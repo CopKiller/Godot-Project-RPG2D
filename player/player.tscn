@@ -1,11 +1,26 @@
-[gd_scene load_steps=33 format=3 uid="uid://cgh6aqfebgi8v"]
+[gd_scene load_steps=34 format=3 uid="uid://cgh6aqfebgi8v"]
 
 [ext_resource type="Texture2D" uid="uid://cro52ev2jxytu" path="res://assets/player/1.png" id="1_ab0is"]
 [ext_resource type="Script" path="res://scripts/player/Player.cs" id="1_eqwyk"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eb60i"]
-radius = 11.0
-height = 48.0
+[sub_resource type="FontFile" id="FontFile_v7k1c"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/14/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j3yla"]
 atlas = ExtResource("1_ab0is")
@@ -122,7 +137,7 @@ region = Rect2(384, 192, 64, 64)
 [sub_resource type="SpriteFrames" id="SpriteFrames_uw24r"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 4.0,
 "texture": SubResource("AtlasTexture_j3yla")
 }, {
 "duration": 1.0,
@@ -136,7 +151,7 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 4.0,
 "texture": SubResource("AtlasTexture_g4p0f")
 }, {
 "duration": 1.0,
@@ -150,7 +165,7 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 4.0,
 "texture": SubResource("AtlasTexture_a8y1h")
 }, {
 "duration": 1.0,
@@ -164,7 +179,7 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 4.0,
 "texture": SubResource("AtlasTexture_qig8r")
 }, {
 "duration": 1.0,
@@ -246,15 +261,42 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7fjqw"]
+size = Vector2(39.9914, 9.14618)
+
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(600, 600)
 script = ExtResource("1_eqwyk")
 
-[node name="Collision" type="CollisionShape2D" parent="."]
-position = Vector2(0, 7)
-shape = SubResource("CapsuleShape2D_eb60i")
+[node name="Name" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -36.0
+offset_top = -43.0
+offset_right = -3.0
+offset_bottom = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(2.24, 1)
+size_flags_vertical = 8
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = SubResource("FontFile_v7k1c")
+theme_override_font_sizes/font_size = 14
+text = "eaee"
+horizontal_alignment = 1
+language = "pt"
+structured_text_bidi_override = 6
+metadata/_edit_use_anchors_ = true
 
-[node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_uw24r")
-animation = &"Idle_Left"
-frame_progress = 0.84067
+animation = &"Idle_Right"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 19.7122)
+rotation = -3.14159
+scale = Vector2(0.55012, 2.34244)
+shape = SubResource("RectangleShape2D_7fjqw")

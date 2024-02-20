@@ -1,0 +1,76 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfg2lvy0vclch"]
+
+[ext_resource type="Texture2D" uid="uid://dhm4qaf4dydnm" path="res://UI/MainMenu/Graphics/Background/madeirado.png" id="1_4ip2p"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackGround" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_4ip2p")
+
+[node name="ContainerBackGround" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.319556
+anchor_top = 0.364833
+anchor_right = 0.540782
+anchor_bottom = 0.846778
+offset_top = 0.320007
+offset_right = -118.456
+offset_bottom = -265.68
+scale = Vector2(3.4, 4.28)
+color = Color(0.211765, 0.392157, 0.286275, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="ContainerBackGround"]
+layout_mode = 0
+offset_left = 28.8235
+offset_right = 68.8235
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 13
+text = "MainMenu"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Container" type="VBoxContainer" parent="ContainerBackGround"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.193974
+anchor_top = 0.419292
+anchor_right = 0.445938
+anchor_bottom = 0.830959
+offset_right = 174.639
+offset_bottom = 103.655
+grow_vertical = 2
+scale = Vector2(0.317647, 0.244945)
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="LoginButton" type="Button" parent="ContainerBackGround/Container"]
+layout_mode = 2
+text = "Login"
+
+[node name="NewAccountButton" type="Button" parent="ContainerBackGround/Container"]
+layout_mode = 2
+text = "New Account"
+
+[node name="OptionsButton" type="Button" parent="ContainerBackGround/Container"]
+layout_mode = 2
+text = "Options"
+
+[node name="QuitButton" type="Button" parent="ContainerBackGround/Container"]
+layout_mode = 2
+text = "Quit
+"

@@ -1,7 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://o5kgjukd4mre"]
+[gd_scene load_steps=3 format=3 uid="uid://o5kgjukd4mre"]
 
 [ext_resource type="PackedScene" uid="uid://cgh6aqfebgi8v" path="res://player/player.tscn" id="1_6lgqv"]
+[ext_resource type="PackedScene" uid="uid://brk0rsiirop1s" path="res://entities/monster/monster.tscn" id="2_ga3p6"]
 
 [node name="Game" type="Node2D"]
+z_as_relative = false
+y_sort_enabled = true
 
 [node name="Player" parent="." instance=ExtResource("1_6lgqv")]
+z_as_relative = false
+y_sort_enabled = true
+position = Vector2(400, 300)
+
+[node name="Monster" parent="." instance=ExtResource("2_ga3p6")]
+y_sort_enabled = true

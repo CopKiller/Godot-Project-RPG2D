@@ -2,106 +2,106 @@
 
 public partial class Player : CharacterBody2D
 {
-    public const float Speed = 300.0f;
+    // Nome do jogador
+    //string Name = "Player";
 
-    // Declare os nós das animações de movimento
+    // Referência ao AnimatedSprite
     private AnimatedSprite2D animatedSprite;
 
+    // Velocidade do jogador
+    public int Speed = 60;
+
+    // Última direção do jogador
     private Vector2 lastDirection = Vector2.Zero;
 
     public override void _Ready()
     {
         // Obtenha a referência ao AnimatedSprite no nó do jogador
-        animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite");
+        animatedSprite = GetNode<AnimatedSprite2D>("Sprite");
     }
+
     public override void _PhysicsProcess(double delta)
     {
-        Vector2 velocity = Velocity;
+        Vector2 direction = GetInputDirection();
+        MovePlayer(direction, delta);
+        ProcessDirection(direction);
+    }
 
-        // Obtenha a direção do movimento
-        Vector2 direction = Vector2.Zero;
+    // Obtém a direção de entrada do jogador
+    private Vector2 GetInputDirection()
+    {
+        var xMoving = Input.GetActionStrength("Move_Right") - Input.GetActionStrength("Move_Left");
+        var yMoving = Input.GetActionStrength("Move_Down") - Input.GetActionStrength("Move_Up");
+        return new Vector2(xMoving, yMoving).Normalized();
+    }
 
-        if (Input.IsActionPressed("MOVE_LEFT"))
+    // Move o jogador com base na direção
+    private void MovePlayer(Vector2 direction, double delta)
+    {
+        var running = GetInputRunning();
+        var speed = running ? Speed * 2 : Speed;
+        Velocity = direction * speed;
+
+        MoveAndCollide(Velocity * (float)delta);
+    }
+
+    // Verifica se o botão de corrida está pressionado
+    private bool GetInputRunning()
+    {
+        return Input.IsActionPressed("Shift_Down");
+    }
+
+    // Processa a direção para reproduzir as animações corretas
+    private void ProcessDirection(Vector2 direction)
+    {
+        if (direction.LengthSquared() > 0)
         {
-            direction.X -= 1;
-        }
-        if (Input.IsActionPressed("MOVE_RIGHT"))
-        {
-            direction.X += 1;
-        }
-        if (Input.IsActionPressed("MOVE_UP"))
-        {
-            direction.Y -= 1;
-        }
-        if (Input.IsActionPressed("MOVE_DOWN"))
-        {
-            direction.Y += 1;
-        }
-
-        // Normalize o vetor de direção para manter a velocidade constante em movimentos diagonais
-        direction = direction.Normalized();
-
-        // Atribua a velocidade baseada na direção e na velocidade definida
-        velocity = direction * Speed;
-
-        // Atribua a velocidade ao jogador
-        this.Velocity = velocity;
-
-        // Verificar se o jogador está se movendo
-        if (direction.Length() > 0)
-        {
-            // Definir animação com base na direção do movimento
-            if (Mathf.Abs(direction.X) > Mathf.Abs(direction.Y))
-            {
-                if (direction.X > 0)
-                {
-                    // Movendo-se para a direita
-                    animatedSprite.Play("Walk_Right");
-                }
-                else
-                {
-                    // Movendo-se para a esquerda
-                    animatedSprite.Play("Walk_Left");
-                }
-            }
-            else
-            {
-                if (direction.Y > 0)
-                {
-                    // Movendo-se para cima
-                    animatedSprite.Play("Walk_Down");
-                }
-                else
-                {
-                    // Movendo-se para baixo
-                    animatedSprite.Play("Walk_Up");
-                }
-            }
-
-            // Atualizar a última direção apenas se o jogador estiver se movendo
+            PlayMovementAnimation(direction);
             lastDirection = direction;
         }
         else
         {
-            // Sem movimento, reproduzir a animação idle correspondente à última direção
-            if (lastDirection.X > 0)
-            {
-                animatedSprite.Play("Idle_Right");
-            }
-            else if (lastDirection.X < 0)
-            {
-                animatedSprite.Play("Idle_Left");
-            }
-            else if (lastDirection.Y > 0)
-            {
-                animatedSprite.Play("Idle_Down");
-            }
-            else if (lastDirection.Y < 0)
-            {
-                animatedSprite.Play("Idle_Up");
-            }
+            PlayIdleAnimation();
         }
+    }
 
-        MoveAndSlide();
+    // Reproduz a animação de movimento adequada com base na direção
+    private void PlayMovementAnimation(Vector2 direction)
+    {
+        string animationName = GetAnimationNameFromDirection(direction);
+        animatedSprite.Play(animationName);
+    }
+
+    // Obtém o nome da animação com base na direção do movimento
+    private string GetAnimationNameFromDirection(Vector2 direction)
+    {
+        if (Mathf.Abs(direction.X) > Mathf.Abs(direction.Y))
+        {
+            return direction.X > 0 ? "Walk_Right" : "Walk_Left";
+        }
+        else
+        {
+            return direction.Y > 0 ? "Walk_Down" : "Walk_Up";
+        }
+    }
+
+    // Reproduz a animação idle correspondente à última direção
+    private void PlayIdleAnimation()
+    {
+        string animationName = GetIdleAnimationName();
+        animatedSprite.Play(animationName);
+    }
+
+    // Obtém o nome da animação idle com base na última direção
+    private string GetIdleAnimationName()
+    {
+        if (lastDirection.X > 0)
+            return "Idle_Right";
+        else if (lastDirection.X < 0)
+            return "Idle_Left";
+        else if (lastDirection.Y > 0)
+            return "Idle_Down";
+        else
+            return "Idle_Up";
     }
 }
