@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cfg2lvy0vclch"]
+[gd_scene load_steps=3 format=3 uid="uid://cfg2lvy0vclch"]
 
 [ext_resource type="Texture2D" uid="uid://dhm4qaf4dydnm" path="res://UI/MainMenu/Graphics/Background/madeirado.png" id="1_4ip2p"]
+[ext_resource type="Script" path="res://UI/MainMenu/MainMenu.cs" id="1_slqy8"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_slqy8")
 
 [node name="BackGround" type="TextureRect" parent="."]
 layout_mode = 1
@@ -58,19 +60,19 @@ scale = Vector2(0.317647, 0.244945)
 alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="LoginButton" type="Button" parent="ContainerBackGround/Container"]
+[node name="LoginButton" type="Button" parent="ContainerBackGround/Container" groups=["Buttons"]]
 layout_mode = 2
 text = "Login"
 
-[node name="NewAccountButton" type="Button" parent="ContainerBackGround/Container"]
+[node name="NewAccountButton" type="Button" parent="ContainerBackGround/Container" groups=["Buttons"]]
 layout_mode = 2
 text = "New Account"
 
-[node name="OptionsButton" type="Button" parent="ContainerBackGround/Container"]
+[node name="OptionsButton" type="Button" parent="ContainerBackGround/Container" groups=["Buttons"]]
 layout_mode = 2
 text = "Options"
 
-[node name="QuitButton" type="Button" parent="ContainerBackGround/Container"]
+[node name="QuitButton" type="Button" parent="ContainerBackGround/Container" groups=["Buttons"]]
 layout_mode = 2
 text = "Quit
 "
