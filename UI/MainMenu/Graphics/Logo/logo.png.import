@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhm4qaf4dydnm"
-path="res://.godot/imported/madeirado.png-63f696424fd05290e19de79ced82029a.ctex"
+uid="uid://vo4xmh1l2uy1"
+path="res://.godot/imported/logo.png-9561a7ac5c884d1d7e0f9d445216ee73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/MainMenu/Graphics/Background/madeirado.png"
-dest_files=["res://.godot/imported/madeirado.png-63f696424fd05290e19de79ced82029a.ctex"]
+source_file="res://UI/MainMenu/Graphics/Logo/logo.png"
+dest_files=["res://.godot/imported/logo.png-9561a7ac5c884d1d7e0f9d445216ee73.ctex"]
 
 [params]
 

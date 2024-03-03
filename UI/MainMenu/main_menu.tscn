@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfg2lvy0vclch"]
+[gd_scene load_steps=6 format=3 uid="uid://cfg2lvy0vclch"]
 
-[ext_resource type="Texture2D" uid="uid://dhm4qaf4dydnm" path="res://UI/MainMenu/Graphics/Background/madeirado.png" id="1_4ip2p"]
 [ext_resource type="Script" path="res://UI/MainMenu/MainMenu.cs" id="1_slqy8"]
+[ext_resource type="Texture2D" uid="uid://ccp7opy3xi4kp" path="res://UI/MainMenu/Graphics/Background/background.png" id="2_jwp4y"]
+[ext_resource type="Texture2D" uid="uid://vo4xmh1l2uy1" path="res://UI/MainMenu/Graphics/Logo/logo.png" id="3_1xx8x"]
+[ext_resource type="Texture2D" uid="uid://cdtsyxheb7mxv" path="res://UI/MainMenu/Graphics/Window/window.png" id="4_51l5x"]
+
+[sub_resource type="SystemFont" id="SystemFont_g0rtq"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -19,9 +23,82 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_4ip2p")
+texture = ExtResource("2_jwp4y")
+expand_mode = 1
 
-[node name="ContainerBackGround" type="ColorRect" parent="."]
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -178.0
+offset_right = 178.0
+offset_bottom = 158.0
+grow_horizontal = 2
+texture = ExtResource("3_1xx8x")
+
+[node name="MainContainer" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -142.0
+offset_top = -396.0
+offset_right = 142.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("4_51l5x")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="MainContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -54.5
+offset_top = 7.0
+offset_right = 54.5
+offset_bottom = 35.0
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("SystemFont_g0rtq")
+theme_override_font_sizes/font_size = 20
+text = "Main Menu"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="MainContainer/VBoxContainer" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Login"
+
+[node name="RegisterButton" type="Button" parent="MainContainer/VBoxContainer" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 4
+text = "New Account"
+
+[node name="OptionsButton" type="Button" parent="MainContainer/VBoxContainer" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Options"
+
+[node name="ExitButton" type="Button" parent="MainContainer/VBoxContainer" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Quit
+"
+
+[node name="RegisterContainer" type="ColorRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.319556
@@ -35,18 +112,18 @@ scale = Vector2(3.4, 4.28)
 color = Color(0.211765, 0.392157, 0.286275, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="ContainerBackGround"]
+[node name="Label" type="Label" parent="RegisterContainer"]
 layout_mode = 0
 offset_left = 28.8235
 offset_right = 68.8235
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 13
-text = "MainMenu"
+text = "Register"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Container" type="VBoxContainer" parent="ContainerBackGround"]
+[node name="ContainerVertical" type="VBoxContainer" parent="RegisterContainer"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.193974
@@ -60,19 +137,64 @@ scale = Vector2(0.317647, 0.244945)
 alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="LoginButton" type="Button" parent="ContainerBackGround/Container" groups=["Buttons"]]
+[node name="UserHorizontal" type="HBoxContainer" parent="RegisterContainer/ContainerVertical"]
 layout_mode = 2
-text = "Login"
 
-[node name="NewAccountButton" type="Button" parent="ContainerBackGround/Container" groups=["Buttons"]]
+[node name="BoxLabel" type="VBoxContainer" parent="RegisterContainer/ContainerVertical/UserHorizontal"]
 layout_mode = 2
-text = "New Account"
 
-[node name="OptionsButton" type="Button" parent="ContainerBackGround/Container" groups=["Buttons"]]
+[node name="User" type="Label" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxLabel"]
 layout_mode = 2
-text = "Options"
+text = "User:"
 
-[node name="QuitButton" type="Button" parent="ContainerBackGround/Container" groups=["Buttons"]]
+[node name="Pass" type="Label" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxLabel"]
 layout_mode = 2
-text = "Quit
+text = "Pass:"
+
+[node name="Pass2" type="Label" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxLabel"]
+layout_mode = 2
+text = "Retype:"
+
+[node name="BoxText" type="VBoxContainer" parent="RegisterContainer/ContainerVertical/UserHorizontal"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="UserText" type="TextEdit" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxText"]
+texture_filter = 2
+texture_repeat = 1
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.5
+caret_blink = true
+caret_multiple = false
+draw_control_chars = true
+text_direction = 1
+language = "pt"
+
+[node name="PassText" type="TextEdit" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxText"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.5
+text = "
 "
+placeholder_text = "Password
+"
+draw_control_chars = true
+
+[node name="PassText2" type="TextEdit" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxText"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.5
+text = "
+"
+placeholder_text = "Password Retype"
+draw_control_chars = true
+
+[node name="Button" type="Button" parent="RegisterContainer/ContainerVertical"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+text = "Criar Conta"
