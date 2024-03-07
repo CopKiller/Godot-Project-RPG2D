@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\godot-project\\ui\\mainmenu\\maincontainer\\maincontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:ui\\mainmenu\\maincontainer\\maincontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\godot-project\\customcontrol\\windowtexturerect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:customcontrol\\windowtexturerect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\godot-project\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\godot-project\\ui\\mainmenu\\maincontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:ui\\mainmenu\\maincontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\godot-project\\ui\\mainmenu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\ui\\mainmenu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:ui\\mainmenu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\godot-project\\controller\\activewindows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:controller\\activewindows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\godot-project\\ui\\mainmenu\\windows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:ui\\mainmenu\\windows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\godot-project\\ui\\mainmenu\\maincontainer\\optioncontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:ui\\mainmenu\\maincontainer\\optioncontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\godot-project\\ui\\mainmenu\\maincontainer\\registercontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:ui\\mainmenu\\maincontainer\\registercontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D28C4763-FC0E-49A4-BA26-EFDD53E87867}|Godot Project.csproj|solutionrelative:scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +42,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainContainer.cs",
-              "DocumentMoniker": "C:\\USERS\\FELIP\\ONEDRIVE\\\u00C1REA DE TRABALHO\\GODOT-PROJECT\\UI\\MainMenu\\MainContainer\\MainContainer.cs",
-              "RelativeDocumentMoniker": "UI\\MainMenu\\MainContainer\\MainContainer.cs",
-              "ToolTip": "C:\\USERS\\FELIP\\ONEDRIVE\\\u00C1REA DE TRABALHO\\GODOT-PROJECT\\UI\\MainMenu\\MainContainer\\MainContainer.cs",
-              "RelativeToolTip": "UI\\MainMenu\\MainContainer\\MainContainer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "OptionContainer.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\UI\\MainMenu\\MainContainer\\OptionContainer.cs",
+              "RelativeDocumentMoniker": "UI\\MainMenu\\MainContainer\\OptionContainer.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\UI\\MainMenu\\MainContainer\\OptionContainer.cs",
+              "RelativeToolTip": "UI\\MainMenu\\MainContainer\\OptionContainer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T15:12:11.119Z",
+              "WhenOpened": "2024-03-07T03:19:55.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Windows.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\UI\\MainMenu\\Windows.cs",
+              "RelativeDocumentMoniker": "UI\\MainMenu\\Windows.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\UI\\MainMenu\\Windows.cs",
+              "RelativeToolTip": "UI\\MainMenu\\Windows.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T02:45:13.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ActiveWindows.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\Controller\\ActiveWindows.cs",
+              "RelativeDocumentMoniker": "Controller\\ActiveWindows.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\Controller\\ActiveWindows.cs",
+              "RelativeToolTip": "Controller\\ActiveWindows.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA5wB4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T02:34:14.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterContainer.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\UI\\MainMenu\\MainContainer\\RegisterContainer.cs",
+              "RelativeDocumentMoniker": "UI\\MainMenu\\MainContainer\\RegisterContainer.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\UI\\MainMenu\\MainContainer\\RegisterContainer.cs",
+              "RelativeToolTip": "UI\\MainMenu\\MainContainer\\RegisterContainer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T22:53:46.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WindowTextureRect.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\CustomControl\\WindowTextureRect.cs",
+              "RelativeDocumentMoniker": "CustomControl\\WindowTextureRect.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\CustomControl\\WindowTextureRect.cs",
+              "RelativeToolTip": "CustomControl\\WindowTextureRect.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T22:25:56.241Z",
               "EditorCaption": ""
             },
             {
@@ -45,20 +117,33 @@
               "RelativeDocumentMoniker": "UI\\MainMenu\\MainMenu.cs",
               "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\UI\\MainMenu\\MainMenu.cs",
               "RelativeToolTip": "UI\\MainMenu\\MainMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T00:59:55.279Z",
+              "WhenOpened": "2024-03-03T21:25:32.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MainContainer.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\UI\\MainMenu\\MainContainer.cs",
+              "RelativeDocumentMoniker": "UI\\MainMenu\\MainContainer.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\UI\\MainMenu\\MainContainer.cs",
+              "RelativeToolTip": "UI\\MainMenu\\MainContainer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T15:12:11.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\scripts\\player\\Player.cs",
               "RelativeDocumentMoniker": "scripts\\player\\Player.cs",
               "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\Godot-Project\\scripts\\player\\Player.cs",
               "RelativeToolTip": "scripts\\player\\Player.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAAwE4AAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-03T00:59:55.579Z",
               "EditorCaption": ""

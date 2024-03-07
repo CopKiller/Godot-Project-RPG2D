@@ -1,11 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://cfg2lvy0vclch"]
+[gd_scene load_steps=9 format=3 uid="uid://cfg2lvy0vclch"]
 
 [ext_resource type="Script" path="res://UI/MainMenu/MainMenu.cs" id="1_slqy8"]
 [ext_resource type="Texture2D" uid="uid://ccp7opy3xi4kp" path="res://UI/MainMenu/Graphics/Background/background.png" id="2_jwp4y"]
 [ext_resource type="Texture2D" uid="uid://vo4xmh1l2uy1" path="res://UI/MainMenu/Graphics/Logo/logo.png" id="3_1xx8x"]
-[ext_resource type="Texture2D" uid="uid://cdtsyxheb7mxv" path="res://UI/MainMenu/Graphics/Window/window.png" id="4_51l5x"]
+[ext_resource type="Texture2D" uid="uid://b6qqpppfnursn" path="res://UI/MainMenu/Graphics/Window/window2.png" id="4_jqx37"]
+[ext_resource type="Script" path="res://UI/MainMenu/MainContainer.cs" id="5_1meam"]
+[ext_resource type="Script" path="res://UI/MainMenu/MainContainer/RegisterContainer.cs" id="6_lt5pw"]
+[ext_resource type="Script" path="res://UI/MainMenu/MainContainer/OptionContainer.cs" id="7_sd07n"]
 
 [sub_resource type="SystemFont" id="SystemFont_g0rtq"]
+subpixel_positioning = 0
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -27,6 +31,7 @@ texture = ExtResource("2_jwp4y")
 expand_mode = 1
 
 [node name="Logo" type="TextureRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -38,6 +43,7 @@ grow_horizontal = 2
 texture = ExtResource("3_1xx8x")
 
 [node name="MainContainer" type="TextureRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -47,11 +53,11 @@ anchor_bottom = 1.0
 offset_left = -142.0
 offset_top = -396.0
 offset_right = 142.0
-offset_bottom = -62.0
+offset_bottom = -140.0
 grow_horizontal = 2
 grow_vertical = 0
-texture = ExtResource("4_51l5x")
-expand_mode = 1
+texture = ExtResource("4_jqx37")
+script = ExtResource("5_1meam")
 
 [node name="Label" type="Label" parent="MainContainer"]
 layout_mode = 1
@@ -59,9 +65,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -54.5
-offset_top = 7.0
+offset_top = 5.0
 offset_right = 54.5
-offset_bottom = 35.0
+offset_bottom = 33.0
 grow_horizontal = 2
 theme_override_fonts/font = SubResource("SystemFont_g0rtq")
 theme_override_font_sizes/font_size = 20
@@ -91,110 +97,96 @@ layout_mode = 2
 size_flags_vertical = 4
 text = "Options"
 
+[node name="CreditsButton" type="Button" parent="MainContainer/VBoxContainer" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Credits
+"
+
 [node name="ExitButton" type="Button" parent="MainContainer/VBoxContainer" groups=["MenuButtons"]]
 layout_mode = 2
 size_flags_vertical = 4
 text = "Quit
 "
 
-[node name="RegisterContainer" type="ColorRect" parent="."]
+[node name="RegisterContainer" type="TextureRect" parent="."]
 visible = false
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.319556
-anchor_top = 0.364833
-anchor_right = 0.540782
-anchor_bottom = 0.846778
-offset_top = 0.320007
-offset_right = -118.456
-offset_bottom = -265.68
-scale = Vector2(3.4, 4.28)
-color = Color(0.211765, 0.392157, 0.286275, 1)
-metadata/_edit_use_anchors_ = true
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -142.0
+offset_top = -396.0
+offset_right = 142.0
+offset_bottom = -140.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("4_jqx37")
+script = ExtResource("6_lt5pw")
 
 [node name="Label" type="Label" parent="RegisterContainer"]
-layout_mode = 0
-offset_left = 28.8235
-offset_right = 68.8235
-offset_bottom = 23.0
-theme_override_font_sizes/font_size = 13
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -54.5
+offset_top = 5.0
+offset_right = 54.5
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("SystemFont_g0rtq")
+theme_override_font_sizes/font_size = 20
 text = "Register"
 horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
 
-[node name="ContainerVertical" type="VBoxContainer" parent="RegisterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="RegisterContainer"]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.193974
-anchor_top = 0.419292
-anchor_right = 0.445938
-anchor_bottom = 0.830959
-offset_right = 174.639
-offset_bottom = 103.655
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.317647, 0.244945)
-alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="UserHorizontal" type="HBoxContainer" parent="RegisterContainer/ContainerVertical"]
-layout_mode = 2
-
-[node name="BoxLabel" type="VBoxContainer" parent="RegisterContainer/ContainerVertical/UserHorizontal"]
-layout_mode = 2
-
-[node name="User" type="Label" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxLabel"]
-layout_mode = 2
-text = "User:"
-
-[node name="Pass" type="Label" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxLabel"]
-layout_mode = 2
-text = "Pass:"
-
-[node name="Pass2" type="Label" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxLabel"]
-layout_mode = 2
-text = "Retype:"
-
-[node name="BoxText" type="VBoxContainer" parent="RegisterContainer/ContainerVertical/UserHorizontal"]
-layout_mode = 2
-size_flags_horizontal = 3
 alignment = 1
 
-[node name="UserText" type="TextEdit" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxText"]
-texture_filter = 2
-texture_repeat = 1
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 1.5
-caret_blink = true
-caret_multiple = false
-draw_control_chars = true
-text_direction = 1
-language = "pt"
+[node name="OptionContainer" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -142.0
+offset_top = -396.0
+offset_right = 142.0
+offset_bottom = -140.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("4_jqx37")
+script = ExtResource("7_sd07n")
 
-[node name="PassText" type="TextEdit" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxText"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-size_flags_stretch_ratio = 1.5
-text = "
-"
-placeholder_text = "Password
-"
-draw_control_chars = true
+[node name="Label" type="Label" parent="OptionContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -54.5
+offset_top = 5.0
+offset_right = 54.5
+offset_bottom = 33.0
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("SystemFont_g0rtq")
+theme_override_font_sizes/font_size = 20
+text = "Options"
+horizontal_alignment = 1
 
-[node name="PassText2" type="TextEdit" parent="RegisterContainer/ContainerVertical/UserHorizontal/BoxText"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-size_flags_stretch_ratio = 1.5
-text = "
-"
-placeholder_text = "Password Retype"
-draw_control_chars = true
-
-[node name="Button" type="Button" parent="RegisterContainer/ContainerVertical"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 10
-text = "Criar Conta"
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
