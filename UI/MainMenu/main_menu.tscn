@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cfg2lvy0vclch"]
+[gd_scene load_steps=13 format=3 uid="uid://cfg2lvy0vclch"]
 
 [ext_resource type="Script" path="res://UI/MainMenu/MainMenu.cs" id="1_slqy8"]
 [ext_resource type="Texture2D" uid="uid://ccp7opy3xi4kp" path="res://UI/MainMenu/Graphics/Background/background.png" id="2_jwp4y"]
@@ -7,6 +7,18 @@
 [ext_resource type="Script" path="res://UI/MainMenu/MainContainer.cs" id="5_1meam"]
 [ext_resource type="Script" path="res://UI/MainMenu/MainContainer/RegisterContainer.cs" id="6_lt5pw"]
 [ext_resource type="Script" path="res://UI/MainMenu/MainContainer/OptionContainer.cs" id="7_sd07n"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_cdjyw"]
+b = Vector2(-1, 601)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_k67wk"]
+b = Vector2(802, -1)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_fr4px"]
+b = Vector2(802, -2)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mmlwn"]
+size = Vector2(364.5, 159)
 
 [sub_resource type="SystemFont" id="SystemFont_g0rtq"]
 subpixel_positioning = 0
@@ -30,17 +42,41 @@ grow_vertical = 2
 texture = ExtResource("2_jwp4y")
 expand_mode = 1
 
-[node name="Logo" type="TextureRect" parent="."]
-visible = false
-layout_mode = 1
+[node name="Area2D" type="Node2D" parent="."]
+
+[node name="Borders" type="StaticBody2D" parent="Area2D"]
+
+[node name="Left" type="CollisionShape2D" parent="Area2D/Borders"]
+shape = SubResource("SegmentShape2D_cdjyw")
+
+[node name="Right" type="CollisionShape2D" parent="Area2D/Borders"]
+position = Vector2(802, 0)
+shape = SubResource("SegmentShape2D_cdjyw")
+
+[node name="Down" type="CollisionShape2D" parent="Area2D/Borders"]
+position = Vector2(0, 602)
+shape = SubResource("SegmentShape2D_k67wk")
+
+[node name="Up" type="CollisionShape2D" parent="Area2D/Borders"]
+shape = SubResource("SegmentShape2D_fr4px")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Area2D"]
+position = Vector2(420, 146)
+
+[node name="Logo" type="TextureRect" parent="Area2D/RigidBody2D"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -178.0
-offset_right = 178.0
-offset_bottom = 158.0
+offset_left = -170.0
+offset_top = -79.0
+offset_right = 186.0
+offset_bottom = 79.0
 grow_horizontal = 2
 texture = ExtResource("3_1xx8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D/RigidBody2D"]
+position = Vector2(2, -2)
+shape = SubResource("RectangleShape2D_mmlwn")
 
 [node name="MainContainer" type="TextureRect" parent="."]
 visible = false
