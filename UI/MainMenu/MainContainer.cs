@@ -1,6 +1,6 @@
 ﻿using Godot;
 using Godot.Collections;
-using GodotProject.CustomControl;
+using GodotProject.Window.CustomControl;
 using System;
 
 public partial class MainContainer : WindowTextureRect

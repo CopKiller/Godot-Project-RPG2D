@@ -1,7 +1,6 @@
 ﻿using Godot;
-using GodotProject.Controller;
-using GodotProject.CustomControl;
-using System.Collections.Generic;
+using GodotProject.Window.Controller;
+using GodotProject.Window.CustomControl;
 
 public partial class MainMenu : Control
 {

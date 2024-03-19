@@ -1,5 +1,5 @@
-﻿using Godot;
-using GodotProject.CustomControl;
+﻿
+using GodotProject.Window.CustomControl;
 
 public partial class RegisterContainer : WindowTextureRect
 {
