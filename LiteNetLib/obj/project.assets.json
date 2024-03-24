@@ -777,11 +777,11 @@
   "project": {
     "version": "1.2.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\GD Project\\LiteNetLib\\LiteNetLib.csproj",
+      "projectUniqueName": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\LiteNetLib\\LiteNetLib.csproj",
       "projectName": "LiteNetLib",
-      "projectPath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\GD Project\\LiteNetLib\\LiteNetLib.csproj",
+      "projectPath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\LiteNetLib\\LiteNetLib.csproj",
       "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\GD Project\\LiteNetLib\\obj\\",
+      "outputPath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\LiteNetLib\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

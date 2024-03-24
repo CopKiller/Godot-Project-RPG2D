@@ -1,24 +1,18 @@
-using Shared.Scripts.Player;
-using Godot;
+﻿using Godot;
 using System;
+using GdProject.Shared.Scripts.NodeManager;
 
 public partial class Game : Node2D
 {
     public override void _Ready()
     {
-
+        // Adiciona este nó ao gerenciador de nós
+        NodeManager.AddToNodeManager(this);
     }
 
-    public override void _Input(InputEvent @event)
+    public override void _Process(double delta)
     {
         
     }
-
-    public void InitializePlayer(PlayerDataModel playerData)
-    {
-        var player = new Player();
-        player.HandlePlayerData(playerData);
-        AddChild(player);
-    }
-
 }
+

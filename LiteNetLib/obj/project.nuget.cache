@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "221GLv+l1GqiHZuDD/IYZ2BZotBMo2wkrgXNPpz4jNqriFE2ruoZRH5bAbRAqS+6hQ1+VLyxfJW8kwyLmJFVtw==",
+  "dgSpecHash": "xqOOOpm+bdeJlSnenifvpJvMh1AZHXnWhhZ4RttDTlBcYiYfPqoEapfkBwNSSueieoROQx9kzodgQmTnf3O84g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\GD Project\\LiteNetLib\\LiteNetLib.csproj",
+  "projectFilePath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\LiteNetLib\\LiteNetLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
