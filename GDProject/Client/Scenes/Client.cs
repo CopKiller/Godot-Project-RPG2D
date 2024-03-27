@@ -34,7 +34,6 @@ public partial class Client : Node
         NodeManager.GetNode<MainMenu>(nameof(MainMenu)).Hide();
         NodeManager.GetNode<Game>(nameof(Game)).Show();
     }
-
     public void InitConnection()
     {
         var gameClient = new GameClient();

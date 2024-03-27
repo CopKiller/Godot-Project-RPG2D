@@ -5,10 +5,9 @@ using Shared.Scripts.Player;
 
 public partial class Player : PlayerPhysicsModel
 {
-
     public void SetPlayerName(string playerName)
     {
-        playerData.PlayerName = playerName;
+        PlayerData.PlayerName = playerName;
         NodeManager.GetNode<RichTextLabel>("PlayerName").Text = playerName;
     }
 }

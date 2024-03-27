@@ -12,20 +12,20 @@ namespace Shared.Scripts.Player
 {
     public partial class PlayerPhysicsModel : CharacterBody2D
     {
-        public PlayerDataModel playerData;
+        public PlayerDataModel PlayerData;
 
         Vector2 LastDirection = new Vector2();
         public float Speed = 100;
 
         public override void _Ready()
         {
-            playerData = new PlayerDataModel();
+            PlayerData = new PlayerDataModel();
             //playerData.PlayerName = "Player";
-            playerData.Position = Position;
+            PlayerData.Position = Position;
 
-            playerData.Class = new ClassModel();
-            playerData.Class.Class = ClassType.Mage;
-            playerData.Class.AnimatedSprite = GetNode<AnimatedSprite2D>("Sprite");
+            PlayerData.Class = new ClassModel();
+            PlayerData.Class.Class = ClassType.Mage;
+            PlayerData.Class.AnimatedSprite = GetNode<AnimatedSprite2D>("Sprite");
         }
 
         public override void _Process(double delta)
@@ -78,7 +78,7 @@ namespace Shared.Scripts.Player
         private void PlayMovementAnimation(Vector2 direction)
         {
             string animationName = GetAnimationNameFromDirection(direction);
-            playerData.Class.AnimatedSprite.Play(animationName);
+            PlayerData.Class.AnimatedSprite.Play(animationName);
         }
         // Obtém o nome da animação com base na direção do movimento
         private string GetAnimationNameFromDirection(Vector2 direction)
@@ -112,7 +112,7 @@ namespace Shared.Scripts.Player
         private void PlayIdleAnimation()
         {
             string animationName = GetIdleAnimationName();
-            playerData.Class.AnimatedSprite.Play(animationName);
+            PlayerData.Class.AnimatedSprite.Play(animationName);
         }
         // Obtém o nome da animação idle com base na última direção
         private string GetIdleAnimationName()

@@ -9,3 +9,15 @@ C:\Users\felip\OneDrive\Área de Trabalho\Bibliotecas Terceiros\LiteNetLib-1.2.0
 C:\Users\felip\OneDrive\Área de Trabalho\Bibliotecas Terceiros\LiteNetLib-1.2.0\LiteNetLib-1.2.0\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.dll
 C:\Users\felip\OneDrive\Área de Trabalho\Bibliotecas Terceiros\LiteNetLib-1.2.0\LiteNetLib-1.2.0\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.xml
 C:\Users\felip\OneDrive\Área de Trabalho\Bibliotecas Terceiros\LiteNetLib-1.2.0\LiteNetLib-1.2.0\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.pdb
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netstandard2.1\LiteNetLib.deps.json
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netstandard2.1\LiteNetLib.dll
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netstandard2.1\LiteNetLib.pdb
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netstandard2.1\LiteNetLib.xml
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.AssemblyInfoInputs.cache
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.AssemblyInfo.cs
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.csproj.CoreCompileInputs.cache
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.sourcelink.json
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.dll
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.xml
+C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\obj\Debug\netstandard2.1\LiteNetLib.pdb

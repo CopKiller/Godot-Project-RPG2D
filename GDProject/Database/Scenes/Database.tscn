@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0vriwfrga2mh"]
+
+[ext_resource type="Script" path="res://Database/Scripts/Database.cs" id="1_5qk6p"]
+
+[node name="Database" type="Node"]
+script = ExtResource("1_5qk6p")
+
+[node name="Player" type="Node" parent="."]
+
+[node name="Account" type="Node" parent="."]
