@@ -11,12 +11,13 @@ namespace GdProject.Shared.Scripts.NodeManager
         private static DictionaryWrapper<string, Node> nodeMap = new DictionaryWrapper<string, Node>();
 
         // Método para adicionar um nó ao gerenciador
-        public static void AddNode(Node node)
+        public static void AddNode<T>(T node) where T : Node
         {
             if (nodeMap.ContainsKey(node.Name))
             {
                 return;
             }
+
             nodeMap.AddItem(node.Name, node);
 
             GD.Print("Adicionado nó: " + node.Name + " do tipo " + node.GetType().Name);
@@ -24,10 +25,10 @@ namespace GdProject.Shared.Scripts.NodeManager
         // Método para obter um nó do gerenciador pelo nome
         public static T GetNode<T>(string name) where T : Node
         {
-            foreach (var item in nodeMap.GetItems())
-            {
-                GD.Print("Nó: " + item.Key + " do tipo " + item.Value.GetType().Name);
-            }
+            //foreach (var item in nodeMap.GetItems())
+            //{
+            //    GD.Print("Nó: " + item.Key + " do tipo " + item.Value.GetType().Name);
+            //}
 
             if (nodeMap.ContainsKey(name))
             {
@@ -52,7 +53,7 @@ namespace GdProject.Shared.Scripts.NodeManager
             }
         }
         // Método recursivo para adicionar um nó e seus filhos ao gerenciador
-        public static void AddToNodeManager(Node node)
+        public static void AddToNodeManager<T>(T node) where T : Node
         {
             // Adiciona o nó ao gerenciador
             AddNode(node);

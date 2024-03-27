@@ -53,10 +53,6 @@
   </Target>
 
   <ItemGroup>
-    <None Include="..\LNL.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

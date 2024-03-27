@@ -1,7 +1,8 @@
-[gd_scene load_steps=44 format=3 uid="uid://c2385dwmt65h2"]
+[gd_scene load_steps=46 format=3 uid="uid://c2385dwmt65h2"]
 
 [ext_resource type="Script" path="res://Client/Scenes/Client.cs" id="1_xqbha"]
 [ext_resource type="Texture2D" uid="uid://0ah8e7twsavc" path="res://Client/Resources/MainMenu/Background/background.png" id="1_xv5dp"]
+[ext_resource type="Script" path="res://Client/Scripts/MainMenu/MainMenu.cs" id="2_ouw2s"]
 [ext_resource type="Texture2D" uid="uid://dxjuhhlalewer" path="res://Client/Resources/MainMenu/Logo/logo.png" id="2_psbkn"]
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/MainWindow.cs" id="3_7luoa"]
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/Windows.cs" id="3_c2hjj"]
@@ -10,9 +11,10 @@
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/OptionWindow.cs" id="5_mdjd1"]
 [ext_resource type="Script" path="res://Client/Scripts/Game/Game.cs" id="6_ie8vh"]
 [ext_resource type="Script" path="res://Client/Scripts/Entities/Player.cs" id="7_l05p6"]
-[ext_resource type="Texture2D" uid="uid://cjjx5flhwidvy" path="res://Client/Resources/Game/Ground/6.png" id="10_t6gtu"]
+[ext_resource type="PackedScene" uid="uid://ckrobnhv3w7mu" path="res://Client/Scenes/Game/Map/Ground/Ground_01.tscn" id="10_25j42"]
+[ext_resource type="Script" path="res://Client/Scripts/MainMenu/Buttons/LoginOkButton.cs" id="10_hxsgh"]
 [ext_resource type="Texture2D" uid="uid://boy7qfugprna7" path="res://Client/Resources/Game/Player/Sprite/Homen Mago Iniciante RPG.png" id="11_ba42d"]
-[ext_resource type="Texture2D" uid="uid://bt7p83ahqr2sw" path="res://Client/Resources/Game/Fringe/6.png" id="13_6nqcl"]
+[ext_resource type="PackedScene" uid="uid://cqyevyj4fqul7" path="res://Client/Scenes/Game/Map/Fringe/Fringe_01.tscn" id="13_1pc3w"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_708la"]
 atlas = ExtResource("11_ba42d")
@@ -129,7 +131,7 @@ region = Rect2(320, 192, 64, 64)
 [sub_resource type="SpriteFrames" id="SpriteFrames_354p2"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 5.0,
 "texture": SubResource("AtlasTexture_708la")
 }, {
 "duration": 1.0,
@@ -143,7 +145,7 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 5.0,
 "texture": SubResource("AtlasTexture_ghk85")
 }, {
 "duration": 1.0,
@@ -157,7 +159,7 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 5.0,
 "texture": SubResource("AtlasTexture_s6mfx")
 }, {
 "duration": 1.0,
@@ -171,7 +173,7 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 5.0,
 "texture": SubResource("AtlasTexture_a1t4m")
 }, {
 "duration": 1.0,
@@ -292,6 +294,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+script = ExtResource("2_ouw2s")
 
 [node name="BackGround" type="TextureRect" parent="UI/MainMenu"]
 layout_mode = 1
@@ -323,6 +326,7 @@ grow_vertical = 2
 script = ExtResource("3_c2hjj")
 
 [node name="MainWindow" type="TextureRect" parent="UI/MainMenu/Windows"]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -337,6 +341,58 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_mu58v")
 script = ExtResource("3_7luoa")
+
+[node name="TitleLabel" type="Label" parent="UI/MainMenu/Windows/MainWindow"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -65.0
+offset_right = 23.0
+offset_bottom = 23.0
+grow_horizontal = 2
+scale = Vector2(1.5, 1.5)
+text = "Main Menu
+"
+horizontal_alignment = 1
+
+[node name="VerticalBox" type="VBoxContainer" parent="UI/MainMenu/Windows/MainWindow"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -78.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="LoginButton" type="Button" parent="UI/MainMenu/Windows/MainWindow/VerticalBox" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Login"
+
+[node name="RegisterButton" type="Button" parent="UI/MainMenu/Windows/MainWindow/VerticalBox" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Register"
+
+[node name="RecoveryButton" type="Button" parent="UI/MainMenu/Windows/MainWindow/VerticalBox" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Recovery"
+
+[node name="OptionButton" type="Button" parent="UI/MainMenu/Windows/MainWindow/VerticalBox" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Options"
+
+[node name="CreditButton" type="Button" parent="UI/MainMenu/Windows/MainWindow/VerticalBox" groups=["MenuButtons"]]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Credits
+"
 
 [node name="RegisterWindow" type="TextureRect" parent="UI/MainMenu/Windows"]
 visible = false
@@ -372,15 +428,133 @@ grow_vertical = 2
 texture = ExtResource("4_mu58v")
 script = ExtResource("5_mdjd1")
 
+[node name="LoginWindow" type="TextureRect" parent="UI/MainMenu/Windows"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -142.0
+offset_top = -128.0
+offset_right = 142.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_mu58v")
+script = ExtResource("3_7luoa")
+
+[node name="TitleLabel" type="Label" parent="UI/MainMenu/Windows/LoginWindow"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -65.0
+offset_right = 23.0
+offset_bottom = 23.0
+grow_horizontal = 2
+scale = Vector2(1.5, 1.5)
+text = "Login"
+horizontal_alignment = 1
+
+[node name="VerticalBox" type="VBoxContainer" parent="UI/MainMenu/Windows/LoginWindow"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -78.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="LoginText" type="TextEdit" parent="UI/MainMenu/Windows/LoginWindow/VerticalBox"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Login Here"
+shortcut_keys_enabled = false
+scroll_fit_content_height = true
+caret_multiple = false
+draw_control_chars = true
+
+[node name="PasswordText" type="TextEdit" parent="UI/MainMenu/Windows/LoginWindow/VerticalBox"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Password Here"
+shortcut_keys_enabled = false
+scroll_fit_content_height = true
+caret_multiple = false
+draw_control_chars = true
+
+[node name="LoginOkButton" type="Button" parent="UI/MainMenu/Windows/LoginWindow/VerticalBox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Entrar"
+script = ExtResource("10_hxsgh")
+
+[node name="CreditWindow" type="TextureRect" parent="UI/MainMenu/Windows"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -142.0
+offset_top = -128.0
+offset_right = 142.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_mu58v")
+script = ExtResource("3_7luoa")
+
+[node name="TitleLabel" type="Label" parent="UI/MainMenu/Windows/CreditWindow"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -65.0
+offset_right = 23.0
+offset_bottom = 23.0
+grow_horizontal = 2
+scale = Vector2(1.5, 1.5)
+text = "Login"
+horizontal_alignment = 1
+
+[node name="VerticalBox" type="VBoxContainer" parent="UI/MainMenu/Windows/CreditWindow"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -78.0
+offset_bottom = 122.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="UI/MainMenu/Windows/CreditWindow/VerticalBox"]
+layout_mode = 2
+size_flags_vertical = 3
+placeholder_text = "Login Here"
+shortcut_keys_enabled = false
+scroll_fit_content_height = true
+caret_multiple = false
+draw_control_chars = true
+
+[node name="CreditButton" type="Button" parent="UI/MainMenu/Windows/CreditWindow/VerticalBox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Entrar"
+
 [node name="Game" type="Node2D" parent="UI"]
 script = ExtResource("6_ie8vh")
 
-[node name="GroundMap" type="TextureRect" parent="UI/Game"]
-offset_left = -14.0
-offset_top = -8.0
-offset_right = 2034.0
-offset_bottom = 2040.0
-texture = ExtResource("10_t6gtu")
+[node name="Ground-01" parent="UI/Game" instance=ExtResource("10_25j42")]
+offset_right = 2048.0
+offset_bottom = 2048.0
 
 [node name="Player" type="CharacterBody2D" parent="UI/Game"]
 position = Vector2(512, 325)
@@ -395,6 +569,7 @@ position = Vector2(0, 13)
 shape = SubResource("CapsuleShape2D_0xrpr")
 
 [node name="Camera2D" type="Camera2D" parent="UI/Game/Player"]
+scale = Vector2(0.537713, 0.648628)
 limit_left = 0
 limit_top = 0
 limit_smoothed = true
@@ -402,11 +577,26 @@ position_smoothing_enabled = true
 rotation_smoothing_enabled = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
 
-[node name="FringeMap" type="TextureRect" parent="UI/Game"]
-offset_left = -14.0
-offset_top = -8.0
-offset_right = 2034.0
-offset_bottom = 2040.0
-texture = ExtResource("13_6nqcl")
-stretch_mode = 1
+[node name="PlayerName" type="RichTextLabel" parent="UI/Game/Player"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -18.0
+offset_top = -48.0
+offset_right = 18.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Character"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+tab_size = 0
+shortcut_keys_enabled = false
+
+[node name="Fringe-01" parent="UI/Game" instance=ExtResource("13_1pc3w")]

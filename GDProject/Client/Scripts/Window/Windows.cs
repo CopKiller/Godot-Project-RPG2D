@@ -1,6 +1,8 @@
 ﻿public enum MainMenuWindows
 {
-    MainContainer,
-    RegisterContainer,
-    OptionContainer,
+    MainWindow,
+    LoginWindow,
+    RegisterWindow,
+    OptionWindow,
+    CreditWindow
 }

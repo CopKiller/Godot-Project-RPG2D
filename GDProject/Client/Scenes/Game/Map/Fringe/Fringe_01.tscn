@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqyevyj4fqul7"]
+
+[ext_resource type="Texture2D" uid="uid://bt7p83ahqr2sw" path="res://Client/Resources/Game/Map/Fringe/6.png" id="1_tgdw2"]
+
+[node name="Fringe-01" type="TextureRect"]
+offset_right = 2048.0
+offset_bottom = 2048.0
+texture = ExtResource("1_tgdw2")

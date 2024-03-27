@@ -1,4 +1,6 @@
+using GdProject.Shared.Scripts;
 using Godot;
+using LiteNetLib;
 
 public partial class GameManager : Control
 {
@@ -7,6 +9,9 @@ public partial class GameManager : Control
 
     public override void _Ready()
     {
+
+        GD.Print("GameManager Ready");
+
         if (ServerBuild)
         {
             GameServer server = new GameServer();
@@ -17,5 +22,8 @@ public partial class GameManager : Control
             GameClient client = new GameClient();
             AddChild(client);
         }
+
+        NetDebug.Logger = new GDPrint();
+        NetDebug.Logger.WriteNet(NetLogLevel.Trace, "NetDebug Logger initialized");
     }
 }

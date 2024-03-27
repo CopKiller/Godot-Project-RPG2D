@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjjx5flhwidvy"
-path="res://.godot/imported/6.png-26b5f48cd4d9cf4828a3903ce84aa131.ctex"
+uid="uid://dc57a611gvp8u"
+path="res://.godot/imported/!_fire.png-7fef2f315b29f9274dcd357b1cceff88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Client/Resources/Game/Ground/6.png"
-dest_files=["res://.godot/imported/6.png-26b5f48cd4d9cf4828a3903ce84aa131.ctex"]
+source_file="res://!_fire.png"
+dest_files=["res://.godot/imported/!_fire.png-7fef2f315b29f9274dcd357b1cceff88.ctex"]
 
 [params]
 

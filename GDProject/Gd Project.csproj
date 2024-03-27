@@ -9,4 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LiteNetLib\LiteNetLib.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Shared\Scripts\Network\Packet\Client\" />
+  </ItemGroup>
 </Project>

@@ -41,6 +41,7 @@ namespace LiteNetLib
     {
         public static INetLogger Logger = null;
         private static readonly object DebugLogLock = new object();
+
         private static void WriteLogic(NetLogLevel logLevel, string str, params object[] args)
         {
             lock (DebugLogLock)
@@ -50,6 +51,7 @@ namespace LiteNetLib
 #if UNITY_5_3_OR_NEWER
                     UnityEngine.Debug.Log(string.Format(str, args));
 #else
+                    //GDPrint.Print(string.Format(str, args));
                     Console.WriteLine(str, args);
 #endif
                 }

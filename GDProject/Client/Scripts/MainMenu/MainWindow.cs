@@ -3,6 +3,7 @@ using Shared.Window.CustomControl;
 using GdProject.Client.Scripts.Window.Controller;
 using GdProject.Client.Scripts.Window.Interface;
 using System;
+using GdProject.Shared.Scripts.NodeManager;
 
 public partial class MainWindow : WindowTextureRect
 {
@@ -71,15 +72,17 @@ public partial class MainWindow : WindowTextureRect
     private void _OnButtonPressed(string buttonName)
     {
         // Verifica se é o botão de jogar
-        if (buttonName == "PlayButton")
+        if (buttonName == "LoginButton")
         {
-            StartGame();
+            GD.Print("LoginButton Pressed");
+            var LoginWindow = (IControlWindow)NodeManager.GetNode<MainWindow>("LoginWindow");
+            activeWindows.AddActiveWindow(LoginWindow);
         }
         else if (buttonName == "RegisterButton")
         {
-            OpenWindow(MainMenuWindows.RegisterContainer);
+            //OpenWindow(MainMenuWindows.RegisterContainer);
         }
-        else if (buttonName == "OptionsButton")
+        else if (buttonName == "OptionButton")
         {
             //OpenWindow(MainMenuWindows.OptionContainer);
 

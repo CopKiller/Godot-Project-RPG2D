@@ -569,16 +569,13 @@ namespace LiteNetLib.Utils
             _maxStringLength = maxStringLength;
         }
 
-        private ClassInfo<T> RegisterInternal<
-#if NET5_0_OR_GREATER
-        [DynamicallyAccessedMembers(Trimming.SerializerMemberTypes)]
-#endif
-            T>()
+        private ClassInfo<T> RegisterInternal<T>()
         {
             if (ClassInfo<T>.Instance != null)
                 return ClassInfo<T>.Instance;
 
-            var props = typeof(T).GetProperties(
+            Type t = typeof(T);
+            var props = t.GetProperties(
                 BindingFlags.Instance |
                 BindingFlags.Public |
                 BindingFlags.GetProperty |

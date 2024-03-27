@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckrobnhv3w7mu"]
+
+[ext_resource type="Texture2D" uid="uid://cjjx5flhwidvy" path="res://Client/Resources/Game/Map/Ground/6.png" id="1_tslwt"]
+
+[node name="Ground-01" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_tslwt")

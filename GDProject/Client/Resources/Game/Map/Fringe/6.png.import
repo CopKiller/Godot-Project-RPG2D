@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bt7p83ahqr2sw"
-path="res://.godot/imported/6.png-92aa203a95b7bb70671a489eae47a886.ctex"
+path="res://.godot/imported/6.png-4f63508c205a0b23d07902671b752cf5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Client/Resources/Game/Fringe/6.png"
-dest_files=["res://.godot/imported/6.png-92aa203a95b7bb70671a489eae47a886.ctex"]
+source_file="res://Client/Resources/Game/Map/Fringe/6.png"
+dest_files=["res://.godot/imported/6.png-4f63508c205a0b23d07902671b752cf5.ctex"]
 
 [params]
 
