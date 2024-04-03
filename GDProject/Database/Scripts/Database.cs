@@ -9,8 +9,7 @@ using EntityFramework.Repositories.Player;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using GdProject.Shared.Scripts;
-using GdProject.Shared.Scripts.NodeManager;
+using GdProject.Shared.Scripts.Global;
 
 public partial class Database : Node
 {
@@ -59,19 +58,4 @@ public partial class Database : Node
         //    scp.Database.Migrate();
         //}
     }
-
-    // Obter o diretório raiz, para criar e acessar o banco de dados
-    //public string GetDatabaseDirectory()
-    //{
-    //    var path = OS.GetUserDataDir();
-    //    var databasePath = System.IO.Path.Combine(path, "database.db");
-
-    //    return databasePath;
-    //}
-
-    //// Método para acionar o GetDatabaseDirectory e retornar para um projeto externo
-    //public string GetDatabaseDirectoryExternal()
-    //{
-    //    return GetDatabaseDirectory();
-    //}
 }

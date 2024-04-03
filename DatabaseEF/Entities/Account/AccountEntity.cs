@@ -2,7 +2,6 @@
 
 using Player;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 public class AccountEntity : BaseEntity
 {
@@ -20,18 +19,12 @@ public class AccountEntity : BaseEntity
     [MaxLength(MaxCriptographyCaracteres)] // Defina o tamanho máximo desejado aqui
     public string Salt { get; set; } = string.Empty;
 
-    [MaxLength(MaxEmailCaracteres)]
-    public string Email { get; set; } = string.Empty;
-
     public DateTime CreatedDate { get; set; } = DateTime.Now;
-    public DateTime LastLoginDate { get; set; } = DateTime.Now;
-    public virtual List<PlayerEntity> Players { get; set; } = new List<PlayerEntity>();
+    public DateTime LastLoginDate { get; set; }
+    public PlayerEntity Player { get; set; } = new PlayerEntity();
 
     public AccountEntity()
     {   
-    //    for (var i = 0; i < MaxChar; i++)
-    //    {
-    //        Players.Add(new PlayerEntity());
-    //    }
+    
     }
 }

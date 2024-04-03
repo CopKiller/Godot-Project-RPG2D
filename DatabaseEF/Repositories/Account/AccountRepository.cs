@@ -1,5 +1,6 @@
 ﻿using EntityFramework.Entities.Account;
 using EntityFramework.Entities.Player;
+using EntityFramework.Repositories.ValidadeData;
 using EntityFramework.Repositories.ValidateData;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,111 +18,91 @@ namespace EntityFramework.Repositories.Account
             _dbContext = dbContext;
         }
 
-        //public async Task<OperationResult> AddPlayerAccountAsync(AccountEntity account)
-        //{
-        //    var login = InputValidator.IsValidLogin(account.Login);
-        //    var password = InputValidator.IsValidPassword(account.Password);
-        //    var email = InputValidator.IsValidEmail(account.Email);
+        public async Task<OperationResult> AddPlayerAccountAsync(AccountEntity account)
+        {
+            var login = InputValidator.IsValidLogin(account.Login);
+            var password = InputValidator.IsValidPassword(account.Password);
 
-        //    if (login.Success && password.Success && email.Success)
-        //    {
+            if (login.Success && password.Success)
+            {
 
-        //        var verifyAccountExists = await CheckPlayerAccountAsync(account.Login);
+                var verifyAccountExists = await CheckPlayerAccountAsync(account.Login);
 
-        //        if (verifyAccountExists.Success == false)
-        //        {
-        //            return new OperationResult
-        //            {
-        //                Success = false,
-        //                Message = $"[DATABASE] Account {account.Login} already exists!",
-        //                Color = ConsoleColor.Red,
-        //                ClientMenu = ClientMenu.MenuRegister,
-        //                ClientMessages = ClientMessages.NameTaken
-        //            };
-        //        }
+                if (verifyAccountExists.Success == false)
+                {
+                    return new OperationResult
+                    {
+                        Success = false,
+                        Message = $"[DATABASE] Account {account.Login} already exists!"
+                    };
+                }
 
-        //        //SHA256 Criptography of password -> Set on Database
-        //        Hash.CreatePasswordHash(account.Password, out string passwordHash, out string salt);
-        //        account.Password = passwordHash;
-        //        account.Salt = salt;
+                //SHA256 Criptography of password -> Set on Database
+                Hash.CreatePasswordHash(account.Password, out string passwordHash, out string salt);
+                account.Password = passwordHash;
+                account.Salt = salt;
 
-        //        await _dbContext.AccountEntities.AddAsync(account);
+                await _dbContext.AccountEntities.AddAsync(account);
 
-        //        if (await _dbContext.SaveChangesAsync() > 0)
-        //        {
-        //            return new OperationResult
-        //            {
-        //                Success = true,
-        //                Message = $"[DATABASE] Account {account.Login} has been addeded!",
-        //                Color = ConsoleColor.Green,
-        //                ClientMenu = ClientMenu.MenuLogin,
-        //                ClientMessages = ClientMessages.AccountCreated
-        //            };
-        //        }
-        //        else
-        //        {
-        //            return new OperationResult
-        //            {
-        //                Success = false,
-        //                Message = $"[DATABASE] Account {account.Login} has not been addeded!",
-        //                Color = ConsoleColor.Red,
-        //                ClientMenu = ClientMenu.MenuMain,
-        //                ClientMessages = ClientMessages.Connection
-        //            };
-        //        }
-        //    }
-        //    else // Tratamentos de erros
-        //    {
-        //        if (!login.Success)
-        //        {
-        //            return login;
-        //        }
-        //        else if (!password.Success)
-        //        {
-        //            return password;
-        //        }
-        //        else if (!email.Success)
-        //        {
-        //            return email;
-        //        }
-        //        else
-        //        {
-        //            return new OperationResult
-        //            {
-        //                Success = false,
-        //                Message = $"[DATABASE] Account {account.Login} has not been addeded!",
-        //                Color = ConsoleColor.Red,
-        //                ClientMenu = ClientMenu.MenuMain,
-        //                ClientMessages = ClientMessages.MySql
-        //            };
-        //        }
-        //    }
-        //}
+                if (await _dbContext.SaveChangesAsync() > 0)
+                {
+                    return new OperationResult
+                    {
+                        Success = true,
+                        Message = $"[DATABASE] Account {account.Login} has been addeded!",
+                    };
+                }
+                else
+                {
+                    return new OperationResult
+                    {
+                        Success = false,
+                        Message = $"[DATABASE] Account {account.Login} has not been addeded!",
+                    };
+                }
+            }
+            else // Tratamentos de erros
+            {
+                if (!login.Success)
+                {
+                    return login;
+                }
+                else if (!password.Success)
+                {
+                    return password;
+                }
+                else
+                {
+                    return new OperationResult
+                    {
+                        Success = false,
+                        Message = $"[DATABASE] Account {account.Login} has not been addeded!",
+                    };
+                }
+            }
+        }
 
 
         //Normalmente utilizado ao criar uma conta, verificando se existe alguma conta com o mesmo login
         //Esta sendo utilizado como login para testes!
-        //public async Task<OperationResult> CheckPlayerAccountAsync(string login)
-        //{
-        //    var operationResult = new OperationResult();
-        //    var conta = await _dbContext.AccountEntities
-        //        .FirstOrDefaultAsync(e => e.Login == login);
+        public async Task<OperationResult> CheckPlayerAccountAsync(string login)
+        {
+            var operationResult = new OperationResult();
+            var conta = await _dbContext.AccountEntities
+                .FirstOrDefaultAsync(e => e.Login == login);
 
-        //    if (conta == null)
-        //    {
-        //        operationResult.Success = true;
-        //        return operationResult;
-        //    }
-        //    else
-        //    {
-        //        operationResult.Success = false;
-        //        operationResult.Message = $"[DATABASE] Account {login} already exists!";
-        //        operationResult.Color = ConsoleColor.Red;
-        //        operationResult.ClientMessages = ClientMessages.NameTaken;
-        //        operationResult.ClientMenu = ClientMenu.MenuRegister;
-        //        return operationResult;
-        //    }
-        //}
+            if (conta == null)
+            {
+                operationResult.Success = true;
+                return operationResult;
+            }
+            else
+            {
+                operationResult.Success = false;
+                operationResult.Message = $"[DATABASE] Account {login} already exists!";
+                return operationResult;
+            }
+        }
 
         //public async Task<CombinedOperationResult<AccountEntity>> AuthenticateAccount(string login, string password)
         //{
@@ -159,7 +140,7 @@ namespace EntityFramework.Repositories.Account
         //    }
 
         //    return combinedOperations;
-            
+
         //}
 
         //Normalmente utilizado para envio da conta ao servidor do jogo

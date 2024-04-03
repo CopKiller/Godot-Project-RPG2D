@@ -1,6 +1,5 @@
 using GdProject.Client.Scripts.Window.Controller;
 using GdProject.Client.Scripts.Window.Interface;
-using GdProject.Shared.Scripts.NodeManager;
 using Godot;
 using System;
 using System.Runtime.CompilerServices;

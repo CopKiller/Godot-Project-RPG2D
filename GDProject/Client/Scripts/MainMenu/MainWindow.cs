@@ -3,7 +3,7 @@ using Shared.Window.CustomControl;
 using GdProject.Client.Scripts.Window.Controller;
 using GdProject.Client.Scripts.Window.Interface;
 using System;
-using GdProject.Shared.Scripts.NodeManager;
+
 
 public partial class MainWindow : WindowTextureRect
 {
@@ -75,25 +75,18 @@ public partial class MainWindow : WindowTextureRect
         if (buttonName == "LoginButton")
         {
             GD.Print("LoginButton Pressed");
-            var LoginWindow = (IControlWindow)NodeManager.GetNode<MainWindow>("LoginWindow");
+            var LoginWindow = (IControlWindow)NodeManager.GetNode<WindowTextureRect>("LoginWindow");
             activeWindows.AddActiveWindow(LoginWindow);
         }
         else if (buttonName == "RegisterButton")
         {
-            //OpenWindow(MainMenuWindows.RegisterContainer);
+            GD.Print("LoginButton Pressed");
+            var RegisterWindow = (IControlWindow)NodeManager.GetNode<WindowTextureRect>("RegisterWindow");
+            activeWindows.AddActiveWindow(RegisterWindow);
         }
         else if (buttonName == "OptionButton")
         {
-            //OpenWindow(MainMenuWindows.OptionContainer);
 
-            //var multiplayerControl = GetParent().GetParent().GetNode<Connection>("Multiplayer");
-
-            //if (multiplayerControl == null)
-            //{
-            //    GD.PrintErr("MultiplayerController not found");
-            //    return;
-            //}
-            //multiplayerControl.ConnectToServer();
         }
         else if (buttonName == "ExitButton")
         {
@@ -101,23 +94,5 @@ public partial class MainWindow : WindowTextureRect
             GetTree().Quit();
         }
     }
-
-    public void StartGame()
-    {
-        GetParent<MainMenu>().Hide();
-        // Carrega a cena do jogo
-        var scene = ResourceLoader.Load<PackedScene>("res://client/scenes/game.tscn").Instantiate<Node2D>();
-        GetTree().Root.AddChild(scene);
-
-        // Obter o nó de conexão
-        //var connection = GetParent().GetParent().GetNode<Connection>("Multiplayer");
-        //connection.PlayerLogin();
-    }
-
-    // Called every frame. 'delta' is the elapsed time since the previous frame.
-    public override void _Process(double delta)
-	{
-        
-	}
 
 }

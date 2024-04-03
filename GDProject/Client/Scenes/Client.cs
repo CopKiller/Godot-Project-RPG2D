@@ -1,8 +1,8 @@
 ﻿using GdProject.Client.Scripts.Window.Controller;
 using GdProject.Client.Scripts.Window.Interface;
-using GdProject.Shared.Scripts.NodeManager;
 using Godot;
 using System;
+using System.Threading;
 
 public partial class Client : Node
 {
@@ -34,13 +34,12 @@ public partial class Client : Node
         NodeManager.GetNode<MainMenu>(nameof(MainMenu)).Hide();
         NodeManager.GetNode<Game>(nameof(Game)).Show();
     }
+
     public void InitConnection()
     {
-        var gameClient = new GameClient();
-        AddChild(gameClient);
-
-        NodeManager.AddNode(gameClient);
+        var clientNetworkService = new ClientNetworkService();
+        clientNetworkService.Name = "ClientNetworkService";
+        AddChild(clientNetworkService);
+        NodeManager.AddNode(clientNetworkService);
     }
-
-
 }

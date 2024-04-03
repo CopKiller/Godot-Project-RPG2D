@@ -1,6 +1,5 @@
 ﻿using Godot;
 using System;
-using GdProject.Shared.Scripts.NodeManager;
 
 public partial class Game : Node2D
 {

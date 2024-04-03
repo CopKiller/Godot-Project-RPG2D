@@ -1,10 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://cee18ts1l4omb"]
+[gd_scene load_steps=5 format=3 uid="uid://cee18ts1l4omb"]
 
 [ext_resource type="PackedScene" uid="uid://c2385dwmt65h2" path="res://Client/Scenes/Client.tscn" id="1_gve3o"]
 [ext_resource type="Script" path="res://Root/Scripts/RPG2D.cs" id="1_njvog"]
 [ext_resource type="PackedScene" uid="uid://bvmhd8cnqhe37" path="res://Server/Scenes/Server.tscn" id="2_jxktp"]
-[ext_resource type="PackedScene" uid="uid://djrcrdoa32okj" path="res://Shared/Scenes/Shared.tscn" id="3_1miny"]
-[ext_resource type="Script" path="res://Server/Scripts/Server.cs" id="4_ebfw5"]
 [ext_resource type="PackedScene" uid="uid://b0vriwfrga2mh" path="res://Database/Scenes/Database.tscn" id="6_38gst"]
 
 [node name="RPG2D" type="Node2D"]
@@ -16,8 +14,5 @@ DatabaseStart = true
 [node name="Client" parent="." instance=ExtResource("1_gve3o")]
 
 [node name="Server" parent="." instance=ExtResource("2_jxktp")]
-script = ExtResource("4_ebfw5")
 
 [node name="Database" parent="." instance=ExtResource("6_38gst")]
-
-[node name="Shared" parent="." instance=ExtResource("3_1miny")]

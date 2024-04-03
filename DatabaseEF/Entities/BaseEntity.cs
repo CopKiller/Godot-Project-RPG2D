@@ -10,8 +10,7 @@ namespace EntityFramework.Entities
 {
     public class BaseEntity
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [ForeignKey("Id")]
         public int Id { get; set; }
     }
 }

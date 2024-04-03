@@ -1,4 +1,4 @@
-﻿using GdProject.Shared.Scripts.NodeManager;
+﻿
 using Godot;
 using System;
 
@@ -26,8 +26,5 @@ public partial class RPG2D : Node2D
         {
             NodeManager.AddToNodeManager(GetNode<Node>("Database"));
         }
-
-        // Remove o nó compartilhado por não estar sendo usado
-        GetNode<Node>("Shared").QueueFree();
     }
 }

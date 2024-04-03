@@ -32,37 +32,6 @@ public class MeuDbContext : DbContext
             relationship.DeleteBehavior = DeleteBehavior.Cascade;
         }
 
-        // Configuração de relações específicas
-
-        modelBuilder.Entity<PlayerEntity>()
-            .HasOne(p => p.AccountEntity)
-            .WithMany(a => a.Players)
-            .HasForeignKey(p => p.AccountEntityId);
-
-        modelBuilder.Entity<PlayerEntity>()
-            .HasOne(p => p.Position)
-            .WithOne()
-            .HasForeignKey<Position>(p => p.Id)
-            .OnDelete(DeleteBehavior.Cascade);
-
-        modelBuilder.Entity<PlayerEntity>()
-            .HasOne(p => p.Stat)
-            .WithOne()
-            .HasForeignKey<Stat>(s => s.Id)
-            .OnDelete(DeleteBehavior.Cascade);
-
-        modelBuilder.Entity<PlayerEntity>()
-            .HasOne(p => p.Vital)
-            .WithOne()
-            .HasForeignKey<Vital>(v => v.Id)
-            .OnDelete(DeleteBehavior.Cascade);
-
-        modelBuilder.Entity<PlayerEntity>()
-            .HasOne(p => p.Penalty)
-            .WithOne()
-            .HasForeignKey<Penalty>(v => v.Id)
-            .OnDelete(DeleteBehavior.Cascade);
-
         // Adicione outras configurações de modelo, se necessário...
         base.OnModelCreating(modelBuilder);
     }

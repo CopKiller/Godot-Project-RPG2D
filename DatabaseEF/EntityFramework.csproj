@@ -16,4 +16,8 @@
     <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.1.8" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Entities\ValueObjects\Player\Interface\" />
+  </ItemGroup>
+
 </Project>
