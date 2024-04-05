@@ -30,7 +30,7 @@ namespace GdProject.Shared.Scripts.Network
         /// <summary>
         /// Latency of each player
         /// </summary>
-        public Dictionary<NetPeer, int> PeerLatency { get; } = new Dictionary<NetPeer, int>();
+        //public Dictionary<NetPeer, int> PeerLatency { get; } = new Dictionary<NetPeer, int>();
 
         /// <inheritdoc />
         public virtual void Register()

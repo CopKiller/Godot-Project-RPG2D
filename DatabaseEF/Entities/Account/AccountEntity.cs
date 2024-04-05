@@ -1,9 +1,10 @@
 ﻿namespace EntityFramework.Entities.Account;
 
+using EntityFramework.Entities.Interface;
 using Player;
 using System.ComponentModel.DataAnnotations;
 
-public class AccountEntity : BaseEntity
+public class AccountEntity : BaseEntity, IAccountEntity
 {
     public const byte MaxChar = 3;
     public const byte MaxAccountCaracteres = 20;

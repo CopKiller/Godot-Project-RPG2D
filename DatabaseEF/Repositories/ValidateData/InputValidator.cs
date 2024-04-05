@@ -1,4 +1,5 @@
 ﻿using EntityFramework.Entities.Account;
+using EntityFramework.Entities.Player;
 using EntityFramework.Repositories.ValidadeData;
 using System.Text.RegularExpressions;
 
@@ -6,6 +7,29 @@ namespace EntityFramework.Repositories.ValidateData
 {
     public static class InputValidator
     {
+
+        public static OperationResult IsValidName(string name)
+        {
+            if (String.IsNullOrEmpty(name) || (name.Length > PlayerEntity.MaxNameCaracteres))
+            {
+                return new OperationResult
+                {
+                    Success = false,
+                    Message = $"Name out of range, Max caracteres is {PlayerEntity.MaxNameCaracteres}.",
+                };
+            }
+
+            if (!Regex.IsMatch(name, "^[a-zA-Z0-9_]+$"))
+            {
+                return new OperationResult
+                {
+                    Success = false,
+                    Message = "Valid Caracteres: a-z, A-Z, 0-9, _",
+                };
+            }
+
+            return new OperationResult { Success = true };
+        }
         public static OperationResult IsValidLogin(string login)
         {
             if (String.IsNullOrEmpty(login) || (login.Length > AccountEntity.MaxAccountCaracteres))

@@ -10,6 +10,8 @@ using GdProject.Shared.Scripts.Entities.Player;
 using GdProject.Shared.Scripts.Global;
 using GdProject.Shared.Scripts.Global.Extensions;
 using System.Linq;
+using GdProject.Shared.Scripts.Network.Packet.Server;
+using GdProject.Client.Scripts.Window.Interface;
 
 public partial class ClientNetworkService : NetworkService
 {
@@ -92,6 +94,7 @@ public partial class ClientNetworkService : NetworkService
         Subscribe<SPeersAll>(ReceiveAllPlayers);
         Subscribe<SPlayerData>(ReceivePlayerData);
         Subscribe<CPlayerAction>(ReceivePlayerPosition);
+        Subscribe<SNewChar>(ReceiveCreateChar);
     }
 
     public void Connect()
@@ -173,14 +176,13 @@ public partial class ClientNetworkService : NetworkService
 
         GDPrint.Print($"peer.RemoteID: {peer.RemoteId} peer.ID: {peer.Id} | ServerPeer.RemoteID: {ServerPeer.RemoteId} ServerPeer.ID: {ServerPeer.Id}");
 
-        var myData = packet.PlayerDataModels.FirstOrDefault(x => x.Index == peer.RemoteId);
-        if (myData == null) { return; }
-
         // Add all players to game
         foreach (var player in packet.PlayerDataModels)
         {
             AddPlayer(player);
         }
+
+        NodeManager.GetNode<Client>("Client").InitGame();
     }
     private void ReceivePlayerData(SPlayerData packet, NetPeer peer)
     {
@@ -190,21 +192,28 @@ public partial class ClientNetworkService : NetworkService
     private void AddPlayer(PlayerDataModel playerData)
     {
         GDPrint.Print("Client: Adding player: " + playerData.Index);
-        var player = (Player)NodeManager.GetNode<Player>("Player").Duplicate();
-        NodeManager.GetNode<Control>("Players").AddChild(player);
-        NodeManager.AddNode(player);
+
+        // Create player
+        Player player;
+
+        if (playerData.Index == ServerPeer.RemoteId)
+        {
+            player = NodeManager.GetNode<Player>("Player");
+            player.IsLocalPlayer = true;
+            player.GameClient = this;
+        }
+        else
+        {
+            player = (Player)NodeManager.GetNode<Player>("Player").Duplicate();
+            NodeManager.GetNode<Control>("Players").AddChild(player);
+            NodeManager.AddNode(player);
+        }
 
         player.PlayerData = playerData;
         player.UpdatePlayer();
 
         // Add player to dictionary
         Players.AddItem(playerData.Index, player);
-
-        if (player.PlayerData.Index == ServerPeer.RemoteId)
-        {
-            player.IsLocalPlayer = true;
-            player.GameClient = this;
-        }
     }
 
     public void SendPlayerPosition(CPlayerAction playerAction)
@@ -231,10 +240,39 @@ public partial class ClientNetworkService : NetworkService
     {
         var loginPacket = new CLogin
         {
-            Username = username,
+            Login = username,
             Password = password
         };
 
         NetPacketProcessor.Send(NetManager.FirstPeer, loginPacket, DeliveryMethod.ReliableUnordered);
     }
+
+    public void Register(string username, string password)
+    {
+        var loginPacket = new CNewAccount
+        {
+            Login = username,
+            Password = password
+        };
+
+        NetPacketProcessor.Send(NetManager.FirstPeer, loginPacket, DeliveryMethod.ReliableUnordered);
+    }
+
+    public void CreateChar(string name)
+    {
+        var createCharPacket = new CNewChar
+        {
+            Name = name
+        };
+
+        NetPacketProcessor.Send(NetManager.FirstPeer, createCharPacket, DeliveryMethod.ReliableUnordered);
+    }
+
+    public void ReceiveCreateChar(SNewChar newchar, NetPeer netPeer)
+    {
+        NodeManager.GetNode<Windows>("Windows").CloseAllWindows();
+        NodeManager.GetNode<Windows>("Windows").AddActiveWindow((IControlWindow)NodeManager.GetNode<CharacterWindow>("CharacterWindow"));
+    }
+
+
 }

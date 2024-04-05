@@ -10,7 +10,7 @@ public partial class LoginOkButton : Button
 
     private void OnButtonPressed()
     {
-        NodeManager.GetNode<Client>("Client").InitConnection();
+        //NodeManager.GetNode<Client>("Client").InitConnection();
         NodeManager.GetNode<LoginWindow>("LoginWindow").OnLoginButtonPressed();
 
 

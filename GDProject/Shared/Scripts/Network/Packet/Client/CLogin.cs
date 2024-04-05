@@ -9,17 +9,17 @@ namespace GdProject.Shared.Scripts.Network.Packet.Client
 {
     public class CLogin : INetSerializable
     {
-        public string Username { get; set; }
+        public string Login { get; set; }
         public string Password { get; set; }
 
         public void Deserialize(NetDataReader reader)
         {
-            Username = reader.GetString();
+            Login = reader.GetString();
             Password = reader.GetString();
         }
         public void Serialize(NetDataWriter writer)
         {
-            writer.Put(Username);
+            writer.Put(Login);
             writer.Put(Password);
         }
 

@@ -10,6 +10,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using GdProject.Shared.Scripts.Global;
+using System.Threading.Tasks;
+using EntityFramework.Entities.Interface;
 
 public partial class Database : Node
 {
@@ -57,5 +59,71 @@ public partial class Database : Node
         //    var scp = scope.ServiceProvider.GetRequiredService<MeuDbContext>();
         //    scp.Database.Migrate();
         //}
+    }
+
+    public IRepository<T> GetRepository<T>() where T : class
+    {
+        return _serviceProvider.GetRequiredService<IRepository<T>>();
+    }
+
+    public async Task<IAccountEntity> AuthenticateAsync(string username, string password)
+    {
+        using (var scope = _serviceProvider.CreateScope())
+        {
+            var accountRepository = GetRepository<AccountEntity>();
+            var repository = (AccountRepository)accountRepository;
+
+            var account = await repository.AuthenticateAccountAsync(username, password);
+
+            GDPrint.Print(account.Message);
+
+            if (account.EntityType == null)
+            {
+                return null;
+            }
+
+            if (account.Success)
+            {
+                return account.EntityType;
+            }
+
+            return null;
+        }
+    }
+
+    public async void RegisterAccountAsync(string username, string password)
+    {
+        using (var scope = _serviceProvider.CreateScope())
+        {
+            var accountRepository = GetRepository<AccountEntity>();
+            var repository = (AccountRepository)accountRepository;
+
+            var playerAccount = new AccountEntity();
+            playerAccount.Login = username;
+            playerAccount.Password = password;
+
+            var account = await repository.AddPlayerAccountAsync(playerAccount);
+
+            GDPrint.Print(account.Message);
+        }
+    }
+
+    public async Task<bool> RegisterPlayerAsync(string charName, int accountId)
+    {
+        using (var scope = _serviceProvider.CreateScope())
+        {
+            var playerRepository = GetRepository<PlayerEntity>();
+            var repository = (PlayerRepository)playerRepository;
+
+            var player = new PlayerEntity();
+            player.Name = charName;
+            player.Id = accountId;
+
+            var account = await repository.AddNewPlayerAsync(charName, accountId);
+
+            GDPrint.Print(account.Message);
+
+            return account.Success;
+        }
     }
 }

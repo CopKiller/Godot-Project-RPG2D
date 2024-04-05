@@ -8,8 +8,13 @@
             //string diretorioAssembly = Path.GetDirectoryName(Environment.CurrentDirectory);
             // Navega para o diretório pai, que é o diretório raiz do projeto em muitos casos
             string diretorioRaizProjeto = Environment.CurrentDirectory;
+
+            // Navega para cima até chegar ao diretório do banco de dados
+            DirectoryInfo diretorio = new(diretorioRaizProjeto);
+            var parent = diretorio.Parent;
+
             // Nome do arquivo de banco de dados
-            diretorioRaizProjeto = "Data Source=" + diretorioRaizProjeto + "DatabaseSqlite.db";
+            diretorioRaizProjeto = "Data Source=" + parent + "/DatabaseSqlite" + ".db";
 
             return diretorioRaizProjeto;
         }

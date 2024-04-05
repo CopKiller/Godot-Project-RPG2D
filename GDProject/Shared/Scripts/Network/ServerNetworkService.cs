@@ -11,6 +11,10 @@ using GdProject.Shared.Scripts.Entities.Player;
 using GdProject.Shared.Scripts.Global;
 using GdProject.Shared.Scripts.Global.Extensions;
 using System.Linq;
+using EntityFramework.Repositories.Account;
+using EntityFramework.Entities.Account;
+using EntityFramework.Entities.Interface;
+using GdProject.Shared.Scripts.Network.Packet.Server;
 
 public partial class ServerNetworkService : NetworkService
 {
@@ -59,7 +63,7 @@ public partial class ServerNetworkService : NetworkService
 
         GDPrint.Print("Server: Try to start on port " + port);
 
-        var result = this.NetManager.Start(port);
+        var result = this.NetManager.Start(IPAddress.Any, IPAddress.IPv6Any, port);
         if (result)
         {
             GDPrint.Print("Server: Bind on port " + port);
@@ -90,18 +94,25 @@ public partial class ServerNetworkService : NetworkService
     {
         // Register to receive packets
         Subscribe<CPlayerAction>(ProcessPlayerAction);
+        Subscribe<CLogin>(ProcessPlayerLogin);
+        Subscribe<CNewAccount>(ProcessPlayerRegister);
+        Subscribe<CNewChar>(ProcessPlayerCreateChar);
     }
 
     private void OnPeerConnectedEvent(NetPeer peer)
     {
         GD.Print("Server: OnPeerConnectedEvent");
 
-        JoinGameData(peer);
+        var newPlayer = new PlayerDataModel();
+        newPlayer.Index = peer.Id;
+        Players.AddItem(peer.Id, newPlayer);
     }
 
     private void OnPeerDisconnectedEvent(NetPeer peer, DisconnectInfo disconnectInfo)
     {
         GD.Print("Server: OnPeerDisconnectedEvent");
+
+        Players.RemoveItem(peer.Id);
     }
 
     private void OnNetworkErrorEvent(IPEndPoint endPoint, SocketError socketError)
@@ -148,16 +159,10 @@ public partial class ServerNetworkService : NetworkService
         GD.Print("Server: OnNtpResponseEvent");
     }
 
-    public void JoinGameData(NetPeer peer)
+    public void JoinGameData(PlayerDataModel playerDataModel, NetPeer peer)
     {
-        // Create player data
-        var playerDataModel = new PlayerDataModel();
-        playerDataModel.Index = peer.Id;
-        playerDataModel.Position = new Vector2(200, 200);
-        playerDataModel.PlayerName = "Player " + peer.Id;
-
         // Add player to the Dictionary of all players
-        Players.AddItem(playerDataModel.Index, playerDataModel);
+        playerDataModel.GameState = GameState.InGame;
 
         // Send all players to the new player -> TO NEW PLAYER
         SendAllPlayersTo(peer);
@@ -184,6 +189,9 @@ public partial class ServerNetworkService : NetworkService
 
     private void ProcessPlayerAction(CPlayerAction playerAction, NetPeer netPeer)
     {
+        var player = Players.GetItem(netPeer.Id);
+        if  (player.GameState != GameState.InGame) { return; }
+
         if (Players.ContainsKey(netPeer.Id))
         {
             switch (playerAction.ActionType)
@@ -208,20 +216,70 @@ public partial class ServerNetworkService : NetworkService
 
     private void ProcessPlayerLogin(CLogin playerLogin, NetPeer netPeer)
     {
+        var player = Players.GetItem(netPeer.Id);
+
+        if (player.GameState != GameState.InMenu) { return; }
+
         var db = NodeManager.GetNode<Database>("Database");
 
         if (db == null) { return; }
 
-        //var accountRepo = db.GetRepository<AccountRepository>();
+        var account = db.AuthenticateAsync(playerLogin.Login, playerLogin.Password);
 
-        //if (Players.ContainsKey(netPeer.Id))
-        //{
-        //    Players.GetItem(netPeer.Id).PlayerName = playerLogin.PlayerName;
-        //    Players.GetItem(netPeer.Id).Position = playerLogin.Position;
-        //    Players.GetItem(netPeer.Id).Rotation = playerLogin.Rotation;
-        //    Players.GetItem(netPeer.Id).Scale = playerLogin.Scale;
-        //    Players.GetItem(netPeer.Id).Color = playerLogin.Color;
-        //    Players.GetItem(netPeer.Id).IsLocalPlayer = playerLogin.IsLocalPlayer;
-        //}
+        if (account.Result == null) { return; }
+
+        GDPrint.Print("account logged in: " + account.Result.Login);
+
+        player.accountId = account.Result.Id;
+
+        if (account.Result.Player.Name == string.Empty)
+        {
+            // Create character
+            var newChar = new SNewChar();
+            NetPacketProcessor.Send(netPeer, newChar, DeliveryMethod.ReliableUnordered);
+            Players.GetItem(netPeer.Id).GameState = GameState.InCharacterCreation;
+            return;
+        }
+
+        GDPrint.Print("Player logged in: " + account.Result.Player.Name);
+
+        // Create player data
+        var playerVar = account.Result.Player;
+
+        player.Position = new Vector2(playerVar.Position.X, playerVar.Position.Y);
+        player.PlayerName = playerVar.Name;
+
+        player.playerId = playerVar.Id;
+
+        JoinGameData(player, netPeer);
+    }
+
+    private void ProcessPlayerRegister(CNewAccount playerLogin, NetPeer netPeer)
+    {
+        var player = Players.GetItem(netPeer.Id);
+        if (player.GameState != GameState.InMenu) { return; }
+
+        var db = NodeManager.GetNode<Database>("Database");
+
+        if (db == null) { return; }
+
+        db.RegisterAccountAsync(playerLogin.Login, playerLogin.Password);
+
+    }
+
+    private void ProcessPlayerCreateChar(CNewChar playerCharacter, NetPeer netPeer)
+    {
+        var player = Players.GetItem(netPeer.Id);
+        if (player.GameState != GameState.InCharacterCreation) { return; }
+
+        var db = NodeManager.GetNode<Database>("Database");
+
+        if (db == null) { return; }
+
+        var result = db.RegisterPlayerAsync(playerCharacter.Name, player.accountId).Result;
+
+            player.PlayerName = playerCharacter.Name;
+            JoinGameData(player, netPeer);
+
     }
 }

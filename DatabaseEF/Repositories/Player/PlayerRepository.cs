@@ -1,5 +1,7 @@
 ﻿
 using EntityFramework.Entities.Player;
+using EntityFramework.Repositories.ValidadeData;
+using EntityFramework.Repositories.ValidateData;
 using Microsoft.EntityFrameworkCore;
 
 namespace EntityFramework.Repositories.Player
@@ -15,112 +17,84 @@ namespace EntityFramework.Repositories.Player
             _dbContext = dbContext;
         }
 
-        public async Task<PlayerEntity> GetPlayerByAccountId(int accountId)
-        {
-            return await _dbContext.PlayerEntities.FirstOrDefaultAsync(p => p.Id == accountId);
-        }
+        //public async Task<PlayerEntity> GetPlayerByAccountId(int accountId)
+        //{
+        //    return await _dbContext.PlayerEntities.FirstOrDefaultAsync(p => p.Id == accountId);
+        //}
 
-        public async Task<bool> HasPlayerName(string nome)
+        private async Task<bool> HasPlayerName(string nome)
         {
             // Verificar se o nome já existe na tabela de jogadores
             return await _dbContext.PlayerEntities.AnyAsync(p => p.Name.ToLower() == nome.ToLower());
         }
 
-        //public async Task<bool> AdicionarJogadorAsync(PlayerEntity jogador)
-        //{
-        //    try
-        //    {
-        //        // Verifique se o nome que o jogador escolheu já existe no banco de dados
-        //        if (NomeJogadorJaExisteAsync(jogador.Name).Result)
-        //        {
-        //            Console.WriteLine($"Jogador com nome {jogador.Name} já existe.");
-        //            return false;
-        //        }
-
-        //        // Validar a quantidade de chars da conta, para não ultrapassar o limite
-        //        int quantidadeJogadores = _dbContext.PlayerEntities
-        //        .Count(p => p.AccountEntityId == jogador.AccountEntityId);
-        //        if (quantidadeJogadores >= AccountEntity.MaxChar)
-        //        {
-        //            Console.WriteLine($"A conta {jogador.AccountEntityId} já possui 3 personagens.");
-        //            return false;
-        //        }
-
-        //        // Verificar se o jogador não está tentando criar um char onde já tem um.
-        //        var playersAccount = await _dbContext.PlayerEntities
-        //        .Where(p => p.AccountEntityId == jogador.AccountEntityId).AnyAsync(a => a.SlotId == jogador.SlotId);
-        //        if (playersAccount)
-        //        {
-        //            Console.WriteLine($"O Slot {jogador.SlotId} já possui um personagem.");
-        //            return false;
-        //        }
-
-        //        // Adicionar o jogador no banco de dados
-        //        await _dbContext.PlayerEntities.AddAsync(jogador);
-        //        // Salve as alterações no banco de dados
-        //        var result = await _dbContext.SaveChangesAsync();
-
-        //        return result > 0;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Erro ao adicionar jogador: {ex.Message}");
-        //        return false;
-        //    }
-        //}
-
-        //public async Task<bool> ExcluirJogadorAsync(int charSlot, int accountId)
-        //{
-        //    try
-        //    {
-        //        var result = await _dbContext.PlayerEntities
-        //        .DeleteAsync(p => p.AccountEntityId == accountId && p.SlotId == charSlot) > 0;
-
-        //        if (result)
-        //        {
-        //            await _dbContext.SaveChangesAsync();
-        //            Console.WriteLine($"Jogador com Slot {charSlot} e AccountId {accountId} foi excluído.");
-        //            return true;
-        //        }
-        //        else
-        //        {
-        //            Console.WriteLine($"Jogador com Slot {charSlot} e AccountId {accountId} não foi excluído.");
-        //            return false;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Erro ao excluir jogador: {ex.Message}");
-        //        return false;
-        //    }
-        //}
-
-        public async Task<bool> AtualizarJogadorAsync(PlayerEntity jogador)
+        private async Task<bool> HasPlayerSlot(int playerId)
         {
-            try
-            {
-                // Verifique se o jogador existe no banco de dados
-                var jogadorExistente = await _dbContext.PlayerEntities.FindAsync(jogador.Id);
-                if (jogadorExistente == null)
-                {
-                    Console.WriteLine($"Jogador com ID {jogador.Id} não encontrado.");
-                    return false;
-                }
-
-                jogadorExistente = jogador;
-                // Atualize outras propriedades conforme necessário
-
-                // Salve as alterações no banco de dados
-                await _dbContext.SaveChangesAsync();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao atualizar jogador: {ex.Message}");
-                return false;
-            }
+            // Buscar o jogador pelo ID e verificar se o nome dele é diferente de 'string.Empty'
+            return await _dbContext.PlayerEntities.AnyAsync(p => p.Id == playerId && p.Name != string.Empty);
         }
 
-        // Adicione métodos específicos, se necessário
+        private async Task<PlayerEntity> GivePlayerByAccountId(int accountId)
+        {
+            return await _dbContext.PlayerEntities.FirstOrDefaultAsync(p => p.Id == accountId);
+        }
+
+        public async Task<OperationResult> AddNewPlayerAsync(string charName, int accountId)
+        {
+            var operationResult = new OperationResult();
+
+            var validateName = InputValidator.IsValidName(charName);
+
+            if (!validateName.Success)
+            {
+                operationResult.Success = false;
+                operationResult.Message = validateName.Message;
+                return operationResult;
+            }
+
+            // Verifique se o nome que o jogador escolheu já existe no banco de dados
+            if (await HasPlayerName(charName))
+            {
+                operationResult.Success = false;
+                operationResult.Message = $"Jogador com nome {charName} já existe.";
+                return operationResult;
+            }
+
+            // Verificar se o jogador não está tentando criar um char onde já tem um.
+            if (await HasPlayerSlot(accountId))
+            {
+                operationResult.Success = false;
+                operationResult.Message = $"O Slot {accountId} já possui um personagem.";
+                return operationResult;
+            }
+
+            var result = GivePlayerByAccountId(accountId);
+
+            if (result == null)
+            {
+                operationResult.Success = false;
+                operationResult.Message = "Erro ao obter o jogador.";
+                return operationResult;
+            }
+
+            if (result.Result == null)
+            {
+                operationResult.Success = false;
+                operationResult.Message = "Jogador não encontrado.";
+                return operationResult;
+            }
+
+            result.Result.Name = charName;
+
+            var refreshDb = await UpdateAsync();
+            if (!refreshDb)
+            {
+                operationResult.Success = false;
+                operationResult.Message = "Erro ao atualizar o banco de dados.";
+            }
+
+            return operationResult;
+        }
     }
+    // Adicione métodos específicos, se necessário
 }

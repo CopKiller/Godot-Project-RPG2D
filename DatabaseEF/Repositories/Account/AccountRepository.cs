@@ -1,4 +1,5 @@
 ﻿using EntityFramework.Entities.Account;
+using EntityFramework.Entities.Interface;
 using EntityFramework.Entities.Player;
 using EntityFramework.Repositories.ValidadeData;
 using EntityFramework.Repositories.ValidateData;
@@ -104,59 +105,35 @@ namespace EntityFramework.Repositories.Account
             }
         }
 
-        //public async Task<CombinedOperationResult<AccountEntity>> AuthenticateAccount(string login, string password)
-        //{
-        //    var combinedOperations = new CombinedOperationResult<AccountEntity>();
-
-        //    var conta = await _dbContext.AccountEntities
-        //        .FirstOrDefaultAsync(e => e.Login == login);
-
-        //    combinedOperations.Entity = conta;
-
-        //    if (combinedOperations.Entity == null)
-        //    {
-        //        combinedOperations.Success = false;
-        //        combinedOperations.Message = $"[DATABASE] Account {login} not found!";
-        //        combinedOperations.Color = ConsoleColor.Red;
-        //        combinedOperations.ClientMessages = ClientMessages.WrongPass;
-        //        combinedOperations.ClientMenu = ClientMenu.MenuLogin;
-        //        return combinedOperations;
-
-        //    }
-
-        //    if (Hash.VerifyPassword(password, conta.Password, conta.Salt))
-        //    {
-        //        combinedOperations.Success = true;
-        //        combinedOperations.Message = $"[DATABASE] Account {login} has been authenticated!";
-        //        combinedOperations.Color = ConsoleColor.Green;
-        //    }
-        //    else
-        //    {
-        //        combinedOperations.Success = false;
-        //        combinedOperations.Message = $"[DATABASE] Account {login} has not been authenticated!";
-        //        combinedOperations.Color = ConsoleColor.Red;
-        //        combinedOperations.ClientMessages = ClientMessages.WrongPass;
-        //        combinedOperations.ClientMenu = ClientMenu.MenuLogin;
-        //    }
-
-        //    return combinedOperations;
-
-        //}
-
-        //Normalmente utilizado para envio da conta ao servidor do jogo
-        public async Task<AccountEntity?> GivePlayerAccountAsync(string login, string password)
+        public async Task<OperationResult> AuthenticateAccountAsync(string login, string password)
         {
-            var conta = await _dbContext.AccountEntities
+            var operationResult = new OperationResult();
+
+            var account = await _dbContext.AccountEntities.Include(a => a.Player)
                 .FirstOrDefaultAsync(e => e.Login == login);
 
-            if (conta == null) { return null; }
-
-            if (Hash.VerifyPassword(password, conta.Salt, conta.Password))
+            if (account == null)
             {
-                return conta;
+                operationResult.Success = false;
+                operationResult.Message = $"[DATABASE] Account {login} not found!";
+                return operationResult;
             }
 
-            return null;
+            if (Hash.VerifyPassword(password, account.Password, account.Salt))
+            {
+                operationResult.Success = true;
+                operationResult.Message = $"[DATABASE] Account {login} has been authenticated!";
+            }
+            else
+            {
+                operationResult.Success = false;
+                operationResult.Message = $"[DATABASE] Account {login} has not been authenticated!";
+            }
+
+            operationResult.EntityType = account;
+
+            return operationResult;
+
         }
 
         public async Task<int> AtualizarContaAsync()

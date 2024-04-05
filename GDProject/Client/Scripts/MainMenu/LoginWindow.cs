@@ -11,8 +11,8 @@ public partial class LoginWindow : WindowTextureRect
 
     public void OnLoginButtonPressed()
     {
-        var username = NodeManager.GetNode<LineEdit>("LoginText").Text;
-        var password = NodeManager.GetNode<LineEdit>("PasswordText").Text;
+        var username = GetNode<LineEdit>("VerticalBox/LoginText").Text;
+        var password = GetNode<LineEdit>("VerticalBox/PasswordText").Text;
 
         if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
         {

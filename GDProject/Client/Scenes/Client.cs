@@ -21,6 +21,8 @@ public partial class Client : Node
         NodeManager.AddToNodeManager(this);
 
         InitMenu();
+
+        InitConnection();
     }
 
     public void InitMenu()

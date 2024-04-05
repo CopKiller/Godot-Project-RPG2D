@@ -21,4 +21,18 @@ public partial class Windows : Control
     {
         return activeWindows;
     }
+    public void AddActiveWindow(IControlWindow window)
+    {
+        activeWindows.AddActiveWindow(window);
+    }
+
+    public void CloseWindow(IControlWindow window)
+    {
+        activeWindows.CloseWindow(window);
+    }
+
+    public void CloseAllWindows()
+    {
+        activeWindows.CloseAllWindows();
+    }
 }

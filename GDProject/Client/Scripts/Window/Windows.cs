@@ -4,5 +4,6 @@
     LoginWindow,
     RegisterWindow,
     OptionWindow,
-    CreditWindow
+    CreditWindow,
+    CharacterWindow
 }
