@@ -1,4 +1,5 @@
-﻿using Godot;
+﻿using GdProject.Network;
+using Godot;
 using Shared.Window.CustomControl;
 using System;
 
@@ -29,6 +30,6 @@ public partial class LoginWindow : WindowTextureRect
         GD.Print("Username: " + username);
         GD.Print("Password: " + password);
 
-        NodeManager.GetNode<ClientNetworkService>(nameof(ClientNetworkService)).Login(username, password);
+        //NodeManager.GetNode<ClientNetworkService>(nameof(ClientNetworkService)).Login(username, password);
     }
 }

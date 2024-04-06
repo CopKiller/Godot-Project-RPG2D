@@ -1,7 +1,7 @@
-﻿using Godot;
-using GdProject.Shared.Scripts.Network.Packet.Client;
-using System.Reflection.Metadata.Ecma335;
-using GdProject.Shared.Scripts.Entities.Player;
+﻿using GdProject.Network;
+using Godot;
+using SharedLibrary.Models;
+using SharedLibrary.Network.Packet.Client;
 
 namespace Shared.Scripts.Player
 {
@@ -32,11 +32,11 @@ namespace Shared.Scripts.Player
         {
             if (IsLocalPlayer)
             {
-                PlayerAction.Direction = GetInputDirection();
+                PlayerAction.Direction = new SharedLibrary.DataType.Vector2(GetInputDirection().X, GetInputDirection().Y);
             }
 
-            MovePlayer(PlayerAction.Direction, delta);
-            ProcessDirection(PlayerAction.Direction);
+            MovePlayer(new Vector2(PlayerAction.Position.X, PlayerAction.Position.Y), delta);
+            ProcessDirection(new Vector2(PlayerAction.Direction.X, PlayerAction.Direction.Y));
         }
 
         // Obtém a direção de entrada do jogador

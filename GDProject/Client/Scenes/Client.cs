@@ -8,15 +8,6 @@ public partial class Client : Node
 {
     public override void _Ready()
     {
-        var clientStart = GetTree().Root.GetNode<RPG2D>("RPG2D").ClientStart;
-
-        GD.Print("Client Start: " + clientStart);
-        if (!clientStart)
-        {
-            QueueFree();
-            return;
-        }
-
         // Adiciona este nó e os filhos ao gerenciador de nós
         NodeManager.AddToNodeManager(this);
 
@@ -39,9 +30,9 @@ public partial class Client : Node
 
     public void InitConnection()
     {
-        var clientNetworkService = new ClientNetworkService();
-        clientNetworkService.Name = "ClientNetworkService";
-        AddChild(clientNetworkService);
-        NodeManager.AddNode(clientNetworkService);
+        //var clientNetworkService = new ClientNetworkService();
+        //clientNetworkService.Name = "ClientNetworkService";
+        //AddChild(clientNetworkService);
+        //NodeManager.AddNode(clientNetworkService);
     }
 }

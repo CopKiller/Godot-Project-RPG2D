@@ -1,7 +1,6 @@
-﻿using GdProject.Shared.Scripts.Global.Extensions;
+﻿
 using Godot;
-using System;
-using System.Collections.Generic;
+using SharedLibrary.Extensions;
 
 // Classe para gerenciar os nós do jogo
 public static class NodeManager
