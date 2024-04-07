@@ -1,13 +1,15 @@
-﻿using GdProject.Client.Scripts.Window.Controller;
-using GdProject.Client.Scripts.Window.Interface;
+﻿
+using GdProject.Logger;
+using GdProject.Network;
 using Godot;
-using System;
-using System.Threading;
 
+namespace GdProject.Client;
 public partial class Client : Node
 {
     public override void _Ready()
     {
+        ExternalLogger.Logger = new LogManager();
+
         // Adiciona este nó e os filhos ao gerenciador de nós
         NodeManager.AddToNodeManager(this);
 
@@ -30,9 +32,11 @@ public partial class Client : Node
 
     public void InitConnection()
     {
-        //var clientNetworkService = new ClientNetworkService();
-        //clientNetworkService.Name = "ClientNetworkService";
-        //AddChild(clientNetworkService);
-        //NodeManager.AddNode(clientNetworkService);
+        var clientNetworkService = new ClientNetworkService();
+        clientNetworkService.Name = "ClientNetworkService";
+        AddChild(clientNetworkService);
+        NodeManager.AddNode(clientNetworkService);
+        clientNetworkService.Register();
+        clientNetworkService.Connect();
     }
 }

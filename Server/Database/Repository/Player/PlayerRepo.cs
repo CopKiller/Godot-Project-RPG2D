@@ -3,11 +3,6 @@ using EntityFramework.Repositories.Interface;
 using EntityFramework.Repositories.Player;
 using Microsoft.Extensions.DependencyInjection;
 using Server.Logger;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Server.Database.Repository.Player
 {

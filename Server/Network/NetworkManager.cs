@@ -1,29 +1,26 @@
 ﻿
 
 using LiteNetLib;
+using Server.Infrastructure;
+using SharedLibrary.Extensions;
 
 namespace Server.Network
 {
     internal class NetworkManager
     {
-        //public Action<NetPeer> PlayerAccepted;
-
         internal ServerNetworkService _serverNetwork;
 
         private Thread _thread;
 
         internal bool _isRunning = true;
 
-        public NetworkManager()
-        {
-            _serverNetwork = new ServerNetworkService();
-            //_serverNetwork.PlayerAccepted += OnPlayerAccepted;
-        }
+        public readonly DictionaryWrapper<int, ServerClient> _players;
 
-        //private void OnPlayerAccepted(NetPeer peer)
-        //{
-        //    PlayerAccepted?.Invoke(peer);
-        //}
+        public NetworkManager(DictionaryWrapper<int, ServerClient> players)
+        {
+            _players = players;
+            _serverNetwork = new ServerNetworkService(_players);
+        }
 
         public void Start()
         {

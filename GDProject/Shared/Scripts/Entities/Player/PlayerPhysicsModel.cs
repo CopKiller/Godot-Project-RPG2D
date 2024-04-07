@@ -19,6 +19,19 @@ namespace Shared.Scripts.Player
 
         public float Speed = 100;
 
+        // Posição do jogador -> Conversão de um DataType.Vector2 para um Godot.Vector2
+        //public new SharedLibrary.DataType.Vector2 Position
+        //{
+        //    get => new SharedLibrary.DataType.Vector2(base.Position.X, base.Position.Y);
+        //    set => base.Position = new Vector2(value.X, value.Y);
+        //}
+
+        //public new SharedLibrary.DataType.Vector2 Direction
+        //{
+        //    get => new SharedLibrary.DataType.Vector2(PlayerAction.Direction.X, PlayerAction.Direction.Y);
+        //    set => PlayerAction.Direction = value;
+        //}
+
         public ClientNetworkService GameClient { get; set; }
 
 
@@ -32,11 +45,14 @@ namespace Shared.Scripts.Player
         {
             if (IsLocalPlayer)
             {
-                PlayerAction.Direction = new SharedLibrary.DataType.Vector2(GetInputDirection().X, GetInputDirection().Y);
+                var vector2 = GetInputDirection();
+                PlayerAction.Direction = new SharedLibrary.DataType.Vector2(vector2.X, vector2.Y);
             }
 
-            MovePlayer(new Vector2(PlayerAction.Position.X, PlayerAction.Position.Y), delta);
-            ProcessDirection(new Vector2(PlayerAction.Direction.X, PlayerAction.Direction.Y));
+            var _vector2 = new Vector2(PlayerAction.Direction.X, PlayerAction.Direction.Y);
+            MovePlayer(_vector2, delta);
+
+            ProcessDirection(_vector2);
         }
 
         // Obtém a direção de entrada do jogador
@@ -69,8 +85,8 @@ namespace Shared.Scripts.Player
                 PlayerAction = new CPlayerAction
                 {
                     ActionType = PlayerActionType.Move,
-                    Position = Position,
-                    Direction = direction,
+                    Position = new SharedLibrary.DataType.Vector2(Position.X, Position.Y),
+                    Direction = new SharedLibrary.DataType.Vector2(direction.X, direction.Y),
                     Speed = speed,
                     Running = PlayerAction.Running
                 };
@@ -84,8 +100,8 @@ namespace Shared.Scripts.Player
                     PlayerAction = new CPlayerAction
                     {
                         ActionType = PlayerActionType.Stop,
-                        Position = Position,
-                        Direction = Vector2.Zero,
+                        Position = new SharedLibrary.DataType.Vector2(Position.X, Position.Y),
+                        Direction = SharedLibrary.DataType.Vector2.Zero,
                         Speed = speed,
                         Running = PlayerAction.Running
                     };
@@ -129,9 +145,9 @@ namespace Shared.Scripts.Player
             bool inputRunning;
 
             if (IsLocalPlayer)
-            inputRunning = GetInputRunning();
+                inputRunning = GetInputRunning();
             else
-            inputRunning = PlayerAction.Running;
+                inputRunning = PlayerAction.Running;
 
             if (inputRunning)
             {

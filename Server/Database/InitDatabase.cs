@@ -19,7 +19,7 @@ namespace Server.Database
 
     internal class InitDatabase
     {
-        private DatabaseManager _databaseManager;
+        public DatabaseManager _databaseManager;
         public void Start()
         {
             var serviceCollection = new ServiceCollection();

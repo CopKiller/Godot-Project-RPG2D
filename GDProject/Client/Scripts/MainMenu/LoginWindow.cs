@@ -30,6 +30,6 @@ public partial class LoginWindow : WindowTextureRect
         GD.Print("Username: " + username);
         GD.Print("Password: " + password);
 
-        //NodeManager.GetNode<ClientNetworkService>(nameof(ClientNetworkService)).Login(username, password);
+        NodeManager.GetNode<ClientNetworkService>(nameof(ClientNetworkService)).Login(username, password);
     }
 }

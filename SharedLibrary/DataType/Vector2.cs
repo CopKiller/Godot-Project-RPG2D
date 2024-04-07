@@ -1,5 +1,6 @@
 ﻿
 
+
 namespace SharedLibrary.DataType
 {
     public struct Vector2

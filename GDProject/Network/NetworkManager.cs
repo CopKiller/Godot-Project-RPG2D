@@ -17,18 +17,12 @@ internal class NetworkManager
     public NetworkManager()
     {
         _clientNetwork = new ClientNetworkService();
-        //_serverNetwork.PlayerAccepted += OnPlayerAccepted;
     }
-
-    //private void OnPlayerAccepted(NetPeer peer)
-    //{
-    //    PlayerAccepted?.Invoke(peer);
-    //}
 
     public void Start()
     {
         _clientNetwork.Register();
-        _clientNetwork.Bind(Config.ServerPort);
+        _clientNetwork.Connect();
 
         _thread = new Thread(() =>
         {
@@ -44,12 +38,12 @@ internal class NetworkManager
 
     public void Stop()
     {
-        _serverNetwork.Unregister();
+        _clientNetwork.Unregister();
     }
 
     public void Update()
     {
-        _serverNetwork.Update();
+        _clientNetwork.Update();
         Thread.Sleep(15);
 
     }

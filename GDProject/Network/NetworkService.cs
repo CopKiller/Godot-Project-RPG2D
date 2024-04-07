@@ -1,4 +1,5 @@
-﻿using GdProject.Network.Interface;
+﻿using GdProject.Logger;
+using GdProject.Network.Interface;
 using Godot;
 using LiteNetLib;
 using LiteNetLib.Utils;

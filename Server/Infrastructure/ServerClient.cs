@@ -10,15 +10,14 @@ namespace Server.Infrastructure
 
         public PlayerDataModel _playerData { get; set; }
 
-        //private NetPacketProcessor _netPacketProcessor;
-
         public ServerClient() { }
 
         public ServerClient(NetPeer netPeer)
         {
-            _peer = netPeer;
-            //_netPacketProcessor = netPacketProcessor;
             _playerData = new PlayerDataModel();
+            _peer = netPeer;
+
+            _playerData.Index = _peer.Id;
         }
 
         public void SendDataToClient(NetDataWriter writer)

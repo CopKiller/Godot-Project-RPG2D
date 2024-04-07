@@ -5,8 +5,5 @@
 
 [node name="RPG2D" type="Node2D"]
 script = ExtResource("1_njvog")
-ServerStart = true
-ClientStart = true
-DatabaseStart = true
 
 [node name="Client" parent="." instance=ExtResource("1_gve3o")]
