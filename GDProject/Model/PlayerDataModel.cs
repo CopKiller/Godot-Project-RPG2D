@@ -1,8 +1,8 @@
-﻿using LiteNetLib.Utils;
+﻿using GdProject.Network.Extensions;
+using LiteNetLib.Utils;
 using SharedLibrary.DataType;
-using SharedLibrary.Network.Extensions;
 
-namespace SharedLibrary.Models
+namespace GdProject.Model
 {
     public class PlayerDataModel : INetSerializable
     {

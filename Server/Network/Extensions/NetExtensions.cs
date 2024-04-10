@@ -1,7 +1,7 @@
 ﻿using LiteNetLib.Utils;
 using SharedLibrary.DataType;
 
-namespace SharedLibrary.Network.Extensions
+namespace Server.Network.Extensions
 {
     public static class NetExtensions
     {

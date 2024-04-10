@@ -1,13 +1,10 @@
 using LiteNetLib;
 using LiteNetLib.Utils;
-using Server.Database;
 using Server.Infrastructure;
 using Server.Logger;
-using SharedLibrary.DataType;
+using Server.Network.Packet;
+using Server.Network.Packet.Client;
 using SharedLibrary.Extensions;
-using SharedLibrary.Models;
-using SharedLibrary.Network.Packet.Client;
-using SharedLibrary.Network.Packet.Server;
 using System.Net;
 using System.Net.Sockets;
 
@@ -16,28 +13,16 @@ internal class ServerNetworkService : NetworkService
 {
     public event Action<NetPeer> PlayerAccepted;
 
-    public event Action<int> PlayerDisconnected;
-
     public readonly DictionaryWrapper<int, ServerClient> _players;
-
-    public ProcessPackage ProcessPackage { get; set; }
 
     public ServerNetworkService(DictionaryWrapper<int, ServerClient> players)
     {
         _players = players;
-        ProcessPackage = new ProcessPackage(_players, NetPacketProcessor);
     }
 
     public override void Register()
-
     {
         base.Register();
-
-        // Register to receive packets
-        Subscribe<CPlayerAction>(ProcessPackage.ProcessPlayerAction);
-        Subscribe<CLogin>(ProcessPackage.ProcessPlayerLogin);
-        Subscribe<CNewAccount>(ProcessPackage.ProcessPlayerRegister);
-        Subscribe<CNewChar>(ProcessPackage.ProcessPlayerCreateChar);
 
         this.listener.PeerConnectedEvent += OnPeerConnectedEvent;
         listener.PeerDisconnectedEvent += OnPeerDisconnectedEvent;
@@ -48,6 +33,8 @@ internal class ServerNetworkService : NetworkService
         listener.ConnectionRequestEvent += OnConnectionRequestEvent;
         listener.DeliveryEvent += OnDeliveryEvent;
         listener.NtpResponseEvent += OnNtpResponseEvent;
+
+        this.NetPacketProcessor = new PacketProcessor(_players);
     }
 
     public void Bind(int port)
@@ -66,6 +53,8 @@ internal class ServerNetworkService : NetworkService
         {
             return;
         }
+
+        
 
         this.listener.PeerConnectedEvent -= OnPeerConnectedEvent;
         this.listener.PeerDisconnectedEvent -= OnPeerDisconnectedEvent;
@@ -86,7 +75,7 @@ internal class ServerNetworkService : NetworkService
     }
     private void OnPeerDisconnectedEvent(NetPeer peer, DisconnectInfo disconnectInfo)
     {
-        PlayerDisconnected?.Invoke(peer.Id);
+        _players.GetItem(peer.Id).Disconnect();
     }
     private void OnNetworkErrorEvent(IPEndPoint endPoint, SocketError socketError)
     {

@@ -651,7 +651,6 @@ text = "Create"
 script = ExtResource("12_7kyh5")
 
 [node name="Game" type="Node2D" parent="UI"]
-visible = false
 script = ExtResource("6_ie8vh")
 
 [node name="Ground" parent="UI/Game" instance=ExtResource("10_25j42")]
@@ -710,3 +709,16 @@ tab_size = 0
 shortcut_keys_enabled = false
 
 [node name="Fringe" parent="UI/Game" instance=ExtResource("13_1pc3w")]
+
+[node name="GameUI" type="CanvasLayer" parent="UI/Game"]
+follow_viewport_enabled = true
+
+[node name="ChatUI" type="TextureRect" parent="UI/Game/GameUI"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 8

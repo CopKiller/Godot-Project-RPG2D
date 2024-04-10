@@ -1,7 +1,7 @@
-﻿using GdProject.Network;
+﻿using GdProject.Model;
+using GdProject.Network;
+using GdProject.Network.Packet.Client;
 using Godot;
-using SharedLibrary.Models;
-using SharedLibrary.Network.Packet.Client;
 
 namespace Shared.Scripts.Player
 {

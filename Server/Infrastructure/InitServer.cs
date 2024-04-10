@@ -2,8 +2,8 @@
 using Server.Database;
 using Server.Logger;
 using Server.Network;
+using Server.Network.Packet.Server;
 using SharedLibrary.Extensions;
-using SharedLibrary.Network.Packet.Server;
 
 namespace Server.Infrastructure
 {
@@ -37,7 +37,6 @@ namespace Server.Infrastructure
             // Initialize the server network service threading
             _networkManager = new NetworkManager(_clients);
             _networkManager._serverNetwork.PlayerAccepted += NetworkService_PlayerAccepted;
-            _networkManager._serverNetwork.PlayerDisconnected += NetworkService_PlayerDisconnected;
             _networkManager.Start();
 
             // Initialize the database
@@ -49,17 +48,17 @@ namespace Server.Infrastructure
         private void NetworkService_PlayerAccepted(NetPeer peer)
         {
             var client = new ServerClient(peer);
+            client.OnDisconnect += PlayerDisconnect;
             _clients.AddItem(peer.Id, client);
 
             _loggerManager.Log($"Player connected: {peer.Id}");
         }
 
-        private void NetworkService_PlayerDisconnected(int peerId)
+        private void PlayerDisconnect(int peerId)
         {
             var sLeft = new SLeft();
             sLeft.Index = peerId;
-
-            _networkManager._serverNetwork.ProcessPackage.SentMessageToAllBut(sLeft, DeliveryMethod.ReliableUnordered, peerId);
+            sLeft.WritePacket(_networkManager._serverNetwork.NetPacketProcessor, _clients.GetItem(peerId)._peer);
 
             _clients.RemoveItem(peerId);
 

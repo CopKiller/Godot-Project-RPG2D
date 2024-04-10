@@ -1,12 +1,12 @@
 ﻿using GdProject.Client.Scripts.Window.Interface;
 using GdProject.Logger;
+using GdProject.Model;
+using GdProject.Network.Packet.Client;
+using GdProject.Network.Packet.Server;
 using Godot;
 using LiteNetLib;
 using LiteNetLib.Utils;
 using SharedLibrary.Extensions;
-using SharedLibrary.Models;
-using SharedLibrary.Network.Packet.Client;
-using SharedLibrary.Network.Packet.Server;
 using System.Net;
 using System.Net.Sockets;
 
@@ -39,13 +39,6 @@ public partial class ClientNetworkService : NetworkService
     {
         base.Register();
         this.Disconnect();
-
-        // Register to receive packets   
-        Subscribe<SPeersAll>(ReceiveAllPlayers);
-        Subscribe<SPlayerData>(ReceivePlayerData);
-        Subscribe<CPlayerAction>(ReceivePlayerPosition);
-        Subscribe<SNewChar>(ReceiveCreateChar);
-        Subscribe<SLeft>(PlayerDisconnected);
 
         listener.PeerConnectedEvent += OnPeerConnectedEvent;
         listener.PeerDisconnectedEvent += OnPeerDisconnectedEvent;
