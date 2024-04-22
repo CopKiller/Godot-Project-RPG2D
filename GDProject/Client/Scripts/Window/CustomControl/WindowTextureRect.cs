@@ -1,7 +1,6 @@
 ﻿using GdProject.Client.Scripts.Window.Controller;
 using GdProject.Client.Scripts.Window.Interface;
 using Godot;
-using System.Collections.Generic;
 
 namespace Shared.Window.CustomControl
 {

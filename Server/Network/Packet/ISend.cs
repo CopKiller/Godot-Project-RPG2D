@@ -1,11 +1,10 @@
 ﻿
 using LiteNetLib;
-using LiteNetLib.Utils;
 
-namespace Server.Network.Packet
+namespace Network.Packet
 {
     internal interface ISend
     {
-        void WritePacket(PacketProcessor netPacketProcessor, NetPeer netPeer);
+        void WritePacket(Server.Network.PacketProcessor netPacketProcessor, NetPeer netPeer);
     }
 }

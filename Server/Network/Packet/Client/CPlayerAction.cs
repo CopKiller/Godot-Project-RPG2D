@@ -1,10 +1,10 @@
-﻿using LiteNetLib.Utils;
-using SharedLibrary.DataType;
+﻿using LiteNetLib;
 using Server.Infrastructure;
+using Server.Network;
+using SharedLibrary.DataType;
 using SharedLibrary.Extensions;
-using LiteNetLib;
 
-namespace Server.Network.Packet.Client
+namespace Network.Packet
 {
     internal class CPlayerAction : IRecv, ISend
     {
@@ -18,11 +18,12 @@ namespace Server.Network.Packet.Client
         public void ReadPacket(DictionaryWrapper<int, ServerClient> players,
             PacketProcessor netPacketProcessor, int peerId)
         {
-            var player = players.GetItem(peerId);
-            if (player._playerData.GameState != GameState.InGame) { return; }
-
             if (players.ContainsKey(peerId))
             {
+                var player = players.GetItem(peerId);
+
+                if (player.GameState != GameState.InGame) { return; }
+
                 switch (ActionType)
                 {
                     case PlayerActionType.Move:
@@ -49,7 +50,7 @@ namespace Server.Network.Packet.Client
         }
     }
 
-    public enum PlayerActionType: byte
+    public enum PlayerActionType : byte
     {
         Move,
         Stop

@@ -1,7 +1,8 @@
-﻿using GdProject.Model;
-using GdProject.Network;
-using GdProject.Network.Packet.Client;
+﻿using GdProject.Infrastructure;
+using GdProject.Logger;
+using GdProject.Model;
 using Godot;
+using Network.Packet;
 
 namespace Shared.Scripts.Player
 {
@@ -17,22 +18,9 @@ namespace Shared.Scripts.Player
 
         public AnimatedSprite2D AnimatedSprite;
 
+        Vector2 JoystickDirection = Vector2.Zero;
+
         public float Speed = 100;
-
-        // Posição do jogador -> Conversão de um DataType.Vector2 para um Godot.Vector2
-        //public new SharedLibrary.DataType.Vector2 Position
-        //{
-        //    get => new SharedLibrary.DataType.Vector2(base.Position.X, base.Position.Y);
-        //    set => base.Position = new Vector2(value.X, value.Y);
-        //}
-
-        //public new SharedLibrary.DataType.Vector2 Direction
-        //{
-        //    get => new SharedLibrary.DataType.Vector2(PlayerAction.Direction.X, PlayerAction.Direction.Y);
-        //    set => PlayerAction.Direction = value;
-        //}
-
-        public ClientNetworkService GameClient { get; set; }
 
 
         public override void _Ready()
@@ -56,12 +44,28 @@ namespace Shared.Scripts.Player
         }
 
         // Obtém a direção de entrada do jogador
+
         private Vector2 GetInputDirection()
         {
-            var xMoving = Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
-            var yMoving = Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
-            return new Vector2(xMoving, yMoving).Normalized();
+            if (InitClient.PlatformName == "Windows")
+            {
+                var xMoving = Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
+                var yMoving = Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
+                return new Vector2(xMoving, yMoving).Normalized();
+            }
+            else if (InitClient.PlatformName == "Android")
+            {
+                return JoystickDirection.Normalized();
+            }
+
+            return Vector2.Zero;
         }
+
+        public void OnVirtualJoystickAnalogicChange(Vector2 direction)
+        {
+            JoystickDirection = direction;
+        }
+
         //Move o jogador com base na direção
         private void MovePlayer(Vector2 direction, double delta)
         {
@@ -82,31 +86,25 @@ namespace Shared.Scripts.Player
 
             if (needToSync)
             {
-                PlayerAction = new CPlayerAction
-                {
-                    ActionType = PlayerActionType.Move,
-                    Position = new SharedLibrary.DataType.Vector2(Position.X, Position.Y),
-                    Direction = new SharedLibrary.DataType.Vector2(direction.X, direction.Y),
-                    Speed = speed,
-                    Running = PlayerAction.Running
-                };
+                PlayerAction.ActionType = PlayerActionType.Move;
+                PlayerAction.Position = new SharedLibrary.DataType.Vector2(Position.X, Position.Y);
+                PlayerAction.Direction = new SharedLibrary.DataType.Vector2(direction.X, direction.Y);
+                PlayerAction.Speed = speed;
+                PlayerAction.Running = PlayerAction.Running;
 
-                GameClient.SendPlayerPosition(PlayerAction);
+                PlayerAction.WritePacket(InitClient.LocalPlayer.PacketProcessor);
             }
             else
             {
                 if (PlayerAction.ActionType == PlayerActionType.Move)
                 {
-                    PlayerAction = new CPlayerAction
-                    {
-                        ActionType = PlayerActionType.Stop,
-                        Position = new SharedLibrary.DataType.Vector2(Position.X, Position.Y),
-                        Direction = SharedLibrary.DataType.Vector2.Zero,
-                        Speed = speed,
-                        Running = PlayerAction.Running
-                    };
+                    PlayerAction.ActionType = PlayerActionType.Move;
+                    PlayerAction.Position = new SharedLibrary.DataType.Vector2(Position.X, Position.Y);
+                    PlayerAction.Direction = SharedLibrary.DataType.Vector2.Zero;
+                    PlayerAction.Speed = speed;
+                    PlayerAction.Running = PlayerAction.Running;
 
-                    GameClient.SendPlayerPosition(PlayerAction);
+                    PlayerAction.WritePacket(InitClient.LocalPlayer.PacketProcessor);
 
                     PlayerAction.ActionType = PlayerActionType.Stop;
                 }

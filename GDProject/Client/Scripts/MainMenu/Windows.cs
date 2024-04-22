@@ -1,8 +1,6 @@
 using GdProject.Client.Scripts.Window.Controller;
 using GdProject.Client.Scripts.Window.Interface;
 using Godot;
-using System;
-using System.Runtime.CompilerServices;
 
 public partial class Windows : Control
 {
@@ -22,6 +20,11 @@ public partial class Windows : Control
         return activeWindows;
     }
     public void AddActiveWindow(IControlWindow window)
+    {
+        activeWindows.AddActiveWindow(window);
+    }
+
+    public void AddActiveWindow(CharacterWindow window)
     {
         activeWindows.AddActiveWindow(window);
     }

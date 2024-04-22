@@ -1,9 +1,8 @@
 ﻿
+using GdProject.Network;
 using LiteNetLib;
-using LiteNetLib.Utils;
-using SharedLibrary.Extensions;
 
-namespace GdProject.Network.Packet.Client
+namespace Network.Packet
 {
     internal class CNewAccount : ISend
     {
@@ -12,7 +11,7 @@ namespace GdProject.Network.Packet.Client
 
         public void WritePacket(PacketProcessor packetProcessor)
         {
-            
+            packetProcessor.SendDataToServer(this, DeliveryMethod.ReliableSequenced);
         }
     }
 }

@@ -1,15 +1,14 @@
-﻿using LiteNetLib.Utils;
-using Server.Network.Packet;
-using Server.Network.Packet.Client;
-using LiteNetLib;
+﻿using LiteNetLib;
+using LiteNetLib.Utils;
+using Network.Packet;
 using Server.Infrastructure;
-using SharedLibrary.Extensions;
 using Server.Model;
 using Server.Network.Extensions;
+using SharedLibrary.Extensions;
 
 namespace Server.Network
 {
-    internal class PacketProcessor : NetPacketProcessor
+    public class PacketProcessor : NetPacketProcessor
     {
         private readonly DictionaryWrapper<int, ServerClient> _players;
         public PacketProcessor(DictionaryWrapper<int, ServerClient> players)
@@ -43,7 +42,7 @@ namespace Server.Network
             obj.ReadPacket(_players, this, netPeer.Id);
         }
 
-        public void SendDataToAllBut<T>(T packet,int excludePeerId, DeliveryMethod deliveryMethod = DeliveryMethod.ReliableOrdered) where T : class, new()
+        public void SendDataToAllBut<T>(T packet, int excludePeerId, DeliveryMethod deliveryMethod = DeliveryMethod.ReliableOrdered) where T : class, new()
         {
             var excludePeer = _players.GetItem(excludePeerId);
 
@@ -52,7 +51,7 @@ namespace Server.Network
             {
                 if (player.Value._peer.Id != excludePeerId)
                 {
-                    if (player.Value._playerData.GameState == GameState.InGame)
+                    if (player.Value.GameState == GameState.InGame)
                     {
                         this.Send(player.Value._peer, packet, deliveryMethod);
                     }
@@ -65,7 +64,7 @@ namespace Server.Network
             var allPlayers = _players.GetItems();
             foreach (var player in allPlayers)
             {
-                if (player.Value._playerData.GameState == GameState.InGame)
+                if (player.Value.GameState == GameState.InGame)
                 {
                     this.Send(player.Value._peer, packet, deliveryMethod);
                 }

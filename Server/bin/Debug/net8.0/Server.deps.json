@@ -353,9 +353,6 @@
         }
       },
       "SharedLibrary/1.0.0": {
-        "dependencies": {
-          "LiteNetLib": "1.2.0"
-        },
         "runtime": {
           "SharedLibrary.dll": {}
         }

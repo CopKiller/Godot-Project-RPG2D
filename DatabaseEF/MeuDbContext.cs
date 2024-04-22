@@ -2,7 +2,6 @@
 using EntityFramework.Configuration;
 using EntityFramework.Entities.Account;
 using EntityFramework.Entities.Player;
-using EntityFramework.Entities.ValueObjects.Player;
 using Microsoft.EntityFrameworkCore;
 using SQLitePCL;
 

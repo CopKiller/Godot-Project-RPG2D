@@ -6,7 +6,6 @@ namespace GdProject.Network;
 
 internal class NetworkManager
 {
-    //public Action<NetPeer> PlayerAccepted;
 
     internal ClientNetworkService _clientNetwork;
 
@@ -38,6 +37,7 @@ internal class NetworkManager
 
     public void Stop()
     {
+        _isRunning = false;
         _clientNetwork.Unregister();
     }
 

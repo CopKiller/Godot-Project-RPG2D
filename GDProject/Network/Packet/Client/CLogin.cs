@@ -1,17 +1,16 @@
-﻿
-using SharedLibrary.DataType;
-using SharedLibrary.Extensions;
+﻿using GdProject.Network;
+using LiteNetLib;
 
-namespace GdProject.Network.Packet.Client
+namespace Network.Packet
 {
-    internal class CLogin : ISend
+    public class CLogin : ISend
     {
         public string Login { get; set; }
         public string Password { get; set; }
 
         public void WritePacket(PacketProcessor packetProcessor)
         {
-            
+            packetProcessor.SendDataToServer(this, DeliveryMethod.ReliableSequenced);
         }
     }
 }

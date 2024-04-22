@@ -2,8 +2,6 @@ using LiteNetLib;
 using LiteNetLib.Utils;
 using Server.Infrastructure;
 using Server.Logger;
-using Server.Network.Packet;
-using Server.Network.Packet.Client;
 using SharedLibrary.Extensions;
 using System.Net;
 using System.Net.Sockets;
@@ -54,7 +52,7 @@ internal class ServerNetworkService : NetworkService
             return;
         }
 
-        
+
 
         this.listener.PeerConnectedEvent -= OnPeerConnectedEvent;
         this.listener.PeerDisconnectedEvent -= OnPeerDisconnectedEvent;

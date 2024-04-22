@@ -1,6 +1,6 @@
 ﻿
 
-namespace GdProject.Network.Packet
+namespace Network.Packet
 {
     internal interface IRecv
     {

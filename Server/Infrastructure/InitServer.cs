@@ -1,8 +1,8 @@
 ﻿using LiteNetLib;
+using Network.Packet;
 using Server.Database;
 using Server.Logger;
 using Server.Network;
-using Server.Network.Packet.Server;
 using SharedLibrary.Extensions;
 
 namespace Server.Infrastructure
@@ -21,7 +21,7 @@ namespace Server.Infrastructure
 
         internal DictionaryWrapper<int, ServerClient> _clients = new();
 
-        internal InitServer(){ }
+        internal InitServer() { }
 
         public void Start()
         {

@@ -1,10 +1,10 @@
 ﻿
-using LiteNetLib;
-using LiteNetLib.Utils;
+
 using Server.Infrastructure;
+using Server.Network;
 using SharedLibrary.Extensions;
 
-namespace Server.Network.Packet
+namespace Network.Packet
 {
     internal interface IRecv
     {

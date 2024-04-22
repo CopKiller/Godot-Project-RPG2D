@@ -1,7 +1,7 @@
-﻿using Godot;
-using Shared.Window.CustomControl;
-using GdProject.Client.Scripts.Window.Controller;
+﻿using GdProject.Client.Scripts.Window.Controller;
 using GdProject.Client.Scripts.Window.Interface;
+using Godot;
+using Shared.Window.CustomControl;
 using System;
 
 

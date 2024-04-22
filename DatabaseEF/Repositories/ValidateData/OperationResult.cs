@@ -1,7 +1,4 @@
-﻿
-using EntityFramework.Entities.Account;
-using EntityFramework.Entities.Interface;
-using EntityFramework.Repositories.Interface;
+﻿using EntityFramework.Entities.Interface;
 
 namespace EntityFramework.Repositories.ValidadeData
 {

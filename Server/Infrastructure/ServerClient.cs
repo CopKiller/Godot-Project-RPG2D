@@ -3,11 +3,13 @@ using Server.Model;
 
 namespace Server.Infrastructure
 {
-    internal class ServerClient
+    public class ServerClient
     {
         public event Action<int> OnDisconnect;
 
         public NetPeer _peer { get; set; }
+
+        public GameState GameState { get; set; } = GameState.InMenu;
 
         public PlayerDataModel _playerData { get; set; }
 

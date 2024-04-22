@@ -1,8 +1,6 @@
-﻿using EntityFramework.Entities.Account;
-using EntityFramework.Entities.Interface;
+﻿using EntityFramework.Entities.Interface;
 using EntityFramework.Entities.ValueObjects.Player;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EntityFramework.Entities.Player;
 
@@ -17,6 +15,6 @@ public class PlayerEntity : BaseEntity, IPlayerEntity
 
     public PlayerEntity()
     {
-        
+
     }
 }

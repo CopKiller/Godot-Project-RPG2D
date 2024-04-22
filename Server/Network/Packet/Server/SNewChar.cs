@@ -1,8 +1,8 @@
 ﻿
 using LiteNetLib;
-using LiteNetLib.Utils;
+using Server.Network;
 
-namespace Server.Network.Packet.Server
+namespace Network.Packet
 {
     internal class SNewChar : ISend
     {

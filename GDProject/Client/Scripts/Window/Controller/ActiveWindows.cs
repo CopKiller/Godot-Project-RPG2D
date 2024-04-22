@@ -1,9 +1,7 @@
-﻿using System;
+﻿using GdProject.Client.Scripts.Window.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Shared.Window.CustomControl;
-using Godot;
-using GdProject.Client.Scripts.Window.Interface;
 
 namespace GdProject.Client.Scripts.Window.Controller
 {

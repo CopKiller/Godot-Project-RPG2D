@@ -1,6 +1,4 @@
 ﻿using EntityFramework.Entities.Account;
-using EntityFramework.Entities.Interface;
-using EntityFramework.Entities.Player;
 using EntityFramework.Repositories.ValidadeData;
 using EntityFramework.Repositories.ValidateData;
 using Microsoft.EntityFrameworkCore;

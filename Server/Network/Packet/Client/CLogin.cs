@@ -1,14 +1,13 @@
-﻿using LiteNetLib;
-using LiteNetLib.Utils;
+﻿
 using Server.Infrastructure;
 using Server.Logger;
-using Server.Network.Packet.Server;
+using Server.Network;
 using SharedLibrary.DataType;
 using SharedLibrary.Extensions;
 
-namespace Server.Network.Packet.Client
+namespace Network.Packet
 {
-    internal class CLogin : IRecv
+    public class CLogin : IRecv
     {
         public string Login { get; set; }
         public string Password { get; set; }
@@ -19,7 +18,7 @@ namespace Server.Network.Packet.Client
             var player = players.GetItem(peerId);
 
             // Check if player is in menu
-            if (player._playerData.GameState != GameState.InMenu) { return; }
+            if (player.GameState != GameState.InMenu) { return; }
 
             // Get repo
             var db = InitServer._databaseManager._databaseManager.AccountRepo;
@@ -29,18 +28,18 @@ namespace Server.Network.Packet.Client
             var account = db.AuthenticateAsync(Login, Password);
             if (account.Result == null) { return; }
 
+            player._playerData.accountId = account.Result.Id;
+
             // Check if account is already logged in
             if (CheckMultipleAccounts(player, players)) { return; }
 
-            ExternalLogger.Print("account logged in: " + account.Result.Login);
-
-            player._playerData.accountId = account.Result.Id;
+            ExternalLogger.Print("account logged in: " + account.Result.Login + " index: " + peerId);
 
             if (account.Result.Player.Name == string.Empty)
             {
                 // Create character
                 new SNewChar().WritePacket(netPacketProcessor, player._peer);
-                player._playerData.GameState = GameState.InCharacterCreation;
+                player.GameState = GameState.InCharacterCreation;
                 return;
             }
 
@@ -57,7 +56,7 @@ namespace Server.Network.Packet.Client
         {
             var _players = players.GetItems().Count(x => x.Value._playerData.accountId == client._playerData.accountId);
 
-            return _players > 0;
+            return _players > 1;
 
         }
 
@@ -66,7 +65,7 @@ namespace Server.Network.Packet.Client
         {
             var client = players.GetItem(peerId);
             // Add player to the Dictionary of all players
-            client._playerData.GameState = GameState.InGame;
+            client.GameState = GameState.InGame;
 
             // Send all players to the new player -> TO NEW PLAYER
             SendAllPlayersTo(players, netPacketProcessor, peerId);
@@ -81,14 +80,14 @@ namespace Server.Network.Packet.Client
             var _players = players.GetItems();
 
             var sPeersAll = new SPeersAll();
-            sPeersAll.PlayerDataModels = [.. _players.Select(x => x.Value._playerData).Where(y => y.GameState == GameState.InGame)];
+            sPeersAll.PlayerDataModels = [.. _players.Select(x => x.Value).Where(y => y.GameState == GameState.InGame).Select(z => z._playerData)];
             sPeersAll.WritePacket(netPacketProcessor, players.GetItem(peerId)._peer);
         }
 
         private void SendPlayerToAllPlayers(DictionaryWrapper<int, ServerClient> players,
                        PacketProcessor netPacketProcessor, int peerId)
         {
-            var _players = players.GetItems().Values.Where(x => x._playerData.GameState == GameState.InGame && x._peer.Id != peerId);
+            var _players = players.GetItems().Values.Where(x => x.GameState == GameState.InGame && x._peer.Id != peerId);
 
             var myPlayer = players.GetItem(peerId);
 

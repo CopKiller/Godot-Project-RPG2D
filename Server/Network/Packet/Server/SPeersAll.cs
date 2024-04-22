@@ -1,8 +1,9 @@
 ﻿
 using LiteNetLib;
 using Server.Model;
+using Server.Network;
 
-namespace Server.Network.Packet.Server
+namespace Network.Packet
 {
     internal class SPeersAll : ISend
     {

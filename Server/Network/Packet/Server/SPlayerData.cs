@@ -2,8 +2,9 @@
 
 using LiteNetLib;
 using Server.Model;
+using Server.Network;
 
-namespace Server.Network.Packet.Server
+namespace Network.Packet
 {
     internal class SPlayerData : ISend
     {
@@ -11,7 +12,7 @@ namespace Server.Network.Packet.Server
 
         public void WritePacket(PacketProcessor packetProcessor, NetPeer netPeer)
         {
-        packetProcessor.SendDataTo(this, netPeer.Id, DeliveryMethod.ReliableUnordered);
+            packetProcessor.SendDataTo(this, netPeer.Id, DeliveryMethod.ReliableUnordered);
         }
     }
 }

@@ -488,11 +488,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\LiteNetLib\\LiteNetLib.csproj": {
-                "projectPath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\LiteNetLib\\LiteNetLib.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

@@ -1,10 +1,8 @@
-﻿
-using LiteNetLib;
-using LiteNetLib.Utils;
-using Server.Infrastructure;
+﻿using Server.Infrastructure;
+using Server.Network;
 using SharedLibrary.Extensions;
 
-namespace Server.Network.Packet.Client
+namespace Network.Packet
 {
     internal class CNewAccount : IRecv
     {
@@ -15,7 +13,7 @@ namespace Server.Network.Packet.Client
             PacketProcessor netPacketProcessor, int peerId)
         {
             var player = players.GetItem(peerId);
-            if (player._playerData.GameState != GameState.InMenu) { return; }
+            if (player.GameState != GameState.InMenu) { return; }
 
             var db = InitServer._databaseManager._databaseManager.AccountRepo;
 

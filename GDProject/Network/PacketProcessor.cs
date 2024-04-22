@@ -1,18 +1,17 @@
-﻿using LiteNetLib.Utils;
-using LiteNetLib;
-using SharedLibrary.Extensions;
-using GdProject.Network.Packet;
-using System;
+﻿using GdProject.Infrastructure;
+using GdProject.Logger;
 using GdProject.Model;
 using GdProject.Network.Extensions;
-using GdProject.Network.Packet.Server;
-using GdProject.Network.Packet.Client;
+using LiteNetLib;
+using LiteNetLib.Utils;
+using Network.Packet;
+using System;
 
 namespace GdProject.Network
 {
     public class PacketProcessor : NetPacketProcessor
     {
-        public PacketProcessor(DictionaryWrapper<int, Player> players)
+        public PacketProcessor()
         {
             // Register custom types
             RegisterCustomTypes();
@@ -48,9 +47,14 @@ namespace GdProject.Network
             obj.ReadPacket(netPeer.Id);
         }
 
-        public void SendDataTo<T>(T packet, int peerId, DeliveryMethod deliveryMethod = DeliveryMethod.ReliableOrdered) where T : class, new()
+        public void SendDataToServer<T>(T packet, DeliveryMethod deliveryMethod = DeliveryMethod.ReliableOrdered) where T : class, new()
         {
-            //this.Send(peer, packet, deliveryMethod);
+
+            // Preciso de uma referencia do NetPeer do servidor
+            Send(InitClient.LocalPlayer.CurrentPeer, packet, deliveryMethod);
+
+            // log
+            //ExternalLogger.Print($"SendDataToServer: {packet.GetType().Name}");
         }
     }
 }

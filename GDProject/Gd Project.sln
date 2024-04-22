@@ -13,9 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{4F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "..\DatabaseEF\EntityFramework.csproj", "{86F8B035-C9D6-4140-8F6A-61E58EF38D27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "..\Server\Server.csproj", "{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "..\Server\Server.csproj", "{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "..\SharedLibrary\SharedLibrary.csproj", "{279A2BE2-ECAD-4031-A950-F8073D226291}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLibrary", "..\SharedLibrary\SharedLibrary.csproj", "{279A2BE2-ECAD-4031-A950-F8073D226291}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

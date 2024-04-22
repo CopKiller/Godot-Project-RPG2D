@@ -1,7 +1,6 @@
 ﻿using LiteNetLib;
-using LiteNetLib.Utils;
-using Server.Network.Interface;
 using Server.Logger;
+using Server.Network.Interface;
 
 namespace Server.Network;
 internal abstract class NetworkService : IService
@@ -13,7 +12,7 @@ internal abstract class NetworkService : IService
     /// <summary>
     /// Initializes a new instance of the <see cref="NetworkService"/> class.
     /// </summary>
-    internal NetworkService(){ }
+    internal NetworkService() { }
 
     /// <inheritdoc />
     public virtual void Register()

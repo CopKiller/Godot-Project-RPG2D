@@ -25,7 +25,7 @@ public class AccountEntity : BaseEntity, IAccountEntity
     public PlayerEntity Player { get; set; } = new PlayerEntity();
 
     public AccountEntity()
-    {   
-    
+    {
+
     }
 }

@@ -1,8 +1,10 @@
 ﻿
+using GdProject.Client;
+using GdProject.Infrastructure;
 using GdProject.Model;
-using LiteNetLib;
+using Godot;
 
-namespace GdProject.Network.Packet.Server
+namespace Network.Packet
 {
     internal class SPlayerData : IRecv
     {
@@ -10,8 +12,12 @@ namespace GdProject.Network.Packet.Server
 
         public void ReadPacket(int peerId)
         {
-            
+            var MyPlayer = NodeManager.GetNode<Player>("Player");
+
+            var pData = new Player();
+            pData.PlayerData = PlayerDataModel;
+
+            MyPlayer.CallDeferred("DuplicatePlayer", pData);
         }
-        
     }
 }

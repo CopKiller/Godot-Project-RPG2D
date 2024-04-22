@@ -1,6 +1,7 @@
 ﻿
-using GdProject.Network;
+using GdProject.Infrastructure;
 using Godot;
+using Network.Packet;
 using Shared.Window.CustomControl;
 
 public partial class RegisterWindow : WindowTextureRect
@@ -30,6 +31,10 @@ public partial class RegisterWindow : WindowTextureRect
         GD.Print("Username: " + username);
         GD.Print("Password: " + password);
 
-        NodeManager.GetNode<ClientNetworkService>(nameof(ClientNetworkService)).Register(username, password);
+        new CNewAccount
+        {
+            Login = username,
+            Password = password
+        }.WritePacket(InitClient.LocalPlayer.PacketProcessor);
     }
 }

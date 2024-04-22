@@ -1,6 +1,8 @@
 ﻿
+using GdProject.Network;
+using LiteNetLib;
 
-namespace GdProject.Network.Packet.Client
+namespace Network.Packet
 {
     internal class CNewChar : ISend
     {
@@ -8,7 +10,7 @@ namespace GdProject.Network.Packet.Client
 
         public void WritePacket(PacketProcessor packetProcessor)
         {
-            
+            packetProcessor.SendDataToServer(this, DeliveryMethod.ReliableSequenced);
         }
 
     }

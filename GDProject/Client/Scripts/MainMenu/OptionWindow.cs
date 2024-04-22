@@ -1,5 +1,4 @@
-﻿using Godot;
-using Shared.Window.CustomControl;
+﻿using Shared.Window.CustomControl;
 
 public partial class OptionWindow : WindowTextureRect
 {

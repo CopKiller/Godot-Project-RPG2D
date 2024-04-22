@@ -1,6 +1,4 @@
-﻿using LiteNetLib;
-
-namespace GdProject.Network.Packet.Server
+﻿namespace Network.Packet
 {
     public class SLeft : IRecv
     {
@@ -8,7 +6,11 @@ namespace GdProject.Network.Packet.Server
 
         public void ReadPacket(int peerId)
         {
-            
+            var playerNode = NodeManager.GetNode<Player>(Index.ToString());
+
+            if (playerNode == null) return;
+
+            playerNode.QueueFree();
         }
     }
 }

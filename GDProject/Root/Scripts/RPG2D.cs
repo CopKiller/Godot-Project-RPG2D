@@ -1,6 +1,5 @@
 ﻿
 using Godot;
-using System;
 
 public partial class RPG2D : Node2D
 {

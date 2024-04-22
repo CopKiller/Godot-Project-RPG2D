@@ -1,6 +1,6 @@
-[gd_scene load_steps=49 format=3 uid="uid://c2385dwmt65h2"]
+[gd_scene load_steps=50 format=3 uid="uid://c2385dwmt65h2"]
 
-[ext_resource type="Script" path="res://Client/Scenes/Client.cs" id="1_xqbha"]
+[ext_resource type="Script" path="res://Client/Scenes/ClientNode.cs" id="1_dl1nj"]
 [ext_resource type="Texture2D" uid="uid://0ah8e7twsavc" path="res://Client/Resources/MainMenu/Background/background.png" id="1_xv5dp"]
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/MainMenu.cs" id="2_ouw2s"]
 [ext_resource type="Texture2D" uid="uid://dxjuhhlalewer" path="res://Client/Resources/MainMenu/Logo/logo.png" id="2_psbkn"]
@@ -18,6 +18,7 @@
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/Buttons/CreateCharButton.cs" id="12_7kyh5"]
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/CharacterWindow.cs" id="12_ng5jm"]
 [ext_resource type="PackedScene" uid="uid://cqyevyj4fqul7" path="res://Client/Scenes/Game/Map/Fringe/Fringe_01.tscn" id="13_1pc3w"]
+[ext_resource type="Script" path="res://addons/virtual_joystick/scripts/virtual_joystick.gd" id="19_ct0hb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_708la"]
 atlas = ExtResource("11_ba42d")
@@ -281,7 +282,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0xrpr"]
 
 [node name="Client" type="Node"]
-script = ExtResource("1_xqbha")
+script = ExtResource("1_dl1nj")
 
 [node name="UI" type="CanvasLayer" parent="."]
 layer = 0
@@ -722,3 +723,10 @@ offset_right = 40.0
 grow_vertical = 0
 size_flags_horizontal = 0
 size_flags_vertical = 8
+
+[node name="VirtualJoystick" type="Node2D" parent="UI/Game"]
+position = Vector2(102.8, 318.333)
+scale = Vector2(1, 1)
+script = ExtResource("19_ct0hb")
+
+[connection signal="analogic_chage" from="UI/Game/VirtualJoystick" to="UI/Game/Players/Player" method="OnVirtualJoystickAnalogicChange"]

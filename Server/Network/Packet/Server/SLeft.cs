@@ -1,6 +1,7 @@
 ﻿using LiteNetLib;
+using Server.Network;
 
-namespace Server.Network.Packet.Server
+namespace Network.Packet
 {
     internal class SLeft : ISend
     {

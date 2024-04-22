@@ -1,8 +1,7 @@
 ﻿
-using LiteNetLib;
-using LiteNetLib.Utils;
+using GdProject.Network;
 
-namespace GdProject.Network.Packet
+namespace Network.Packet
 {
     internal interface ISend
     {

@@ -1,8 +1,6 @@
 ﻿<Project Sdk="Godot.NET.Sdk/4.2.1">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net8.0</TargetFramework>
-    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'ios' ">net8.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>GdProject</RootNamespace>
   </PropertyGroup>
@@ -11,9 +9,15 @@
     <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <Folder Include="Shared\Scripts\Entities\Class\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Shared\Scripts\Entities\Class\" />
+    <PackageReference Update="GodotSharp" Version="4.2.1" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Update="GodotSharpEditor" Version="4.2.1" />
+	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Godot.SourceGenerators" Version="4.2.1" />
   </ItemGroup>
 </Project>

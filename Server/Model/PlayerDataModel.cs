@@ -8,7 +8,6 @@ namespace Server.Model
     {
         public int playerId { get; set; } // Database of player
         public int accountId { get; set; } // Database of player
-        public GameState GameState { get; set; } = GameState.InMenu;
         public int Index { get; set; }
         public string PlayerName { get; set; }
         public Vector2 Position { get; set; } = Vector2.Zero;

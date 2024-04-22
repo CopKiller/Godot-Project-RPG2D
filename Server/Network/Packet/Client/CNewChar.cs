@@ -1,9 +1,8 @@
-﻿using LiteNetLib;
-using LiteNetLib.Utils;
-using Server.Infrastructure;
+﻿using Server.Infrastructure;
+using Server.Network;
 using SharedLibrary.Extensions;
 
-namespace Server.Network.Packet.Client
+namespace Network.Packet
 {
     internal class CNewChar : IRecv
     {
@@ -13,7 +12,7 @@ namespace Server.Network.Packet.Client
             PacketProcessor netPacketProcessor, int peerId)
         {
             var player = players.GetItem(peerId);
-            if (player._playerData.GameState != GameState.InCharacterCreation) { return; }
+            if (player.GameState != GameState.InCharacterCreation) { return; }
 
             var db = InitServer._databaseManager._databaseManager.PlayerRepo;
 
