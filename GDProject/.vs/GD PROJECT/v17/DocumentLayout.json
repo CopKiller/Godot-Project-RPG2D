@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\shared\\scripts\\entities\\player\\playerphysicsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\shared\\scripts\\entities\\player\\playerphysicsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:shared\\scripts\\entities\\player\\playerphysicsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:infrastructure\\initclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\client\\scripts\\clientnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\clientnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\clientnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -234,8 +234,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -246,8 +250,7 @@
               "RelativeToolTip": "Client\\Scripts\\ClientNode.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwBkAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T20:22:15.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T20:22:15.442Z"
             },
             {
               "$type": "Document",
@@ -259,8 +262,7 @@
               "RelativeToolTip": "..\\SharedLibrary\\SharedLibrary.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-21T16:04:05.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:04:05.89Z"
             },
             {
               "$type": "Document",
@@ -272,8 +274,7 @@
               "RelativeToolTip": "Infrastructure\\InitClient.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAIwBwAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:20:22.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:20:22.337Z"
             },
             {
               "$type": "Document",
@@ -283,7 +284,7 @@
               "RelativeDocumentMoniker": "Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
               "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
               "RelativeToolTip": "Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAqwDYAAABCAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAqwC8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T22:43:45.358Z",
               "EditorCaption": ""
@@ -298,8 +299,7 @@
               "RelativeToolTip": "Logger\\ExternalLogger.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:18.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:29:18.197Z"
             },
             {
               "$type": "Document",
@@ -311,8 +311,7 @@
               "RelativeToolTip": "Shared\\Scripts\\Global\\NodeManager.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAAowD0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:47.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:29:47.358Z"
             },
             {
               "$type": "Document",
@@ -324,8 +323,7 @@
               "RelativeToolTip": "Gd Project.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-21T16:03:02.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:03:02.174Z"
             },
             {
               "$type": "Document",
@@ -337,8 +335,7 @@
               "RelativeToolTip": "..\\Server\\Network\\Packet\\Server\\SNewChar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:55:07.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:55:07.481Z"
             },
             {
               "$type": "Document",
@@ -350,8 +347,7 @@
               "RelativeToolTip": "..\\Server\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:53:21.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:53:21.471Z"
             },
             {
               "$type": "Document",
@@ -363,8 +359,7 @@
               "RelativeToolTip": "..\\DatabaseEF\\MeuDbContext.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAIwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:32:37.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:32:37.919Z"
             },
             {
               "$type": "Document",
@@ -376,8 +371,7 @@
               "RelativeToolTip": "..\\Server\\Database\\DatabaseManager.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwAwAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:56:53.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:56:53.528Z"
             },
             {
               "$type": "Document",
@@ -389,8 +383,7 @@
               "RelativeToolTip": "Root\\Scripts\\RPG2D.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:07:43.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:07:43.625Z"
             },
             {
               "$type": "Document",
@@ -402,8 +395,7 @@
               "RelativeToolTip": "Client\\Scripts\\MainMenu\\Windows.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAwwAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:22:52.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:22:52.049Z"
             },
             {
               "$type": "Document",
@@ -415,8 +407,7 @@
               "RelativeToolTip": "Client\\Scripts\\MainMenu\\RegisterWindow.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:29:00.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:29:00.815Z"
             },
             {
               "$type": "Document",
@@ -428,8 +419,7 @@
               "RelativeToolTip": "..\\Server\\Infrastructure\\InitServer.cs",
               "ViewState": "AQIAACsAAAAAAAAAAAAIwDwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:57:17.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:57:17.792Z"
             },
             {
               "$type": "Document",
@@ -441,8 +431,7 @@
               "RelativeToolTip": "Client\\Scripts\\MainMenu\\MainWindow.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:31:11.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:31:11.004Z"
             },
             {
               "$type": "Document",
@@ -454,8 +443,7 @@
               "RelativeToolTip": "..\\Server\\Commands\\ReadConsole.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:56:47.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:56:47.511Z"
             },
             {
               "$type": "Document",
@@ -467,8 +455,7 @@
               "RelativeToolTip": "Client\\Scripts\\MainMenu\\LoginWindow.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:08:53.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:08:53.624Z"
             },
             {
               "$type": "Document",
@@ -480,8 +467,7 @@
               "RelativeToolTip": "Client\\Scripts\\MainMenu\\CharacterWindow.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAcAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:22:39.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:22:39.188Z"
             },
             {
               "$type": "Document",
@@ -493,8 +479,7 @@
               "RelativeToolTip": "Client\\Scripts\\Entities\\Player.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T20:33:12.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T20:33:12.941Z"
             },
             {
               "$type": "Document",
@@ -506,8 +491,7 @@
               "RelativeToolTip": "Client\\Scripts\\MainMenu\\OptionWindow.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:31:54.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:31:54.166Z"
             },
             {
               "$type": "Document",
@@ -519,8 +503,7 @@
               "RelativeToolTip": "Model\\PlayerDataModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:23.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:29:23.613Z"
             },
             {
               "$type": "Document",
@@ -532,8 +515,7 @@
               "RelativeToolTip": "Network\\Packet\\Server\\SNewChar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:21:29.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T23:21:29.869Z"
             },
             {
               "$type": "Document",
@@ -545,8 +527,7 @@
               "RelativeToolTip": "Client\\Scripts\\Game\\Game.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:28:30.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:28:30.822Z"
             },
             {
               "$type": "Document",
@@ -558,8 +539,7 @@
               "RelativeToolTip": "Client\\Scripts\\Entities\\Monster.cs",
               "ViewState": "AQIAAGIAAAAAAAAAAAAQwHIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:28:19.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:28:19.494Z"
             },
             {
               "$type": "Document",
@@ -571,8 +551,7 @@
               "RelativeToolTip": "..\\Server\\Model\\PlayerDataModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:58:32.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:58:32.752Z"
             },
             {
               "$type": "Document",
@@ -584,8 +563,7 @@
               "RelativeToolTip": "..\\Server\\Network\\Extensions\\NetExtensions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:06:06.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:06:06.072Z"
             },
             {
               "$type": "Document",
@@ -597,8 +575,7 @@
               "RelativeToolTip": "..\\SharedLibrary\\Extensions\\DictionaryWrapper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:03:03.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:03:03.664Z"
             },
             {
               "$type": "Document",
@@ -610,8 +587,7 @@
               "RelativeToolTip": "..\\SharedLibrary\\Extensions\\NumericExtensions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:03:04.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:03:04.513Z"
             },
             {
               "$type": "Document",
@@ -635,8 +611,7 @@
               "RelativeToolTip": "Network\\Packet\\Client\\CLogin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:21:26.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T23:21:26.846Z"
             },
             {
               "$type": "Document",
@@ -648,8 +623,7 @@
               "RelativeToolTip": "..\\SharedLibrary\\Extensions\\StringDictonary.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:03:05.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:03:05.153Z"
             },
             {
               "$type": "Document",
@@ -661,8 +635,7 @@
               "RelativeToolTip": "..\\SharedLibrary\\Extensions\\TypeDictonary.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:03:05.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:03:05.777Z"
             },
             {
               "$type": "Document",
@@ -674,8 +647,7 @@
               "RelativeToolTip": "..\\SharedLibrary\\DataType\\Vector2.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:02:35.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:02:35.121Z"
             },
             {
               "$type": "Document",
@@ -687,8 +659,7 @@
               "RelativeToolTip": "..\\SharedLibrary\\DataType\\GameState.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T02:02:31.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T02:02:31.017Z"
             },
             {
               "$type": "Document",
@@ -700,8 +671,7 @@
               "RelativeToolTip": "..\\SharedLibrary\\Network\\Config.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:04:32.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:04:32.064Z"
             },
             {
               "$type": "Document",
@@ -713,8 +683,7 @@
               "RelativeToolTip": "..\\Server\\Network\\ServerNetworkService.cs",
               "ViewState": "AQIAAFMAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:59:35.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:59:35.648Z"
             },
             {
               "$type": "Document",
@@ -726,8 +695,7 @@
               "RelativeToolTip": "Infrastructure\\ClientPlayer.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAA1wBAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T22:59:37.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T22:59:37.639Z"
             },
             {
               "$type": "Document",
@@ -739,8 +707,7 @@
               "RelativeToolTip": "Network\\PacketProcessor.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwBMAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:26:51.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:26:51.705Z"
             },
             {
               "$type": "Document",
@@ -752,8 +719,7 @@
               "RelativeToolTip": "..\\Server\\Network\\NetworkService.cs",
               "ViewState": "AQIAAEwAAAAAAAAAAAAcwAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:59:07.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:59:07.841Z"
             },
             {
               "$type": "Document",
@@ -765,8 +731,7 @@
               "RelativeToolTip": "..\\Server\\Network\\NetworkManager.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:58:54.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:58:54.504Z"
             },
             {
               "$type": "Document",
@@ -778,8 +743,7 @@
               "RelativeToolTip": "..\\Server\\Infrastructure\\ServerClient.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAcwA0AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:58:06.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:58:06.464Z"
             },
             {
               "$type": "Document",
@@ -791,8 +755,7 @@
               "RelativeToolTip": "..\\Server\\Database\\InitDatabase.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAIBJwCIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:57:04.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:57:04.68Z"
             },
             {
               "$type": "Document",
@@ -804,8 +767,7 @@
               "RelativeToolTip": "Network\\NetworkManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:28.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:29:28.006Z"
             },
             {
               "$type": "Document",
@@ -817,8 +779,7 @@
               "RelativeToolTip": "Network\\ClientNetworkService.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:26.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:29:26.934Z"
             },
             {
               "$type": "Document",
@@ -830,8 +791,7 @@
               "RelativeToolTip": "Network\\Packet\\Server\\SLeft.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:27:54.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:27:54.858Z"
             },
             {
               "$type": "Document",
@@ -843,8 +803,7 @@
               "RelativeToolTip": "Network\\Extensions\\NetExtensions.cs",
               "ViewState": "AQIAACsAAAAAAAAAAAAcwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:39:23.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:39:23.659Z"
             },
             {
               "$type": "Document",
@@ -856,8 +815,7 @@
               "RelativeToolTip": "Network\\Packet\\Client\\CPlayerAction.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:55:58.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:55:58.317Z"
             },
             {
               "$type": "Document",
@@ -869,8 +827,7 @@
               "RelativeToolTip": "..\\DatabaseEF\\Configuration\\DatabaseDirectory.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAQwAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:25:26.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:25:26.62Z"
             },
             {
               "$type": "Document",
@@ -882,8 +839,7 @@
               "RelativeToolTip": "..\\DatabaseEF\\Entities\\Account\\AccountEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T01:24:48.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T01:24:48.786Z"
             },
             {
               "$type": "Document",
@@ -895,8 +851,7 @@
               "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CLogin.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAIBJwAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T17:02:42.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T17:02:42.85Z"
             },
             {
               "$type": "Document",
@@ -908,8 +863,7 @@
               "RelativeToolTip": "Logger\\ILogger.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:19.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:29:19.413Z"
             },
             {
               "$type": "Document",
@@ -921,8 +875,7 @@
               "RelativeToolTip": "Logger\\LogManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:20.381Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:29:20.381Z"
             },
             {
               "$type": "Document",
@@ -934,8 +887,7 @@
               "RelativeToolTip": "Network\\Packet\\Client\\CNewChar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:21:05.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T23:21:05.206Z"
             },
             {
               "$type": "Document",
@@ -947,8 +899,7 @@
               "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CPlayerAction.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAmwDYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:36:01.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:36:01.398Z"
             },
             {
               "$type": "Document",
@@ -960,8 +911,7 @@
               "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CNewAccount.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:21:59.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T23:21:59.808Z"
             },
             {
               "$type": "Document",
@@ -973,8 +923,7 @@
               "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CNewChar.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:22:08.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T23:22:08.614Z"
             },
             {
               "$type": "Document",
@@ -986,8 +935,7 @@
               "RelativeToolTip": "Network\\Packet\\Client\\CNewAccount.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwBEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:20:17.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T23:20:17.191Z"
             },
             {
               "$type": "Document",
@@ -999,8 +947,7 @@
               "RelativeToolTip": "Network\\Packet\\Server\\SPlayerData.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAABQwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:37:40.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:37:40.07Z"
             },
             {
               "$type": "Document",
@@ -1012,8 +959,7 @@
               "RelativeToolTip": "..\\Server\\Server.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-21T20:50:34.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T20:50:34.81Z"
             },
             {
               "$type": "Document",
@@ -1025,8 +971,7 @@
               "RelativeToolTip": ".godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T17:43:15.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T17:43:15.715Z"
             },
             {
               "$type": "Document",
@@ -1038,8 +983,7 @@
               "RelativeToolTip": "Client\\Scripts\\MainMenu\\MainMenu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:28:39.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:28:39.703Z"
             },
             {
               "$type": "Document",
@@ -1051,8 +995,7 @@
               "RelativeToolTip": "Client\\Scripts\\Window\\Windows.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:28:55.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-21T16:28:55.278Z"
             }
           ]
         }

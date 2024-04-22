@@ -1,4 +1,5 @@
 ﻿using GdProject.Infrastructure;
+using GdProject.Infrastructure.Platform;
 using GdProject.Logger;
 using GdProject.Model;
 using Godot;
@@ -48,13 +49,13 @@ namespace Shared.Scripts.Player
 
         private Vector2 GetInputDirection()
         {
-            if (OS.GetName() == "Windows")
+            if (PlatformId.GetPlatformId() == PlatformId.Platform.Windows)
             {
                 var xMoving = Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
                 var yMoving = Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
                 return new Vector2(xMoving, yMoving).Normalized();
             }
-            else if (OS.GetName() == "Android")
+            else if (PlatformId.GetPlatformId() == PlatformId.Platform.Android)
             {
                 return JoystickDirection.Normalized();
             }
