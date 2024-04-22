@@ -48,13 +48,13 @@ namespace Shared.Scripts.Player
 
         private Vector2 GetInputDirection()
         {
-            if (InitClient.PlatformName == "Windows")
+            if (OS.GetName() == "Windows")
             {
                 var xMoving = Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
                 var yMoving = Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
                 return new Vector2(xMoving, yMoving).Normalized();
             }
-            else if (InitClient.PlatformName == "Android")
+            else if (OS.GetName() == "Android")
             {
                 return JoystickDirection.Normalized();
             }

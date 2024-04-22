@@ -10,8 +10,6 @@ namespace GdProject.Infrastructure
     {
         public static ClientPlayer LocalPlayer { get; set; } = null;
 
-        public static string PlatformName { get; set; }
-
         public NetworkManager _networkManager;
 
         public bool IsRunning { get; private set; } = false;
@@ -39,8 +37,6 @@ namespace GdProject.Infrastructure
             _networkManager.Start();
 
             IsRunning = true;
-
-            PlatformName = OS.GetName();
 
         }
 
