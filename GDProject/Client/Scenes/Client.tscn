@@ -1,6 +1,6 @@
 [gd_scene load_steps=50 format=3 uid="uid://c2385dwmt65h2"]
 
-[ext_resource type="Script" path="res://Client/Scenes/ClientNode.cs" id="1_dl1nj"]
+[ext_resource type="Script" path="res://Client/Scripts/ClientNode.cs" id="1_dl1nj"]
 [ext_resource type="Texture2D" uid="uid://0ah8e7twsavc" path="res://Client/Resources/MainMenu/Background/background.png" id="1_xv5dp"]
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/MainMenu.cs" id="2_ouw2s"]
 [ext_resource type="Texture2D" uid="uid://dxjuhhlalewer" path="res://Client/Resources/MainMenu/Logo/logo.png" id="2_psbkn"]
@@ -652,6 +652,7 @@ text = "Create"
 script = ExtResource("12_7kyh5")
 
 [node name="Game" type="Node2D" parent="UI"]
+visible = false
 script = ExtResource("6_ie8vh")
 
 [node name="Ground" parent="UI/Game" instance=ExtResource("10_25j42")]
@@ -726,7 +727,6 @@ size_flags_vertical = 8
 
 [node name="VirtualJoystick" type="Node2D" parent="UI/Game"]
 position = Vector2(102.8, 318.333)
-scale = Vector2(1, 1)
 script = ExtResource("19_ct0hb")
 
 [connection signal="analogic_chage" from="UI/Game/VirtualJoystick" to="UI/Game/Players/Player" method="OnVirtualJoystickAnalogicChange"]

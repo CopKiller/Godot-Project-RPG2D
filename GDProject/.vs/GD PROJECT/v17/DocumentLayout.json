@@ -3,15 +3,195 @@
   "WorkspaceRootPath": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scenes\\clientnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scenes\\clientnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\client\\scripts\\clientnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\clientnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\network\\packet\\server\\snewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\sharedlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\shared\\scripts\\global\\nodemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:shared\\scripts\\global\\nodemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\logger\\externallogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:logger\\externallogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\shared\\scripts\\entities\\player\\playerphysicsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:shared\\scripts\\entities\\player\\playerphysicsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\infrastructure\\initclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:infrastructure\\initclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\gd project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:gd project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\network\\packet\\server\\snewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\infrastructure\\initserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\commands\\readconsole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F8B035-C9D6-4140-8F6A-61E58EF38D27}|..\\DatabaseEF\\EntityFramework.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\databaseef\\meudbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\database\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\root\\scripts\\rpg2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:root\\scripts\\rpg2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\mainmenu\\windows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\mainmenu\\windows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\mainmenu\\registerwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\mainmenu\\registerwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\mainmenu\\optionwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\mainmenu\\optionwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\mainmenu\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\mainmenu\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\mainmenu\\loginwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\mainmenu\\loginwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\mainmenu\\characterwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\mainmenu\\characterwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\entities\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\entities\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\model\\playerdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:model\\playerdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\packet\\server\\snewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\server\\snewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\network\\packet\\client\\cnewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\packet\\client\\clogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\client\\clogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|GdProject.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\root\\scripts\\rpg2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|GdProject.csproj|solutionrelative:root\\scripts\\rpg2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\model\\playerdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\network\\extensions\\netextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\extensions\\dictionarywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\extensions\\numericextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\extensions\\stringdictonary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\network\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\extensions\\typedictonary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\datatype\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\datatype\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\packetprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packetprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\infrastructure\\clientplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:infrastructure\\clientplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\network\\servernetworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\network\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\infrastructure\\serverclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\database\\initdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\packet\\server\\sleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\server\\sleft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\clientnetworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\clientnetworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\extensions\\netextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\extensions\\netextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\packet\\client\\cplayeraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\client\\cplayeraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F8B035-C9D6-4140-8F6A-61E58EF38D27}|..\\DatabaseEF\\EntityFramework.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\databaseef\\configuration\\databasedirectory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F8B035-C9D6-4140-8F6A-61E58EF38D27}|..\\DatabaseEF\\EntityFramework.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\databaseef\\entities\\account\\accountentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\logger\\logmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:logger\\logmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\logger\\ilogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:logger\\ilogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\network\\packet\\client\\clogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\packet\\client\\cnewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\client\\cnewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -28,114 +208,23 @@
       "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\server\\splayerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\network\\packet\\server\\speersall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\server\\speersall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\network\\packet\\client\\clogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\client\\clogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\network\\packet\\client\\cnewaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\packet\\client\\cnewaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\client\\cnewaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\packet\\client\\cplayeraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\packet\\client\\cplayeraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\game\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\infrastructure\\clientplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:infrastructure\\clientplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\shared\\scripts\\entities\\player\\playerphysicsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:shared\\scripts\\entities\\player\\playerphysicsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\gdproject\\client\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\gd project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:gd project.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86F8B035-C9D6-4140-8F6A-61E58EF38D27}|..\\DatabaseEF\\EntityFramework.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\databaseef\\entityframework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6498CA2B-8216-4F94-B532-96AC2E124578}|..\\LiteNetLib\\LiteNetLib.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\litenetlib\\litenetlib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\sharedlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\.godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E81CE8A-C5A0-45EB-AFA5-3F2B24DAB507}|..\\Server\\Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\server\\network\\packet\\client\\clogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\shared\\scripts\\global\\nodemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:shared\\scripts\\global\\nodemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\clientnetworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\clientnetworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|GdProject.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\root\\scripts\\rpg2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|GdProject.csproj|solutionrelative:root\\scripts\\rpg2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\mainmenu\\optionwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\mainmenu\\optionwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\mainmenu\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\mainmenu\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\mainmenu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\mainmenu\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\network\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:network\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\model\\playerdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:model\\playerdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\logger\\logmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:logger\\logmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\logger\\ilogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:logger\\ilogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\logger\\externallogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:logger\\externallogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\window\\windows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\window\\windows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\client\\scripts\\entities\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BF074FD-E855-4494-AB24-5C1A2174C99E}|Gd Project.csproj|solutionrelative:client\\scripts\\entities\\monster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{279A2BE2-ECAD-4031-A950-F8073D226291}|..\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\sharedlibrary\\network\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -145,295 +234,194 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CNewChar.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CNewChar.cs",
-              "RelativeDocumentMoniker": "..\\Server\\Network\\Packet\\Client\\CNewChar.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CNewChar.cs",
-              "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CNewChar.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "ClientNode.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\ClientNode.cs",
+              "RelativeDocumentMoniker": "Client\\Scripts\\ClientNode.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\ClientNode.cs",
+              "RelativeToolTip": "Client\\Scripts\\ClientNode.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:22:08.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CNewAccount.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CNewAccount.cs",
-              "RelativeDocumentMoniker": "..\\Server\\Network\\Packet\\Client\\CNewAccount.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CNewAccount.cs",
-              "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CNewAccount.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:21:59.808Z",
+              "WhenOpened": "2024-04-22T20:22:15.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SNewChar.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SNewChar.cs",
-              "RelativeDocumentMoniker": "Network\\Packet\\Server\\SNewChar.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SNewChar.cs",
-              "RelativeToolTip": "Network\\Packet\\Server\\SNewChar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:21:29.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CLogin.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CLogin.cs",
-              "RelativeDocumentMoniker": "Network\\Packet\\Client\\CLogin.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CLogin.cs",
-              "RelativeToolTip": "Network\\Packet\\Client\\CLogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:21:26.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CPlayerAction.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CPlayerAction.cs",
-              "RelativeDocumentMoniker": "..\\Server\\Network\\Packet\\Client\\CPlayerAction.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CPlayerAction.cs",
-              "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CPlayerAction.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAmwDYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:36:01.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CNewChar.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CNewChar.cs",
-              "RelativeDocumentMoniker": "Network\\Packet\\Client\\CNewChar.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CNewChar.cs",
-              "RelativeToolTip": "Network\\Packet\\Client\\CNewChar.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAIAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:21:05.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClientNode.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scenes\\ClientNode.cs",
-              "RelativeDocumentMoniker": "Client\\Scenes\\ClientNode.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scenes\\ClientNode.cs",
-              "RelativeToolTip": "Client\\Scenes\\ClientNode.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:28:03.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CNewAccount.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CNewAccount.cs",
-              "RelativeDocumentMoniker": "Network\\Packet\\Client\\CNewAccount.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CNewAccount.cs",
-              "RelativeToolTip": "Network\\Packet\\Client\\CNewAccount.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T23:20:17.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Game\\Game.cs",
-              "RelativeDocumentMoniker": "Client\\Scripts\\Game\\Game.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Game\\Game.cs",
-              "RelativeToolTip": "Client\\Scripts\\Game\\Game.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:28:30.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SPeersAll.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SPeersAll.cs",
-              "RelativeDocumentMoniker": "Network\\Packet\\Server\\SPeersAll.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SPeersAll.cs",
-              "RelativeToolTip": "Network\\Packet\\Server\\SPeersAll.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAADwvzAAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T17:35:13.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SPlayerData.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SPlayerData.cs",
-              "RelativeDocumentMoniker": "Network\\Packet\\Server\\SPlayerData.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SPlayerData.cs",
-              "RelativeToolTip": "Network\\Packet\\Server\\SPlayerData.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:37:40.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PlayerPhysicsModel.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
-              "RelativeDocumentMoniker": "Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
-              "RelativeToolTip": "Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowDoAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T22:43:45.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CPlayerAction.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CPlayerAction.cs",
-              "RelativeDocumentMoniker": "Network\\Packet\\Client\\CPlayerAction.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CPlayerAction.cs",
-              "RelativeToolTip": "Network\\Packet\\Client\\CPlayerAction.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAuwBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:55:58.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Entities\\Player.cs",
-              "RelativeDocumentMoniker": "Client\\Scripts\\Entities\\Player.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Entities\\Player.cs",
-              "RelativeToolTip": "Client\\Scripts\\Entities\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T20:33:12.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ClientPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Infrastructure\\ClientPlayer.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ClientPlayer.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Infrastructure\\ClientPlayer.cs",
-              "RelativeToolTip": "Infrastructure\\ClientPlayer.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T22:59:37.639Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Gd Project.csproj",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Gd Project.csproj",
-              "RelativeDocumentMoniker": "Gd Project.csproj",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Gd Project.csproj",
-              "RelativeToolTip": "Gd Project.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-21T16:03:02.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "SharedLibrary.csproj",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\SharedLibrary.csproj",
               "RelativeDocumentMoniker": "..\\SharedLibrary\\SharedLibrary.csproj",
               "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\SharedLibrary.csproj",
               "RelativeToolTip": "..\\SharedLibrary\\SharedLibrary.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-04-21T16:04:05.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CLogin.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CLogin.cs",
-              "RelativeDocumentMoniker": "..\\Server\\Network\\Packet\\Client\\CLogin.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CLogin.cs",
-              "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CLogin.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAACQAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "InitClient.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Infrastructure\\InitClient.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\InitClient.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Infrastructure\\InitClient.cs",
+              "RelativeToolTip": "Infrastructure\\InitClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T17:02:42.85Z"
+              "WhenOpened": "2024-04-22T01:20:22.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Server",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Server.csproj",
-              "RelativeDocumentMoniker": "..\\Server\\Server.csproj",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Server.csproj",
-              "RelativeToolTip": "..\\Server\\Server.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "PlayerPhysicsModel.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
+              "RelativeDocumentMoniker": "Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
+              "RelativeToolTip": "Shared\\Scripts\\Entities\\Player\\PlayerPhysicsModel.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAApwBsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T22:43:45.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExternalLogger.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\ExternalLogger.cs",
+              "RelativeDocumentMoniker": "Logger\\ExternalLogger.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\ExternalLogger.cs",
+              "RelativeToolTip": "Logger\\ExternalLogger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:29:18.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NodeManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Shared\\Scripts\\Global\\NodeManager.cs",
+              "RelativeDocumentMoniker": "Shared\\Scripts\\Global\\NodeManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Shared\\Scripts\\Global\\NodeManager.cs",
+              "RelativeToolTip": "Shared\\Scripts\\Global\\NodeManager.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAowD0AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:29:47.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Gd Project.csproj",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Gd Project.csproj",
+              "RelativeDocumentMoniker": "Gd Project.csproj",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Gd Project.csproj",
+              "RelativeToolTip": "Gd Project.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-21T20:50:34.81Z",
+              "WhenOpened": "2024-04-21T16:03:02.174Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SNewChar.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Server\\SNewChar.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Network\\Packet\\Server\\SNewChar.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Server\\SNewChar.cs",
+              "RelativeToolTip": "..\\Server\\Network\\Packet\\Server\\SNewChar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:55:07.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Program.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Program.cs",
+              "RelativeToolTip": "..\\Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:53:21.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MeuDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\MeuDbContext.cs",
+              "RelativeDocumentMoniker": "..\\DatabaseEF\\MeuDbContext.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\MeuDbContext.cs",
+              "RelativeToolTip": "..\\DatabaseEF\\MeuDbContext.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:32:37.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DatabaseManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Database\\DatabaseManager.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Database\\DatabaseManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Database\\DatabaseManager.cs",
+              "RelativeToolTip": "..\\Server\\Database\\DatabaseManager.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:56:53.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RPG2D.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Root\\Scripts\\RPG2D.cs",
+              "RelativeDocumentMoniker": "Root\\Scripts\\RPG2D.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Root\\Scripts\\RPG2D.cs",
+              "RelativeToolTip": "Root\\Scripts\\RPG2D.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:07:43.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Windows.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\Windows.cs",
+              "RelativeDocumentMoniker": "Client\\Scripts\\MainMenu\\Windows.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\Windows.cs",
+              "RelativeToolTip": "Client\\Scripts\\MainMenu\\Windows.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:22:52.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegisterWindow.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\RegisterWindow.cs",
+              "RelativeDocumentMoniker": "Client\\Scripts\\MainMenu\\RegisterWindow.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\RegisterWindow.cs",
+              "RelativeToolTip": "Client\\Scripts\\MainMenu\\RegisterWindow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:29:00.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InitServer.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Infrastructure\\InitServer.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Infrastructure\\InitServer.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Infrastructure\\InitServer.cs",
+              "RelativeToolTip": "..\\Server\\Infrastructure\\InitServer.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAIwDwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:57:17.792Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "LiteNetLib",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\LiteNetLib\\LiteNetLib.csproj",
-              "RelativeDocumentMoniker": "..\\LiteNetLib\\LiteNetLib.csproj",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\LiteNetLib\\LiteNetLib.csproj",
-              "RelativeToolTip": "..\\LiteNetLib\\LiteNetLib.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-21T20:50:43.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EntityFramework",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\EntityFramework.csproj",
-              "RelativeDocumentMoniker": "..\\DatabaseEF\\EntityFramework.csproj",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\EntityFramework.csproj",
-              "RelativeToolTip": "..\\DatabaseEF\\EntityFramework.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-21T20:50:45.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Gd Project.AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\.godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs",
-              "RelativeDocumentMoniker": ".godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\.godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs",
-              "RelativeToolTip": ".godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T17:43:15.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
               "Title": "MainWindow.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\MainWindow.cs",
               "RelativeDocumentMoniker": "Client\\Scripts\\MainMenu\\MainWindow.cs",
@@ -445,43 +433,55 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReadConsole.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Commands\\ReadConsole.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Commands\\ReadConsole.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Commands\\ReadConsole.cs",
+              "RelativeToolTip": "..\\Server\\Commands\\ReadConsole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:56:47.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginWindow.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\LoginWindow.cs",
+              "RelativeDocumentMoniker": "Client\\Scripts\\MainMenu\\LoginWindow.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\LoginWindow.cs",
+              "RelativeToolTip": "Client\\Scripts\\MainMenu\\LoginWindow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:08:53.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CharacterWindow.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\CharacterWindow.cs",
+              "RelativeDocumentMoniker": "Client\\Scripts\\MainMenu\\CharacterWindow.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\CharacterWindow.cs",
+              "RelativeToolTip": "Client\\Scripts\\MainMenu\\CharacterWindow.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:22:39.188Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "NodeManager.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Shared\\Scripts\\Global\\NodeManager.cs",
-              "RelativeDocumentMoniker": "Shared\\Scripts\\Global\\NodeManager.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Shared\\Scripts\\Global\\NodeManager.cs",
-              "RelativeToolTip": "Shared\\Scripts\\Global\\NodeManager.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwB4AAAAmAAAA",
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Entities\\Player.cs",
+              "RelativeDocumentMoniker": "Client\\Scripts\\Entities\\Player.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Entities\\Player.cs",
+              "RelativeToolTip": "Client\\Scripts\\Entities\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:47.358Z"
+              "WhenOpened": "2024-04-21T20:33:12.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RPG2D.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Root\\Scripts\\RPG2D.cs",
-              "RelativeDocumentMoniker": "Root\\Scripts\\RPG2D.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Root\\Scripts\\RPG2D.cs",
-              "RelativeToolTip": "Root\\Scripts\\RPG2D.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:12:53.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ClientNetworkService.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\ClientNetworkService.cs",
-              "RelativeDocumentMoniker": "Network\\ClientNetworkService.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\ClientNetworkService.cs",
-              "RelativeToolTip": "Network\\ClientNetworkService.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAwwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:26.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 16,
               "Title": "OptionWindow.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\OptionWindow.cs",
               "RelativeDocumentMoniker": "Client\\Scripts\\MainMenu\\OptionWindow.cs",
@@ -493,91 +493,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Client\\Scripts\\MainMenu\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\MainMenu.cs",
-              "RelativeToolTip": "Client\\Scripts\\MainMenu\\MainMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:28:39.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "NetworkManager.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\NetworkManager.cs",
-              "RelativeDocumentMoniker": "Network\\NetworkManager.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\NetworkManager.cs",
-              "RelativeToolTip": "Network\\NetworkManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:28.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 23,
               "Title": "PlayerDataModel.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Model\\PlayerDataModel.cs",
               "RelativeDocumentMoniker": "Model\\PlayerDataModel.cs",
               "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Model\\PlayerDataModel.cs",
               "RelativeToolTip": "Model\\PlayerDataModel.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAmwAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T16:29:23.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "LogManager.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\LogManager.cs",
-              "RelativeDocumentMoniker": "Logger\\LogManager.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\LogManager.cs",
-              "RelativeToolTip": "Logger\\LogManager.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "DocumentIndex": 24,
+              "Title": "SNewChar.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SNewChar.cs",
+              "RelativeDocumentMoniker": "Network\\Packet\\Server\\SNewChar.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SNewChar.cs",
+              "RelativeToolTip": "Network\\Packet\\Server\\SNewChar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:20.381Z"
+              "WhenOpened": "2024-04-21T23:21:29.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ILogger.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\ILogger.cs",
-              "RelativeDocumentMoniker": "Logger\\ILogger.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\ILogger.cs",
-              "RelativeToolTip": "Logger\\ILogger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 20,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Game\\Game.cs",
+              "RelativeDocumentMoniker": "Client\\Scripts\\Game\\Game.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Game\\Game.cs",
+              "RelativeToolTip": "Client\\Scripts\\Game\\Game.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:19.413Z"
+              "WhenOpened": "2024-04-21T16:28:30.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ExternalLogger.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\ExternalLogger.cs",
-              "RelativeDocumentMoniker": "Logger\\ExternalLogger.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\ExternalLogger.cs",
-              "RelativeToolTip": "Logger\\ExternalLogger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:29:18.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Windows.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Window\\Windows.cs",
-              "RelativeDocumentMoniker": "Client\\Scripts\\Window\\Windows.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Window\\Windows.cs",
-              "RelativeToolTip": "Client\\Scripts\\Window\\Windows.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T16:28:55.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 21,
               "Title": "Monster.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Entities\\Monster.cs",
               "RelativeDocumentMoniker": "Client\\Scripts\\Entities\\Monster.cs",
@@ -589,15 +541,460 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PlayerDataModel.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Model\\PlayerDataModel.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Model\\PlayerDataModel.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Model\\PlayerDataModel.cs",
+              "RelativeToolTip": "..\\Server\\Model\\PlayerDataModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:58:32.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NetExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Extensions\\NetExtensions.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Network\\Extensions\\NetExtensions.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Extensions\\NetExtensions.cs",
+              "RelativeToolTip": "..\\Server\\Network\\Extensions\\NetExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:06:06.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DictionaryWrapper.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Extensions\\DictionaryWrapper.cs",
+              "RelativeDocumentMoniker": "..\\SharedLibrary\\Extensions\\DictionaryWrapper.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Extensions\\DictionaryWrapper.cs",
+              "RelativeToolTip": "..\\SharedLibrary\\Extensions\\DictionaryWrapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:03:03.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NumericExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Extensions\\NumericExtensions.cs",
+              "RelativeDocumentMoniker": "..\\SharedLibrary\\Extensions\\NumericExtensions.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Extensions\\NumericExtensions.cs",
+              "RelativeToolTip": "..\\SharedLibrary\\Extensions\\NumericExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:03:04.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RPG2D.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Root\\Scripts\\RPG2D.cs",
+              "RelativeDocumentMoniker": "Root\\Scripts\\RPG2D.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Root\\Scripts\\RPG2D.cs",
+              "RelativeToolTip": "Root\\Scripts\\RPG2D.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:12:53.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CLogin.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CLogin.cs",
+              "RelativeDocumentMoniker": "Network\\Packet\\Client\\CLogin.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CLogin.cs",
+              "RelativeToolTip": "Network\\Packet\\Client\\CLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T23:21:26.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "StringDictonary.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Extensions\\StringDictonary.cs",
+              "RelativeDocumentMoniker": "..\\SharedLibrary\\Extensions\\StringDictonary.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Extensions\\StringDictonary.cs",
+              "RelativeToolTip": "..\\SharedLibrary\\Extensions\\StringDictonary.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:03:05.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TypeDictonary.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Extensions\\TypeDictonary.cs",
+              "RelativeDocumentMoniker": "..\\SharedLibrary\\Extensions\\TypeDictonary.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Extensions\\TypeDictonary.cs",
+              "RelativeToolTip": "..\\SharedLibrary\\Extensions\\TypeDictonary.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:03:05.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Vector2.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\DataType\\Vector2.cs",
+              "RelativeDocumentMoniker": "..\\SharedLibrary\\DataType\\Vector2.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\DataType\\Vector2.cs",
+              "RelativeToolTip": "..\\SharedLibrary\\DataType\\Vector2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:02:35.121Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 35,
+              "Title": "GameState.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\DataType\\GameState.cs",
+              "RelativeDocumentMoniker": "..\\SharedLibrary\\DataType\\GameState.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\DataType\\GameState.cs",
+              "RelativeToolTip": "..\\SharedLibrary\\DataType\\GameState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T02:02:31.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "Config.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Network\\Config.cs",
               "RelativeDocumentMoniker": "..\\SharedLibrary\\Network\\Config.cs",
               "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\SharedLibrary\\Network\\Config.cs",
               "RelativeToolTip": "..\\SharedLibrary\\Network\\Config.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T16:04:32.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ServerNetworkService.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\ServerNetworkService.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Network\\ServerNetworkService.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\ServerNetworkService.cs",
+              "RelativeToolTip": "..\\Server\\Network\\ServerNetworkService.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:59:35.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ClientPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Infrastructure\\ClientPlayer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ClientPlayer.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Infrastructure\\ClientPlayer.cs",
+              "RelativeToolTip": "Infrastructure\\ClientPlayer.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T22:59:37.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PacketProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\PacketProcessor.cs",
+              "RelativeDocumentMoniker": "Network\\PacketProcessor.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\PacketProcessor.cs",
+              "RelativeToolTip": "Network\\PacketProcessor.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:26:51.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "NetworkService.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\NetworkService.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Network\\NetworkService.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\NetworkService.cs",
+              "RelativeToolTip": "..\\Server\\Network\\NetworkService.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAcwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:59:07.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "NetworkManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\NetworkManager.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Network\\NetworkManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\NetworkManager.cs",
+              "RelativeToolTip": "..\\Server\\Network\\NetworkManager.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:58:54.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ServerClient.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Infrastructure\\ServerClient.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Infrastructure\\ServerClient.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Infrastructure\\ServerClient.cs",
+              "RelativeToolTip": "..\\Server\\Infrastructure\\ServerClient.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAcwA0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:58:06.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "InitDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Database\\InitDatabase.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Database\\InitDatabase.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Database\\InitDatabase.cs",
+              "RelativeToolTip": "..\\Server\\Database\\InitDatabase.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:57:04.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "NetworkManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\NetworkManager.cs",
+              "RelativeDocumentMoniker": "Network\\NetworkManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\NetworkManager.cs",
+              "RelativeToolTip": "Network\\NetworkManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:29:28.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ClientNetworkService.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\ClientNetworkService.cs",
+              "RelativeDocumentMoniker": "Network\\ClientNetworkService.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\ClientNetworkService.cs",
+              "RelativeToolTip": "Network\\ClientNetworkService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:29:26.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "SLeft.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SLeft.cs",
+              "RelativeDocumentMoniker": "Network\\Packet\\Server\\SLeft.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SLeft.cs",
+              "RelativeToolTip": "Network\\Packet\\Server\\SLeft.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:27:54.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "NetExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Extensions\\NetExtensions.cs",
+              "RelativeDocumentMoniker": "Network\\Extensions\\NetExtensions.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Extensions\\NetExtensions.cs",
+              "RelativeToolTip": "Network\\Extensions\\NetExtensions.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAcwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:39:23.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CPlayerAction.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CPlayerAction.cs",
+              "RelativeDocumentMoniker": "Network\\Packet\\Client\\CPlayerAction.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CPlayerAction.cs",
+              "RelativeToolTip": "Network\\Packet\\Client\\CPlayerAction.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:55:58.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DatabaseDirectory.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\Configuration\\DatabaseDirectory.cs",
+              "RelativeDocumentMoniker": "..\\DatabaseEF\\Configuration\\DatabaseDirectory.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\Configuration\\DatabaseDirectory.cs",
+              "RelativeToolTip": "..\\DatabaseEF\\Configuration\\DatabaseDirectory.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAA1wAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:25:26.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AccountEntity.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\Entities\\Account\\AccountEntity.cs",
+              "RelativeDocumentMoniker": "..\\DatabaseEF\\Entities\\Account\\AccountEntity.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\Entities\\Account\\AccountEntity.cs",
+              "RelativeToolTip": "..\\DatabaseEF\\Entities\\Account\\AccountEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T01:24:48.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CLogin.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CLogin.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Network\\Packet\\Client\\CLogin.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CLogin.cs",
+              "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CLogin.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T17:02:42.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ILogger.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\ILogger.cs",
+              "RelativeDocumentMoniker": "Logger\\ILogger.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\ILogger.cs",
+              "RelativeToolTip": "Logger\\ILogger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:29:19.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "LogManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\LogManager.cs",
+              "RelativeDocumentMoniker": "Logger\\LogManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Logger\\LogManager.cs",
+              "RelativeToolTip": "Logger\\LogManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:29:20.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CNewChar.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CNewChar.cs",
+              "RelativeDocumentMoniker": "Network\\Packet\\Client\\CNewChar.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CNewChar.cs",
+              "RelativeToolTip": "Network\\Packet\\Client\\CNewChar.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T23:21:05.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "CPlayerAction.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CPlayerAction.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Network\\Packet\\Client\\CPlayerAction.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CPlayerAction.cs",
+              "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CPlayerAction.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAmwDYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:36:01.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "CNewAccount.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CNewAccount.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Network\\Packet\\Client\\CNewAccount.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CNewAccount.cs",
+              "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CNewAccount.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T23:21:59.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "CNewChar.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CNewChar.cs",
+              "RelativeDocumentMoniker": "..\\Server\\Network\\Packet\\Client\\CNewChar.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Network\\Packet\\Client\\CNewChar.cs",
+              "RelativeToolTip": "..\\Server\\Network\\Packet\\Client\\CNewChar.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T23:22:08.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "CNewAccount.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CNewAccount.cs",
+              "RelativeDocumentMoniker": "Network\\Packet\\Client\\CNewAccount.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Client\\CNewAccount.cs",
+              "RelativeToolTip": "Network\\Packet\\Client\\CNewAccount.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T23:20:17.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "SPlayerData.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SPlayerData.cs",
+              "RelativeDocumentMoniker": "Network\\Packet\\Server\\SPlayerData.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Network\\Packet\\Server\\SPlayerData.cs",
+              "RelativeToolTip": "Network\\Packet\\Server\\SPlayerData.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:37:40.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Server.csproj",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Server.csproj",
+              "RelativeDocumentMoniker": "..\\Server\\Server.csproj",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Server.csproj",
+              "RelativeToolTip": "..\\Server\\Server.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-21T20:50:34.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Gd Project.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\.godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": ".godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\.godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs",
+              "RelativeToolTip": ".godot\\mono\\temp\\obj\\ExportDebug\\win-x64\\Gd Project.AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T17:43:15.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Client\\Scripts\\MainMenu\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\MainMenu\\MainMenu.cs",
+              "RelativeToolTip": "Client\\Scripts\\MainMenu\\MainMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:28:39.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Windows.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Window\\Windows.cs",
+              "RelativeDocumentMoniker": "Client\\Scripts\\Window\\Windows.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\GDProject\\Client\\Scripts\\Window\\Windows.cs",
+              "RelativeToolTip": "Client\\Scripts\\Window\\Windows.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T16:28:55.278Z"
             }
           ]
         }

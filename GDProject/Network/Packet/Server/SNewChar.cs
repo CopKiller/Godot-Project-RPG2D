@@ -1,5 +1,4 @@
 ﻿
-using GdProject.Client.Scripts.Window.Interface;
 
 namespace Network.Packet
 {
