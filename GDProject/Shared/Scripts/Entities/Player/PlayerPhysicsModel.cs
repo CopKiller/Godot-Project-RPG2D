@@ -23,8 +23,6 @@ namespace Shared.Scripts.Player
 
         public float Speed = 100;
 
-
-
         public override void _Ready()
         {
             AnimatedSprite = GetChild<AnimatedSprite2D>(0);

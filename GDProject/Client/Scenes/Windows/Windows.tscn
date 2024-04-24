@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://j8g7mykgwq4b"]
+
+[node name="Windows" type="CanvasLayer"]
+
+[node name="MainMenu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Menu" type="Window" parent="MainMenu"]
+disable_3d = true
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+title = "Menu"
+initial_position = 1
+size = Vector2i(450, 500)
+content_scale_mode = 1
+content_scale_aspect = 4
+theme_override_font_sizes/title_font_size = 30
+
+[node name="Game" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

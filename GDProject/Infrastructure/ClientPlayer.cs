@@ -7,7 +7,6 @@ namespace GdProject.Infrastructure
 {
     internal class ClientPlayer
     {
-
         public event Action OnDisconnect;
 
         /// <summary>

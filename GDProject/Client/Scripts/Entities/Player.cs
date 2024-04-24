@@ -1,17 +1,12 @@
 
-using GdProject.Infrastructure;
-using GdProject.Logger;
-using GdProject.Model;
 using Godot;
 using Shared.Scripts.Player;
-using System.Collections.Generic;
 
 public partial class Player : PlayerPhysicsModel
 {
 
     public void UpdatePlayer()
     {
-        //GetChild<RichTextLabel>(0).Text = PlayerData.PlayerName;
         GetNode<RichTextLabel>("PlayerName").Text = PlayerData.PlayerName;
         Position = new Vector2(PlayerData.Position.X, PlayerData.Position.Y);
         this.Show();

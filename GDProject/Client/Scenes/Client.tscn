@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://c2385dwmt65h2"]
+[gd_scene load_steps=51 format=3 uid="uid://c2385dwmt65h2"]
 
 [ext_resource type="Script" path="res://Client/Scripts/ClientNode.cs" id="1_dl1nj"]
 [ext_resource type="Texture2D" uid="uid://0ah8e7twsavc" path="res://Client/Resources/MainMenu/Background/background.png" id="1_xv5dp"]
@@ -19,6 +19,7 @@
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/CharacterWindow.cs" id="12_ng5jm"]
 [ext_resource type="PackedScene" uid="uid://cqyevyj4fqul7" path="res://Client/Scenes/Game/Map/Fringe/Fringe_01.tscn" id="13_1pc3w"]
 [ext_resource type="Script" path="res://addons/virtual_joystick/scripts/virtual_joystick.gd" id="19_ct0hb"]
+[ext_resource type="PackedScene" uid="uid://j8g7mykgwq4b" path="res://Client/Scenes/Windows/Windows.tscn" id="20_lqm4i"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_708la"]
 atlas = ExtResource("11_ba42d")
@@ -289,7 +290,6 @@ layer = 0
 follow_viewport_enabled = true
 
 [node name="MainMenu" type="Control" parent="UI"]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -314,9 +314,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -178.0
-offset_right = 178.0
-offset_bottom = 158.0
+offset_left = -356.0
+offset_right = 356.0
+offset_bottom = 316.0
 grow_horizontal = 2
 texture = ExtResource("2_psbkn")
 
@@ -327,10 +327,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(960, 540)
 script = ExtResource("3_c2hjj")
 
 [node name="MainWindow" type="TextureRect" parent="UI/MainMenu/Windows"]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -344,6 +344,7 @@ offset_bottom = 128.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_mu58v")
+expand_mode = 1
 script = ExtResource("3_7luoa")
 
 [node name="TitleLabel" type="Label" parent="UI/MainMenu/Windows/MainWindow"]
@@ -712,21 +713,13 @@ shortcut_keys_enabled = false
 
 [node name="Fringe" parent="UI/Game" instance=ExtResource("13_1pc3w")]
 
-[node name="GameUI" type="CanvasLayer" parent="UI/Game"]
-follow_viewport_enabled = true
+[node name="ToolsUI" type="CanvasLayer" parent="UI/Game"]
 
-[node name="ChatUI" type="TextureRect" parent="UI/Game/GameUI"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -40.0
-offset_right = 40.0
-grow_vertical = 0
-size_flags_horizontal = 0
-size_flags_vertical = 8
-
-[node name="VirtualJoystick" type="Node2D" parent="UI/Game"]
-position = Vector2(102.8, 318.333)
+[node name="VirtualJoystick" type="Node2D" parent="UI/Game/ToolsUI"]
+visible = false
+position = Vector2(104.4, 318.333)
 script = ExtResource("19_ct0hb")
 
-[connection signal="analogic_chage" from="UI/Game/VirtualJoystick" to="UI/Game/Players/Player" method="OnVirtualJoystickAnalogicChange"]
+[node name="Windows" parent="UI" instance=ExtResource("20_lqm4i")]
+
+[connection signal="analogic_chage" from="UI/Game/ToolsUI/VirtualJoystick" to="UI/Game/Players/Player" method="OnVirtualJoystickAnalogicChange"]
