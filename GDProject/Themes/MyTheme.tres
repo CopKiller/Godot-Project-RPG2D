@@ -1,0 +1,60 @@
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://od2j75204vyj"]
+
+[ext_resource type="FontFile" uid="uid://hxxkt0l4oc5s" path="res://Fonts/LEMONMILK-Medium.otf" id="1_16i4f"]
+[ext_resource type="Texture2D" uid="uid://bpve2naf7lxfx" path="res://Client/Resources/MainMenu/Window/window2.png" id="2_4gobk"]
+[ext_resource type="FontFile" uid="uid://dudnwgqnu5fi2" path="res://Fonts/LEMONMILK-Regular.otf" id="3_74lt7"]
+[ext_resource type="Texture2D" uid="uid://cq2ecj84og4d2" path="res://Client/Resources/Buttons/Checkbox/checked.png" id="3_cps4s"]
+[ext_resource type="Texture2D" uid="uid://b0ss43wwdum38" path="res://Client/Resources/Buttons/Checkbox/normal.png" id="3_q066d"]
+[ext_resource type="FontFile" uid="uid://rif5ig7xs8j3" path="res://Fonts/Heroarcherfreeversion-Regular.ttf" id="3_v5u0a"]
+[ext_resource type="Texture2D" uid="uid://brkbwfk5c2o5g" path="res://Client/Resources/Buttons/CloseButton/normal.png" id="5_m6eru"]
+[ext_resource type="Texture2D" uid="uid://dtosdwevb76nx" path="res://Client/Resources/Buttons/CloseButton/pressed.png" id="6_lqeab"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1cfl3"]
+texture = ExtResource("2_4gobk")
+texture_margin_top = 10.0
+expand_margin_left = 1.0
+expand_margin_top = 70.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f1jlj"]
+texture = ExtResource("2_4gobk")
+texture_margin_top = 10.0
+expand_margin_left = 1.0
+expand_margin_top = 70.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+modulate_color = Color(1, 1, 1, 0.823529)
+
+[resource]
+default_font = ExtResource("3_74lt7")
+default_font_size = 32
+AcceptDialog/constants/buttons_separation = 0
+AcceptDialog/styles/panel = null
+Button/font_sizes/font_size = 25
+Button/fonts/font = ExtResource("1_16i4f")
+CheckBox/font_sizes/font_size = 25
+CheckBox/fonts/font = ExtResource("3_74lt7")
+CheckBox/icons/checked = ExtResource("3_cps4s")
+CheckBox/icons/checked_disabled = ExtResource("3_cps4s")
+CheckBox/icons/radio_checked = ExtResource("3_cps4s")
+CheckBox/icons/radio_checked_disabled = ExtResource("3_cps4s")
+CheckBox/icons/radio_unchecked = ExtResource("3_q066d")
+CheckBox/icons/radio_unchecked_disabled = ExtResource("3_q066d")
+CheckBox/icons/unchecked = ExtResource("3_q066d")
+CheckBox/icons/unchecked_disabled = ExtResource("3_q066d")
+Label/font_sizes/font_size = 25
+Label/fonts/font = ExtResource("3_74lt7")
+Window/colors/title_color = Color(0.875, 0.875, 0.875, 1)
+Window/colors/title_outline_modulate = Color(1, 1, 1, 1)
+Window/constants/close_h_offset = 50
+Window/constants/close_v_offset = 54
+Window/constants/resize_margin = 4
+Window/constants/title_height = 70
+Window/constants/title_outline_size = 0
+Window/font_sizes/title_font_size = 32
+Window/fonts/title_font = ExtResource("3_v5u0a")
+Window/icons/close = ExtResource("5_m6eru")
+Window/icons/close_pressed = ExtResource("6_lqeab")
+Window/styles/embedded_border = SubResource("StyleBoxTexture_1cfl3")
+Window/styles/embedded_unfocused_border = SubResource("StyleBoxTexture_f1jlj")

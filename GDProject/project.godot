@@ -33,6 +33,10 @@ project/assembly_name="Gd Project"
 
 enabled=PackedStringArray("res://addons/virtual_joystick/plugin.cfg")
 
+[gui]
+
+theme/custom="res://Themes/MyTheme.tres"
+
 [input]
 
 ui_running={

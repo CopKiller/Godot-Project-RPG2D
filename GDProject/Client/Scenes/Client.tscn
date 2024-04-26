@@ -331,6 +331,7 @@ pivot_offset = Vector2(960, 540)
 script = ExtResource("3_c2hjj")
 
 [node name="MainWindow" type="TextureRect" parent="UI/MainMenu/Windows"]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -717,7 +718,7 @@ shortcut_keys_enabled = false
 
 [node name="VirtualJoystick" type="Node2D" parent="UI/Game/ToolsUI"]
 visible = false
-position = Vector2(104.4, 318.333)
+position = Vector2(104.2, 305)
 script = ExtResource("19_ct0hb")
 
 [node name="Windows" parent="UI" instance=ExtResource("20_lqm4i")]

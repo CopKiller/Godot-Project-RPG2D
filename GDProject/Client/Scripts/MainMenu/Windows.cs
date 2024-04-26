@@ -10,10 +10,10 @@ public partial class Windows : Control
     {
         NodeManager.AddToNodeManager(this);
 
-        var MainWindow = (IControlWindow)NodeManager.GetNode<MainWindow>("MainWindow");
+        //var MainWindow = (IControlWindow)NodeManager.GetNode<MainWindow>("MainWindow");
 
-        activeWindows = new ActiveWindows();
-        activeWindows.AddActiveWindow(MainWindow);
+        //activeWindows = new ActiveWindows();
+        //activeWindows.AddActiveWindow(MainWindow);
     }
     public ActiveWindows GetActiveWindows()
     {
