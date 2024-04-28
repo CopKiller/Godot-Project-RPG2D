@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=11 format=3 uid="uid://od2j75204vyj"]
+[gd_resource type="Theme" load_steps=12 format=3 uid="uid://od2j75204vyj"]
 
 [ext_resource type="FontFile" uid="uid://hxxkt0l4oc5s" path="res://Fonts/LEMONMILK-Medium.otf" id="1_16i4f"]
 [ext_resource type="Texture2D" uid="uid://bpve2naf7lxfx" path="res://Client/Resources/MainMenu/Window/window2.png" id="2_4gobk"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b0ss43wwdum38" path="res://Client/Resources/Buttons/Checkbox/normal.png" id="3_q066d"]
 [ext_resource type="FontFile" uid="uid://rif5ig7xs8j3" path="res://Fonts/Heroarcherfreeversion-Regular.ttf" id="3_v5u0a"]
 [ext_resource type="Texture2D" uid="uid://brkbwfk5c2o5g" path="res://Client/Resources/Buttons/CloseButton/normal.png" id="5_m6eru"]
+[ext_resource type="FontFile" uid="uid://bxh1dn0iaupxl" path="res://Fonts/Rockwell Regular.otf" id="5_p6b86"]
 [ext_resource type="Texture2D" uid="uid://dtosdwevb76nx" path="res://Client/Resources/Buttons/CloseButton/pressed.png" id="6_lqeab"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1cfl3"]
@@ -29,8 +30,6 @@ modulate_color = Color(1, 1, 1, 0.823529)
 [resource]
 default_font = ExtResource("3_74lt7")
 default_font_size = 32
-AcceptDialog/constants/buttons_separation = 0
-AcceptDialog/styles/panel = null
 Button/font_sizes/font_size = 25
 Button/fonts/font = ExtResource("1_16i4f")
 CheckBox/font_sizes/font_size = 25
@@ -45,6 +44,7 @@ CheckBox/icons/unchecked = ExtResource("3_q066d")
 CheckBox/icons/unchecked_disabled = ExtResource("3_q066d")
 Label/font_sizes/font_size = 25
 Label/fonts/font = ExtResource("3_74lt7")
+LineEdit/fonts/font = ExtResource("5_p6b86")
 Window/colors/title_color = Color(0.875, 0.875, 0.875, 1)
 Window/colors/title_outline_modulate = Color(1, 1, 1, 1)
 Window/constants/close_h_offset = 50

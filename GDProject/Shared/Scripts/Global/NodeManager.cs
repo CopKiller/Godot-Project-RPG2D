@@ -1,6 +1,8 @@
 ﻿
 using Godot;
 using SharedLibrary.Extensions;
+using System.Collections.Generic;
+using System.Linq;
 
 // Classe para gerenciar os nós do jogo
 public static class NodeManager
@@ -69,5 +71,12 @@ public static class NodeManager
         {
             AddToNodeManager(child);
         }
+    }
+
+    public static List<T> GetNodes<T>() where T : Node
+    {
+        var nodes = nodeMap.GetItems().Values.Where(n => n is T);
+
+        return nodes.Select(n => (T)n).ToList();
     }
 }

@@ -7,5 +7,10 @@ public partial class Game : Node2D
         // Adiciona este nó ao gerenciador de nós
         NodeManager.AddToNodeManager(this);
     }
+
+    public void InitGame()
+    {
+
+    }
 }
 

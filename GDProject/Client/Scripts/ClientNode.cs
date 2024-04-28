@@ -29,12 +29,12 @@ public partial class ClientNode : Node
     public void InitMenu()
     {
         NodeManager.GetNode<Game>(nameof(Game)).Hide();
-        NodeManager.GetNode<MainMenu>(nameof(MainMenu)).Show();
+        NodeManager.GetNode<MainMenu>(nameof(MainMenu)).InitMenu();
     }
 
     public void InitGame()
     {
-        NodeManager.GetNode<MainMenu>(nameof(MainMenu)).Hide();
+        NodeManager.GetNode<MainMenu>(nameof(MainMenu)).HideMenu();
         NodeManager.GetNode<Game>(nameof(Game)).Show();
     }
 }

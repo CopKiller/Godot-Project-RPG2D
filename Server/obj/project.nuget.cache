@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H4I43DV5fJlHLyDBsuOC+hfTu/CCDmYoCPNpUWLaDf+irDEYhab33D34qBAR1ktzs2SDFCaein+/tTmAJSBBVg==",
+  "dgSpecHash": "TaTYdh4ZqFON6nlNDprgECfm8TI4gJqkPGdOiZhXmJE3AKXpOhf1UJbljE5iQOcXdtxiBNFjd18itZQiMpqV7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\Server\\Server.csproj",
+  "projectFilePath": "C:\\USERS\\FELIP\\ONEDRIVE\\ÁREA DE TRABALHO\\MY GITHUB REPOS\\GODOT-PROJECT\\Server\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.3\\microsoft.data.sqlite.core.8.0.3.nupkg.sha512",
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",

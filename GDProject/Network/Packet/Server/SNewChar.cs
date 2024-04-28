@@ -1,5 +1,7 @@
 ﻿
 
+using Godot;
+
 namespace Network.Packet
 {
     public class SNewChar : IRecv
@@ -8,8 +10,8 @@ namespace Network.Packet
         {
             var windowsNode = NodeManager.GetNode<Windows>("Windows");
 
-            windowsNode.CallDeferred(nameof(windowsNode.CloseAllWindows));
-            windowsNode.CallDeferred(nameof(windowsNode.AddActiveWindow), NodeManager.GetNode<CharacterWindow>("CharacterWindow"));
+            windowsNode.CallDeferred(nameof(windowsNode.CloseAll));
+            windowsNode.CallDeferred(nameof(windowsNode.Open), NodeManager.GetNode<Window>("NewCharWindow"));
         }
     }
 }

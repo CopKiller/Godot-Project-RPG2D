@@ -13,7 +13,7 @@
     <releaseNotes>https://github.com/RevenantX/LiteNetLib/releases/tag/v1.2.0</releaseNotes>
     <copyright>Copyright 2023 Ruslan Pyrch</copyright>
     <tags>udp reliable-udp network</tags>
-    <repository type="git" url="https://github.com/RevenantX/LiteNetLib" commit="47b0692104a60522dae43a7f1f8cdcacb7b2b420" />
+    <repository type="git" url="https://github.com/RevenantX/LiteNetLib" commit="bb5209c4e33ea738bd855d03c58d9f5ce4d96de6" />
     <dependencies>
       <group targetFramework=".NETFramework4.7.1" />
       <group targetFramework=".NETCoreApp3.1" />
@@ -26,22 +26,22 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net471\LiteNetLib.dll" target="lib\net471\LiteNetLib.dll" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net471\LiteNetLib.xml" target="lib\net471\LiteNetLib.xml" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net5.0\LiteNetLib.dll" target="lib\net5.0\LiteNetLib.dll" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net5.0\LiteNetLib.xml" target="lib\net5.0\LiteNetLib.xml" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net6.0\LiteNetLib.dll" target="lib\net6.0\LiteNetLib.dll" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net6.0\LiteNetLib.xml" target="lib\net6.0\LiteNetLib.xml" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net7.0\LiteNetLib.dll" target="lib\net7.0\LiteNetLib.dll" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net7.0\LiteNetLib.xml" target="lib\net7.0\LiteNetLib.xml" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net8.0\LiteNetLib.dll" target="lib\net8.0\LiteNetLib.dll" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\net8.0\LiteNetLib.xml" target="lib\net8.0\LiteNetLib.xml" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netcoreapp3.1\LiteNetLib.dll" target="lib\netcoreapp3.1\LiteNetLib.dll" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netcoreapp3.1\LiteNetLib.xml" target="lib\netcoreapp3.1\LiteNetLib.xml" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netstandard2.0\LiteNetLib.dll" target="lib\netstandard2.0\LiteNetLib.dll" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netstandard2.0\LiteNetLib.xml" target="lib\netstandard2.0\LiteNetLib.xml" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netstandard2.1\LiteNetLib.dll" target="lib\netstandard2.1\LiteNetLib.dll" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\LiteNetLib\bin\Debug\netstandard2.1\LiteNetLib.xml" target="lib\netstandard2.1\LiteNetLib.xml" />
-    <file src="C:\Users\felip\OneDrive\Área de Trabalho\My GitHub Repos\Godot-Project\README.md" target="\README.md" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net471\LiteNetLib.dll" target="lib\net471\LiteNetLib.dll" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net471\LiteNetLib.xml" target="lib\net471\LiteNetLib.xml" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net5.0\LiteNetLib.dll" target="lib\net5.0\LiteNetLib.dll" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net5.0\LiteNetLib.xml" target="lib\net5.0\LiteNetLib.xml" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net6.0\LiteNetLib.dll" target="lib\net6.0\LiteNetLib.dll" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net6.0\LiteNetLib.xml" target="lib\net6.0\LiteNetLib.xml" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net7.0\LiteNetLib.dll" target="lib\net7.0\LiteNetLib.dll" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net7.0\LiteNetLib.xml" target="lib\net7.0\LiteNetLib.xml" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net8.0\LiteNetLib.dll" target="lib\net8.0\LiteNetLib.dll" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\net8.0\LiteNetLib.xml" target="lib\net8.0\LiteNetLib.xml" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\netcoreapp3.1\LiteNetLib.dll" target="lib\netcoreapp3.1\LiteNetLib.dll" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\netcoreapp3.1\LiteNetLib.xml" target="lib\netcoreapp3.1\LiteNetLib.xml" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\netstandard2.0\LiteNetLib.dll" target="lib\netstandard2.0\LiteNetLib.dll" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\netstandard2.0\LiteNetLib.xml" target="lib\netstandard2.0\LiteNetLib.xml" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\netstandard2.1\LiteNetLib.dll" target="lib\netstandard2.1\LiteNetLib.dll" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\LiteNetLib\bin\Debug\netstandard2.1\LiteNetLib.xml" target="lib\netstandard2.1\LiteNetLib.xml" />
+    <file src="C:\USERS\FELIP\ONEDRIVE\ÁREA DE TRABALHO\MY GITHUB REPOS\GODOT-PROJECT\README.md" target="\README.md" />
   </files>
 </package>

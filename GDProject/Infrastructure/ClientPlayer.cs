@@ -28,7 +28,7 @@ namespace GdProject.Infrastructure
 
         public PlayerDataModel _playerData { get; set; } = null;
 
-        public PacketProcessor PacketProcessor;
+        public PacketProcessor PacketProcessor { get; set; }
 
         public ClientPlayer()
         {

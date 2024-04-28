@@ -46,7 +46,7 @@ namespace Server.Database.Repository.Account
             }
         }
 
-        public async void RegisterAccountAsync(string username, string password)
+        public async void RegisterAccountAsync(string username, string password, string email)
         {
             using (var scope = _serviceProvider.CreateScope())
             {
@@ -56,6 +56,7 @@ namespace Server.Database.Repository.Account
                 var playerAccount = new AccountEntity();
                 playerAccount.Login = username;
                 playerAccount.Password = password;
+                playerAccount.Email = email;
 
                 var account = await repository.AddPlayerAccountAsync(playerAccount);
 

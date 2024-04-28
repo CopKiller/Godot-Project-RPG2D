@@ -1,13 +1,17 @@
 ﻿using GdProject.Infrastructure;
 using Godot;
 using Network.Packet;
-using Shared.Window.CustomControl;
 
-public partial class CharacterWindow : WindowTextureRect
+public partial class NewCharWindow : Window
 {
+    public override void _Ready()
+    {
+        GetNode<Button>("VerticalBox/Button").Connect("pressed", new Callable(this, nameof(OnCreateCharButtonPressed)));
+    }
+
     public void OnCreateCharButtonPressed()
     {
-        var name = GetNode<LineEdit>("CharNameText").Text;
+        var name = GetNode<LineEdit>("VerticalBox/PlayerNameText").Text;
 
         if (string.IsNullOrEmpty(name))
         {

@@ -26,6 +26,11 @@ namespace EntityFramework.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("LastLoginDate")
                         .HasColumnType("TEXT");
 

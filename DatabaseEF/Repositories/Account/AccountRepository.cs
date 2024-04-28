@@ -21,8 +21,9 @@ namespace EntityFramework.Repositories.Account
         {
             var login = InputValidator.IsValidLogin(account.Login);
             var password = InputValidator.IsValidPassword(account.Password);
+            var email = InputValidator.IsValidEmail(account.Email);
 
-            if (login.Success && password.Success)
+            if (login.Success && password.Success && email.Success)
             {
 
                 var verifyAccountExists = await CheckPlayerAccountAsync(account.Login);
@@ -69,6 +70,10 @@ namespace EntityFramework.Repositories.Account
                 else if (!password.Success)
                 {
                     return password;
+                }
+                else if (!email.Success)
+                {
+                    return email;
                 }
                 else
                 {
@@ -132,21 +137,6 @@ namespace EntityFramework.Repositories.Account
 
             return operationResult;
 
-        }
-
-        public async Task<int> AtualizarContaAsync()
-        {
-            try
-            {
-                var result = await _dbContext.SaveChangesAsync();
-
-                return result; // Retorna o número de entidades atualizadas
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Erro ao atualizar conta: {ex.Message}");
-                return 0;
-            }
         }
 
         public async Task<int> ExcluirContaPorLoginAsync(string login)

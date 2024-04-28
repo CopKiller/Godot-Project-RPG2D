@@ -1,18 +1,17 @@
 ﻿using GdProject.Infrastructure;
 using Godot;
 using Network.Packet;
-using Shared.Window.CustomControl;
 
-public partial class LoginWindow : WindowTextureRect
+public partial class LoginWindow : Window
 {
     public override void _Ready()
     {
-        //NodeManager.GetNode<LineEdit>("LoginText").GrabFocus();
+        GetNode<Button>("VerticalBox/Button").Connect("pressed", new Callable(this, nameof(OnLoginButtonPressed)));
     }
 
     public void OnLoginButtonPressed()
     {
-        var username = GetNode<LineEdit>("VerticalBox/LoginText").Text;
+        var username = GetNode<LineEdit>("VerticalBox/UsernameText").Text;
         var password = GetNode<LineEdit>("VerticalBox/PasswordText").Text;
 
         if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))

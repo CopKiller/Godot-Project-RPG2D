@@ -35,6 +35,7 @@ namespace GdProject.Network
             Subscribe<CPlayerAction>(ProcessPacketReceive);
             Subscribe<SNewChar>(ProcessPacketReceive);
             Subscribe<SLeft>(ProcessPacketReceive);
+            Subscribe<SAlertMsg>(ProcessPacketReceive);
         }
 
         internal void Subscribe<T>(Action<T, NetPeer> onReceive) where T : class, new()
@@ -52,9 +53,6 @@ namespace GdProject.Network
 
             // Preciso de uma referencia do NetPeer do servidor
             Send(InitClient.LocalPlayer.CurrentPeer, packet, deliveryMethod);
-
-            // log
-            //ExternalLogger.Print($"SendDataToServer: {packet.GetType().Name}");
         }
     }
 }

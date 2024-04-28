@@ -1,16 +1,30 @@
-using Godot;
+﻿using Godot;
 
 public partial class MainMenu : Control
 {
 
-    public override void _Ready()
+    public void InitMenu()
     {
+        this.Show();
 
+        // Traz o nó gerenciador de janelas
+        var windows = NodeManager.GetNode<Windows>(nameof(Windows));
+
+        // Fecha todas as janelas
+        windows.CloseAll();
+
+        // Abre a janela de login
+        windows.Open(NodeManager.GetNode<Window>(nameof(MenuWindow)));
     }
 
-    // Called every frame. 'delta' is the elapsed time since the previous frame.
-    public override void _Process(double delta)
+    public void HideMenu()
     {
+        // Traz o nó gerenciador de janelas
+        var windows = NodeManager.GetNode<Windows>(nameof(Windows));
 
+        // Fecha todas as janelas
+        windows.CloseAll();
+
+        this.Hide();
     }
 }

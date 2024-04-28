@@ -26,7 +26,11 @@ namespace Network.Packet
 
             // Validate login
             var account = db.AuthenticateAsync(Login, Password);
-            if (account.Result == null) { return; }
+            if (account.Result == null) 
+            { 
+                new SAlertMsg() { Msg = "Invalid login or password" }.WritePacket(netPacketProcessor, player._peer);
+                return;
+            }
 
             player._playerData.accountId = account.Result.Id;
 

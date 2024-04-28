@@ -8,6 +8,7 @@ namespace Network.Packet
     {
         public string Login { get; set; }
         public string Password { get; set; }
+        public string Email { get; set; }
 
         public void ReadPacket(DictionaryWrapper<int, ServerClient> players,
             PacketProcessor netPacketProcessor, int peerId)
@@ -19,7 +20,7 @@ namespace Network.Packet
 
             if (db == null) { return; }
 
-            db.RegisterAccountAsync(Login, Password);
+            db.RegisterAccountAsync(Login, Password, Email);
         }
     }
 }
