@@ -2,10 +2,12 @@
 using Godot;
 using Network.Packet;
 
-public partial class NewCharWindow : Window
+public partial class NewCharWindow : BaseWindow
 {
     public override void _Ready()
     {
+        base._Ready();
+
         GetNode<Button>("VerticalBox/Button").Connect("pressed", new Callable(this, nameof(OnCreateCharButtonPressed)));
     }
 
@@ -15,13 +17,13 @@ public partial class NewCharWindow : Window
 
         if (string.IsNullOrEmpty(name))
         {
-            GD.Print("Character name is empty");
+            NodeManager.GetNode<AlertMsg>("AlertMsg").ShowAlert("Character name is empty");
             return;
         }
 
         if (name.Length < 3)
         {
-            GD.Print("Character name is too short");
+            NodeManager.GetNode<AlertMsg>("AlertMsg").ShowAlert("Character name is too short");
             return;
         }
 

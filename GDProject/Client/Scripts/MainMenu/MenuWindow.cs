@@ -1,9 +1,11 @@
 ﻿using Godot;
 
-public partial class MenuWindow : Window
+public partial class MenuWindow : BaseWindow
 {
     public override void _Ready()
     {
+        base._Ready();
+
         NodeManager.AddToNodeManager(this);
 
         AssingButtonSignals();

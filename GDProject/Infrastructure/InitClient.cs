@@ -81,6 +81,7 @@ namespace GdProject.Infrastructure
         private void LocalPlayerDisconnect()
         {
             LocalPlayer = null;
+
         }
 
         public void LocalPlayerDisconnected(NetPeer netPeer)

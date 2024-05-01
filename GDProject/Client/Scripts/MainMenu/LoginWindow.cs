@@ -2,10 +2,12 @@
 using Godot;
 using Network.Packet;
 
-public partial class LoginWindow : Window
+public partial class LoginWindow : BaseWindow
 {
     public override void _Ready()
     {
+        base._Ready();
+
         GetNode<Button>("VerticalBox/Button").Connect("pressed", new Callable(this, nameof(OnLoginButtonPressed)));
     }
 
@@ -16,18 +18,15 @@ public partial class LoginWindow : Window
 
         if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
         {
-            GD.Print("Username or password is empty");
+            NodeManager.GetNode<AlertMsg>("AlertMsg").ShowAlert("Username or password is empty");
             return;
         }
 
         if (username.Length < 3 || password.Length < 3)
         {
-            GD.Print("Username or password is too short");
+            NodeManager.GetNode<AlertMsg>("AlertMsg").ShowAlert("Username or password is too short");
             return;
         }
-
-        GD.Print("Username: " + username);
-        GD.Print("Password: " + password);
 
 
         var login = new CLogin

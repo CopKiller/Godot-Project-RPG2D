@@ -1,4 +1,7 @@
-﻿using Godot;
+﻿using GdProject.Client;
+using GdProject.Infrastructure;
+using Godot;
+using System;
 
 public partial class Game : Node2D
 {
@@ -10,7 +13,25 @@ public partial class Game : Node2D
 
     public void InitGame()
     {
+        this.Show();
+        NodeManager.GetNode<CanvasLayer>("UI").Show();
+    }
 
+    public void EndGame()
+    {
+        NodeManager.GetNode<Windows>(nameof(Windows)).CloseAll();
+
+        InitClient.LocalPlayer.Disconnect();
+
+        NodeManager.GetNode<Player>(nameof(Player)).Hide();
+
+        NodeManager.GetNode<Control>("HudMenu").Hide();
+
+        NodeManager.GetNode<ClientNode>("Client").InitMenu();
+
+        NodeManager.GetNode<ClientNode>("Client")._initClient.Start();
+
+        NodeManager.GetNode<CanvasLayer>("UI").Hide();
     }
 }
 

@@ -1,9 +1,10 @@
-[gd_scene load_steps=42 format=3 uid="uid://c2385dwmt65h2"]
+[gd_scene load_steps=43 format=3 uid="uid://c2385dwmt65h2"]
 
 [ext_resource type="Script" path="res://Client/Scripts/ClientNode.cs" id="1_dl1nj"]
 [ext_resource type="Texture2D" uid="uid://0ah8e7twsavc" path="res://Client/Resources/MainMenu/Background/background.png" id="1_xv5dp"]
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/MainMenu.cs" id="2_ouw2s"]
 [ext_resource type="Texture2D" uid="uid://dxjuhhlalewer" path="res://Client/Resources/MainMenu/Logo/logo.png" id="2_psbkn"]
+[ext_resource type="PackedScene" uid="uid://xmbg1y67165u" path="res://Client/Scenes/Game/Hud/HudMenu.tscn" id="4_hxe5e"]
 [ext_resource type="Script" path="res://Client/Scripts/Game/Game.cs" id="6_ie8vh"]
 [ext_resource type="Script" path="res://Client/Scripts/Entities/Player.cs" id="7_l05p6"]
 [ext_resource type="PackedScene" uid="uid://ckrobnhv3w7mu" path="res://Client/Scenes/Game/Map/Ground/Ground_01.tscn" id="10_25j42"]
@@ -276,13 +277,7 @@ animations = [{
 [node name="Client" type="Node"]
 script = ExtResource("1_dl1nj")
 
-[node name="UI" type="CanvasLayer" parent="."]
-layer = 0
-follow_viewport_enabled = true
-
-[node name="Windows" parent="UI" instance=ExtResource("20_lqm4i")]
-
-[node name="MainMenu" type="Control" parent="UI"]
+[node name="MainMenu" type="Control" parent="."]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -290,11 +285,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(960, 540)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("2_ouw2s")
 
-[node name="BackGround" type="TextureRect" parent="UI/MainMenu"]
+[node name="BackGround" type="TextureRect" parent="MainMenu"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -302,8 +298,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_xv5dp")
+expand_mode = 1
 
-[node name="Logo" type="TextureRect" parent="UI/MainMenu"]
+[node name="Logo" type="TextureRect" parent="MainMenu"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -313,37 +310,46 @@ offset_right = 356.0
 offset_bottom = 316.0
 grow_horizontal = 2
 texture = ExtResource("2_psbkn")
+expand_mode = 1
 
-[node name="Game" type="Node2D" parent="UI"]
+[node name="Game" type="Node2D" parent="."]
 visible = false
 script = ExtResource("6_ie8vh")
 
-[node name="Ground" parent="UI/Game" instance=ExtResource("10_25j42")]
-offset_right = 2048.0
-offset_bottom = 2048.0
+[node name="Ground" parent="Game" instance=ExtResource("10_25j42")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 1)
 
-[node name="Players" type="Control" parent="UI/Game"]
+[node name="Players" type="Control" parent="Game"]
 y_sort_enabled = true
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Player" type="CharacterBody2D" parent="UI/Game/Players"]
+[node name="Player" type="CharacterBody2D" parent="Game/Players"]
 visible = false
 position = Vector2(512, 325)
 script = ExtResource("7_l05p6")
 
-[node name="Sprite" type="AnimatedSprite2D" parent="UI/Game/Players/Player"]
+[node name="Sprite" type="AnimatedSprite2D" parent="Game/Players/Player"]
 sprite_frames = SubResource("SpriteFrames_354p2")
 animation = &"Idle_Down"
 
-[node name="Collider" type="CollisionShape2D" parent="UI/Game/Players/Player"]
+[node name="Collider" type="CollisionShape2D" parent="Game/Players/Player"]
 position = Vector2(0, 13)
 shape = SubResource("CapsuleShape2D_0xrpr")
 
-[node name="Camera2D" type="Camera2D" parent="UI/Game/Players/Player"]
-scale = Vector2(0.537713, 0.648628)
+[node name="Camera2D" type="Camera2D" parent="Game/Players/Player"]
+scale = Vector2(0.471, 0.568)
 limit_left = 0
 limit_top = 0
 limit_smoothed = true
@@ -354,7 +360,18 @@ drag_vertical_enabled = true
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
-[node name="PlayerName" type="RichTextLabel" parent="UI/Game/Players/Player"]
+[node name="ColorRect" type="ColorRect" parent="Game/Players/Player"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0, 0, 0, 0.568627)
+
+[node name="PlayerName" type="RichTextLabel" parent="Game/Players/Player"]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -373,13 +390,25 @@ autowrap_mode = 0
 tab_size = 0
 shortcut_keys_enabled = false
 
-[node name="Fringe" parent="UI/Game" instance=ExtResource("13_1pc3w")]
+[node name="Fringe" parent="Game" instance=ExtResource("13_1pc3w")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="ToolsUI" type="CanvasLayer" parent="UI/Game"]
-
-[node name="VirtualJoystick" type="Node2D" parent="UI/Game/ToolsUI"]
+[node name="UI" type="CanvasLayer" parent="."]
+layer = 0
 visible = false
-position = Vector2(104.2, 305)
+
+[node name="Windows" parent="UI" instance=ExtResource("20_lqm4i")]
+
+[node name="VirtualJoystick" type="Node2D" parent="UI"]
+position = Vector2(80.8, 240)
 script = ExtResource("19_ct0hb")
 
-[connection signal="analogic_chage" from="UI/Game/ToolsUI/VirtualJoystick" to="UI/Game/Players/Player" method="OnVirtualJoystickAnalogicChange"]
+[node name="HudMenu" parent="UI" instance=ExtResource("4_hxe5e")]
+
+[connection signal="analogic_chage" from="UI/VirtualJoystick" to="Game/Players/Player" method="OnVirtualJoystickAnalogicChange"]

@@ -10,6 +10,7 @@ public partial class ClientNode : Node
 
     public override void _Ready()
     {
+
         ExternalLogger.Logger = new LogManager();
 
         // Adiciona este nó e os filhos ao gerenciador de nós
@@ -20,7 +21,7 @@ public partial class ClientNode : Node
         InitMenu();
     }
 
-    private void InitClient()
+    public void InitClient()
     {
         _initClient = new InitClient();
         _initClient.Start();
@@ -30,11 +31,15 @@ public partial class ClientNode : Node
     {
         NodeManager.GetNode<Game>(nameof(Game)).Hide();
         NodeManager.GetNode<MainMenu>(nameof(MainMenu)).InitMenu();
+
+        NodeManager.GetNode<Camera2D>(nameof(Camera2D)).Zoom = new Vector2(1, 1);
     }
 
     public void InitGame()
     {
         NodeManager.GetNode<MainMenu>(nameof(MainMenu)).HideMenu();
-        NodeManager.GetNode<Game>(nameof(Game)).Show();
+        NodeManager.GetNode<Game>(nameof(Game)).InitGame();
+
+        NodeManager.GetNode<Camera2D>(nameof(Camera2D)).Zoom = new Vector2(2, 2);
     }
 }

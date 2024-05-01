@@ -5,6 +5,10 @@
     <RootNamespace>GdProject</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Client\Scripts\Window\Alert\**" />
+    <EmbeddedResource Remove="Client\Scripts\Window\Alert\**" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\LiteNetLib\LiteNetLib.csproj" />
     <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj" />
   </ItemGroup>

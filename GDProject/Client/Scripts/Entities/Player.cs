@@ -8,6 +8,12 @@ public partial class Player : PlayerPhysicsModel
     public void UpdatePlayer()
     {
         GetNode<RichTextLabel>("PlayerName").Text = PlayerData.PlayerName;
+
+        GetNode<ColorRect>("ColorRect").Size = GetNode<RichTextLabel>("PlayerName").GetMinimumSize();
+        Vector2 position = GetNode<RichTextLabel>("PlayerName").Position;
+        position.X = -GetNode<ColorRect>("ColorRect").Size.X / 2;
+        GetNode<ColorRect>("ColorRect").Position = position;
+
         Position = new Vector2(PlayerData.Position.X, PlayerData.Position.Y);
         this.Show();
     }

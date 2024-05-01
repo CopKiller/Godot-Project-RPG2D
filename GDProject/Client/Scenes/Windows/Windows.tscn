@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://j8g7mykgwq4b"]
+[gd_scene load_steps=15 format=3 uid="uid://j8g7mykgwq4b"]
 
 [ext_resource type="Script" path="res://Client/Scripts/Window/Windows.cs" id="1_bgsn2"]
 [ext_resource type="Theme" uid="uid://od2j75204vyj" path="res://Themes/MyTheme.tres" id="1_d8oiv"]
@@ -12,11 +12,11 @@
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/LoginWindow.cs" id="10_p71ui"]
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/RegisterWindow.cs" id="11_cy4jf"]
 [ext_resource type="Script" path="res://Client/Scripts/MainMenu/NewCharWindow.cs" id="12_8c2w6"]
-[ext_resource type="Script" path="res://Client/Scripts/Window/Alert/Alert.cs" id="13_4dhtp"]
 [ext_resource type="FontFile" uid="uid://bxh1dn0iaupxl" path="res://Fonts/Rockwell Regular.otf" id="13_63h83"]
-[ext_resource type="Script" path="res://Client/Scripts/Window/Alert/PanelBG.cs" id="14_yo1oi"]
+[ext_resource type="Script" path="res://Client/Scripts/Window/AlertMsg.cs" id="14_iqpm8"]
 
 [node name="Windows" type="CanvasLayer"]
+visible = false
 script = ExtResource("1_bgsn2")
 
 [node name="MainMenuWindows" type="Control" parent="."]
@@ -99,7 +99,7 @@ snap_2d_transforms_to_pixel = true
 snap_2d_vertices_to_pixel = true
 title = "LOGIN"
 initial_position = 1
-size = Vector2i(450, 375)
+size = Vector2i(450, 374)
 visible = false
 unresizable = true
 content_scale_mode = 1
@@ -259,7 +259,6 @@ size_flags_vertical = 3
 text = "Create"
 
 [node name="Alert" type="Node" parent="MainMenuWindows"]
-script = ExtResource("13_4dhtp")
 
 [node name="PanelBG" type="Panel" parent="MainMenuWindows/Alert"]
 visible = false
@@ -271,9 +270,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-script = ExtResource("14_yo1oi")
 
-[node name="AlertMsg" type="Window" parent="MainMenuWindows/Alert/PanelBG"]
+[node name="AlertMsg" type="Window" parent="MainMenuWindows/Alert"]
 disable_3d = true
 transparent_bg = true
 snap_2d_transforms_to_pixel = true
@@ -288,8 +286,10 @@ always_on_top = true
 theme = ExtResource("1_d8oiv")
 theme_override_constants/title_height = 100
 theme_override_constants/close_v_offset = 70
+script = ExtResource("14_iqpm8")
+OffuscateBG = true
 
-[node name="VerticalBox" type="VBoxContainer" parent="MainMenuWindows/Alert/PanelBG/AlertMsg"]
+[node name="VerticalBox" type="VBoxContainer" parent="MainMenuWindows/Alert/AlertMsg"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -297,7 +297,7 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="AlertMsgLabel" type="Label" parent="MainMenuWindows/Alert/PanelBG/AlertMsg/VerticalBox"]
+[node name="AlertMsgLabel" type="Label" parent="MainMenuWindows/Alert/AlertMsg/VerticalBox"]
 clip_contents = true
 custom_minimum_size = Vector2(400, 200)
 layout_mode = 2
@@ -309,15 +309,10 @@ text = "AlertMsg Here"
 horizontal_alignment = 1
 autowrap_mode = 2
 
-[node name="ButtonAccept" type="Button" parent="MainMenuWindows/Alert/PanelBG/AlertMsg/VerticalBox"]
-visible = false
+[node name="ButtonAccept" type="Button" parent="MainMenuWindows/Alert/AlertMsg/VerticalBox"]
 layout_mode = 2
 text = "Accept
 "
-
-[node name="ButtonCancel" type="Button" parent="MainMenuWindows/Alert/PanelBG/AlertMsg/VerticalBox"]
-layout_mode = 2
-text = "OK"
 
 [node name="GameWindows" type="Control" parent="."]
 visible = false

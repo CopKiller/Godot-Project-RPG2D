@@ -20,11 +20,17 @@ namespace Network.Packet
 
             var result = db.RegisterPlayerAsync(Name, player._playerData.accountId).Result;
 
-
-            player._playerData.PlayerName = Name;
-
-            var joinGameData = new CLogin();
-            joinGameData.JoinGameData(players, netPacketProcessor, peerId);
+            if (result.Success == false)
+            {
+                new SAlertMsg() { Msg = result.Message }.WritePacket(netPacketProcessor, player._peer);
+                return;
+            }
+            else
+            {
+                player._playerData.PlayerName = Name;
+                var joinGameData = new CLogin();
+                joinGameData.JoinGameData(players, netPacketProcessor, peerId);
+            }
         }
 
     }

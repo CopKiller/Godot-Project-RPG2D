@@ -46,10 +46,8 @@ namespace EntityFramework.Repositories.Player
             var validateName = InputValidator.IsValidName(charName);
 
             if (!validateName.Success)
-            {
-                operationResult.Success = false;
-                operationResult.Message = validateName.Message;
-                return operationResult;
+            {;
+                return validateName;
             }
 
             // Verifique se o nome que o jogador escolheu já existe no banco de dados

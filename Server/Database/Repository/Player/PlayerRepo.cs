@@ -1,6 +1,7 @@
 ﻿using EntityFramework.Entities.Player;
 using EntityFramework.Repositories.Interface;
 using EntityFramework.Repositories.Player;
+using EntityFramework.Repositories.ValidadeData;
 using Microsoft.Extensions.DependencyInjection;
 using Server.Logger;
 
@@ -20,7 +21,7 @@ namespace Server.Database.Repository.Player
             _serviceProvider = serviceProvider;
         }
 
-        public async Task<bool> RegisterPlayerAsync(string charName, int accountId)
+        public async Task<OperationResult> RegisterPlayerAsync(string charName, int accountId)
         {
             using (var scope = _serviceProvider.CreateScope())
             {
@@ -33,9 +34,7 @@ namespace Server.Database.Repository.Player
 
                 var account = await repository.AddNewPlayerAsync(charName, accountId);
 
-                ExternalLogger.Print(account.Message);
-
-                return account.Success;
+                return account;
             }
         }
     }

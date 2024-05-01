@@ -20,7 +20,9 @@ namespace Network.Packet
 
             if (db == null) { return; }
 
-            db.RegisterAccountAsync(Login, Password, Email);
+            var result = db.RegisterAccountAsync(Login, Password, Email);
+
+            new SAlertMsg() { Msg = result.Result.Message }.WritePacket(netPacketProcessor, player._peer);
         }
     }
 }

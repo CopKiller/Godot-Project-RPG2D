@@ -2,8 +2,10 @@
 using EntityFramework.Entities.Interface;
 using EntityFramework.Repositories.Account;
 using EntityFramework.Repositories.Interface;
+using EntityFramework.Repositories.ValidadeData;
 using Microsoft.Extensions.DependencyInjection;
 using Server.Logger;
+using System.Security.Principal;
 
 namespace Server.Database.Repository.Account
 {
@@ -46,7 +48,7 @@ namespace Server.Database.Repository.Account
             }
         }
 
-        public async void RegisterAccountAsync(string username, string password, string email)
+        public async Task<OperationResult> RegisterAccountAsync(string username, string password, string email)
         {
             using (var scope = _serviceProvider.CreateScope())
             {
@@ -60,7 +62,7 @@ namespace Server.Database.Repository.Account
 
                 var account = await repository.AddPlayerAccountAsync(playerAccount);
 
-                ExternalLogger.Print(account.Message);
+                return account;
             }
         }
     }

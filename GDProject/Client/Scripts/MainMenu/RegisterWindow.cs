@@ -3,10 +3,12 @@ using GdProject.Infrastructure;
 using Godot;
 using Network.Packet;
 
-public partial class RegisterWindow : Window
+public partial class RegisterWindow : BaseWindow
 {
     public override void _Ready()
     {
+        base._Ready();
+
         GetNode<Button>("VerticalBox/Button").Connect("pressed", new Callable(this, nameof(OnRegisterButtonPressed)));
     }
 
@@ -19,37 +21,33 @@ public partial class RegisterWindow : Window
 
         if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
         {
-            GD.Print("Username or password is empty");
+            NodeManager.GetNode<AlertMsg>("AlertMsg").ShowAlert("Username or password is empty");
             return;
         }
 
         if (password != passwordRepeat)
         {
-            GD.Print("Passwords do not match");
+            NodeManager.GetNode<AlertMsg>("AlertMsg").ShowAlert("Passwords do not match");
             return;
         }
 
         if (username.Length < 3 || password.Length < 3)
         {
-            GD.Print("Username or password is too short");
+            NodeManager.GetNode<AlertMsg>("AlertMsg").ShowAlert("Username or password is too short");
             return;
         }
 
         if (email.Length < 3)
         {
-            GD.Print("Email is too short");
+            NodeManager.GetNode<AlertMsg>("AlertMsg").ShowAlert("Email is too short");
             return;
         }
 
         if (!email.Contains('@') || !email.Contains('.'))
         {
-            GD.Print("Email is invalid");
+            NodeManager.GetNode<AlertMsg>("AlertMsg").ShowAlert("Email is invalid");
             return;
         }
-
-        GD.Print("Username: " + username);
-        GD.Print("Password: " + password);
-        GD.Print("Email: " + email);
 
         new CNewAccount
         {
