@@ -1,5 +1,6 @@
 ﻿
 using GdProject.Client;
+using GdProject.Client.Scripts.Entities.Player;
 using GdProject.Infrastructure;
 using GdProject.Logger;
 using GdProject.Model;
@@ -12,36 +13,39 @@ namespace Network.Packet
     internal class SPeersAll : IRecv
     {
         public List<PlayerDataModel> PlayerDataModels { get; set; }
-
+        public List<PlayerPhysicModel> PlayerPhysicModels { get; set; }
 
         public void ReadPacket(int peerId)
         {
             if (PlayerDataModels.Count == 0) { return; }
+            if (PlayerPhysicModels.Count == 0) { return; }
 
-            ExternalLogger.Print("SPeersAll");
-            ExternalLogger.Print($"PlayerDataModels: {PlayerDataModels.Count}");
-            ExternalLogger.Print($"{InitClient.LocalPlayer.RemotePeer.Id} - local {peerId}");
+            ExternalLogger.Print($"SPeersAll Received");
 
-            Player MyPlayer = NodeManager.GetNode<Player>("Player");
+            var dict = new Dictionary<PlayerDataModel, PlayerPhysicModel>();
 
-            foreach (var playerData in PlayerDataModels)
+            for (int i = 0; i < PlayerDataModels.Count; i++)
             {
-                ExternalLogger.Print($"PlayerDataModels: {playerData.PlayerName}");
-                if (playerData.Index == InitClient.LocalPlayer.RemotePeer.RemoteId)
+                dict.Add(PlayerDataModels[i], PlayerPhysicModels[i]);
+            }
+
+            PlayerController MyPlayer = NodeManager.GetNode<PlayerController>("Player");
+
+            foreach (KeyValuePair<PlayerDataModel, PlayerPhysicModel> par in dict)
+            {
+                var pController = new PlayerController();
+
+                pController.playerDataModel = par.Key;
+
+                pController.playerPhysicModel = par.Value;
+
+                if (par.Key.Index == InitClient.LocalPlayer.RemotePeer.RemoteId)
                 {
-                    var pData = new Player();
-                    pData.PlayerData = playerData;
-
-                    MyPlayer.CallDeferred(nameof(MyPlayer.AddLocalPlayer), pData);
-
-                    ExternalLogger.Print($"PlayerDataModels: {playerData.PlayerName} - Local");
+                    MyPlayer.CallDeferred(nameof(MyPlayer.AddLocalPlayer), pController);
                 }
                 else
                 {
-                    var pData = new Player();
-                    pData.PlayerData = playerData;
-
-                    MyPlayer.CallDeferred("DuplicatePlayer", pData);
+                    MyPlayer.CallDeferred(nameof(MyPlayer.DuplicatePlayer), pController);
                 }
             }
 

@@ -1,8 +1,10 @@
 ﻿
 using EntityFramework.Entities.Player;
+using EntityFramework.Entities.ValueObjects.Player;
 using EntityFramework.Repositories.ValidadeData;
 using EntityFramework.Repositories.ValidateData;
 using Microsoft.EntityFrameworkCore;
+using System.Numerics;
 
 namespace EntityFramework.Repositories.Player
 {
@@ -34,7 +36,7 @@ namespace EntityFramework.Repositories.Player
             return await _dbContext.PlayerEntities.AnyAsync(p => p.Id == playerId && p.Name != string.Empty);
         }
 
-        private async Task<PlayerEntity> GivePlayerByAccountId(int accountId)
+        public async Task<PlayerEntity> GivePlayerByAccountId(int accountId)
         {
             return await _dbContext.PlayerEntities.FirstOrDefaultAsync(p => p.Id == accountId);
         }
@@ -89,6 +91,45 @@ namespace EntityFramework.Repositories.Player
             {
                 operationResult.Success = false;
                 operationResult.Message = "Erro ao atualizar o banco de dados.";
+            }
+
+            operationResult.Success = true;
+            operationResult.Message = $"Jogador {charName} criado com sucesso!";
+
+            return operationResult;
+        }
+
+        public async Task<OperationResult> SavePlayerAsync(PlayerEntity player)
+        {
+            var operationResult = new OperationResult();
+
+            var playerEntity = await GetByIdAsync(player.Id);
+
+            if (playerEntity == null)
+            {
+                operationResult.Success = false;
+                operationResult.Message = "Jogador não encontrado e nao foi salvo.";
+                return operationResult;
+            }
+
+            playerEntity.Position.X = player.Position.X;
+            playerEntity.Position.Y = player.Position.Y;
+
+            playerEntity.Direction.X = player.Direction.X;
+            playerEntity.Direction.Y = player.Direction.Y;
+
+            var validateUpdate = await UpdateAsync();
+
+            if (!validateUpdate)
+            {
+                operationResult.Success = false;
+                operationResult.Message = "Erro ao atualizar o jogador.";
+                return operationResult;
+            } 
+            else
+            {
+                operationResult.Success = true;
+                operationResult.Message = $"Jogador {player.Name} salvo!";
             }
 
             return operationResult;

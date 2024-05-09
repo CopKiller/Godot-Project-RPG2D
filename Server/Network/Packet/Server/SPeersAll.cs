@@ -8,6 +8,7 @@ namespace Network.Packet
     internal class SPeersAll : ISend
     {
         public List<PlayerDataModel> PlayerDataModels { get; set; }
+        public List<PlayerPhysicModel> PlayerPhysicModels { get; set; }
 
         public void WritePacket(PacketProcessor netPacketProcessor, NetPeer netPeer)
         {

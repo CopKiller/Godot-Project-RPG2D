@@ -23,7 +23,7 @@ public partial class Game : Node2D
 
         InitClient.LocalPlayer.Disconnect();
 
-        NodeManager.GetNode<Player>(nameof(Player)).Hide();
+        NodeManager.GetNode<PlayerController>(nameof(PlayerController)).Hide();
 
         NodeManager.GetNode<Control>("HudMenu").Hide();
 

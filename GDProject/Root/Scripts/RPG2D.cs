@@ -1,7 +1,7 @@
 ﻿
 using Godot;
 
-public partial class RPG2D : Node2D
+public partial class RPG2D : Node
 {
     public override void _Ready()
     {

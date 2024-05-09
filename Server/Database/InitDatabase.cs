@@ -35,7 +35,7 @@ namespace Server.Database
             _databaseManager.Initialize();
 
             // Descomente a linha abaixo para criar um novo banco de dados
-            // _databaseManager.CreateDatabase();
+             _databaseManager.CreateDatabase();
         }
     }
 }

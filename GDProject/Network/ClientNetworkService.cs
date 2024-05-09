@@ -179,7 +179,7 @@ public partial class ClientNetworkService : NetworkService
     //    Players.AddItem(playerData.Index, player);
     //}
 
-    public void SendPlayerPosition(CPlayerAction playerAction)
+    public void SendPlayerPosition(CPlayerMoveAction playerAction)
     {
         NetPacketProcessor.Send(NetManager.FirstPeer, playerAction, DeliveryMethod.ReliableSequenced);
     }

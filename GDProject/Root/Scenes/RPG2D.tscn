@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://cee18ts1l4omb"]
 
-[ext_resource type="PackedScene" uid="uid://c2385dwmt65h2" path="res://Client/Scenes/Client.tscn" id="1_gve3o"]
+[ext_resource type="PackedScene" uid="uid://c2385dwmt65h2" path="res://Client/Scenes/Client.tscn" id="1_m6ykh"]
 [ext_resource type="Script" path="res://Root/Scripts/RPG2D.cs" id="1_njvog"]
 
-[node name="RPG2D" type="Node2D"]
+[node name="RPG2D" type="Node"]
 script = ExtResource("1_njvog")
 
-[node name="Client" parent="." instance=ExtResource("1_gve3o")]
+[node name="Client" parent="." instance=ExtResource("1_m6ykh")]

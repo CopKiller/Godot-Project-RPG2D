@@ -56,9 +56,17 @@ namespace Server.Infrastructure
 
         private void PlayerDisconnect(int peerId)
         {
+
+            var peerEntity = _clients.GetItem(peerId);
+
             var sLeft = new SLeft();
             sLeft.Index = peerId;
-            sLeft.WritePacket(_networkManager._serverNetwork.NetPacketProcessor, _clients.GetItem(peerId)._peer);
+            sLeft.WritePacket(_networkManager._serverNetwork.NetPacketProcessor, peerEntity._peer);
+
+            var db = _databaseManager._databaseManager.PlayerRepo;
+            if (db == null) { return; }
+
+            db.SavePlayerAsync(peerEntity._playerData, peerEntity._playerPhysic);
 
             _clients.RemoveItem(peerId);
 

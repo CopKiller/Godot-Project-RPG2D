@@ -13,7 +13,9 @@
     <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Client\Scripts\Entities\Player\Actions\" />
     <Folder Include="Shared\Scripts\Entities\Class\" />
+    <Folder Include="Shared\Scripts\Entities\Player\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="GodotSharp" Version="4.2.1" />

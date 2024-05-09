@@ -26,7 +26,8 @@ namespace GdProject.Infrastructure
         /// </summary>
         public GameState GameState { get; set; }
 
-        public PlayerDataModel _playerData { get; set; } = null;
+        //public PlayerDataModel _playerData { get; set; } = null;
+        //public PlayerPhysicModel _playerPhysic { get; set; } = null;
 
         public PacketProcessor PacketProcessor { get; set; }
 

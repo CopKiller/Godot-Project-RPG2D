@@ -24,6 +24,8 @@ namespace GdProject.Network
         {
             // Register Types Of Serializations
             this.RegisterNestedType<PlayerDataModel>(() => { return new PlayerDataModel(); });
+            this.RegisterNestedType<PlayerMoveModel>(() => { return new PlayerMoveModel(); });
+            this.RegisterNestedType<PlayerPhysicModel>(() => { return new PlayerPhysicModel(); });
             this.RegisterNestedType(NetExtensions.SerializeVector2, NetExtensions.DeserializeVector2);
         }
 
@@ -32,7 +34,7 @@ namespace GdProject.Network
             // Register to receive packets  
             Subscribe<SPeersAll>(ProcessPacketReceive);
             Subscribe<SPlayerData>(ProcessPacketReceive);
-            Subscribe<CPlayerAction>(ProcessPacketReceive);
+            Subscribe<CPlayerMoveAction>(ProcessPacketReceive);
             Subscribe<SNewChar>(ProcessPacketReceive);
             Subscribe<SLeft>(ProcessPacketReceive);
             Subscribe<SAlertMsg>(ProcessPacketReceive);

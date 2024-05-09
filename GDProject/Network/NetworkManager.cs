@@ -23,6 +23,8 @@ internal class NetworkManager
         _clientNetwork.Register();
         _clientNetwork.Connect();
 
+        
+
         _thread = new Thread(() =>
         {
             while (_isRunning)

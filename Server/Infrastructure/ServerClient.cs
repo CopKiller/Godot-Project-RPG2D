@@ -13,11 +13,14 @@ namespace Server.Infrastructure
 
         public PlayerDataModel _playerData { get; set; }
 
+        public PlayerPhysicModel _playerPhysic { get; set; }
+
         public ServerClient() { }
 
         public ServerClient(NetPeer netPeer)
         {
             _playerData = new PlayerDataModel();
+            _playerPhysic = new PlayerPhysicModel();
             _peer = netPeer;
 
             _playerData.Index = _peer.Id;

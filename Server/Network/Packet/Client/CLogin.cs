@@ -35,7 +35,11 @@ namespace Network.Packet
             player._playerData.accountId = account.Result.Id;
 
             // Check if account is already logged in
-            if (CheckMultipleAccounts(player, players)) { return; }
+            if (CheckMultipleAccounts(player, players))
+            {
+                new SAlertMsg() { Msg = "Account is already logged in" }.WritePacket(netPacketProcessor, player._peer);
+                return;
+            }
 
             ExternalLogger.Print("account logged in: " + account.Result.Login + " index: " + peerId);
 
@@ -49,9 +53,13 @@ namespace Network.Packet
 
             // Create player data
             var playerVar = account.Result.Player;
-            player._playerData.Position = new Vector2(playerVar.Position.X, playerVar.Position.Y);
-            player._playerData.PlayerName = playerVar.Name;
+
             player._playerData.playerId = playerVar.Id;
+            player._playerData.PlayerName = playerVar.Name;
+            
+
+            player._playerPhysic.Position = new Vector2(playerVar.Position.X, playerVar.Position.Y);
+            player._playerPhysic.Direction = new Vector2(playerVar.Direction.X, playerVar.Direction.Y);
 
             JoinGameData(players, netPacketProcessor, peerId);
         }
@@ -85,6 +93,7 @@ namespace Network.Packet
 
             var sPeersAll = new SPeersAll();
             sPeersAll.PlayerDataModels = [.. _players.Select(x => x.Value).Where(y => y.GameState == GameState.InGame).Select(z => z._playerData)];
+            sPeersAll.PlayerPhysicModels = [.. _players.Select(x => x.Value).Where(y => y.GameState == GameState.InGame).Select(z => z._playerPhysic)];
             sPeersAll.WritePacket(netPacketProcessor, players.GetItem(peerId)._peer);
         }
 
@@ -93,13 +102,15 @@ namespace Network.Packet
         {
             var _players = players.GetItems().Values.Where(x => x.GameState == GameState.InGame && x._peer.Id != peerId);
 
+
             var myPlayer = players.GetItem(peerId);
 
             foreach (var player in _players)
             {
                 new SPlayerData()
                 {
-                    PlayerDataModel = myPlayer._playerData
+                    PlayerDataModel = myPlayer._playerData,
+                    PlayerPhysicModel = myPlayer._playerPhysic
                 }.WritePacket(netPacketProcessor, player._peer);
             }
         }

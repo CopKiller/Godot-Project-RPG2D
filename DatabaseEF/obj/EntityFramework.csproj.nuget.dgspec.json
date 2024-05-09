@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\USERS\\FELIP\\ONEDRIVE\\ÁREA DE TRABALHO\\MY GITHUB REPOS\\GODOT-PROJECT\\DatabaseEF\\EntityFramework.csproj": {}
+    "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\EntityFramework.csproj": {}
   },
   "projects": {
-    "C:\\USERS\\FELIP\\ONEDRIVE\\ÁREA DE TRABALHO\\MY GITHUB REPOS\\GODOT-PROJECT\\DatabaseEF\\EntityFramework.csproj": {
+    "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\EntityFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\USERS\\FELIP\\ONEDRIVE\\ÁREA DE TRABALHO\\MY GITHUB REPOS\\GODOT-PROJECT\\DatabaseEF\\EntityFramework.csproj",
+        "projectUniqueName": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\EntityFramework.csproj",
         "projectName": "EntityFramework",
-        "projectPath": "C:\\USERS\\FELIP\\ONEDRIVE\\ÁREA DE TRABALHO\\MY GITHUB REPOS\\GODOT-PROJECT\\DatabaseEF\\EntityFramework.csproj",
+        "projectPath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\EntityFramework.csproj",
         "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\obj\\",
         "projectStyle": "PackageReference",

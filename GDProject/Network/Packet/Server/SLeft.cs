@@ -1,4 +1,6 @@
-﻿namespace Network.Packet
+﻿using Godot;
+
+namespace Network.Packet
 {
     public class SLeft : IRecv
     {
@@ -6,11 +8,11 @@
 
         public void ReadPacket(int peerId)
         {
-            var playerNode = NodeManager.GetNode<Player>(Index.ToString());
+            var playerNode = NodeManager.GetNode<PlayerController>(Index.ToString());
 
             if (playerNode == null) return;
 
-            playerNode.QueueFree();
+            playerNode.CallDeferred(nameof(playerNode.RemovePlayer));
         }
     }
 }

@@ -9,15 +9,18 @@ namespace Network.Packet
     internal class SPlayerData : IRecv
     {
         public PlayerDataModel PlayerDataModel { get; set; }
+        public PlayerPhysicModel PlayerPhysicModel { get; set; }
 
         public void ReadPacket(int peerId)
         {
-            var MyPlayer = NodeManager.GetNode<Player>("Player");
+            var MyPlayer = NodeManager.GetNode<PlayerController>("Player");
 
-            var pData = new Player();
-            pData.PlayerData = PlayerDataModel;
+            var pController = new PlayerController();
 
-            MyPlayer.CallDeferred("DuplicatePlayer", pData);
+            pController.playerDataModel = PlayerDataModel;
+            pController.playerPhysicModel = PlayerPhysicModel;
+
+            MyPlayer.CallDeferred(nameof(MyPlayer.DuplicatePlayer), pController);
         }
     }
 }

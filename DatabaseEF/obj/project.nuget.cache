@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l4XVA+Zxi/yZvX8u+T9YVoAO0pZbFGNb8V/M+xdC4Taw0MEXBmkz+Pt0MGhM6F7nCLfq7rlt6Xfw+p2oF827rg==",
+  "dgSpecHash": "UUhfe3vVMCSCWOWAsUcdEtE2rNh9Z2tgKc1q3VETr/s7sxyMWbimyBgmEJ4/mBEqQZe3m1wcx0JolncuWDlKqw==",
   "success": true,
-  "projectFilePath": "C:\\USERS\\FELIP\\ONEDRIVE\\ÁREA DE TRABALHO\\MY GITHUB REPOS\\GODOT-PROJECT\\DatabaseEF\\EntityFramework.csproj",
+  "projectFilePath": "C:\\Users\\felip\\OneDrive\\Área de Trabalho\\My GitHub Repos\\Godot-Project\\DatabaseEF\\EntityFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\felip\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\felip\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

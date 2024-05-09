@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dxjuhhlalewer" path="res://Client/Resources/MainMenu/Logo/logo.png" id="2_psbkn"]
 [ext_resource type="PackedScene" uid="uid://xmbg1y67165u" path="res://Client/Scenes/Game/Hud/HudMenu.tscn" id="4_hxe5e"]
 [ext_resource type="Script" path="res://Client/Scripts/Game/Game.cs" id="6_ie8vh"]
-[ext_resource type="Script" path="res://Client/Scripts/Entities/Player.cs" id="7_l05p6"]
+[ext_resource type="Script" path="res://Client/Scripts/Entities/Player/PlayerController.cs" id="7_l05p6"]
 [ext_resource type="PackedScene" uid="uid://ckrobnhv3w7mu" path="res://Client/Scenes/Game/Map/Ground/Ground_01.tscn" id="10_25j42"]
 [ext_resource type="Texture2D" uid="uid://boy7qfugprna7" path="res://Client/Resources/Game/Player/Sprite/Homen Mago Iniciante RPG.png" id="11_ba42d"]
 [ext_resource type="PackedScene" uid="uid://cqyevyj4fqul7" path="res://Client/Scenes/Game/Map/Fringe/Fringe_01.tscn" id="13_1pc3w"]
@@ -406,7 +406,7 @@ visible = false
 [node name="Windows" parent="UI" instance=ExtResource("20_lqm4i")]
 
 [node name="VirtualJoystick" type="Node2D" parent="UI"]
-position = Vector2(80.8, 240)
+position = Vector2(104.2, 350)
 script = ExtResource("19_ct0hb")
 
 [node name="HudMenu" parent="UI" instance=ExtResource("4_hxe5e")]
