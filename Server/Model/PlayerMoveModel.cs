@@ -19,6 +19,7 @@ namespace Server.Model
             Position = reader.GetVector2();
             Direction = reader.GetVector2();
             isRunning = reader.GetBool();
+            Speed = reader.GetFloat();
         }
 
         public void Serialize(NetDataWriter writer)
@@ -26,6 +27,7 @@ namespace Server.Model
             writer.Put(Position);
             writer.Put(Direction);
             writer.Put(isRunning);
+            writer.Put(Speed);
         }
 
     }

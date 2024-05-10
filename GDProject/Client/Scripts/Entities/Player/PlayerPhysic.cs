@@ -19,7 +19,7 @@ namespace GdProject.Model
 
         protected Vector2 Direction = Vector2.Zero;
 
-        private Vector2 LastDirection = Vector2.Zero;
+        protected Vector2 LastDirection = Vector2.Zero;
 
         private Vector2 JoystickDirection = Vector2.Zero;
 

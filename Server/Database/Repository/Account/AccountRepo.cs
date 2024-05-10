@@ -1,7 +1,9 @@
 ﻿using EntityFramework.Entities.Account;
 using EntityFramework.Entities.Interface;
+using EntityFramework.Entities.Player;
 using EntityFramework.Repositories.Account;
 using EntityFramework.Repositories.Interface;
+using EntityFramework.Repositories.Player;
 using EntityFramework.Repositories.ValidadeData;
 using Microsoft.Extensions.DependencyInjection;
 using Server.Logger;
@@ -32,7 +34,8 @@ namespace Server.Database.Repository.Account
 
                 var account = await repository.AuthenticateAccountAsync(username, password);
 
-                ExternalLogger.Print(account.Message);
+                ExternalLogger.Print(account.EntityType.Player.Position.X.ToString());
+                ExternalLogger.Print(account.EntityType.Player.Position.Y.ToString());
 
                 if (account.EntityType == null)
                 {

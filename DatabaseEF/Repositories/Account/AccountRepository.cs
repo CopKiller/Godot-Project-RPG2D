@@ -2,6 +2,7 @@
 using EntityFramework.Repositories.ValidadeData;
 using EntityFramework.Repositories.ValidateData;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 
 namespace EntityFramework.Repositories.Account
@@ -112,7 +113,7 @@ namespace EntityFramework.Repositories.Account
         {
             var operationResult = new OperationResult();
 
-            var account = await _dbContext.AccountEntities.Include(a => a.Player)
+            var account = await _dbContext.AccountEntities.Include(a => a.Player).Include(a => a.Player.Position).Include(a => a.Player.Direction)
                 .FirstOrDefaultAsync(e => e.Login == login);
 
             if (account == null)
