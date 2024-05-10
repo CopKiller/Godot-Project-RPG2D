@@ -5,7 +5,7 @@ public partial class Windows : CanvasLayer
 {
     public override void _Ready()
     {
-        NodeManager.AddNode(this);
+        //NodeManager.AddNode(this);
     }
 
     public void Close(Window window)

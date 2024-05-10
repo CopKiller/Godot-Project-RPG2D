@@ -14,7 +14,7 @@ public partial class ClientNode : Node
         ExternalLogger.Logger = new LogManager();
 
         // Adiciona este nó e os filhos ao gerenciador de nós
-        NodeManager.AddToNodeManager(this);
+        //NodeManager.AddToNodeManager(this);
 
         InitClient();
 

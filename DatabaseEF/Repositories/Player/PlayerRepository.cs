@@ -19,11 +19,6 @@ namespace EntityFramework.Repositories.Player
             _dbContext = dbContext;
         }
 
-        //public async Task<PlayerEntity> GetPlayerByAccountId(int accountId)
-        //{
-        //    return await _dbContext.PlayerEntities.FirstOrDefaultAsync(p => p.Id == accountId);
-        //}
-
         private async Task<bool> HasPlayerName(string nome)
         {
             // Verificar se o nome já existe na tabela de jogadores

@@ -6,7 +6,7 @@ public partial class MenuWindow : BaseWindow
     {
         base._Ready();
 
-        NodeManager.AddToNodeManager(this);
+        //NodeManager.AddToNodeManager(this);
 
         AssingButtonSignals();
     }

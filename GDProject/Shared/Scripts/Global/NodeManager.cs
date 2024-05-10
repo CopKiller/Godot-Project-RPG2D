@@ -5,8 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 
 // Classe para gerenciar os nós do jogo
-public static class NodeManager
+public partial class NodeManager : Node
 {
+
+    public override void _Ready()
+    {
+        var tree = GetTree().Root.GetNode<RPG2D>(nameof(RPG2D));
+
+        AddToNodeManager(tree);
+    }
+
+
     // Dicionário para mapear os nós por seus nomes
     private static DictionaryWrapper<string, Node> nodeMap = new DictionaryWrapper<string, Node>();
 
