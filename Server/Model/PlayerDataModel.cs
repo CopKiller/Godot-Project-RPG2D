@@ -1,4 +1,6 @@
-﻿using LiteNetLib.Utils;
+﻿using EntityFramework.Entities.Player;
+using LiteNetLib.Utils;
+using System.Numerics;
 
 namespace Server.Model
 {
@@ -19,6 +21,12 @@ namespace Server.Model
         {
             writer.Put(Index);
             writer.Put(PlayerName);
+        }
+
+        public void ConvertPlayerData(PlayerEntity playerData)
+        {
+            playerId = playerData.Id;
+            PlayerName = playerData.Name;
         }
     }
 

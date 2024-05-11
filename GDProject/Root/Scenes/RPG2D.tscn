@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cee18ts1l4omb"]
+[gd_scene load_steps=7 format=3 uid="uid://cee18ts1l4omb"]
 
 [ext_resource type="Script" path="res://Logger/LogManager.cs" id="1_f7rlo"]
 [ext_resource type="PackedScene" uid="uid://c2385dwmt65h2" path="res://Client/Scenes/Client.tscn" id="1_m6ykh"]
 [ext_resource type="Script" path="res://Client/Scripts/NodeManager.cs" id="2_5sv2w"]
 [ext_resource type="Script" path="res://Network/NetworkManager.cs" id="3_i8bdk"]
+[ext_resource type="Script" path="res://Root/Scripts/ConfigManager.cs" id="4_2it1j"]
 [ext_resource type="Script" path="res://Infrastructure/ClientManager.cs" id="4_oafom"]
 
 [node name="RPG2D" type="Node"]
@@ -21,6 +22,9 @@ script = ExtResource("2_5sv2w")
 [node name="NetworkManager" type="Node" parent="Managers"]
 editor_description = "Este nó é mantido e gerencia a conexão com o servidor"
 script = ExtResource("3_i8bdk")
+
+[node name="ConfigManager" type="Node" parent="Managers"]
+script = ExtResource("4_2it1j")
 
 [node name="ClientManager" type="Node" parent="Managers"]
 editor_description = "Este nó é mantido e gerencia os serviços do client"

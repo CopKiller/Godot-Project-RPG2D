@@ -16,6 +16,9 @@
     <Folder Include="Client\Scripts\Entities\Player\Actions\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Update="GodotSharp" Version="4.2.1" />
   </ItemGroup>
 	<ItemGroup>

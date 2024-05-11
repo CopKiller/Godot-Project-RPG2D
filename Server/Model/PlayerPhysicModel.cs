@@ -1,4 +1,5 @@
 ﻿
+using EntityFramework.Entities.ValueObjects.Player;
 using LiteNetLib.Utils;
 using Server.Network.Extensions;
 using SharedLibrary.DataType;
@@ -29,6 +30,16 @@ namespace Server.Model
             writer.Put(Direction);
             writer.Put(Speed);
             writer.Put(isRunning);
+        }
+
+        public void ConvertPosition(Position position)
+        {
+            Position = new Vector2(position.X, position.Y);
+        }
+
+        public void ConvertDirection(Direction direction)
+        {
+            Direction = new Vector2(direction.X, direction.Y);
         }
     }
 }

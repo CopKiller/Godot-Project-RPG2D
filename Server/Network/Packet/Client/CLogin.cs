@@ -54,12 +54,10 @@ namespace Network.Packet
             // Create player data
             var playerVar = account.Result.Player;
 
-            player._playerData.playerId = playerVar.Id;
-            player._playerData.PlayerName = playerVar.Name;
-            
+            player._playerData.ConvertPlayerData(playerVar);
 
-            player._playerPhysic.Position = new Vector2(playerVar.Position.X, playerVar.Position.Y);
-            player._playerPhysic.Direction = new Vector2(playerVar.Direction.X, playerVar.Direction.Y);
+            player._playerPhysic.ConvertPosition(playerVar.Position);
+            player._playerPhysic.ConvertDirection(playerVar.Direction);
 
             JoinGameData(players, netPacketProcessor, peerId);
         }

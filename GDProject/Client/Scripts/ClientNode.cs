@@ -12,6 +12,8 @@ public partial class ClientNode : Node
         InitClient();
 
         InitMenu();
+
+        InitConfigs();
     }
 
     public void InitClient()
@@ -33,5 +35,33 @@ public partial class ClientNode : Node
         NodeManager.GetNode<Game>(nameof(Game)).InitGame();
 
         NodeManager.GetNode<Camera2D>(nameof(Camera2D)).Zoom = new Vector2(2, 2);
+    }
+
+    public void InitConfigs()
+    {
+        var config = NodeManager.GetNode<ConfigManager>(nameof(ConfigManager));
+
+        config.LoadConfig();
+
+        if (config.ConfigData.SaveUser)
+        {
+            NodeManager.GetNode<CheckBox>("SaveUserCheckbox").ButtonPressed = true;
+
+            if (!string.IsNullOrEmpty(config.ConfigData.Username))
+            {
+                NodeManager.GetNode<LineEdit>("UsernameText").Text = config.ConfigData.Username;
+            }
+        }
+
+        if (config.ConfigData.SavePassword)
+        {
+            NodeManager.GetNode<CheckBox>("SavePassCheckbox").ButtonPressed = true;
+
+            if (!string.IsNullOrEmpty(config.ConfigData.Password))
+            {
+                NodeManager.GetNode<LineEdit>("PasswordText").Text = config.ConfigData.Password;
+            }
+        }
+
     }
 }

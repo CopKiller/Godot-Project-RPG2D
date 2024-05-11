@@ -50,6 +50,7 @@ namespace EntityFramework.Repositories.Account
                     return new OperationResult
                     {
                         Success = true,
+                        EntityType = account,
                         Message = $"[DATABASE] Account {account.Login} has been addeded!",
                     };
                 }

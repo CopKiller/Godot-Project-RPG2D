@@ -1,4 +1,5 @@
 ﻿using Server.Infrastructure;
+using Server.Logger;
 using Server.Network;
 using SharedLibrary.Extensions;
 
@@ -23,6 +24,16 @@ namespace Network.Packet
             var result = db.RegisterAccountAsync(Login, Password, Email);
 
             new SAlertMsg() { Msg = result.Result.Message }.WritePacket(netPacketProcessor, player._peer);
+
+            if (result.Result.Success)
+            {
+                ExternalLogger.Print("account created: " + Login + " index: " + peerId);
+
+                // Create character
+                player._playerData.accountId = result.Result.EntityType.Id;
+                new SNewChar().WritePacket(netPacketProcessor, player._peer);
+                player.GameState = GameState.InCharacterCreation;
+            }
         }
     }
 }
