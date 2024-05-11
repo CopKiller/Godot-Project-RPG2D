@@ -54,6 +54,6 @@ public partial class RegisterWindow : BaseWindow
             Login = username,
             Password = password,
             Email = email
-        }.WritePacket(InitClient.LocalPlayer.PacketProcessor);
+        }.WritePacket(ClientManager.LocalPlayer.PacketProcessor);
     }
 }

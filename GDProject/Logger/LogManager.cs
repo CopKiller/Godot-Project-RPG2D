@@ -2,8 +2,18 @@
 
 namespace GdProject.Logger
 {
-    internal class LogManager : ILogger
+    internal partial class LogManager : Node, ILogger
     {
+        public override void _Ready()
+        {
+            ExternalLogger.Logger = this;
+
+            Log("Logger initialized");
+
+            // Remove o gerenciador de nós mas mantém seus métodos acessíveis de qualquer parte do código
+            this.QueueFree();
+        }
+
         public void LogError(string message)
         {
             GD.Print("[ERROR] " + message);

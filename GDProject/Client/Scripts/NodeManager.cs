@@ -1,4 +1,5 @@
 ﻿
+using GdProject.Logger;
 using Godot;
 using SharedLibrary.Extensions;
 using System.Collections.Generic;
@@ -7,14 +8,17 @@ using System.Linq;
 // Classe para gerenciar os nós do jogo
 public partial class NodeManager : Node
 {
-
     public override void _Ready()
     {
-        var tree = GetTree().Root.GetNode<RPG2D>(nameof(RPG2D));
+        var tree = GetTree().Root.GetNode<Node>("RPG2D");
 
         AddToNodeManager(tree);
-    }
 
+        ExternalLogger.Print("Nós carregados: " + nodeMap.Count());
+
+        // Remove o gerenciador de nós mas mantém seus métodos acessíveis de qualquer parte do código
+        this.QueueFree();
+    }
 
     // Dicionário para mapear os nós por seus nomes
     private static DictionaryWrapper<string, Node> nodeMap = new DictionaryWrapper<string, Node>();
@@ -29,14 +33,14 @@ public partial class NodeManager : Node
 
         nodeMap.AddItem(node.Name, node);
 
-        GD.Print("Adicionado nó: " + node.Name + " do tipo " + node.GetType().Name);
+        //ExternalLogger.Print("Adicionado nó: " + node.Name + " do tipo " + node.GetType().Name);
     }
     // Método para obter um nó do gerenciador pelo nome
     public static T GetNode<T>(string name) where T : Node
     {
         //foreach (var item in nodeMap.GetItems())
         //{
-        //    GD.Print("Nó: " + item.Key + " do tipo " + item.Value.GetType().Name);
+        //    ExternalLogger.Print("Nó: " + item.Key + " do tipo " + item.Value.GetType().Name);
         //}
 
         if (nodeMap.ContainsKey(name))
@@ -51,13 +55,13 @@ public partial class NodeManager : Node
             }
             else
             {
-                GD.Print("O nó '" + name + "' não é do tipo esperado: " + typeof(T).Name);
+                ExternalLogger.Print("O nó '" + name + "' não é do tipo esperado: " + typeof(T).Name);
                 return null;
             }
         }
         else
         {
-            GD.Print("O nó '" + name + "' não foi encontrado.");
+            ExternalLogger.Print("O nó '" + name + "' não foi encontrado.");
             return null;
         }
     }

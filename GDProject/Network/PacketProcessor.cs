@@ -54,7 +54,7 @@ namespace GdProject.Network
         {
 
             // Preciso de uma referencia do NetPeer do servidor
-            Send(InitClient.LocalPlayer.CurrentPeer, packet, deliveryMethod);
+            Send(ClientManager.LocalPlayer.CurrentPeer, packet, deliveryMethod);
         }
     }
 }

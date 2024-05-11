@@ -34,7 +34,7 @@ public partial class LoginWindow : BaseWindow
             Login = username,
             Password = password
         };
-        login.WritePacket(InitClient.LocalPlayer.PacketProcessor);
+        login.WritePacket(ClientManager.LocalPlayer.PacketProcessor);
 
         //new CLogin
         //{

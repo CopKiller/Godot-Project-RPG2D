@@ -39,7 +39,7 @@ namespace Network.Packet
 
                 pController.playerPhysicModel = par.Value;
 
-                if (par.Key.Index == InitClient.LocalPlayer.RemotePeer.RemoteId)
+                if (par.Key.Index == ClientManager.LocalPlayer.RemotePeer.RemoteId)
                 {
                     MyPlayer.CallDeferred(nameof(MyPlayer.AddLocalPlayer), pController);
                 }

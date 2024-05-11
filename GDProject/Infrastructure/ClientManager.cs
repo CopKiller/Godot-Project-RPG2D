@@ -6,17 +6,23 @@ using System;
 
 namespace GdProject.Infrastructure
 {
-    internal class InitClient
+    internal partial class ClientManager : Node
     {
         public static ClientPlayer LocalPlayer { get; set; } = null;
 
-        public NetworkManager _networkManager;
+        public NetworkManager _networkManager { get; set; }
 
         public bool IsRunning { get; private set; } = false;
 
-        public InitClient()
+        public override void _Ready()
         {
+            _networkManager = NodeManager.GetNode<NetworkManager>(nameof(NetworkManager));
 
+            _networkManager = new NetworkManager();
+
+            _networkManager._clientNetwork = new ClientNetworkService();
+
+            ExternalLogger.Print("Client Manager Initialized");
         }
 
         public void Start()
@@ -25,8 +31,6 @@ namespace GdProject.Infrastructure
             {
                 return;
             }
-
-            _networkManager = new NetworkManager();
 
             _networkManager._clientNetwork.RemotePeerConnectedEvent += RemotePeerConnected;
             _networkManager._clientNetwork.RemotePeerDisconnectedEvent += RemotePeerDisconnected;

@@ -1,10 +1,11 @@
 ﻿
 
+using Godot;
 using System.Threading;
 
 namespace GdProject.Network;
 
-internal class NetworkManager
+internal partial class NetworkManager : Node
 {
 
     internal ClientNetworkService _clientNetwork;
@@ -13,17 +14,10 @@ internal class NetworkManager
 
     internal bool _isRunning = true;
 
-    public NetworkManager()
-    {
-        _clientNetwork = new ClientNetworkService();
-    }
-
     public void Start()
     {
         _clientNetwork.Register();
         _clientNetwork.Connect();
-
-        
 
         _thread = new Thread(() =>
         {

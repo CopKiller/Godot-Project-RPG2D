@@ -30,6 +30,6 @@ public partial class NewCharWindow : BaseWindow
         new CNewChar
         {
             Name = name
-        }.WritePacket(InitClient.LocalPlayer.PacketProcessor);
+        }.WritePacket(ClientManager.LocalPlayer.PacketProcessor);
     }
 }

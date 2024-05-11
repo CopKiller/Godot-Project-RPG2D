@@ -21,15 +21,13 @@ public partial class Game : Node2D
     {
         NodeManager.GetNode<Windows>(nameof(Windows)).CloseAll();
 
-        InitClient.LocalPlayer.Disconnect();
+        ClientManager.LocalPlayer.Disconnect();
 
         NodeManager.GetNode<PlayerController>(nameof(PlayerController)).Hide();
 
         NodeManager.GetNode<Control>("HudMenu").Hide();
 
         NodeManager.GetNode<ClientNode>("Client").InitMenu();
-
-        NodeManager.GetNode<ClientNode>("Client")._initClient.Start();
 
         NodeManager.GetNode<CanvasLayer>("UI").Hide();
     }

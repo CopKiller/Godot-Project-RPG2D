@@ -9,7 +9,7 @@ namespace GdProject.Client.Scripts.Entities.Player
     public partial class PlayerNetwork : PlayerData
     {
 
-        private PacketProcessor packetProcessor => InitClient.LocalPlayer.PacketProcessor;
+        private PacketProcessor packetProcessor => ClientManager.LocalPlayer.PacketProcessor;
 
         private CPlayerMoveAction CPlayerMoveAction;
 

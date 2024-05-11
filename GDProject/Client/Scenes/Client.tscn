@@ -313,6 +313,7 @@ texture = ExtResource("2_psbkn")
 expand_mode = 1
 
 [node name="Game" type="Node2D" parent="."]
+visible = false
 script = ExtResource("6_ie8vh")
 
 [node name="Ground" parent="Game" instance=ExtResource("10_25j42")]
