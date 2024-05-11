@@ -49,6 +49,8 @@ public partial class RegisterWindow : BaseWindow
             return;
         }
 
+        NodeManager.GetNode<ClientManager>(nameof(ClientManager)).Start();
+
         new CNewAccount
         {
             Login = username,

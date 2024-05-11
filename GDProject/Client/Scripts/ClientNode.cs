@@ -8,17 +8,20 @@ public partial class ClientNode : Node
 {
     public override void _Ready()
     {
-
-        InitClient();
-
         InitMenu();
 
         InitConfigs();
+
+        InitNetwork();
     }
 
-    public void InitClient()
+    public void InitNetwork()
     {
-        NodeManager.GetNode<ClientManager>(nameof(ClientManager)).Start();
+        var clientManager = NodeManager.GetNode<ClientManager>(nameof(ClientManager));
+
+        clientManager.Stop();
+
+        clientManager.Start();
     }
 
     public void InitMenu()
@@ -63,5 +66,10 @@ public partial class ClientNode : Node
             }
         }
 
+    }
+
+    public void UpdatePingText(int ping)
+    {
+        NodeManager.GetNode<RichTextLabel>("Ping").Text = $"Ping: {ping}ms";
     }
 }

@@ -1,4 +1,5 @@
-﻿using GdProject.Logger;
+﻿using GdProject.Client;
+using GdProject.Logger;
 using GdProject.Network;
 using Godot;
 using LiteNetLib;
@@ -69,6 +70,8 @@ namespace GdProject.Infrastructure
         public void RemotePeerDisconnected(NetPeer netPeer, DisconnectInfo disconnectInfo)
         {
             LocalPlayer = null;
+
+            LocalPlayer.GameState = GameState.InMenu;
         }
 
         public void LocalPlayerConnected(NetPeer netPeer)
@@ -86,16 +89,26 @@ namespace GdProject.Infrastructure
         {
             LocalPlayer = null;
 
+            LocalPlayer.GameState = GameState.InMenu;
+
         }
 
         public void LocalPlayerDisconnected(NetPeer netPeer)
         {
             LocalPlayer = null;
+
+            LocalPlayer.GameState = GameState.InMenu;
         }
 
         public void LocalPlayerLatencyUpdated(int latency)
         {
             LocalPlayer.Ping = latency;
+
+            if (LocalPlayer.GameState == GameState.InGame)
+            {
+                var ping = NodeManager.GetNode<ClientNode>("Client");
+                ping.CallDeferred(nameof(ping.UpdatePingText), LocalPlayer.Ping);
+            }
         }
 
     }

@@ -24,10 +24,7 @@ namespace GdProject.Infrastructure
         /// <summary>
         /// Get the current game state
         /// </summary>
-        public GameState GameState { get; set; }
-
-        //public PlayerDataModel _playerData { get; set; } = null;
-        //public PlayerPhysicModel _playerPhysic { get; set; } = null;
+        public GameState GameState { get; set; } = GameState.InMenu;
 
         public PacketProcessor PacketProcessor { get; set; }
 

@@ -19,17 +19,35 @@ public partial class Game : Node2D
 
     public void EndGame()
     {
-        NodeManager.GetNode<Windows>(nameof(Windows)).CloseAll();
+        //NodeManager.GetNode<Windows>(nameof(Windows)).CloseAll();
 
         ClientManager.LocalPlayer.Disconnect();
 
-        NodeManager.GetNode<PlayerController>(nameof(PlayerController)).Hide();
+        //NodeManager.GetNode<PlayerController>("Player").Hide();
 
-        NodeManager.GetNode<Control>("HudMenu").Hide();
+        //NodeManager.GetNode<Control>("HudMenu").Hide();
 
-        NodeManager.GetNode<ClientNode>("Client").InitMenu();
+        //NodeManager.GetNode<CanvasLayer>("UI").Hide();
 
-        NodeManager.GetNode<CanvasLayer>("UI").Hide();
+        // Fecha o jogo
+        GetTree().Quit();
+
     }
+
+    //private void ConnectToServer()
+    //{
+    //    NodeManager.GetNode<ClientNode>("Client").InitMenu();
+
+    //    var timer = new Timer();
+    //    timer.WaitTime = 5000;
+    //    timer.OneShot = true;
+    //    timer.Connect("timeout", new Callable(timer, nameof(OnTimerTimeout)));
+
+    //}
+
+    //private void OnTimerTimeout()
+    //{
+    //    NodeManager.GetNode<ClientNode>(nameof(ClientNode)).InitNetwork();
+    //}
 }
 

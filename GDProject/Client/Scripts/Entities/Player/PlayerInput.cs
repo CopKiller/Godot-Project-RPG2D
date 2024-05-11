@@ -24,7 +24,7 @@ namespace GdProject.Client.Scripts.Entities.Player
                 SetInputRunning();
                 SetInputDirection();
 
-                ExternalLogger.Print($"Direction: {Direction}");
+                //ExternalLogger.Print($"Direction: {Direction}");
             }
         }
 

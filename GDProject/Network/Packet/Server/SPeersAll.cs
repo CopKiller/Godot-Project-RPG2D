@@ -20,6 +20,8 @@ namespace Network.Packet
             if (PlayerDataModels.Count == 0) { return; }
             if (PlayerPhysicModels.Count == 0) { return; }
 
+            ClientManager.LocalPlayer.GameState = GameState.InGame;
+
             ExternalLogger.Print($"SPeersAll Received");
 
             var dict = new Dictionary<PlayerDataModel, PlayerPhysicModel>();

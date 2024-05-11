@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://c2385dwmt65h2"]
+[gd_scene load_steps=44 format=3 uid="uid://c2385dwmt65h2"]
 
 [ext_resource type="Script" path="res://Client/Scripts/ClientNode.cs" id="1_dl1nj"]
 [ext_resource type="Texture2D" uid="uid://0ah8e7twsavc" path="res://Client/Resources/MainMenu/Background/background.png" id="1_xv5dp"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://xmbg1y67165u" path="res://Client/Scenes/Game/Hud/HudMenu.tscn" id="4_hxe5e"]
 [ext_resource type="Script" path="res://Client/Scripts/Game/Game.cs" id="6_ie8vh"]
 [ext_resource type="Script" path="res://Client/Scripts/Entities/Player/PlayerController.cs" id="7_l05p6"]
+[ext_resource type="PackedScene" uid="uid://c2wakxybkwnjc" path="res://Client/Scenes/Game/Monsters/Monsters.tscn" id="9_ksi6j"]
 [ext_resource type="PackedScene" uid="uid://ckrobnhv3w7mu" path="res://Client/Scenes/Game/Map/Ground/Ground_01.tscn" id="10_25j42"]
 [ext_resource type="Texture2D" uid="uid://boy7qfugprna7" path="res://Client/Resources/Game/Player/Sprite/Homen Mago Iniciante RPG.png" id="11_ba42d"]
 [ext_resource type="PackedScene" uid="uid://cqyevyj4fqul7" path="res://Client/Scenes/Game/Map/Fringe/Fringe_01.tscn" id="13_1pc3w"]
@@ -390,6 +391,8 @@ autowrap_mode = 0
 tab_size = 0
 shortcut_keys_enabled = false
 
+[node name="Monsters" parent="Game" instance=ExtResource("9_ksi6j")]
+
 [node name="Fringe" parent="Game" instance=ExtResource("13_1pc3w")]
 anchors_preset = 15
 anchor_right = 1.0
@@ -410,5 +413,14 @@ position = Vector2(104.2, 350)
 script = ExtResource("19_ct0hb")
 
 [node name="HudMenu" parent="UI" instance=ExtResource("4_hxe5e")]
+
+[node name="Ping" type="RichTextLabel" parent="UI"]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_font_sizes/normal_font_size = 32
+text = "Ping: 0"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
 
 [connection signal="analogic_chage" from="UI/VirtualJoystick" to="Game/Players/Player" method="OnVirtualJoystickAnalogicChange"]

@@ -1,5 +1,6 @@
 ﻿
 
+using GdProject.Infrastructure;
 using Godot;
 
 namespace Network.Packet
@@ -8,6 +9,8 @@ namespace Network.Packet
     {
         public void ReadPacket(int peerId)
         {
+            ClientManager.LocalPlayer.GameState = GameState.InCharacterCreation;
+
             var windowsNode = NodeManager.GetNode<Windows>("Windows");
 
             windowsNode.CallDeferred(nameof(windowsNode.CloseAll));
