@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b7pv8pwys7y0c"]
+
+[node name="Utils" type="Node"]
+
+[node name="NodeManager" type="Node" parent="."]

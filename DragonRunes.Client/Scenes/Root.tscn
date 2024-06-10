@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://i2ym21uffdr6"]
+
+[ext_resource type="PackedScene" uid="uid://dvrdq51xli4r7" path="res://Scenes/Client.tscn" id="1_1hxa3"]
+[ext_resource type="PackedScene" uid="uid://b7pv8pwys7y0c" path="res://Scenes/Utils.tscn" id="2_3k5hq"]
+
+[node name="Root" type="Node"]
+
+[node name="Client" parent="." instance=ExtResource("1_1hxa3")]
+
+[node name="Utils" parent="." instance=ExtResource("2_3k5hq")]

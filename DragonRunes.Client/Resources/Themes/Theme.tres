@@ -1,0 +1,46 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://cs4y62on2qesn"]
+
+[ext_resource type="FontFile" uid="uid://bkavfrxj1pqci" path="res://Resources/Fonts/LEMONMILK-Regular.otf" id="1_bm1p8"]
+[ext_resource type="Texture2D" uid="uid://cigscqki7msjv" path="res://Resources/GUI/Window/Default.png" id="2_c4uo5"]
+[ext_resource type="Texture2D" uid="uid://e37gf0c0njsy" path="res://Resources/GUI/Window/Pressed.png" id="3_y4o37"]
+[ext_resource type="Texture2D" uid="uid://b1rfcbcsoyl1m" path="res://Resources/GUI/Window/Portrait.png" id="4_pp5o4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uvfuo"]
+texture = ExtResource("4_pp5o4")
+texture_margin_left = 1.0
+texture_margin_top = 90.0
+texture_margin_right = 1.0
+texture_margin_bottom = 1.0
+expand_margin_left = 5.0
+expand_margin_top = 48.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+region_rect = Rect2(0, 0, 284, 334)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0vi8q"]
+load_path = "res://.godot/imported/Portrait.png-5ca2ce86118e438a6f7ca4bc2ab11c8a.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cehj7"]
+texture = SubResource("CompressedTexture2D_0vi8q")
+texture_margin_left = 1.0
+texture_margin_top = 90.0
+texture_margin_right = 1.0
+texture_margin_bottom = 1.0
+expand_margin_left = 5.0
+expand_margin_top = 48.0
+expand_margin_right = 5.0
+expand_margin_bottom = 5.0
+region_rect = Rect2(0, 0, 284, 334)
+modulate_color = Color(1, 1, 1, 0.862745)
+
+[resource]
+Window/colors/title_color = Color(0.875, 0.875, 0.875, 1)
+Window/constants/close_h_offset = 31
+Window/constants/close_v_offset = 44
+Window/constants/title_height = 52
+Window/font_sizes/title_font_size = 20
+Window/fonts/title_font = ExtResource("1_bm1p8")
+Window/icons/close = ExtResource("2_c4uo5")
+Window/icons/close_pressed = ExtResource("3_y4o37")
+Window/styles/embedded_border = SubResource("StyleBoxTexture_uvfuo")
+Window/styles/embedded_unfocused_border = SubResource("StyleBoxTexture_cehj7")
