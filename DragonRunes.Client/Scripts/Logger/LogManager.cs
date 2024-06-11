@@ -1,5 +1,4 @@
-﻿using GdProject.Logger;
-using Godot;
+﻿using Godot;
 
 namespace DragonRunes.Logger
 {

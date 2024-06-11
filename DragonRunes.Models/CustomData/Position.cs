@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DragonRunes.Models.CustomData
 {
-    public struct Position
+    public class Position
     {
+        public int Id { get; set; }
         public float X { get; set; }
         public float Y { get; set; }
     }

@@ -1,26 +1,29 @@
 ﻿using LiteNetLib;
-using Server.Model;
+using DragonRunes.Network.CustomData;
+using DragonRunes.Server.Network;
+using DragonRunes.Network.Packet.Server;
+using DragonRunes.Network;
 
 namespace DragonRunes.Server.Infrastructure
 {
     public class ServerClient
     {
-        public event Action<int> OnDisconnect;
-
         public NetPeer _peer { get; set; }
 
-        public GameState GameState { get; set; } = GameState.InMenu;
+        public GameState GameState { get; set; }
 
         public PlayerDataModel _playerData { get; set; }
 
-        public PlayerPhysicModel _playerPhysic { get; set; }
+        private readonly ServerPacketProcessor _serverPacketProcessor;
 
         public ServerClient() { }
 
-        public ServerClient(NetPeer netPeer)
+        public ServerClient(NetPeer netPeer, ServerPacketProcessor? serverPacketProcessor)
         {
+            _serverPacketProcessor = serverPacketProcessor;
+
             _playerData = new PlayerDataModel();
-            _playerPhysic = new PlayerPhysicModel();
+
             _peer = netPeer;
 
             _playerData.Index = _peer.Id;
@@ -28,8 +31,9 @@ namespace DragonRunes.Server.Infrastructure
 
         public void Disconnect()
         {
+            _serverPacketProcessor.ServerLeft(_peer);
+
             _peer.Disconnect();
-            OnDisconnect?.Invoke(_peer.Id);
         }
 
         //public void SendDataToClient(NetDataWriter writer)

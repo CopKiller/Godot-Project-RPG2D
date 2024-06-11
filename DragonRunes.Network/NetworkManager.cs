@@ -12,6 +12,11 @@ public class NetworkManager
 
     public bool _isRunning;
 
+    public NetworkManager(IService networkService)
+    {
+        _networkService = networkService;
+    }
+
     public void Start()
     {
         _networkService?.Register();
@@ -40,7 +45,7 @@ public class NetworkManager
     public void Update()
     {
         _networkService?.Update();
-        Thread.Sleep(15);
+        //Thread.Sleep(15);
 
     }
 }

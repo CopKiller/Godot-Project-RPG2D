@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{886A2B97-4E11-4CA2-ABE6-448C4D3D626C}|DragonRunes.Client\\DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\nodemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886A2B97-4E11-4CA2-ABE6-448C4D3D626C}|DragonRunes.Client\\DragonRunes.Client.csproj|solutionrelative:dragonrunes.client\\scripts\\nodemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{349876BF-3148-452B-AACE-F1F2B89A590F}|External\\DragonRunes.Database\\DragonRunes.Database.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\external\\dragonrunes.database\\dragonrunes.database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{349876BF-3148-452B-AACE-F1F2B89A590F}|External\\DragonRunes.Database\\DragonRunes.Database.csproj|solutionrelative:external\\dragonrunes.database\\dragonrunes.database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 199,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NodeManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\NodeManager.cs",
+              "RelativeDocumentMoniker": "DragonRunes.Client\\Scripts\\NodeManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\NodeManager.cs",
+              "RelativeToolTip": "DragonRunes.Client\\Scripts\\NodeManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T02:43:28.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DragonRunes.Database.csproj",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\DragonRunes.Database\\DragonRunes.Database.csproj",
+              "RelativeDocumentMoniker": "External\\DragonRunes.Database\\DragonRunes.Database.csproj",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\DragonRunes.Database\\DragonRunes.Database.csproj",
+              "RelativeToolTip": "External\\DragonRunes.Database\\DragonRunes.Database.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-11T02:43:18.992Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 50,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

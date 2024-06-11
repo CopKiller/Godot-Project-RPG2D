@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\EntityFrameworkCore\DragonRunes.Database.csproj" />
+    <ProjectReference Include="..\..\DragonRunes.Database\DragonRunes.Database.csproj" />
   </ItemGroup>
 
 </Project>

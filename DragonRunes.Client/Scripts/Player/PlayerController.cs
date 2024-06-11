@@ -2,7 +2,7 @@
 using GdProject.Client.Scripts.Entities.Player;
 using DragonRunes.Models;
 using GdProject.Model;
-using DragonRunes.Models.CustomData.Godot;
+using DragonRunes.Network.CustomData;
 
 public partial class PlayerController : PlayerInput
 {
@@ -23,14 +23,14 @@ public partial class PlayerController : PlayerInput
         GetParent().AddChild(newPlayer);
         //NodeManager.AddNode(newPlayer);
 
-        newPlayer.InitializePlayerModel(player.playerDataModel, player.playerPhysicModel);
+        newPlayer.InitializePlayerModel(player.playerDataModel);
     }
 
     public void AddLocalPlayer(PlayerController player)
     {
         IsLocalPlayer = true;
 
-        this.InitializePlayerModel(player.playerDataModel, player.playerPhysicModel);
+        this.InitializePlayerModel(player.playerDataModel);
     }
 
     private void InitializePlayerModel(PlayerDataModel playerDataModel)

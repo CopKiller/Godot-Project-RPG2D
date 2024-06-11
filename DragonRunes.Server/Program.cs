@@ -1,7 +1,7 @@
 ﻿
 
-using Server.Commands;
-using Server.Infrastructure;
+using DragonRunes.Server.Infrastructure;
+using DragonRunes.Server.Commands;
 
 namespace DragonRunes.Server;
 public class Program

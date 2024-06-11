@@ -10,7 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DragonRunes.Network\DragonRunes.Network.csproj" />
     <ProjectReference Include="..\DragonRunes.Shared\DragonRunes.Shared.csproj" />
-    <ProjectReference Include="..\External\EntityFrameworkCore\DragonRunes.Database.csproj" />
+    <ProjectReference Include="..\External\DragonRunes.Database\DragonRunes.Database.csproj" />
   </ItemGroup>
 
   <ItemGroup>

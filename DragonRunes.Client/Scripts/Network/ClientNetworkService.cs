@@ -1,4 +1,5 @@
-﻿using DragonRunes.Network;
+﻿using DragonRunes.Logger;
+using DragonRunes.Network;
 using LiteNetLib;
 using LiteNetLib.Utils;
 using System;
@@ -48,20 +49,20 @@ public class ClientNetworkService : NetworkService
     {
         base.Start();
 
-        //if (NetManager.IsRunning)
-        //ExternalLogger.Print("Client: Started client");
-        //else
-        //ExternalLogger.Print("Client: Failed to start client");
+        if (NetManager.IsRunning)
+            Logg.Logger.Log("Client: Started client");
+        else
+            Logg.Logger.Log("Client: Failed to start client");
 
         var CurrentPeer = NetManager.Connect(NetworkAddress.ServerAddress, NetworkAddress.ServerPort, NetworkAddress.SecureConnectionKey);
 
         if (CurrentPeer == null)
         {
-            //ExternalLogger.Print("Client: Failed to connect to server");
+            Logg.Logger.Log("Client: Failed to connect to server");
             return;
         }
-        //else
-        //ExternalLogger.Print("Client: Connected to server");
+        else
+            Logg.Logger.Log("Client: Connected to server");
 
         CurrentPeerConnectedEvent?.Invoke(CurrentPeer);
     }

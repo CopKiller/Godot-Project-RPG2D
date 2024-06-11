@@ -1,6 +1,6 @@
 ﻿
 
-using GdProject.Logger;
+
 using Godot;
 
 namespace GdProject.Client.Scripts.Entities.Player

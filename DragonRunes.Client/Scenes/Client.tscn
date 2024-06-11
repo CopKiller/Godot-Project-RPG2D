@@ -9,7 +9,5 @@
 follow_viewport_enabled = true
 
 [node name="MainMenu" parent="CanvasLayer" instance=ExtResource("1_j8ebj")]
-visible = false
 
 [node name="Game" parent="CanvasLayer" instance=ExtResource("2_hkxwx")]
-visible = false

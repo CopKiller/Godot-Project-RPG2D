@@ -15,16 +15,11 @@ internal class ServerNetworkService : NetworkService
 
     public ServerPacketProcessor? _serverPacketProcessor { get; private set; }
 
-    public event Action<NetPeer> PlayerAccepted;
+    //public event Action<NetPeer> PlayerAccepted;
 
     public override void Register()
     {
         base.Register();
-
-        _serverPacketProcessor = new ServerPacketProcessor();
-        _serverPacketProcessor.Initialize();
-
-        _players = new DictionaryWrapper<int, ServerClient>();
 
         // Server is true, client is false
         this.NetManager.UseNativeSockets = true;
@@ -42,6 +37,11 @@ internal class ServerNetworkService : NetworkService
 
     public override void Start()
     {
+        _serverPacketProcessor = new ServerPacketProcessor();
+        _serverPacketProcessor.Initialize();
+
+        _players = new DictionaryWrapper<int, ServerClient>();
+
         var port = NetworkAddress.ServerPort;
 
         Logg.Logger.Log("Server: Try to start on port " + port);
@@ -74,11 +74,19 @@ internal class ServerNetworkService : NetworkService
 
     private void OnPeerConnectedEvent(NetPeer peer)
     {
-        PlayerAccepted?.Invoke(peer);
+            var player = new ServerClient(peer, _serverPacketProcessor);
+            _players?.AddItem(peer.Id, player);
+
+            Logg.Logger.Log($"Player connected: {peer.Id}");
     }
     private void OnPeerDisconnectedEvent(NetPeer peer, DisconnectInfo disconnectInfo)
     {
-        _players.GetItem(peer.Id).Disconnect();
+        var peerId = peer.Id;
+
+        _players?.GetItem(peerId).Disconnect();
+        _players?.RemoveItem(peerId);
+
+        Logg.Logger.Log($"Player disconnected: {peerId}");
     }
     private void OnNetworkErrorEvent(IPEndPoint endPoint, SocketError socketError)
     {

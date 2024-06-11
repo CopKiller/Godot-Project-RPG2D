@@ -1,4 +1,4 @@
-﻿using DragonRunes.Models.CustomData.Godot;
+﻿using DragonRunes.Network.CustomData;
 using Godot;
 using System;
 
@@ -13,11 +13,11 @@ namespace GdProject.Model
 
         public bool InGame = false;
 
-        protected Vector2 Direction = Vector2.Zero;
+        protected Godot.Vector2 Direction = Godot.Vector2.Zero;
 
-        protected Vector2 LastDirection = Vector2.Zero;
+        protected Godot.Vector2 LastDirection = Godot.Vector2.Zero;
 
-        private Vector2 JoystickDirection = Vector2.Zero;
+        private Godot.Vector2 JoystickDirection = Godot.Vector2.Zero;
 
         protected float Speed;
 
@@ -36,13 +36,13 @@ namespace GdProject.Model
         {
             AnimatedSprite = GetChild<AnimatedSprite2D>(0);
 
-            Position = new Godot.Vector2(playerPhysicModel.Position.X, playerPhysicModel.Position.Y);
+            Position = new Godot.Vector2(playerDataModel.Position.X, playerDataModel.Position.Y);
 
-            Direction = new Godot.Vector2(playerPhysicModel.Direction.X, playerPhysicModel.Direction.Y);
+            Direction = new Godot.Vector2(playerDataModel.Direction.X, playerDataModel.Direction.Y);
 
             LastDirection = Direction;
 
-            Speed = playerPhysicModel.Speed;
+            Speed = 100; //playerDataModel.Speed;
         }
 
 
@@ -85,7 +85,7 @@ namespace GdProject.Model
         }
         private void ProcessNetworkSincronization()
         {
-            var needToSync = Velocity != Vector2.Zero;
+            var needToSync = Velocity != Godot.Vector2.Zero;
 
             if (needToSync)
             {
@@ -102,9 +102,9 @@ namespace GdProject.Model
             }
         }
 
-        private Vector2 GetInputDirection()
+        private Godot.Vector2 GetInputDirection()
         {
-            return new Vector2(xMoving, yMoving).Normalized();
+            return new Godot.Vector2(xMoving, yMoving).Normalized();
         }
 
         protected void SetInputDirection()
@@ -113,7 +113,7 @@ namespace GdProject.Model
             yMoving = Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
         }
 
-        public void OnVirtualJoystickAnalogicChange(Vector2 direction)
+        public void OnVirtualJoystickAnalogicChange(Godot.Vector2 direction)
         {
             xMoving = direction.X;
             yMoving = direction.Y;
@@ -154,7 +154,7 @@ namespace GdProject.Model
             AnimatedSprite.Play(animationName);
         }
         // Obtém o nome da animação com base na direção do movimento
-        private string GetAnimationNameFromDirection(Vector2 direction)
+        private string GetAnimationNameFromDirection(Godot.Vector2 direction)
         {
             bool inputRunning;
 

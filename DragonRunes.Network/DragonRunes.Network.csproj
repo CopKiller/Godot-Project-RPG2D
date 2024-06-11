@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DragonRunes.Logger\DragonRunes.Logger.csproj" />
+    <ProjectReference Include="..\DragonRunes.Models\DragonRunes.Models.csproj" />
     <ProjectReference Include="..\External\LiteNetLib\LiteNetLib.csproj" />
   </ItemGroup>
 

@@ -5,4 +5,10 @@
     <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'ios' ">net8.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DragonRunes.Logger\DragonRunes.Logger.csproj" />
+    <ProjectReference Include="..\DragonRunes.Models\DragonRunes.Models.csproj" />
+    <ProjectReference Include="..\DragonRunes.Network\DragonRunes.Network.csproj" />
+    <ProjectReference Include="..\DragonRunes.Shared\DragonRunes.Shared.csproj" />
+  </ItemGroup>
 </Project>
