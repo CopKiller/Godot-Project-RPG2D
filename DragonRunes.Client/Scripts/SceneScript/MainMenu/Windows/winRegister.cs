@@ -1,16 +1,20 @@
-﻿using DragonRunes.Logger;
-using Godot;
+﻿using Godot;
 
-public partial class Game : Node2D
+public partial class winRegister : WindowBase
 {
     public override void _Ready()
     {
+        base._Ready();
+
         // Inicia os componentes da cena
-        Logg.Logger.Log("Iniciando componentes da cena...");
         InitializeComponents();
     }
 
     private void InitializeComponents()
+    {
+        AssignButtons();
+    }
+    private void AssignButtons()
     {
         
     }

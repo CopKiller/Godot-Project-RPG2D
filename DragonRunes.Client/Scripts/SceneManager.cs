@@ -53,15 +53,6 @@ public static class SceneManager
 
             NodeManager.AddToNodeManager(instance);
             pathRoot.AddChild(instance);
-
-            //node.GetTree().Root.AddChild(scene.Instantiate());
-
-            //var instance = scene.Instantiate();
-
-            //Logg.Logger.Log("Adicionando cena '" + name + "'");
-
-            //NodeManager.AddToNodeManager(instance);
-            //node.AddChild(instance);
         }
         else
         {

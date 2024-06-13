@@ -1,5 +1,5 @@
 ﻿using DragonRunes.Logger;
-using DragonRunes.Network.Service.Interface;
+using DragonRunes.Network.Service;
 using LiteNetLib;
 
 namespace DragonRunes.Network;
@@ -11,8 +11,6 @@ public abstract class NetworkService : IService
     /// <inheritdoc />
     public virtual void Register()
     {
-        Logg.Logger.Log("Registering Network Service.");
-
         this.listener = new EventBasedNetListener();
         this.NetManager = new NetManager(this.listener)
         {

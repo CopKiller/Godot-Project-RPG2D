@@ -1,4 +1,6 @@
 ﻿using DragonRunes.Logger;
+using DragonRunes.Network;
+using DragonRunes.Scripts.Network;
 using Godot;
 
 namespace DragonRunes.Client.Scripts
@@ -17,19 +19,11 @@ namespace DragonRunes.Client.Scripts
 
             // Carrega a cena inicial do MainMenu
             Logg.Logger.Log("Carregando a cena MainMenu...");
-
             this.LoadScene("MainMenu");
 
-
-            //// Obtém a raiz do nó "Root" e adiciona ao gerenciador
-            //var tree = GetTree().Root.GetNode<Node>("Root");
-
-            //AddToNodeManager(tree);
-
-            //Logg.Logger.Log("Nós carregados: " + nodeMap.Count());
-
-            //// Remove o gerenciador de nós mas mantém seus métodos acessíveis de qualquer parte do código
-            //this.QueueFree();
+            // Realiza a conexão com o servidor
+            var netManager = new NetworkManager(new ClientNetworkService());
+            netManager.Start();
         }
     }
 }

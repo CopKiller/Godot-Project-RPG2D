@@ -8,7 +8,6 @@ transparent_bg = true
 title = "title here"
 initial_position = 1
 size = Vector2i(300, 300)
-visible = false
 wrap_controls = true
 unresizable = true
 content_scale_size = Vector2i(284, 300)

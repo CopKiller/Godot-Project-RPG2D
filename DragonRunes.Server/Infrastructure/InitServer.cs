@@ -4,75 +4,69 @@ using DragonRunes.Server.Logger;
 using DragonRunes.Network;
 using DragonRunes.Shared;
 using DragonRunes.Server.Network;
+using DragonRunes.Server.Repository;
+using DragonRunes.Database.Repository;
+using DragonRunes.Models;
+using Microsoft.Extensions.DependencyInjection;
+using DragonRunes.Network.Service;
 
 namespace DragonRunes.Server.Infrastructure
 {
     public class InitServer
     {
-        // TODO: Implement the ServerLoop class
+        private readonly IServiceProvider _serviceProvider;
 
-        private NetworkManager _networkManager;
+        private INetworkManager _networkManager;
 
-        //private LogManager _loggerManager;
-
-        //internal static InitDatabase _databaseManager;
+        public DatabaseManager _databaseManager;
 
         private bool _isRunning = false;
 
-        internal InitServer() { }
+        internal InitServer(IServiceProvider serviceProvider)
+        {
+            _serviceProvider = serviceProvider;
+        }
 
         public void Start()
         {
-            if (_isRunning)
-            {
-                return;
-            }
+            StartLogger();
 
-            // Initialize the logger
-            Logg.Logger = new LogManager();
-            Logg.Logger.Log("Logs Initialized...");
+            StartDatabase();
 
-            // Initialize the server network service threading
-            _networkManager = new NetworkManager(new ServerNetworkService());
-            Logg.Logger.Log("NetManager Initialized...");
+            StartNetwork();
 
-            //_networkManager._networkService.PlayerAccepted += NetworkService_PlayerAccepted;
+            Logg.Logger.Log("Server Started...");
 
-            _networkManager.Start();
-            Logg.Logger.Log("NetManager Started...");
-
-            // Initialize the database
-            //_databaseManager = new InitDatabase();
-            //_databaseManager.Start();
+            Logg.Logger.Log($"Quantidade de contas: {CountDatabaseAccounts().ToString()}");
 
             _isRunning = true;
         }
-        //private void NetworkService_PlayerAccepted(NetPeer peer)
-        //{
-        //    var client = new ServerClient(peer);
-        //    client.OnDisconnect += PlayerDisconnect;
-        //    //_clients.AddItem(peer.Id, client);
 
-        //    Logg.Logger.Log($"Player connected: {peer.Id}");
-        //}
+        private void StartLogger()
+        {
+            Logg.Logger = new LogManager();
+            Logg.Logger.Log("Logs Initialized...");
+        }
 
-        //private void PlayerDisconnect(int peerId)
-        //{
+        private void StartDatabase()
+        {
+            var accountRepo = _serviceProvider.GetRequiredService<IAccountRepository>();
+            var playerRepo = _serviceProvider.GetRequiredService<IPlayerRepository>();
+            _databaseManager = new DatabaseManager(accountRepo, playerRepo);
+            Logg.Logger.Log("Database Initialized...");
+        }
 
-        //    var peerEntity = _clients.GetItem(peerId);
+        private void StartNetwork()
+        {
+            _networkManager =  _serviceProvider.GetRequiredService<INetworkManager>();
+            _networkManager.Register(_serviceProvider.GetRequiredService<IService>());
+            _networkManager.Start();
+            Logg.Logger.Log("Network Started...");
+        }
 
-        //    var sLeft = new SLeft();
-        //    sLeft.Index = peerId;
-        //    sLeft.WritePacket(_networkManager._serverNetwork.NetPacketProcessor, peerEntity._peer);
-
-        //    var db = _databaseManager._databaseManager.PlayerRepo;
-        //    if (db == null) { return; }
-
-        //    db.SavePlayerAsync(peerEntity._playerData, peerEntity._playerPhysic);
-
-        //    _clients.RemoveItem(peerId);
-
-        //    Logg.Logger.Log($"Player disconnected: {peerId}");
-        //}
+        private int CountDatabaseAccounts()
+        {
+            return _databaseManager.AccountRepository.CountAccounts();
+        }
     }
 }

@@ -13,8 +13,4 @@
     <ProjectReference Include="..\External\DragonRunes.Database\DragonRunes.Database.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Database\" />
-  </ItemGroup>
-
 </Project>

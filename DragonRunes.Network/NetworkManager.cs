@@ -1,12 +1,11 @@
 ﻿
-
-using DragonRunes.Network.Service.Interface;
+using DragonRunes.Network.Service;
 
 namespace DragonRunes.Network;
 
-public class NetworkManager
+public class NetworkManager : INetworkManager
 {
-    public readonly IService? _networkService;
+    public IService? _networkService { get; private set; }
 
     private Thread? _thread;
 
@@ -34,6 +33,11 @@ public class NetworkManager
         _thread.Start();
 
         _isRunning = true;
+    }
+
+    public void Register(IService service)
+    {
+        _networkService = service;
     }
 
     public void Stop()

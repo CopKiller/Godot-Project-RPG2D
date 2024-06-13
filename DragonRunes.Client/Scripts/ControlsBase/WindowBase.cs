@@ -18,7 +18,7 @@ public partial class WindowBase : Window
 
     public override void _EnterTree()
     {
-        originalSize = this.Size;
+        originalSize = this.Size;    
     }
     private void InitializeTimer()
     {
@@ -36,14 +36,14 @@ public partial class WindowBase : Window
         timerClose.Connect("timeout", new Callable(this, nameof(CloseWindow)));
     }
 
-    public void OnCloseRequest()
+    public virtual void OnCloseRequest()
     {
         // Start Timer
         timerClose.Start();
     }
     public void CloseWindow()
     {
-        this.Title = "";
+        //this.Title = "";
 
         var size = this.Size;
 
@@ -53,7 +53,8 @@ public partial class WindowBase : Window
         {
             this.Hide();
             timerClose.Stop();
-            //timerClose.QueueFree();
+
+            this.Size = originalSize;
         }
     }
 }

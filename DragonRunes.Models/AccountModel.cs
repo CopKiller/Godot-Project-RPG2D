@@ -13,5 +13,11 @@ namespace DragonRunes.Models
         public string Password { get; set; } = string.Empty;
         public string Mail { get; set; } = string.Empty;
         public string Hash { get; set; } = string.Empty;
+
+        public PlayerModel Player { get; set; } = new PlayerModel();
+
+        public AccountModel()
+        {
+        }
     }
 }

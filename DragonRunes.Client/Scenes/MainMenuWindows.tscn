@@ -1,53 +1,64 @@
-[gd_scene load_steps=2 format=3 uid="uid://bwntvhcisiman"]
+[gd_scene load_steps=5 format=3 uid="uid://bwntvhcisiman"]
 
 [ext_resource type="PackedScene" uid="uid://ch3p1vufwf0wq" path="res://Scenes/ControlsBase/WindowBase.tscn" id="1_sblp3"]
+[ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winMenu.cs" id="2_rpr66"]
+[ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winLogin.cs" id="3_xbin1"]
+[ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winRegister.cs" id="4_m3ejt"]
 
 [node name="MainMenuWindows" type="Node"]
 
 [node name="winMenu" parent="." instance=ExtResource("1_sblp3")]
 title = "MENU"
+visible = false
+script = ExtResource("2_rpr66")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="winMenu"]
+[node name="MarginContainer" type="MarginContainer" parent="winMenu"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
 offset_top = 2.0
-offset_right = -2.0
-offset_bottom = -3.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="winMenu/MarginContainer"]
+layout_mode = 2
 theme_override_constants/separation = 5
 
-[node name="btnLogin" type="Button" parent="winMenu/VBoxContainer"]
+[node name="btnLogin" type="Button" parent="winMenu/MarginContainer/VBoxContainer" groups=["MenuButtons"]]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Login"
 
-[node name="btnRegister" type="Button" parent="winMenu/VBoxContainer"]
+[node name="btnRegister" type="Button" parent="winMenu/MarginContainer/VBoxContainer" groups=["MenuButtons"]]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Register"
 
-[node name="btnRecovery" type="Button" parent="winMenu/VBoxContainer"]
+[node name="btnRecovery" type="Button" parent="winMenu/MarginContainer/VBoxContainer" groups=["MenuButtons"]]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Recovery
 "
 
-[node name="btnOptions" type="Button" parent="winMenu/VBoxContainer"]
+[node name="btnOptions" type="Button" parent="winMenu/MarginContainer/VBoxContainer" groups=["MenuButtons"]]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Options
 "
 
-[node name="btnCredits" type="Button" parent="winMenu/VBoxContainer"]
+[node name="btnCredits" type="Button" parent="winMenu/MarginContainer/VBoxContainer" groups=["MenuButtons"]]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Credits
 "
 
-[node name="btnExit" type="Button" parent="winMenu/VBoxContainer"]
+[node name="btnExit" type="Button" parent="winMenu/MarginContainer/VBoxContainer" groups=["MenuButtons"]]
 layout_mode = 2
 size_flags_vertical = 3
 text = "Exit
@@ -56,79 +67,94 @@ text = "Exit
 [node name="winLogin" parent="." instance=ExtResource("1_sblp3")]
 title = "LOGIN"
 size = Vector2i(300, 200)
+visible = false
+exclusive = true
+always_on_top = true
 content_scale_size = Vector2i(284, 200)
+script = ExtResource("3_xbin1")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="winLogin"]
+[node name="MarginContainer" type="MarginContainer" parent="winLogin"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 2.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="winLogin/MarginContainer"]
+layout_mode = 2
 theme_override_constants/separation = 15
 
-[node name="HBoxContainer" type="HBoxContainer" parent="winLogin/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="winLogin/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="lblLogin" type="Label" parent="winLogin/VBoxContainer/HBoxContainer"]
+[node name="lblLogin" type="Label" parent="winLogin/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "User:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="txtLogin" type="LineEdit" parent="winLogin/VBoxContainer/HBoxContainer"]
+[node name="txtLogin" type="LineEdit" parent="winLogin/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Username here!"
 alignment = 1
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="winLogin/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="winLogin/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="lblLogin" type="Label" parent="winLogin/VBoxContainer/HBoxContainer2"]
+[node name="lblPass" type="Label" parent="winLogin/MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "Pass:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="txtLogin" type="LineEdit" parent="winLogin/VBoxContainer/HBoxContainer2"]
+[node name="txtPass" type="LineEdit" parent="winLogin/MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Password here!"
 alignment = 1
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="winLogin/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="winLogin/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="chkSaveUser" type="CheckBox" parent="winLogin/VBoxContainer/HBoxContainer3"]
+[node name="chkSaveUser" type="CheckBox" parent="winLogin/MarginContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Save User?"
 
-[node name="chkSavePass" type="CheckBox" parent="winLogin/VBoxContainer/HBoxContainer3"]
+[node name="chkSavePass" type="CheckBox" parent="winLogin/MarginContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 text = "Save Pass?"
 
-[node name="btnGo" type="Button" parent="winLogin/VBoxContainer"]
+[node name="btnGo" type="Button" parent="winLogin/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "GO!"
 
 [node name="winRegister" parent="." instance=ExtResource("1_sblp3")]
 title = "REGISTER"
-size = Vector2i(300, 246)
+size = Vector2i(300, 248)
+visible = false
 content_scale_size = Vector2i(284, 250)
+script = ExtResource("4_m3ejt")
 
 [node name="MarginContainer" type="MarginContainer" parent="winRegister"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 10
@@ -144,14 +170,14 @@ layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="lblLogin" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="lblRLogin" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "User:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="txtLogin" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="txtRLogin" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Username here!"
@@ -162,14 +188,14 @@ layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="lblPass" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="lblRPass" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "Pass:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="txtPass" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="txtRPass" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Password here!"
@@ -180,14 +206,14 @@ layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="lblPass" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer3"]
+[node name="lblRPass" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "Pass:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="txtPass" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer3"]
+[node name="txtRPass" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Retype password here!"
@@ -198,14 +224,14 @@ layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="lblMail" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer4"]
+[node name="lblRMail" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "Mail:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="txtMail" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer4"]
+[node name="txtRMail" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Insert your e-mail here!"
@@ -216,20 +242,20 @@ layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="lblBirthday" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer5"]
+[node name="lblRBirthday" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer5"]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "Birthday Date:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="txtBirthday" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer5"]
+[node name="txtRBirthday" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer5"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "##/##/####"
 alignment = 1
 
-[node name="btnRegister" type="Button" parent="winRegister/MarginContainer/VBoxContainer"]
+[node name="btnRGo" type="Button" parent="winRegister/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "GO!"
@@ -237,6 +263,7 @@ text = "GO!"
 [node name="winOptions" parent="." instance=ExtResource("1_sblp3")]
 title = "OPTIONS"
 size = Vector2i(300, 122)
+visible = false
 content_scale_size = Vector2i(284, 122)
 
 [node name="MarginContainer" type="MarginContainer" parent="winOptions"]
@@ -266,19 +293,23 @@ layout_mode = 2
 size_flags_horizontal = 3
 text = "Music"
 
-[node name="btnOk" type="Button" parent="winOptions/MarginContainer/VBoxContainer"]
+[node name="btnOOk" type="Button" parent="winOptions/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "OK!"
 
 [node name="winNewChar" parent="." instance=ExtResource("1_sblp3")]
 title = "NEW CHAR"
 size = Vector2i(300, 150)
+visible = false
 content_scale_size = Vector2i(284, 150)
 
 [node name="MarginContainer" type="MarginContainer" parent="winNewChar"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 10
@@ -308,7 +339,7 @@ popup/item_0/id = 0
 popup/item_1/text = "Female"
 popup/item_1/id = 1
 
-[node name="btnOk" type="Button" parent="winNewChar/MarginContainer/VBoxContainer"]
+[node name="btnCOk" type="Button" parent="winNewChar/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "OK!"

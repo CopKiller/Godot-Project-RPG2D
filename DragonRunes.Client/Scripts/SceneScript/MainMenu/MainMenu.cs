@@ -19,7 +19,5 @@ public partial class MainMenu : Control
     private void InitializeComponents()
     {
         NodeManager.GetNode<Window>("winMenu").Show();
-
-        //this.LoadScene("Game");
     }
 }

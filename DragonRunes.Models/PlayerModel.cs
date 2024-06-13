@@ -13,7 +13,11 @@ namespace DragonRunes.Models
         public string Name { get; set; } = string.Empty;
         public Gender Gender { get; set; }
         public Class Class { get; set; }
-        public Position Position { get; set; }
-        public Direction Direction { get; set; }
+        public Position Position { get; set; } = new Position();
+        public Direction Direction { get; set; } = new Direction();
+
+        public PlayerModel()
+        {
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace DragonRunes.Models.CustomData
     public class Direction 
     {
         public int Id { get; set; }
-        public float X { get; set; }
-        public float Y { get; set; }
+        public float X { get; set; } = 0;
+        public float Y { get; set; } = 0;
     }
 }

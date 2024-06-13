@@ -1,4 +1,4 @@
-namespace DragonRunes.Network.Service.Interface;
+namespace DragonRunes.Network.Service;
 
 /// <summary>
 /// Required interface for service classes
