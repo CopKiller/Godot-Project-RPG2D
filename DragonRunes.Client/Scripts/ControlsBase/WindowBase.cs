@@ -1,16 +1,16 @@
-using Godot;
+﻿using Godot;
 using System;
 
 public partial class WindowBase : Window
 {
 
-	private Timer timerClose;
+    private Timer timerClose;
 
-	private Vector2I originalSize;
+    private Vector2I originalSize;
 
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
-	{
+    // Called when the node enters the scene tree for the first time.
+    public override void _Ready()
+    {
         InitializeTimer();
 
         AssignSignals();
@@ -20,40 +20,40 @@ public partial class WindowBase : Window
     {
         originalSize = this.Size;
     }
-	private void InitializeTimer()
-	{
+    private void InitializeTimer()
+    {
         // Add Timer
         timerClose = new Timer();
         timerClose.WaitTime = 0.01;
         timerClose.OneShot = false;
         this.AddChild(timerClose);
     }
-	private void AssignSignals()
+    private void AssignSignals()
     {
         // Assign Signals
-        this.Connect("close_requested", new Callable(this, "OnCloseRequest"));
+        this.Connect("close_requested", new Callable(this, nameof(OnCloseRequest)));
 
         timerClose.Connect("timeout", new Callable(this, nameof(CloseWindow)));
     }
 
-	public void OnCloseRequest()
+    public void OnCloseRequest()
     {
         // Start Timer
-		timerClose.Start();
+        timerClose.Start();
     }
-	public void CloseWindow()
-	{
-		this.Title = "";
+    public void CloseWindow()
+    {
+        this.Title = "";
 
-		var size = this.Size;
+        var size = this.Size;
 
-		this.Size = this.Size - (originalSize/8);
+        this.Size = this.Size - (originalSize / 8);
 
-		if (this.Size.X <= 0 || this.Size.Y <= 0 || size == this.Size)
+        if (this.Size.X <= 0 || this.Size.Y <= 0 || size == this.Size)
         {
             this.Hide();
-			timerClose.Stop();
-			//timerClose.QueueFree();
+            timerClose.Stop();
+            //timerClose.QueueFree();
         }
-	}
+    }
 }

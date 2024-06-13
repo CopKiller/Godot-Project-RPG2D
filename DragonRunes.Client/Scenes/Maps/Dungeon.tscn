@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://m1y27vtnxo4m"]
+
+[ext_resource type="Texture2D" uid="uid://deiqy8q80rkik" path="res://Resources/Maps/Dungeon/ground.png" id="1_g4p37"]
+[ext_resource type="Texture2D" uid="uid://b2gktinl44gy1" path="res://Resources/Maps/Dungeon/fringe.png" id="2_83uvu"]
+
+[node name="Dungeon" type="Node2D"]
+
+[node name="Ground" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Ground"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_g4p37")
+
+[node name="Fringe" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Fringe"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_83uvu")

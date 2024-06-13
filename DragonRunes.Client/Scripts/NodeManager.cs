@@ -5,26 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 
 // Classe para gerenciar os nós do jogo
-public partial class NodeManager : Node
+public class NodeManager
 {
     private static DictionaryWrapper<string, Node> nodeMap = new DictionaryWrapper<string, Node>();
-
-    public override void _Ready()
-    {
-
-        // Inicia o logger
-        new LogManager();
-
-        // Obtém a raiz do nó "RPG2D" e adiciona ao gerenciador
-        var tree = GetTree().Root.GetNode<Node>("Root");
-
-        AddToNodeManager(tree);
-
-        Logg.Logger.Log("Nós carregados: " + nodeMap.Count());
-
-        // Remove o gerenciador de nós mas mantém seus métodos acessíveis de qualquer parte do código
-        this.QueueFree();
-    }
 
     // Método para adicionar um nó ao gerenciador
     public static void AddNode<T>(T node) where T : Node

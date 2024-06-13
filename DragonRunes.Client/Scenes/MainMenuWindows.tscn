@@ -6,7 +6,6 @@
 
 [node name="winMenu" parent="." instance=ExtResource("1_sblp3")]
 title = "MENU"
-visible = false
 
 [node name="VBoxContainer" type="VBoxContainer" parent="winMenu"]
 anchors_preset = 15
@@ -57,7 +56,6 @@ text = "Exit
 [node name="winLogin" parent="." instance=ExtResource("1_sblp3")]
 title = "LOGIN"
 size = Vector2i(300, 200)
-visible = false
 content_scale_size = Vector2i(284, 200)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="winLogin"]
@@ -125,7 +123,6 @@ text = "GO!"
 [node name="winRegister" parent="." instance=ExtResource("1_sblp3")]
 title = "REGISTER"
 size = Vector2i(300, 246)
-visible = false
 content_scale_size = Vector2i(284, 250)
 
 [node name="MarginContainer" type="MarginContainer" parent="winRegister"]
@@ -240,7 +237,6 @@ text = "GO!"
 [node name="winOptions" parent="." instance=ExtResource("1_sblp3")]
 title = "OPTIONS"
 size = Vector2i(300, 122)
-visible = false
 content_scale_size = Vector2i(284, 122)
 
 [node name="MarginContainer" type="MarginContainer" parent="winOptions"]
@@ -277,7 +273,6 @@ text = "OK!"
 [node name="winNewChar" parent="." instance=ExtResource("1_sblp3")]
 title = "NEW CHAR"
 size = Vector2i(300, 150)
-visible = false
 content_scale_size = Vector2i(284, 150)
 
 [node name="MarginContainer" type="MarginContainer" parent="winNewChar"]

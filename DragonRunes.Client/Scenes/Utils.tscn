@@ -4,7 +4,5 @@
 
 [node name="Utils" type="Node"]
 
-[node name="LogManager" type="Node" parent="."]
-
 [node name="NodeManager" type="Node" parent="."]
 script = ExtResource("1_84h21")

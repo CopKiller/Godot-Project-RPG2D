@@ -1,13 +1,3 @@
-[gd_scene load_steps=3 format=3 uid="uid://dvrdq51xli4r7"]
-
-[ext_resource type="PackedScene" uid="uid://cke67ids60c8u" path="res://Scenes/MainMenu.tscn" id="1_j8ebj"]
-[ext_resource type="PackedScene" uid="uid://cetpw5quodc83" path="res://Scenes/Game.tscn" id="2_hkxwx"]
+[gd_scene format=3 uid="uid://dvrdq51xli4r7"]
 
 [node name="Client" type="Node2D"]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-follow_viewport_enabled = true
-
-[node name="MainMenu" parent="CanvasLayer" instance=ExtResource("1_j8ebj")]
-
-[node name="Game" parent="CanvasLayer" instance=ExtResource("2_hkxwx")]
