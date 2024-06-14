@@ -77,6 +77,21 @@ public class NodeManager
         }
     }
 
+    public static void RemoveNode<T>(T node) where T : Node
+    {
+        if (nodeMap.ContainsKey<T>(node.Name))
+        {
+            nodeMap.RemoveItem(node.Name);
+            FreeNode(node);
+
+            Logg.Logger.Log("Nó removido: " + node.Name);
+        }
+        else
+        {
+            Logg.Logger.Log("O nó '" + node.Name + "' não foi encontrado e não pode ser removido.");
+        }
+    }
+
     // Método para eliminar um nó da memória
     private static void FreeNode<T>(T node) where T : Node
     {

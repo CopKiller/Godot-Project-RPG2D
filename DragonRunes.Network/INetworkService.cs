@@ -3,7 +3,7 @@ namespace DragonRunes.Network.Service;
 /// <summary>
 /// Required interface for service classes
 /// </summary>
-public interface IService
+public interface INetworkService
 {
     /// <summary>
     /// Register the service

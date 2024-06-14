@@ -15,7 +15,6 @@ namespace DragonRunes.Server.Infrastructure
         public IServiceProvider Init()
         {
             Console.WriteLine("Initializing Services...");
-
             var serviceCollection = new ServiceCollection();
 
             // Database
@@ -23,10 +22,7 @@ namespace DragonRunes.Server.Infrastructure
             //Network
             ConfigureNetworkService(serviceCollection);
 
-            // ...
-
             var provider = serviceCollection.BuildServiceProvider();
-
             return provider;
         }
 
@@ -36,11 +32,10 @@ namespace DragonRunes.Server.Infrastructure
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IPlayerRepository, PlayerRepository>();
         }
-
         private void ConfigureNetworkService(IServiceCollection services)
         {
             services.AddScoped<INetworkManager, NetworkManager>();
-            services.AddScoped<IService, ServerNetworkService>();
+            services.AddScoped<INetworkService, ServerNetworkService>();
         }
 
     }

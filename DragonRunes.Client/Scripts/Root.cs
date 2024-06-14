@@ -17,13 +17,21 @@ namespace DragonRunes.Client.Scripts
             Logg.Logger.Log("Iniciando o SceneManager...");
             SceneManager.Initialize();
 
+            // Inicia o gerenciador de clientes
+            Logg.Logger.Log("Iniciando o ClientManager...");
+            CallDeferred(nameof(AddClientManager));
+
             // Carrega a cena inicial do MainMenu
             Logg.Logger.Log("Carregando a cena MainMenu...");
             this.LoadScene("MainMenu");
 
-            // Realiza a conexão com o servidor
-            var netManager = new NetworkManager(new ClientNetworkService());
-            netManager.Start();
+        }
+
+        private void AddClientManager()
+        {
+            var clientManager = new ClientManager();
+            clientManager.Name = "ClientManager";
+            GetTree().Root.AddChild(clientManager);
         }
     }
 }

@@ -47,6 +47,7 @@ public static class SceneManager
             foreach (var item in pathRoot.GetChildren())
             {
                 item.QueueFree();
+                NodeManager.RemoveNode(item);
             }
 
             var instance = scene.Instantiate();

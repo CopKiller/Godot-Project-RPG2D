@@ -3,7 +3,7 @@ using DragonRunes.Network.Service;
 using LiteNetLib;
 
 namespace DragonRunes.Network;
-public abstract class NetworkService : IService
+public abstract class NetworkService : INetworkService
 {
     protected NetManager? NetManager;
     protected EventBasedNetListener? listener;

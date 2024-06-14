@@ -13,7 +13,7 @@ namespace DragonRunes.Network
         void Stop();
         void Update();
 
-        void Register(IService service);
+        void Register(INetworkService service);
 
     }
 }

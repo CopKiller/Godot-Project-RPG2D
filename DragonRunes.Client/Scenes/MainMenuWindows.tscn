@@ -105,6 +105,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Username here!"
 alignment = 1
+max_length = 20
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="winLogin/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -123,6 +124,8 @@ layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Password here!"
 alignment = 1
+max_length = 20
+secret = true
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="winLogin/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -149,7 +152,6 @@ content_scale_size = Vector2i(284, 250)
 script = ExtResource("4_m3ejt")
 
 [node name="MarginContainer" type="MarginContainer" parent="winRegister"]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -304,7 +306,6 @@ visible = false
 content_scale_size = Vector2i(284, 150)
 
 [node name="MarginContainer" type="MarginContainer" parent="winNewChar"]
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

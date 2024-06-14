@@ -5,13 +5,13 @@ namespace DragonRunes.Network;
 
 public class NetworkManager : INetworkManager
 {
-    public IService? _networkService { get; private set; }
+    public INetworkService? _networkService { get; private set; }
 
     private Thread? _thread;
 
     public bool _isRunning;
 
-    public NetworkManager(IService networkService)
+    public NetworkManager(INetworkService networkService)
     {
         _networkService = networkService;
     }
@@ -35,7 +35,7 @@ public class NetworkManager : INetworkManager
         _isRunning = true;
     }
 
-    public void Register(IService service)
+    public void Register(INetworkService service)
     {
         _networkService = service;
     }
@@ -44,6 +44,7 @@ public class NetworkManager : INetworkManager
     {
         _isRunning = false;
         _networkService?.Unregister();
+        _thread?.Join();
     }
 
     public void Update()

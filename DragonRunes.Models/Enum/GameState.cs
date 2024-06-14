@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 public enum GameState
 {
-    None,
+    Disconnect,
     InLogin,
     InGame
 }

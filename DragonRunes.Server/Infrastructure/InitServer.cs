@@ -59,7 +59,7 @@ namespace DragonRunes.Server.Infrastructure
         private void StartNetwork()
         {
             _networkManager =  _serviceProvider.GetRequiredService<INetworkManager>();
-            _networkManager.Register(_serviceProvider.GetRequiredService<IService>());
+            _networkManager.Register(_serviceProvider.GetRequiredService<INetworkService>());
             _networkManager.Start();
             Logg.Logger.Log("Network Started...");
         }
