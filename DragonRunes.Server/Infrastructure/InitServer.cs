@@ -18,7 +18,7 @@ namespace DragonRunes.Server.Infrastructure
 
         private INetworkManager _networkManager;
 
-        public DatabaseManager _databaseManager;
+        public static DatabaseManager _databaseManager;
 
         private bool _isRunning = false;
 

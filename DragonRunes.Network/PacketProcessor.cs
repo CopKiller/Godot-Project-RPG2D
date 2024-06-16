@@ -1,5 +1,7 @@
 ﻿using DragonRunes.Network.CustomData;
 using DragonRunes.Network.CustomData.Extension;
+using DragonRunes.Shared.CustomDataSerializable;
+using DragonRunes.Shared.CustomDataSerializable.Extension;
 using LiteNetLib;
 using LiteNetLib.Utils;
 
@@ -14,7 +16,7 @@ namespace DragonRunes.Network
             // Register Types Of Serializations
             this.RegisterNestedType<PlayerDataModel>(() => { return new PlayerDataModel(); });
             this.RegisterNestedType<PlayerMoveModel>(() => { return new PlayerMoveModel(); });
-            this.RegisterNestedType(Vector2Extension.SerializeVector2, Vector2Extension.DeserializeVector2);
+            //this.RegisterNestedType(Vector2Extension.SerializeVector2, Vector2Extension.DeserializeVector2);
         }
 
         public virtual void SubscribePacket() { }

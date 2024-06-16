@@ -11,8 +11,9 @@ namespace DragonRunes.Models
         public int Id { get; set; }
         public string User { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
+        public DateTime BirthDate { get; set; } = DateTime.MinValue;
         public string Mail { get; set; } = string.Empty;
-        public string Hash { get; set; } = string.Empty;
+        public string Salt { get; set; } = string.Empty;
 
         public PlayerModel Player { get; set; } = new PlayerModel();
 

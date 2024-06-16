@@ -1,4 +1,5 @@
-﻿using DragonRunes.Scripts.Network;
+﻿using DragonRunes.Client.Scripts;
+using DragonRunes.Scripts.Network;
 using DragonRunes.Shared;
 using Godot;
 
@@ -30,7 +31,19 @@ public partial class winLogin : WindowBase
 
     private void GoLogin()
     {
-        
+        var clientManager = NodeManager.GetNode<ClientManager>(nameof(ClientManager));
+
+        var playerPeer = clientManager._player.CurrentPeer;
+
+        var packetProcessor = clientManager._networkService._clientPacketProcessor;
+
+        var loginField = NodeManager.GetNode<LineEdit>("txtLogin").Text;
+        var passField = NodeManager.GetNode<LineEdit>("txtPass").Text;
+
+        if (loginField.IsValidName() && passField.IsValidPassword())
+        {
+            packetProcessor.SendLogin(playerPeer, loginField, passField);
+        }
     }
 
     private void UserText(string text)

@@ -1,4 +1,5 @@
 ﻿
+using DragonRunes.Logger;
 using DragonRunes.Network;
 using DragonRunes.Network.Packet.Client;
 using DragonRunes.Server.Infrastructure;
@@ -31,6 +32,8 @@ namespace DragonRunes.Server.Network
         {
             var excludePeerId = excludePeer.Id;
 
+            Logg.Logger.Log("SendDataToAllBut: " + packet.GetType().ToString());
+
             var allPlayers = _players.GetItems()
                 .Select(allPlayers => allPlayers.Value)
                 .Where(player => player._peer.Id != excludePeerId)
@@ -48,6 +51,8 @@ namespace DragonRunes.Server.Network
         {
             var allPlayers = _players.GetItems();
 
+            Logg.Logger.Log("SendDataToAll: " + packet.GetType().ToString());
+
             foreach (var player in allPlayers)
             {
                 if (player.Value.GameState == GameState.InGame)
@@ -59,6 +64,8 @@ namespace DragonRunes.Server.Network
 
         public override void SendDataTo<T>(NetPeer peer, T packet, DeliveryMethod deliveryMethod = DeliveryMethod.ReliableOrdered) where T : class
         {
+            Logg.Logger.Log("SendDataTo Index: " + peer.Id + " do tipo: " + packet.GetType().ToString());
+
             base.SendDataTo(peer, packet, deliveryMethod);
         }
     }

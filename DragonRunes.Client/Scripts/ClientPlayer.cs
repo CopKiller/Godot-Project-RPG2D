@@ -1,5 +1,9 @@
 ﻿
+using DragonRunes.Logger;
+using DragonRunes.Network.CustomData;
 using DragonRunes.Scripts.Network;
+using DragonRunes.Shared.CustomDataSerializable;
+using GdProject.Client.Scripts.Entities.Player;
 using LiteNetLib;
 using System;
 
@@ -7,7 +11,7 @@ namespace DragonRunes.Client.Scripts
 {
     public class ClientPlayer
     {
-        public event Action OnDisconnect;
+        //public event Action OnDisconnect;
 
         /// <summary>
         /// Get the current latency between server and client
@@ -25,16 +29,43 @@ namespace DragonRunes.Client.Scripts
         /// Get the current game state
         /// </summary>
         public GameState GameState { get; set; } = GameState.Disconnect;
+        /// <summary>
+        ///  Player Data recebido pelo network
+        /// </summary>
+        public PlayerDataModel PlayerData { get; set; }
 
         public ClientPlayer()
         {
 
         }
 
-        public void Disconnect()
+        private void Disconnect()
         {
             CurrentPeer.Disconnect();
-            OnDisconnect?.Invoke();
+            //OnDisconnect?.Invoke();
+        }
+
+        public void OnLocalPeerConnected(NetPeer peer)
+        {
+            CurrentPeer = peer;
+        }
+        public void OnRemotePeerConnected(NetPeer peer)
+        {
+            GameState = GameState.InLogin;
+            RemotePeer = peer;
+            Logg.Logger.Log("Conectado ao servidor");
+        }
+        public void OnLocalPeerDisconnected(NetPeer peer)
+        {
+            GameState = GameState.Disconnect;
+            CurrentPeer = null;
+        }
+        public void OnRemotePeerDisconnected(NetPeer peer, DisconnectInfo disconnectInfo)
+        {
+            Logg.Logger.Log($"Desconectado do servidor: {disconnectInfo.Reason}");
+
+            GameState = GameState.Disconnect;
+            RemotePeer = null;
         }
     }
 }

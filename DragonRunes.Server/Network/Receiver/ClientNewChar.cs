@@ -7,9 +7,15 @@ namespace DragonRunes.Server.Network
     {
         public void ClientNewChar(CNewChar obj, NetPeer netPeer)
         {
+            var player = _players.GetItem(netPeer.Id);
 
-            //var alertManager = NodeManager.GetNode<AlertMsg>("AlertMsg");
-            //alertManager.CallDeferred(nameof(alertManager.ShowAlert), Msg);
+            if (player.GameState != GameState.InLogin)
+            {
+                ServerAlertMsg(netPeer, "You are not in the menu screen!");
+                player.Disconnect();
+                return;
+            }
+            
         }
     }
 }

@@ -43,7 +43,11 @@ namespace DragonRunes.Database.Repository
                 throw new ArgumentException("User cannot be null or empty.", nameof(user));
             }
 
-            return await _db.Accounts.Include(x => x.Player).FirstOrDefaultAsync(a => a.User == user);
+            return await _db.Accounts
+                .Include(x => x.Player)
+                .Include(y => y.Player.Position)
+                .Include(z => z.Player.Direction)
+                .FirstOrDefaultAsync(a => a.User == user);
         }
 
         public async virtual Task<IList<AccountModel>> GetAccountsAsync()

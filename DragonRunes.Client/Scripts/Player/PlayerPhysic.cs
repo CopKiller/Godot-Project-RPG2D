@@ -1,4 +1,5 @@
 ﻿using DragonRunes.Network.CustomData;
+using DragonRunes.Shared.CustomDataSerializable;
 using Godot;
 using System;
 

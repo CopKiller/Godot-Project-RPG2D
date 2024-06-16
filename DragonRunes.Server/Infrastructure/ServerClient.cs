@@ -1,8 +1,6 @@
 ﻿using LiteNetLib;
-using DragonRunes.Network.CustomData;
 using DragonRunes.Server.Network;
-using DragonRunes.Network.Packet.Server;
-using DragonRunes.Network;
+using DragonRunes.Shared.CustomDataSerializable;
 
 namespace DragonRunes.Server.Infrastructure
 {
@@ -14,7 +12,7 @@ namespace DragonRunes.Server.Infrastructure
 
         public PlayerDataModel _playerData { get; set; }
 
-        private readonly ServerPacketProcessor _serverPacketProcessor;
+        public readonly ServerPacketProcessor _serverPacketProcessor;
 
         public ServerClient() { }
 
@@ -27,12 +25,14 @@ namespace DragonRunes.Server.Infrastructure
             _peer = netPeer;
 
             _playerData.Index = _peer.Id;
+
+            GameState = GameState.InLogin;
         }
 
         public void Disconnect()
         {
             _serverPacketProcessor.ServerLeft(_peer);
-
+            GameState = GameState.Disconnect;
             _peer.Disconnect();
         }
 

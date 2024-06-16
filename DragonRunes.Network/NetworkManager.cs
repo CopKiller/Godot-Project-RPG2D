@@ -44,13 +44,12 @@ public class NetworkManager : INetworkManager
     {
         _isRunning = false;
         _networkService?.Unregister();
-        _thread?.Join();
     }
 
     public void Update()
     {
         _networkService?.Update();
-        //Thread.Sleep(15);
+        //Thread.Sleep(15); // A Lib ja implementa um delay
 
     }
 }

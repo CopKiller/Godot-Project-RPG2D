@@ -1,5 +1,4 @@
-﻿using DragonRunes.Network.CustomData;
-using LiteNetLib.Utils;
+﻿using LiteNetLib.Utils;
 
 namespace DragonRunes.Network.CustomData.Extension
 {

@@ -1,23 +1,20 @@
-﻿using DragonRunes.Network.CustomData.Extension;
+﻿using DragonRunes.Models;
+using DragonRunes.Models.CustomData;
+using DragonRunes.Shared.CustomDataSerializable.Extension;
 using LiteNetLib.Utils;
 
-namespace DragonRunes.Network.CustomData
+namespace DragonRunes.Shared.CustomDataSerializable
 {
-    public class PlayerDataModel : INetSerializable
+    public class PlayerDataModel : PlayerModel, INetSerializable
     {
         public int Index { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public Vector2 Position { get; set; }
-        public Vector2 Direction { get; set; }
-        public Class Class { get; set; }
-        public Gender Gender { get; set; }
 
         public void Deserialize(NetDataReader reader)
         {
             Index = reader.GetInt();
             Name = reader.GetString();
-            Position = reader.GetVector2();
-            Direction = reader.GetVector2();
+            Position = reader.GetVector2<Position>();
+            Direction = reader.GetVector2<Direction>();
             Class = (Class)reader.GetByte();
             Gender = (Gender)reader.GetByte();
         }

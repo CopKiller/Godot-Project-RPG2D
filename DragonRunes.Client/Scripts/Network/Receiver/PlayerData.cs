@@ -1,7 +1,8 @@
-﻿using DragonRunes.Network.Packet;
+﻿
+using DragonRunes.Client.Scripts;
 using DragonRunes.Network.Packet.Server;
 using LiteNetLib;
-using System.Collections.Generic;
+using Godot;
 
 namespace DragonRunes.Scripts.Network
 {
@@ -9,43 +10,32 @@ namespace DragonRunes.Scripts.Network
     {
         public void PlayerData(SPlayerData obj, NetPeer netPeer)
         {
+            var myPlayerData = NodeManager.GetNode<ClientManager>(nameof(ClientManager))._player;
 
-            //if (PlayerDataModels.Count == 0) { return; }
-            //if (PlayerPhysicModels.Count == 0) { return; }
+            if (myPlayerData.GameState == GameState.InGame)
+            {
+                var myPlayerNode = NodeManager.GetNode<PlayerController>("Player");
 
-            //ClientManager.LocalPlayer.GameState = GameState.InGame;
+                foreach (var player in obj.PlayerDataModels)
+                {
+                    var playerController = new PlayerController();
+                    playerController.playerDataModel = player;
 
-            //ExternalLogger.Print($"SPeersAll Received");
-
-            //var dict = new Dictionary<PlayerDataModel, PlayerPhysicModel>();
-
-            //for (int i = 0; i < PlayerDataModels.Count; i++)
-            //{
-            //    dict.Add(PlayerDataModels[i], PlayerPhysicModels[i]);
-            //}
-
-            //PlayerController MyPlayer = NodeManager.GetNode<PlayerController>("Player");
-
-            //foreach (KeyValuePair<PlayerDataModel, PlayerPhysicModel> par in dict)
-            //{
-            //    var pController = new PlayerController();
-
-            //    pController.playerDataModel = par.Key;
-
-            //    pController.playerPhysicModel = par.Value;
-
-            //    if (par.Key.Index == ClientManager.LocalPlayer.RemotePeer.RemoteId)
-            //    {
-            //        MyPlayer.CallDeferred(nameof(MyPlayer.AddLocalPlayer), pController);
-            //    }
-            //    else
-            //    {
-            //        MyPlayer.CallDeferred(nameof(MyPlayer.DuplicatePlayer), pController);
-            //    }
-
-            //    var clientNode = NodeManager.GetNode<ClientNode>("Client");
-            //    clientNode.CallDeferred(method: nameof(clientNode.InitGame));
-            //}
+                    if (player.Index == myPlayerData.PlayerData.Index)
+                    {
+                        myPlayerNode.CallDeferred(nameof(myPlayerNode.AddLocalPlayer), playerController);
+                        continue;
+                    }
+                    myPlayerNode.CallDeferred(nameof(myPlayerNode.DuplicatePlayer), playerController);
+                }
+            }
+            else if (myPlayerData.GameState == GameState.InLogin)
+            {
+                var root = NodeManager.GetNode<Node2D>("Root");
+                SceneManager.LoadScene(root, nameof(Game));
+                myPlayerData.GameState = GameState.InGame;
+                PlayerData(obj, netPeer);
+            }
         }
     }
 }

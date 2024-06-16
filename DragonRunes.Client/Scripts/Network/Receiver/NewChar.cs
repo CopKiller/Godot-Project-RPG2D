@@ -1,4 +1,5 @@
-﻿using DragonRunes.Network.Packet;
+﻿using DragonRunes.Client.Scripts.SceneScript.MainMenu.Windows;
+using DragonRunes.Network.Packet;
 using DragonRunes.Network.Packet.Server;
 using Godot;
 using LiteNetLib;
@@ -10,12 +11,17 @@ namespace DragonRunes.Scripts.Network
         public void NewChar(SNewChar obj, NetPeer netPeer)
         {
 
-            //ClientManager.LocalPlayer.GameState = GameState.InCharacterCreation;
+            var allWindows = NodeManager.GetNodes<WindowBase>();
 
-            //var windowsNode = NodeManager.GetNode<Windows>("Windows");
+            foreach (var item in allWindows)
+            {
+                item.Hide();
 
-            //windowsNode.CallDeferred(nameof(windowsNode.CloseAll));
-            //windowsNode.CallDeferred(nameof(windowsNode.Open), NodeManager.GetNode<Window>("NewCharWindow"));
+                if (item is winNewChar newCharWindow)
+                {
+                    newCharWindow.Show();
+                }
+            }
         }
     }
 }

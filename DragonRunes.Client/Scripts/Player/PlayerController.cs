@@ -1,8 +1,6 @@
 
 using GdProject.Client.Scripts.Entities.Player;
-using DragonRunes.Models;
-using GdProject.Model;
-using DragonRunes.Network.CustomData;
+using DragonRunes.Shared.CustomDataSerializable;
 
 public partial class PlayerController : PlayerInput
 {
@@ -21,7 +19,7 @@ public partial class PlayerController : PlayerInput
         newPlayer.Name = player.playerDataModel.Index.ToString();
 
         GetParent().AddChild(newPlayer);
-        //NodeManager.AddNode(newPlayer);
+        NodeManager.AddNode(newPlayer);
 
         newPlayer.InitializePlayerModel(player.playerDataModel);
     }

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bwntvhcisiman"]
+[gd_scene load_steps=6 format=3 uid="uid://bwntvhcisiman"]
 
 [ext_resource type="PackedScene" uid="uid://ch3p1vufwf0wq" path="res://Scenes/ControlsBase/WindowBase.tscn" id="1_sblp3"]
 [ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winMenu.cs" id="2_rpr66"]
 [ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winLogin.cs" id="3_xbin1"]
 [ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winRegister.cs" id="4_m3ejt"]
+[ext_resource type="Script" path="res://Scripts/Logger/winAlertMsg.cs" id="5_gwbof"]
 
 [node name="MainMenuWindows" type="Node"]
 
@@ -69,7 +70,6 @@ title = "LOGIN"
 size = Vector2i(300, 200)
 visible = false
 exclusive = true
-always_on_top = true
 content_scale_size = Vector2i(284, 200)
 script = ExtResource("3_xbin1")
 
@@ -184,6 +184,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Username here!"
 alignment = 1
+max_length = 20
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="winRegister/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -202,24 +203,26 @@ layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Password here!"
 alignment = 1
+max_length = 20
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="winRegister/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="lblRPass" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer3"]
+[node name="lblRPass2" type="Label" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 8
 text = "Pass:"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="txtRPass" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer3"]
+[node name="txtRPass2" type="LineEdit" parent="winRegister/MarginContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Retype password here!"
 alignment = 1
+max_length = 20
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="winRegister/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -238,6 +241,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Insert your e-mail here!"
 alignment = 1
+max_length = 50
 
 [node name="HBoxContainer5" type="HBoxContainer" parent="winRegister/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -256,6 +260,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "##/##/####"
 alignment = 1
+max_length = 10
 
 [node name="btnRGo" type="Button" parent="winRegister/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -328,19 +333,40 @@ layout_mode = 2
 layout_mode = 2
 text = "Name:"
 
-[node name="LineEdit" type="LineEdit" parent="winNewChar/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="txtCharName" type="LineEdit" parent="winNewChar/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+max_length = 20
 
-[node name="OptionButton" type="OptionButton" parent="winNewChar/MarginContainer/VBoxContainer"]
+[node name="optGender" type="OptionButton" parent="winNewChar/MarginContainer/VBoxContainer"]
 layout_mode = 2
-item_count = 2
-popup/item_0/text = "Male"
+alignment = 1
+item_count = 3
+selected = 0
+popup/item_0/text = "None"
 popup/item_0/id = 0
-popup/item_1/text = "Female"
+popup/item_0/separator = true
+popup/item_1/text = "Male"
 popup/item_1/id = 1
+popup/item_2/text = "Female"
+popup/item_2/id = 2
 
 [node name="btnCOk" type="Button" parent="winNewChar/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "OK!"
+
+[node name="winAlertMsg" type="AcceptDialog" parent="."]
+disable_3d = true
+transparent_bg = true
+initial_position = 1
+size = Vector2i(300, 100)
+unresizable = true
+always_on_top = true
+popup_window = true
+content_scale_size = Vector2i(300, 100)
+content_scale_mode = 1
+content_scale_aspect = 4
+dialog_text = "Alert Msg Here!"
+dialog_autowrap = true
+script = ExtResource("5_gwbof")

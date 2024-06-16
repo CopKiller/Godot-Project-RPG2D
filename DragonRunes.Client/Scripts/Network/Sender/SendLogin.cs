@@ -1,4 +1,5 @@
 ﻿
+using DragonRunes.Client.Scripts;
 using DragonRunes.Network.Packet.Client;
 using LiteNetLib;
 
@@ -6,11 +7,15 @@ namespace DragonRunes.Scripts.Network
 {
     public partial class ClientPacketProcessor
     {
-        public void SendLogin()
+        public void SendLogin(NetPeer netPeer, string login, string password)
         {
-            //ClientNetworkService._clientPacketProcessor.SendDataTo(0, new CLogin(), DeliveryMethod.ReliableOrdered);
-            //var alertManager = NodeManager.GetNode<AlertMsg>("AlertMsg");
-            //alertManager.CallDeferred(nameof(alertManager.ShowAlert), Msg);
+            var loginPacket = new CLogin
+            {
+                Login = login,
+                Password = password
+            };
+
+            SendDataTo(netPeer, loginPacket, DeliveryMethod.ReliableOrdered);
         }
     }
 }

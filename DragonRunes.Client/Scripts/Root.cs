@@ -32,6 +32,7 @@ namespace DragonRunes.Client.Scripts
             var clientManager = new ClientManager();
             clientManager.Name = "ClientManager";
             GetTree().Root.AddChild(clientManager);
+            NodeManager.AddNode(clientManager);
         }
     }
 }

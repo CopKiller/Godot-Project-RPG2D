@@ -1,5 +1,8 @@
-﻿using DragonRunes.Network.Packet;
+﻿using DragonRunes.Client.Scripts;
+using DragonRunes.Client.Scripts.Logger;
+using DragonRunes.Network.Packet;
 using DragonRunes.Network.Packet.Server;
+using Godot;
 using LiteNetLib;
 
 namespace DragonRunes.Scripts.Network
@@ -8,9 +11,9 @@ namespace DragonRunes.Scripts.Network
     {
         public void AlertMsg(SAlertMsg obj, NetPeer netPeer)
         {
+            var alertmsgWindow = NodeManager.GetNode<ClientManager>("ClientManager");
 
-            //var alertManager = NodeManager.GetNode<AlertMsg>("AlertMsg");
-            //alertManager.CallDeferred(nameof(alertManager.ShowAlert), Msg);
+            alertmsgWindow.CallDeferred(nameof(alertmsgWindow.AlertMsg), obj.Msg);
         }
     }
 }

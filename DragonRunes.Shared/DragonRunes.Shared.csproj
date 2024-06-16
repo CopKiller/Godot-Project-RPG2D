@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DragonRunes.Models\DragonRunes.Models.csproj" />
+    <ProjectReference Include="..\External\LiteNetLib\LiteNetLib.csproj" />
+  </ItemGroup>
+
 </Project>

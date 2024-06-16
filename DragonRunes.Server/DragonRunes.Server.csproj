@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DragonRunes.Cryptography\DragonRunes.Cryptography.csproj" />
     <ProjectReference Include="..\DragonRunes.Network\DragonRunes.Network.csproj" />
     <ProjectReference Include="..\DragonRunes.Shared\DragonRunes.Shared.csproj" />
     <ProjectReference Include="..\External\DragonRunes.Database\DragonRunes.Database.csproj" />

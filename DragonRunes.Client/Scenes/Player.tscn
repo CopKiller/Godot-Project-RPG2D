@@ -247,6 +247,7 @@ radius = 8.0
 height = 20.0
 
 [node name="Player" type="CharacterBody2D"]
+visible = false
 position = Vector2(523, 423)
 script = ExtResource("1_y27cm")
 

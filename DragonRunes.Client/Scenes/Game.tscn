@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://co18glc0gqc7f"]
+[gd_scene load_steps=4 format=3 uid="uid://co18glc0gqc7f"]
 
 [ext_resource type="Script" path="res://Scripts/SceneScript/Game.cs" id="1_fluqw"]
 [ext_resource type="PackedScene" uid="uid://dpfpeuwt3k62p" path="res://Scenes/Maps.tscn" id="1_ur446"]
+[ext_resource type="PackedScene" uid="uid://b7xasqtculcs4" path="res://Scenes/Player.tscn" id="3_br3el"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_fluqw")
@@ -9,3 +10,5 @@ script = ExtResource("1_fluqw")
 [node name="Maps" parent="." instance=ExtResource("1_ur446")]
 
 [node name="Players" type="Node2D" parent="."]
+
+[node name="Player" parent="Players" instance=ExtResource("3_br3el")]
