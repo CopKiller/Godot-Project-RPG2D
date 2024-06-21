@@ -11,8 +11,8 @@ namespace DragonRunes.Database.Repository
     {
         Task<IList<AccountModel>> GetAccountsAsync();
         Task<AccountModel> GetAccountAsync(string login);
-        Task AddAccountAsync(AccountModel account);
-        Task UpdateAccountAsync(AccountModel account);
-        Task DeleteAccountAsync(string login);
+        Task<bool> AddAccountAsync(AccountModel account);
+        Task<bool> UpdateAccountAsync(AccountModel account);
+        Task<bool> DeleteAccountAsync(string login);
     }
 }

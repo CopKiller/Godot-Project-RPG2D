@@ -2,7 +2,7 @@
 using DragonRunes.Logger;
 using DragonRunes.Server.Logger;
 using DragonRunes.Network;
-using DragonRunes.Shared;
+using DragonRunes.Network;
 using DragonRunes.Server.Network;
 using DragonRunes.Server.Repository;
 using DragonRunes.Database.Repository;
@@ -29,6 +29,8 @@ namespace DragonRunes.Server.Infrastructure
 
         public void Start()
         {
+            _isRunning = true;
+
             StartLogger();
 
             StartDatabase();
@@ -38,8 +40,6 @@ namespace DragonRunes.Server.Infrastructure
             Logg.Logger.Log("Server Started...");
 
             Logg.Logger.Log($"Quantidade de contas: {CountDatabaseAccounts().ToString()}");
-
-            _isRunning = true;
         }
 
         private void StartLogger()

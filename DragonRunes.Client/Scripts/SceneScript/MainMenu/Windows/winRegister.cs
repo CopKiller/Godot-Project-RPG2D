@@ -1,4 +1,4 @@
-﻿using DragonRunes.Shared;
+﻿using DragonRunes.Network;
 using Godot;
 using System.Globalization;
 using System;

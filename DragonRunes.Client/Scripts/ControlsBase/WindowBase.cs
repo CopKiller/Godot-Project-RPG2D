@@ -20,6 +20,17 @@ public partial class WindowBase : Window
     {
         originalSize = this.Size;    
     }
+
+    public void _Hide()
+    {
+        base.Hide();
+    }
+
+    public void _Show()
+    {
+        base.Show();
+    }
+
     private void InitializeTimer()
     {
         // Add Timer

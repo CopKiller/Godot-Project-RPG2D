@@ -176,7 +176,7 @@ namespace LiteNetLib
         /// <summary>
         /// Interval for latency detection and checking connection (in milliseconds)
         /// </summary>
-        public int PingInterval = 1000;
+        public int PingInterval = 5000;
 
         /// <summary>
         /// If NetManager doesn't receive any packet from remote peer during this time (in milliseconds) then connection will be closed
@@ -284,7 +284,7 @@ namespace LiteNetLib
         /// <summary>
         /// IPv6 support
         /// </summary>
-        public bool IPv6Enabled = true;
+        public bool IPv6Enabled = false;
 
         /// <summary>
         /// Override MTU for all new peers registered in this NetManager, will ignores MTU Discovery!

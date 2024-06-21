@@ -1,5 +1,6 @@
 ﻿using DragonRunes.Database;
 using DragonRunes.Database.Repository;
+using DragonRunes.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,5 +19,38 @@ namespace DragonRunes.Server.Repository
             return _db.Players.Count();
         }
 
+        public async Task<bool> RegisterPlayerAsync(PlayerModel player)
+        {
+            if (await CheckPlayerExistAsync(player.Name))
+            {
+                return false;
+            }
+
+            var result = await base.AddPlayerAsync(player);
+            return result;
+        }
+
+        public async Task<bool> DeletePlayerAsync(string name)
+        {
+            var result = await base.GetPlayerAsync(name);
+
+            return await base.DeletePlayerAsync(result);
+        }
+
+        public async Task<IPlayerModel> GetPlayerByNameAsync(string name)
+        {
+            var result = await base.GetPlayerAsync(name);
+
+            return result;
+        }
+
+        private async Task<bool> CheckPlayerExistAsync(string name)
+        {
+
+            var result = await base.GetPlayerAsync(name);
+
+            return result != null;
+
+        }
     }
 }

@@ -18,22 +18,40 @@ namespace DragonRunes.Database.Repository
             _db = db ?? throw new ArgumentNullException(nameof(db));
         }
 
-        public async virtual Task AddAccountAsync(AccountModel account)
+        public async virtual Task<bool> AddAccountAsync(AccountModel account)
         {
             if (account == null)
             {
                 throw new ArgumentNullException(nameof(account));
             }
 
+            if (await HasAccountNameAsync(account.User))
+            {
+                return false;
+            }
+
+            account.User = account.User.ToUpper();
+
             await _db.Accounts.AddAsync(account);
-            await _db.SaveChangesAsync();
+            return await _db.SaveChangesAsync() > 0 ? true : false;
         }
 
-        public async virtual Task DeleteAccountAsync(string user)
+        public async virtual Task<bool> DeleteAccountAsync(string user)
         {
-            var account = await GetAccountAsync(user);
+            user = user.ToUpper();
+            var account = await _db.Accounts
+                .Include(x => x.Player)
+                .Include(y => y.Player.Position)
+                .Include(z => z.Player.Direction)
+                .FirstOrDefaultAsync(a => a.User == user);
+
+            if (account == null)
+            {
+                return false;
+            }
+
             _db.Accounts.Remove(account);
-            await _db.SaveChangesAsync();
+            return await _db.SaveChangesAsync() > 0 ? true : false;
         }
 
         public async virtual Task<AccountModel> GetAccountAsync(string user)
@@ -42,20 +60,26 @@ namespace DragonRunes.Database.Repository
             {
                 throw new ArgumentException("User cannot be null or empty.", nameof(user));
             }
-
-            return await _db.Accounts
+            user = user.ToUpper();
+            var account = await _db.Accounts
                 .Include(x => x.Player)
                 .Include(y => y.Player.Position)
                 .Include(z => z.Player.Direction)
                 .FirstOrDefaultAsync(a => a.User == user);
+
+            return account;
         }
 
         public async virtual Task<IList<AccountModel>> GetAccountsAsync()
         {
-            return await _db.Accounts.Include(x => x.Player).ToListAsync();
+            return await _db.Accounts
+                .Include(x => x.Player)
+                .Include(y => y.Player.Position)
+                .Include(z => z.Player.Direction)
+                .ToListAsync();
         }
 
-        public async virtual Task UpdateAccountAsync(AccountModel account)
+        public async virtual Task<bool> UpdateAccountAsync(AccountModel account)
         {
             if (account == null)
             {
@@ -63,7 +87,13 @@ namespace DragonRunes.Database.Repository
             }
 
             _db.Accounts.Update(account);
-            await _db.SaveChangesAsync();
+            return await _db.SaveChangesAsync() > 0 ? true : false;
+        }
+
+        private async Task<bool> HasAccountNameAsync(string username)
+        {
+            username = username.ToUpper();
+            return await _db.Accounts.AnyAsync(a => a.User == username);
         }
     }
 }

@@ -3,7 +3,7 @@ using DragonRunes.Logger;
 using DragonRunes.Network;
 using DragonRunes.Network.Packet.Client;
 using DragonRunes.Server.Infrastructure;
-using DragonRunes.Shared;
+using DragonRunes.Network;
 using LiteNetLib;
 
 namespace DragonRunes.Server.Network
@@ -22,7 +22,7 @@ namespace DragonRunes.Server.Network
         public override void SubscribePacket()
         {
             // Register to receive packets  
-            this.Subscribe<CLogin>(Login);
+            this.Subscribe<CLogin>(ClientLogin);
             this.Subscribe<CRegister>(ClientRegister);
             this.Subscribe<CNewChar>(ClientNewChar);
             this.Subscribe<CPlayerMove>(ClientPlayerMove);

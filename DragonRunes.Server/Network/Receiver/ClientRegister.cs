@@ -1,14 +1,14 @@
 ﻿using DragonRunes.Models;
 using DragonRunes.Network.Packet.Client;
 using DragonRunes.Server.Infrastructure;
-using DragonRunes.Shared;
+using DragonRunes.Network;
 using LiteNetLib;
 
 namespace DragonRunes.Server.Network
 {
     public partial class ServerPacketProcessor
     {
-        public void ClientRegister(CRegister obj, NetPeer netPeer)
+        public async void ClientRegister(CRegister obj, NetPeer netPeer)
         {
             var player = _players.GetItem(netPeer.Id);
 
@@ -16,30 +16,34 @@ namespace DragonRunes.Server.Network
             {
                 ServerAlertMsg(netPeer, "You are not in the menu screen!");
                 player.Disconnect();
+                _players.RemoveItem(netPeer.Id);
                 return;
             }
 
-            if (obj.Login.IsValidName() && 
-                obj.Password.IsValidPassword() && 
-                obj.Email.IsValidEmail() && 
-                obj.BirthDate.IsValidBirthDate())
+            if (!(obj.Login.IsValidName() &&
+                obj.Password.IsValidPassword() &&
+                obj.Email.IsValidEmail() &&
+                obj.BirthDate.IsValidBirthDate()))
             {
-
-                var account = new AccountModel
-                {
-                    User = obj.Login,
-                    Password = obj.Password,
-                    Mail = obj.Email,
-                    BirthDate = Convert.ToDateTime(obj.BirthDate)
-                };
-
-                InitServer._databaseManager.AccountRepository.AddAccountAsync(player, account);
+                ServerAlertMsg(netPeer, "Rules of data is ivalid!");
+                return;
             }
-            else
+
+            var account = new AccountModel
             {
-                ServerAlertMsg(netPeer, "Invalid username or password!");
-            }
-            
+                User = obj.Login,
+                Password = obj.Password,
+                Email = obj.Email,
+                BirthDate = Convert.ToDateTime(obj.BirthDate)
+            };
+
+            var result = await InitServer._databaseManager.AccountRepository.AddAccountAsync(account);
+
+            if (!result) { ServerAlertMsg(netPeer, "Username already exists!"); return; }
+
+            ServerAlertMsg(netPeer, "Account created successfully!");
+
+            ServerNewChar(netPeer);
         }
     }
 }

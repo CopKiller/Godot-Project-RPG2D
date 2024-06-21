@@ -19,21 +19,22 @@ namespace DragonRunes.Database.Repository
             _db = db;
         }
 
-        public async virtual Task AddPlayerAsync(PlayerModel player)
+        public async virtual Task<bool> AddPlayerAsync(PlayerModel player)
         {
             await _db.Players.AddAsync(player);
-            await _db.SaveChangesAsync();
+            return await _db.SaveChangesAsync() > 0 ? true : false;
         }
 
-        public async virtual Task DeletePlayerAsync(PlayerModel player)
+        public async virtual Task<bool> DeletePlayerAsync(PlayerModel player)
         {
             _db.Players.Remove(player);
-            await _db.SaveChangesAsync();
+            return await _db.SaveChangesAsync() > 0 ? true : false;
         }
 
         public async virtual Task<PlayerModel> GetPlayerAsync(string name)
         {
-            return await _db.Players.FirstOrDefaultAsync(x => x.Name == name);
+            name = name.ToUpper();
+            return await _db.Players.FirstOrDefaultAsync(x => x.Name.ToUpper() == name);
         }
 
         public async virtual Task<IList<PlayerModel>> GetPlayersAsync()
@@ -41,10 +42,10 @@ namespace DragonRunes.Database.Repository
             return await _db.Players.ToListAsync();
         }
 
-        public async virtual Task UpdatePlayerAsync(PlayerModel player)
+        public async virtual Task<bool> UpdatePlayerAsync(PlayerModel player)
         {
             _db.Players.Update(player);
-            await _db.SaveChangesAsync();
+            return await _db.SaveChangesAsync() > 0 ? true : false;
         }
     }
 }

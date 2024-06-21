@@ -1,5 +1,5 @@
 ﻿using DragonRunes.Logger;
-using DragonRunes.Shared;
+using DragonRunes.Network;
 using Godot;
 using System.Collections.Generic;
 using System.Linq;

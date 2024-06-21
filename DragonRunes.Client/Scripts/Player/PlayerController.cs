@@ -1,6 +1,6 @@
 
 using GdProject.Client.Scripts.Entities.Player;
-using DragonRunes.Shared.CustomDataSerializable;
+using DragonRunes.Network.CustomDataSerializable;
 
 public partial class PlayerController : PlayerInput
 {

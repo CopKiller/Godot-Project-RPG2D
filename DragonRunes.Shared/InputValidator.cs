@@ -1,7 +1,7 @@
 ﻿
 using System.Text.RegularExpressions;
 
-namespace DragonRunes.Shared
+namespace DragonRunes.Network
 {
     public static class InputValidator
     {

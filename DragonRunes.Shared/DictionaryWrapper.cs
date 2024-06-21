@@ -1,5 +1,5 @@
 ﻿
-namespace DragonRunes.Shared;
+namespace DragonRunes.Network;
 
 // Classe para gerenciar um dicionário genérico com funcionalidades adicionais
 public class DictionaryWrapper<TKey, TValue>

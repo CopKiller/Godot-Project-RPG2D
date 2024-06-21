@@ -1,6 +1,6 @@
 ﻿
 using DragonRunes.Network.CustomData;
-using DragonRunes.Shared.CustomDataSerializable;
+using DragonRunes.Network.CustomDataSerializable;
 
 namespace DragonRunes.Network.Packet.Server
 {

@@ -1,6 +1,6 @@
 ﻿using DragonRunes.Client.Scripts;
 using DragonRunes.Scripts.Network;
-using DragonRunes.Shared;
+using DragonRunes.Network;
 using Godot;
 
 public partial class winLogin : WindowBase

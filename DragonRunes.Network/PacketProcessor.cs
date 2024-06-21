@@ -1,7 +1,7 @@
 ﻿using DragonRunes.Network.CustomData;
 using DragonRunes.Network.CustomData.Extension;
-using DragonRunes.Shared.CustomDataSerializable;
-using DragonRunes.Shared.CustomDataSerializable.Extension;
+using DragonRunes.Network.CustomDataSerializable;
+using DragonRunes.Network.CustomDataSerializable.Extension;
 using LiteNetLib;
 using LiteNetLib.Utils;
 

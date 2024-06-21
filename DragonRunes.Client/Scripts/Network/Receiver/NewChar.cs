@@ -15,11 +15,11 @@ namespace DragonRunes.Scripts.Network
 
             foreach (var item in allWindows)
             {
-                item.Hide();
+                item.CallDeferred("_Hide");
 
                 if (item is winNewChar newCharWindow)
                 {
-                    newCharWindow.Show();
+                    newCharWindow.CallDeferred("_Show");
                 }
             }
         }

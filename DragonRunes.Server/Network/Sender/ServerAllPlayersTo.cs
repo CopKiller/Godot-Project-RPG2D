@@ -1,6 +1,6 @@
 ﻿
 using DragonRunes.Network.Packet.Server;
-using DragonRunes.Shared.CustomDataSerializable;
+using DragonRunes.Network.CustomDataSerializable;
 using LiteNetLib;
 
 namespace DragonRunes.Server.Network

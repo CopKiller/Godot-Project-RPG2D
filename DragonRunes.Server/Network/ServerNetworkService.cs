@@ -2,7 +2,7 @@
 using DragonRunes.Logger;
 using DragonRunes.Network;
 using DragonRunes.Server.Infrastructure;
-using DragonRunes.Shared;
+using DragonRunes.Network;
 using LiteNetLib;
 using LiteNetLib.Utils;
 using System.Net;
@@ -45,7 +45,9 @@ internal class ServerNetworkService : NetworkService
         var port = NetworkAddress.ServerPort;
 
         Logg.Logger.Log("Server: Try to start on port " + port);
+
         var result = this.NetManager.Start(port);
+
         if (result)
         {
             Logg.Logger.Log("Server: Bind on port " + port);

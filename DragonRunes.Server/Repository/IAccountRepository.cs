@@ -4,12 +4,12 @@ using DragonRunes.Server.Infrastructure;
 
 namespace DragonRunes.Server.Repository
 {
-    public interface IAccountRepository : IAccountModelRepository
+    public interface IAccountRepository
     {
         int CountAccounts();
 
-        Task<AccountModel> CheckAccount(ServerClient playerClient, string username, string password);
-
-        Task AddAccountAsync(ServerClient playerClient, AccountModel accountModel);
+        Task<IAccountModel> CheckAccountAsync(string username, string password);
+        Task<bool> AddAccountAsync(AccountModel accountModel);
+        Task<bool> DeleteAccountAsync(string username);
     }
 }

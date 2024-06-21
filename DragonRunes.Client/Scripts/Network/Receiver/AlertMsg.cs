@@ -11,9 +11,9 @@ namespace DragonRunes.Scripts.Network
     {
         public void AlertMsg(SAlertMsg obj, NetPeer netPeer)
         {
-            var alertmsgWindow = NodeManager.GetNode<ClientManager>("ClientManager");
+            var alertMsg = NodeManager.GetNode<AlertMsgWindow>("AlertMsg");
 
-            alertmsgWindow.CallDeferred(nameof(alertmsgWindow.AlertMsg), obj.Msg);
+            alertMsg.CallDeferred(nameof(alertMsg.SetText), obj.Msg);
         }
     }
 }

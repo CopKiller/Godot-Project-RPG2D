@@ -9,7 +9,7 @@ namespace DragonRunes.Server.Network
         public void ServerNewChar(NetPeer netPeer)
         {
             var packet = new SNewChar();
-            SendDataTo(netPeer, packet, DeliveryMethod.ReliableOrdered);
+            SendDataTo(netPeer, packet, DeliveryMethod.ReliableUnordered);
         }
     }
 }

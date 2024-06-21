@@ -1,42 +1,56 @@
-﻿using DragonRunes.Network.Packet.Client;
+﻿using DragonRunes.Models;
+using DragonRunes.Network.Packet.Client;
 using DragonRunes.Server.Infrastructure;
-using DragonRunes.Shared.CustomDataSerializable;
+using DragonRunes.Network.CustomDataSerializable;
 using LiteNetLib;
 
 namespace DragonRunes.Server.Network
 {
     public partial class ServerPacketProcessor
     {
-        public void Login(CLogin obj, NetPeer netPeer)
+        public async void ClientLogin(CLogin obj, NetPeer netPeer)
         {
             var player = _players.GetItem(netPeer.Id);
+
+            if (player == null)
+            {
+                ServerAlertMsg(netPeer, "You are not connected to the server!");
+                netPeer.Disconnect();
+                return;
+            }
 
             if (player.GameState != GameState.InLogin)
             {
                 ServerAlertMsg(netPeer, "You are not in the menu screen!");
                 player.Disconnect();
+                _players.RemoveItem(netPeer.Id);
                 return;
             }
 
-            var account = InitServer._databaseManager.AccountRepository.CheckAccount(player, obj.Login, obj.Password);
+            var account = await InitServer._databaseManager.AccountRepository.CheckAccountAsync(obj.Login, obj.Password);
 
-            if (account.Result == null) { return; }
+            if (account == null)
+            {
+                ServerAlertMsg(netPeer, "Invalid username or password!");
+                return;
+            }
 
-            var playerData = (PlayerDataModel)account.Result.Player;
-            playerData.Index = netPeer.Id;
+            var playerData = account.Player;
 
-            player._playerData = playerData;
+            var playerDataModel = new PlayerDataModel(playerData);
+            playerDataModel.Index = netPeer.Id;
+            player._playerData = playerDataModel;
 
             if (playerData.Name == string.Empty)
             {
-                ServerAlertMsg(netPeer, "You need to create a character first!");
                 ServerNewChar(netPeer);
+                ServerAlertMsg(netPeer, "You need to create a character first!");
                 return;
             }
 
             ServerAllPlayerData(netPeer);
 
-            ServerPlayerToAllBut(netPeer, playerData);
+            ServerPlayerToAllBut(netPeer, playerDataModel);
 
         }
     }

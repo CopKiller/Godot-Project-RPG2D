@@ -11,8 +11,8 @@ namespace DragonRunes.Database.Repository
     {
         Task<IList<PlayerModel>> GetPlayersAsync();
         Task<PlayerModel> GetPlayerAsync(string login);
-        Task AddPlayerAsync(PlayerModel player);
-        Task UpdatePlayerAsync(PlayerModel player);
-        Task DeletePlayerAsync(PlayerModel player);
+        Task<bool> AddPlayerAsync(PlayerModel player);
+        Task<bool> UpdatePlayerAsync(PlayerModel player);
+        Task<bool> DeletePlayerAsync(PlayerModel player);
     }
 }

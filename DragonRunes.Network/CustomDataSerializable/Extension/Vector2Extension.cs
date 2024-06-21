@@ -2,7 +2,7 @@
 using LiteNetLib.Utils;
 using System.Runtime.CompilerServices;
 
-namespace DragonRunes.Shared.CustomDataSerializable.Extension
+namespace DragonRunes.Network.CustomDataSerializable.Extension
 {
     public static class Vector2Extension
     {

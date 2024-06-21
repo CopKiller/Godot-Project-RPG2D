@@ -3,6 +3,7 @@ using DragonRunes.Client.Scripts;
 using DragonRunes.Network.Packet.Server;
 using LiteNetLib;
 using Godot;
+using DragonRunes.Logger;
 
 namespace DragonRunes.Scripts.Network
 {
@@ -11,6 +12,8 @@ namespace DragonRunes.Scripts.Network
         public void PlayerData(SPlayerData obj, NetPeer netPeer)
         {
             var myPlayerData = NodeManager.GetNode<ClientManager>(nameof(ClientManager))._player;
+
+            Logg.Logger.Log("PlayerData: Recebido");
 
             if (myPlayerData.GameState == GameState.InGame)
             {

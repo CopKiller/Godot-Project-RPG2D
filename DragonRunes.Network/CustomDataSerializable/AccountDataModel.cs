@@ -1,9 +1,9 @@
 ﻿using DragonRunes.Models;
 using DragonRunes.Models.CustomData;
-using DragonRunes.Shared.CustomDataSerializable.Extension;
+using DragonRunes.Network.CustomDataSerializable.Extension;
 using LiteNetLib.Utils;
 
-namespace DragonRunes.Shared.CustomDataSerializable
+namespace DragonRunes.Network.CustomDataSerializable
 {
     //public class AccountDataModel : AccountModel, INetSerializable
     //{

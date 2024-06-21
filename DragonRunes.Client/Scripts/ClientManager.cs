@@ -32,14 +32,12 @@ namespace DragonRunes.Client.Scripts
 
         public override void _Ready()
         {
-            _networkManager.Start();
-        }
+            var AlertMsg = new AlertMsgWindow();
+            AlertMsg.Name = "AlertMsg";
+            AddChild(AlertMsg);
+            NodeManager.AddNode(AlertMsg);
 
-        public void AlertMsg(string text)
-        {
-            var alertmsgWindow = new winAlertMsg();
-            NodeManager.GetNode<Node>("MainMenuWindows").AddChild(alertmsgWindow);
-            alertmsgWindow.SetText(text);
+            _networkManager.Start();
         }
     }
 }

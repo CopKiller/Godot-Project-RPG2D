@@ -1,6 +1,6 @@
 ﻿using LiteNetLib;
 using DragonRunes.Server.Network;
-using DragonRunes.Shared.CustomDataSerializable;
+using DragonRunes.Network.CustomDataSerializable;
 
 namespace DragonRunes.Server.Infrastructure
 {
@@ -20,11 +20,11 @@ namespace DragonRunes.Server.Infrastructure
         {
             _serverPacketProcessor = serverPacketProcessor;
 
-            _playerData = new PlayerDataModel();
+            //_playerData = new PlayerDataModel();
 
             _peer = netPeer;
 
-            _playerData.Index = _peer.Id;
+            //_playerData.Index = _peer.Id;
 
             GameState = GameState.InLogin;
         }

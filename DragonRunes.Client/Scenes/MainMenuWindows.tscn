@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winMenu.cs" id="2_rpr66"]
 [ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winLogin.cs" id="3_xbin1"]
 [ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winRegister.cs" id="4_m3ejt"]
-[ext_resource type="Script" path="res://Scripts/Logger/winAlertMsg.cs" id="5_gwbof"]
+[ext_resource type="Script" path="res://Scripts/SceneScript/MainMenu/Windows/winNewChar.cs" id="5_8dm0d"]
 
 [node name="MainMenuWindows" type="Node"]
 
@@ -309,6 +309,7 @@ title = "NEW CHAR"
 size = Vector2i(300, 150)
 visible = false
 content_scale_size = Vector2i(284, 150)
+script = ExtResource("5_8dm0d")
 
 [node name="MarginContainer" type="MarginContainer" parent="winNewChar"]
 anchors_preset = 15
@@ -369,4 +370,3 @@ content_scale_mode = 1
 content_scale_aspect = 4
 dialog_text = "Alert Msg Here!"
 dialog_autowrap = true
-script = ExtResource("5_gwbof")
