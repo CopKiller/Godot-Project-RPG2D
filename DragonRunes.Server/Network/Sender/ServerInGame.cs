@@ -7,9 +7,9 @@ namespace DragonRunes.Server.Network
 {
     public partial class ServerPacketProcessor
     {
-        public void ServerAllPlayerData(NetPeer netPeer)
+        public void ServerInGame(NetPeer netPeer)
         {
-            var packet = new SPlayerData();
+            var packet = new SInGame();
 
             packet.PlayerDataModels = _players.GetItems()
                 .Where(a => a.Value.GameState == GameState.InGame)

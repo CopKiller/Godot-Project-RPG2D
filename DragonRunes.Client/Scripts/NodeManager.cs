@@ -1,6 +1,8 @@
-﻿using DragonRunes.Logger;
+﻿using DragonRunes.Client.Scripts;
+using DragonRunes.Logger;
 using DragonRunes.Network;
 using Godot;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,6 +10,13 @@ using System.Linq;
 public class NodeManager
 {
     private static DictionaryWrapper<string, Node> nodeMap = new DictionaryWrapper<string, Node>();
+
+    private static List<Type> _exception = new List<Type>
+    {
+        typeof(SceneManager),
+        typeof(ClientManager),
+        typeof(Players)
+    };
 
     // Método para adicionar um nó ao gerenciador
     public static void AddNode<T>(T node) where T : Node
@@ -89,6 +98,19 @@ public class NodeManager
         else
         {
             Logg.Logger.Log("O nó '" + node.Name + "' não foi encontrado e não pode ser removido.");
+        }
+    }
+
+    public static void Clear()
+    {
+        foreach (var node in nodeMap.GetItems().Values)
+        {
+            if (_exception.Contains(node.GetType()))
+            {
+                continue;
+            }
+            FreeNode(node);
+            nodeMap.RemoveItem(node.Name);
         }
     }
 

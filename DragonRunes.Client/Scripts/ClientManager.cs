@@ -1,7 +1,9 @@
 ﻿using DragonRunes.Client.Scripts.Logger;
 using DragonRunes.Network;
+using DragonRunes.Network.CustomDataSerializable;
 using DragonRunes.Scripts.Network;
 using Godot;
+using System.Collections.Generic;
 
 namespace DragonRunes.Client.Scripts
 {

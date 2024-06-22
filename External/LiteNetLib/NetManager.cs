@@ -176,7 +176,7 @@ namespace LiteNetLib
         /// <summary>
         /// Interval for latency detection and checking connection (in milliseconds)
         /// </summary>
-        public int PingInterval = 5000;
+        public int PingInterval = 2000;
 
         /// <summary>
         /// If NetManager doesn't receive any packet from remote peer during this time (in milliseconds) then connection will be closed

@@ -10,30 +10,30 @@ public partial class PlayerController : PlayerInput
         
     }
 
-    public void DuplicatePlayer(PlayerController player)
+    //public void DuplicatePlayer(PlayerController player)
+    //{
+    //    var newPlayer = (PlayerController)Duplicate();
+
+    //    newPlayer.IsLocalPlayer = false;
+
+    //    newPlayer.Name = player.playerDataModel.Index.ToString();
+
+    //    GetParent().AddChild(newPlayer);
+    //    NodeManager.AddNode(newPlayer);
+
+    //    newPlayer.InitializePlayerModel(player.playerDataModel);
+    //}
+
+    //public void AddLocalPlayer(PlayerController player)
+    //{
+    //    IsLocalPlayer = true;
+
+    //    this.InitializePlayerModel(player.playerDataModel);
+    //}
+
+    public void InitializePlayerModel()
     {
-        var newPlayer = (PlayerController)Duplicate();
-
-        newPlayer.IsLocalPlayer = false;
-
-        newPlayer.Name = player.playerDataModel.Index.ToString();
-
-        GetParent().AddChild(newPlayer);
-        NodeManager.AddNode(newPlayer);
-
-        newPlayer.InitializePlayerModel(player.playerDataModel);
-    }
-
-    public void AddLocalPlayer(PlayerController player)
-    {
-        IsLocalPlayer = true;
-
-        this.InitializePlayerModel(player.playerDataModel);
-    }
-
-    private void InitializePlayerModel(PlayerDataModel playerDataModel)
-    {
-        this.playerDataModel = playerDataModel;
+        //this.playerDataModel = playerDataModel;
 
         this.InitializePlayerPhysics();
         this.InitializePlayerData();

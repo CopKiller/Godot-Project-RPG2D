@@ -8,7 +8,7 @@ namespace DragonRunes.Scripts.Network
 {
     public partial class ClientPacketProcessor
     {
-        public void NewChar(SNewChar obj, NetPeer netPeer)
+        public void ServerNewChar(SNewChar obj, NetPeer netPeer)
         {
 
             var allWindows = NodeManager.GetNodes<WindowBase>();

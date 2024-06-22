@@ -9,7 +9,7 @@ namespace DragonRunes.Scripts.Network
 {
     public partial class ClientPacketProcessor
     {
-        public void AlertMsg(SAlertMsg obj, NetPeer netPeer)
+        public void ServerAlertMsg(SAlertMsg obj, NetPeer netPeer)
         {
             var alertMsg = NodeManager.GetNode<AlertMsgWindow>("AlertMsg");
 

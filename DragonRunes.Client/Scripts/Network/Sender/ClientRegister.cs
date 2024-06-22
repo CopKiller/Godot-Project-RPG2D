@@ -7,7 +7,7 @@ namespace DragonRunes.Scripts.Network
 {
     public partial class ClientPacketProcessor
     {
-        public void SendRegister(NetPeer netPeer, string login, string password, string mail, string birthday)
+        public void ClientRegister(NetPeer netPeer, string login, string password, string mail, string birthday)
         {
             var packet = new CRegister
             {

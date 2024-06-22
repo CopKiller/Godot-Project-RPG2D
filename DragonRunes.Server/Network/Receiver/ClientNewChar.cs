@@ -47,9 +47,11 @@ namespace DragonRunes.Server.Network
             player._playerData.Index = netPeer.Id;
             player.GameState = GameState.InGame;
 
-            ServerAllPlayerData(netPeer);
+            ServerInGame(netPeer);
 
-            ServerPlayerToAllBut(netPeer, player._playerData);
+            //ServerAllPlayerData(netPeer);
+
+            ServerPlayerToAllBut(netPeer);
 
         }
     }

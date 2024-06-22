@@ -55,7 +55,7 @@ namespace DragonRunes.Client.Scripts.SceneScript.MainMenu.Windows
 
                 var packetProcessor = clientManager._networkService._clientPacketProcessor;
 
-                packetProcessor.SendNewChar(serverPeer, nameField, (Gender)genderField);
+                packetProcessor.ClientNewChar(serverPeer, nameField, (Gender)genderField);
             }
         }
     }

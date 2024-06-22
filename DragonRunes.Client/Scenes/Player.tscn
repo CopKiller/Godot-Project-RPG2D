@@ -247,7 +247,6 @@ radius = 8.0
 height = 20.0
 
 [node name="Player" type="CharacterBody2D"]
-visible = false
 position = Vector2(523, 423)
 script = ExtResource("1_y27cm")
 
@@ -258,3 +257,35 @@ animation = &"Idle_Down"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 17)
 shape = SubResource("CapsuleShape2D_4ilj1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0, 0, 0, 0.568627)
+
+[node name="PlayerName" type="RichTextLabel" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -38.5
+offset_top = -50.0
+offset_right = 38.5
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Character"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+tab_size = 0
+shortcut_keys_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false

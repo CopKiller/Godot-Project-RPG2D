@@ -17,11 +17,12 @@ namespace DragonRunes.Scripts.Network
         public override void SubscribePacket()
         {
             // Register to receive packets  
-            this.Subscribe<SPlayerData>(PlayerData);
-            this.Subscribe<SPlayerMove>(PlayerMove);
-            this.Subscribe<SNewChar>(NewChar);
-            this.Subscribe<SLeft>(Left);
-            this.Subscribe<SAlertMsg>(AlertMsg);
+            this.Subscribe<SPlayerData>(ServerPlayerData);
+            this.Subscribe<SPlayerMove>(ServerPlayerMove);
+            this.Subscribe<SNewChar>(ServerNewChar);
+            this.Subscribe<SLeft>(ServerLeft);
+            this.Subscribe<SAlertMsg>(ServerAlertMsg);
+            this.Subscribe<SInGame>(ServerInGame);
         }
 
         public override void SendDataTo<T>(NetPeer playerPeer, T packet, DeliveryMethod deliveryMethod = DeliveryMethod.ReliableOrdered)

@@ -7,7 +7,6 @@ namespace DragonRunes.Client.Scripts
 {
     public partial class Root : Node
     {
-
         public override void _Ready()
         {
             // Inicia o logger
@@ -15,24 +14,33 @@ namespace DragonRunes.Client.Scripts
 
             // Inicia o gerenciador de cenas
             Logg.Logger.Log("Iniciando o SceneManager...");
-            SceneManager.Initialize();
+            AddSceneManager();
 
             // Inicia o gerenciador de clientes
             Logg.Logger.Log("Iniciando o ClientManager...");
-            CallDeferred(nameof(AddClientManager));
+            AddClientManager();
 
             // Carrega a cena inicial do MainMenu
-            Logg.Logger.Log("Carregando a cena MainMenu...");
-            this.LoadScene("MainMenu");
+            var sceneManager = NodeManager.GetNode<SceneManager>(nameof(SceneManager));
+            sceneManager.LoadScene(nameof(MainMenu));
 
         }
 
         private void AddClientManager()
         {
             var clientManager = new ClientManager();
-            clientManager.Name = "ClientManager";
-            GetTree().Root.AddChild(clientManager);
+            clientManager.Name = nameof(ClientManager);
+            AddChild(clientManager);
             NodeManager.AddNode(clientManager);
+        }
+
+        private void AddSceneManager()
+        {
+            var sceneManager = new SceneManager();
+            sceneManager.Name = nameof(SceneManager);
+            AddChild(sceneManager);
+            NodeManager.AddNode(sceneManager);
+            sceneManager.Initialize();
         }
     }
 }

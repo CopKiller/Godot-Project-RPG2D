@@ -7,7 +7,7 @@ namespace DragonRunes.Scripts.Network
 {
     public partial class ClientPacketProcessor
     {
-        public void SendLogin(NetPeer netPeer, string login, string password)
+        public void ClientLogin(NetPeer netPeer, string login, string password)
         {
             var loginPacket = new CLogin
             {

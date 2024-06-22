@@ -7,7 +7,7 @@ namespace DragonRunes.Scripts.Network
 {
     public partial class ClientPacketProcessor
     {
-        public void PlayerMove(SPlayerMove obj, NetPeer netPeer)
+        public void ServerPlayerMove(SPlayerMove obj, NetPeer netPeer)
         {
 
             //var playerNode = NodeManager.GetNode<PlayerController>(Index.ToString());

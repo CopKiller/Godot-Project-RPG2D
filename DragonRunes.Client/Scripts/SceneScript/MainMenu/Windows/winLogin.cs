@@ -42,7 +42,7 @@ public partial class winLogin : WindowBase
 
         if (loginField.IsValidName() && passField.IsValidPassword())
         {
-            packetProcessor.SendLogin(playerPeer, loginField, passField);
+            packetProcessor.ClientLogin(playerPeer, loginField, passField);
         }
     }
 

@@ -7,7 +7,7 @@ namespace DragonRunes.Scripts.Network
 {
     public partial class ClientPacketProcessor
     {
-        public void Left(SLeft obj, NetPeer netPeer)
+        public void ServerLeft(SLeft obj, NetPeer netPeer)
         {
 
             NodeManager.GetNode<PlayerController>(obj.Index.ToString()).QueueFree();

@@ -56,7 +56,7 @@ public partial class winRegister : WindowBase
 
             var packetProcessor = clientManager._networkService._clientPacketProcessor;
 
-            packetProcessor.SendRegister(serverPeer, loginField, passField, mailField, birthdayField);
+            packetProcessor.ClientRegister(serverPeer, loginField, passField, mailField, birthdayField);
         }
     }
 

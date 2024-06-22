@@ -1,19 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using DragonRunes.Client.Scripts.SceneScript;
 using DragonRunes.Logger;
 using Godot;
 
-
-public static class SceneManager
+public partial class SceneManager : Node
 {
-    private static Dictionary<string, string> sceneMap = new Dictionary<string, string>();
+    private Dictionary<string, string> sceneMap = new Dictionary<string, string>();
 
-    public static void Initialize()
+    private Node _currentScene;
+
+    public override void _Ready()
+    {
+        Initialize();
+    }
+
+    public void Initialize()
     {
         // Adiciona as cenas ao gerenciador
         AddScene("MainMenu", "res://Scenes/MainMenu.tscn");
 
         AddScene("Game", "res://Scenes/Game.tscn");
+        AddScene("Players", "res://Scenes/Players.tscn");
         AddScene("Player", "res://Scenes/Player.tscn");
         AddScene("Dungeon", "res://Scenes/Maps/Dungeon.tscn");
 
@@ -22,7 +30,7 @@ public static class SceneManager
         //this.QueueFree();
     }
 
-    public static void AddScene(string name, string scene)
+    public void AddScene(string name, string scene)
     {
         if (sceneMap.ContainsKey(name))
         {
@@ -34,7 +42,38 @@ public static class SceneManager
         //Logg.Logger.Log("Adicionada cena: " + name);
     }
 
-    public static void LoadScene(this Node node, string name)
+    public void LoadScene(string name)
+    {
+        if (sceneMap.ContainsKey(name))
+        {
+            var scenePath = sceneMap[name];
+
+            UnloadScene();
+
+            var scene = GD.Load<PackedScene>(scenePath);
+
+            _currentScene = scene.Instantiate();
+
+            NodeManager.AddToNodeManager(_currentScene);
+
+            AddChild(_currentScene);
+        }
+        else
+        {
+            Logg.Logger.Log("A cena '" + name + "' não foi encontrada.");
+        }
+    }
+
+    private void UnloadScene()
+    {
+        if (_currentScene != null)
+        {
+            _currentScene.QueueFree();
+            NodeManager.Clear();
+        }
+    }
+
+    public PackedScene GetScene(string name)
     {
         if (sceneMap.ContainsKey(name))
         {
@@ -42,23 +81,18 @@ public static class SceneManager
 
             var scene = GD.Load<PackedScene>(scenePath);
 
-            var pathRoot = node.GetTree().Root.GetChild<Node>(0);
-
-            foreach (var item in pathRoot.GetChildren())
-            {
-                item.QueueFree();
-                NodeManager.RemoveNode(item);
-            }
-
-            var instance = scene.Instantiate();
-
-            NodeManager.AddToNodeManager(instance);
-            pathRoot.AddChild(instance);
+            return scene;
         }
         else
         {
             Logg.Logger.Log("A cena '" + name + "' não foi encontrada.");
+            return null;
         }
     }
+
+    //private void AddChild<T>(T node) where T : Node
+    //{
+    //    AddChild(node);
+    //}
 }
 

@@ -7,7 +7,7 @@ namespace DragonRunes.Scripts.Network
 {
     public partial class ClientPacketProcessor
     {
-        public void SendNewChar(NetPeer netPeer, string Name, Gender gender)
+        public void ClientNewChar(NetPeer netPeer, string Name, Gender gender)
         {
             var packet = new CNewChar
             {
