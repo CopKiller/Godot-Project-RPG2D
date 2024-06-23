@@ -1,6 +1,4 @@
 
-using GdProject.Client.Scripts.Entities.Player;
-using DragonRunes.Network.CustomDataSerializable;
 
 public partial class PlayerController : PlayerInput
 {
@@ -10,31 +8,8 @@ public partial class PlayerController : PlayerInput
         
     }
 
-    //public void DuplicatePlayer(PlayerController player)
-    //{
-    //    var newPlayer = (PlayerController)Duplicate();
-
-    //    newPlayer.IsLocalPlayer = false;
-
-    //    newPlayer.Name = player.playerDataModel.Index.ToString();
-
-    //    GetParent().AddChild(newPlayer);
-    //    NodeManager.AddNode(newPlayer);
-
-    //    newPlayer.InitializePlayerModel(player.playerDataModel);
-    //}
-
-    //public void AddLocalPlayer(PlayerController player)
-    //{
-    //    IsLocalPlayer = true;
-
-    //    this.InitializePlayerModel(player.playerDataModel);
-    //}
-
     public void InitializePlayerModel()
     {
-        //this.playerDataModel = playerDataModel;
-
         this.InitializePlayerPhysics();
         this.InitializePlayerData();
         this.InitializePlayerNetwork();
@@ -48,7 +23,7 @@ public partial class PlayerController : PlayerInput
     {
         InGame = false;
         GetParent().RemoveChild(this);
-        //NodeManager.RemoveNode(this.Name);
+        NodeManager.RemoveNode<PlayerController>(this.Name);
         QueueFree();
     }
 }

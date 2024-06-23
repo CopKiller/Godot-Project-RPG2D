@@ -1,45 +1,50 @@
 ﻿
 
 
-namespace GdProject.Client.Scripts.Entities.Player
+using DragonRunes.Network.CustomDataSerializable;
+using DragonRunes.Scripts.Network;
+using LiteNetLib;
+using DragonRunes.Models.CustomData;
+
+public partial class PlayerNetwork : PlayerData
 {
-    public partial class PlayerNetwork : PlayerData
+
+    private ClientPacketProcessor packetProcessor;
+    private NetPeer serverPeer;
+
+    public void InitializePlayerNetwork()
     {
+        var clientManager = NodeManager.GetNode<ClientManager>(nameof(ClientManager));
+        packetProcessor = clientManager._networkService._clientPacketProcessor;
+        serverPeer = clientManager._player.CurrentPeer;
+        playerMoveModel = new PlayerMoveModel();
+        playerMoveModel.Position = new Position();
+        playerMoveModel.Direction = new Direction();
 
-        //private PacketProcessor packetProcessor => ClientManager.LocalPlayer.PacketProcessor;
+        this.OnPlayerMove += SendPlayerMove;
+    }
 
-        //private CPlayerMoveAction CPlayerMoveAction;
+    public void SendPlayerMove()
+    {
+        playerMoveModel.Direction.X = LastDirection.X;
+        playerMoveModel.Direction.Y = LastDirection.Y;
+        playerMoveModel.Position.X = Position.X;
+        playerMoveModel.Position.Y = Position.Y;
+        playerMoveModel.IsRunning = isRunning;
 
-        public void InitializePlayerNetwork()
-        {
-            //CPlayerMoveAction = new CPlayerMoveAction();
-            //CPlayerMoveAction.PlayerMoveModel = new PlayerMoveModel();
+        packetProcessor.ClientPlayerMove(serverPeer, playerMoveModel);
+    }
 
-            this.OnPlayerMove += SendPlayerMove;
-        }
+    public void ReceivePlayerMove(PlayerMoveModel playerMoveModel)
+    {
+        this.playerMoveModel = playerMoveModel;
+        CallDeferred(nameof(UpdatePlayerMove));
+    }
 
-        public void SendPlayerMove()
-        {
-            //CPlayerMoveAction.PlayerMoveModel.Position = new SharedLibrary.DataType.Vector2(Position.X, Position.Y);
-            //CPlayerMoveAction.PlayerMoveModel.Direction = new SharedLibrary.DataType.Vector2(LastDirection.X, LastDirection.Y);
-            //CPlayerMoveAction.PlayerMoveModel.isRunning = isRunning;
-            //CPlayerMoveAction.PlayerMoveModel.Speed = Speed;
-            //CPlayerMoveAction.WritePacket(packetProcessor);
-        }
-
-        //public void ReceivePlayerMove(PlayerMoveModel playerMoveModel)
-        //{
-        //    CPlayerMoveAction.PlayerMoveModel = playerMoveModel;
-
-        //    CallDeferred(nameof(UpdatePlayerMove));
-        //}
-        //public void UpdatePlayerMove()
-        //{
-
-        //    Position = new Godot.Vector2(CPlayerMoveAction.PlayerMoveModel.Position.X, CPlayerMoveAction.PlayerMoveModel.Position.Y);
-        //    Direction = new Godot.Vector2(CPlayerMoveAction.PlayerMoveModel.Direction.X, CPlayerMoveAction.PlayerMoveModel.Direction.Y);
-        //    isRunning = CPlayerMoveAction.PlayerMoveModel.isRunning;
-        //    Speed = CPlayerMoveAction.PlayerMoveModel.Speed;
-        //}
+    private void UpdatePlayerMove()
+    {
+        Position = new Godot.Vector2(playerMoveModel.Position.X, playerMoveModel.Position.Y);
+        Direction = new Godot.Vector2(playerMoveModel.Direction.X, playerMoveModel.Direction.Y);
+        isRunning = playerMoveModel.IsRunning;
     }
 }

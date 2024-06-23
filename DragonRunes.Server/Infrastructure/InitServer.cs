@@ -50,8 +50,8 @@ namespace DragonRunes.Server.Infrastructure
 
         private void StartDatabase()
         {
-            var accountRepo = _serviceProvider.GetRequiredService<IAccountRepository>();
-            var playerRepo = _serviceProvider.GetRequiredService<IPlayerRepository>();
+            var accountRepo = _serviceProvider.GetRequiredService<AccountRepository>();
+            var playerRepo = _serviceProvider.GetRequiredService<PlayerRepository>();
             _databaseManager = new DatabaseManager(accountRepo, playerRepo);
             Logg.Logger.Log("Database Initialized...");
         }

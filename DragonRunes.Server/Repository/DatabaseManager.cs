@@ -14,13 +14,13 @@ namespace DragonRunes.Server.Repository
 {
     public class DatabaseManager
     {
-        public readonly IAccountRepository AccountRepository;
+        public readonly AccountRepository AccountRepository;
 
-        public readonly IPlayerRepository PlayerRepository;
+        public readonly PlayerRepository PlayerRepository;
 
 
-        public DatabaseManager(IAccountRepository accountRepository,
-                                IPlayerRepository playerRepository)
+        public DatabaseManager(AccountRepository accountRepository,
+                                PlayerRepository playerRepository)
         {
             AccountRepository = accountRepository ?? throw new ArgumentNullException(nameof(accountRepository));
             PlayerRepository = playerRepository ?? throw new ArgumentNullException(nameof(playerRepository));

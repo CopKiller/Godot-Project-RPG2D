@@ -10,16 +10,16 @@ namespace DragonRunes.Scripts.Network
         public void ServerPlayerMove(SPlayerMove obj, NetPeer netPeer)
         {
 
-            //var playerNode = NodeManager.GetNode<PlayerController>(Index.ToString());
+            var playerNode = NodeManager.GetNode<PlayerController>(obj.PlayerMoveModel.Index.ToString());
 
-            //if (playerNode == null) return;
+            if (playerNode == null) return;
 
             //// Sempre que precisar passar valores de uma classe para ela mesma em outro local,
             //// é melhor passar seus atributos separadamente para não ter problemas de referência
 
             //ExternalLogger.Print("PlayerMoveModel: Recebido" + Index.ToString() + " " + playerNode.GetType().ToString());
 
-            //playerNode.ReceivePlayerMove(PlayerMoveModel);
+            playerNode.ReceivePlayerMove(obj.PlayerMoveModel);
         }
     }
 }

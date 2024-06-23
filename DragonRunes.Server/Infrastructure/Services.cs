@@ -29,8 +29,8 @@ namespace DragonRunes.Server.Infrastructure
         private void ConfigureDatabaseService(IServiceCollection services)
         {
             services.AddDbContext<DatabaseContext>();
-            services.AddScoped<IAccountRepository, AccountRepository>();
-            services.AddScoped<IPlayerRepository, PlayerRepository>();
+            services.AddSingleton<AccountRepository>();
+            services.AddSingleton<PlayerRepository>();
         }
         private void ConfigureNetworkService(IServiceCollection services)
         {

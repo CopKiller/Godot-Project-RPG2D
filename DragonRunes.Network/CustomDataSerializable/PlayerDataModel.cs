@@ -7,6 +7,7 @@ namespace DragonRunes.Network.CustomDataSerializable
 {
     public class PlayerDataModel: PlayerModel, INetSerializable
     {
+        public int accountId { get; set; }
         public int Index { get; set; }
 
         public void Deserialize(NetDataReader reader)
@@ -30,6 +31,7 @@ namespace DragonRunes.Network.CustomDataSerializable
 
         public PlayerDataModel(PlayerModel model)
         {
+            Id = model.Id;
             Name = model.Name;
             Position = model.Position;
             Direction = model.Direction;

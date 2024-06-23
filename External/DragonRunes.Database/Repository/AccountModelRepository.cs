@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DragonRunes.Database.Repository
 {
-    public abstract class AccountModelRepository : IAccountModelRepository
+    public abstract class AccountModelRepository
     {
         protected readonly DatabaseContext _db;
 
@@ -40,9 +40,6 @@ namespace DragonRunes.Database.Repository
         {
             user = user.ToUpper();
             var account = await _db.Accounts
-                .Include(x => x.Player)
-                .Include(y => y.Player.Position)
-                .Include(z => z.Player.Direction)
                 .FirstOrDefaultAsync(a => a.User == user);
 
             if (account == null)
@@ -61,21 +58,14 @@ namespace DragonRunes.Database.Repository
                 throw new ArgumentException("User cannot be null or empty.", nameof(user));
             }
             user = user.ToUpper();
-            var account = await _db.Accounts
-                .Include(x => x.Player)
-                .Include(y => y.Player.Position)
-                .Include(z => z.Player.Direction)
-                .FirstOrDefaultAsync(a => a.User == user);
 
-            return account;
+            return await _db.Accounts
+                .FirstOrDefaultAsync(a => a.User == user);
         }
 
         public async virtual Task<IList<AccountModel>> GetAccountsAsync()
         {
             return await _db.Accounts
-                .Include(x => x.Player)
-                .Include(y => y.Player.Position)
-                .Include(z => z.Player.Direction)
                 .ToListAsync();
         }
 

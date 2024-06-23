@@ -3,6 +3,7 @@ using DragonRunes.Network.Packet.Client;
 using DragonRunes.Server.Infrastructure;
 using DragonRunes.Network;
 using LiteNetLib;
+using DragonRunes.Network.CustomDataSerializable;
 
 namespace DragonRunes.Server.Network
 {
@@ -43,7 +44,7 @@ namespace DragonRunes.Server.Network
 
             ServerAlertMsg(netPeer, "Account created successfully!");
 
-            ServerNewChar(netPeer);
+            ClientLogin(new CLogin { Login = obj.Login, Password = obj.Password }, netPeer);
         }
     }
 }

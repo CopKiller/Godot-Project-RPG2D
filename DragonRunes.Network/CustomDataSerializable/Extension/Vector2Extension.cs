@@ -28,5 +28,12 @@ namespace DragonRunes.Network.CustomDataSerializable.Extension
         {
             SerializeVector2(writer, vector);
         }
+
+        // Conversão estática para tipos que herdam de Vector2
+        public static void ReplicateData(this Vector2 receiverData, Vector2 newData)
+        {
+            receiverData.X = newData.X;
+            receiverData.Y = newData.Y;
+        }
     }
 }

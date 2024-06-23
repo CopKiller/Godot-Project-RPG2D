@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DragonRunes.Server.Repository
 {
-    public class AccountRepository : AccountModelRepository, IAccountRepository
+    public class AccountRepository : AccountModelRepository
     {
         public AccountRepository(DatabaseContext db) : base(db) { }
 
@@ -18,7 +18,7 @@ namespace DragonRunes.Server.Repository
             return _db.Accounts.Count();
         }
 
-        public async Task<IAccountModel> CheckAccountAsync(string username, string password)
+        public async Task<AccountModel> CheckAccountAsync(string username, string password)
         {
             var account = await base.GetAccountAsync(username);
 

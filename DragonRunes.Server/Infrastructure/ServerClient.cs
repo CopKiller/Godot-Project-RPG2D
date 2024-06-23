@@ -10,6 +10,8 @@ namespace DragonRunes.Server.Infrastructure
 
         public GameState GameState { get; set; }
 
+        public int accountId { get; set; }
+
         public PlayerDataModel _playerData { get; set; }
 
         public readonly ServerPacketProcessor _serverPacketProcessor;

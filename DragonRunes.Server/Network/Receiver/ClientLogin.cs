@@ -35,24 +35,22 @@ namespace DragonRunes.Server.Network
                 return;
             }
 
-            var playerData = account.Player;
+            var playerModel = await InitServer._databaseManager.PlayerRepository.GetPlayerByIdAsync(account.Id);
 
-            var playerDataModel = new PlayerDataModel(playerData);
-            playerDataModel.Index = netPeer.Id;
-            player._playerData = playerDataModel;
+            player.accountId = account.Id;
 
-            if (playerData.Name == string.Empty)
+            if (playerModel == null)
             {
                 ServerNewChar(netPeer);
                 ServerAlertMsg(netPeer, "You need to create a character first!");
                 return;
             }
 
+            player._playerData = new PlayerDataModel(playerModel);
+            player._playerData.Index = netPeer.Id;
             player.GameState = GameState.InGame;
 
             ServerInGame(netPeer);
-
-            //ServerAllPlayerData(netPeer);
 
             ServerPlayerToAllBut(netPeer);
 

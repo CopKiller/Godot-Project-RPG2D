@@ -18,9 +18,25 @@ namespace DragonRunes.Client.Scripts
         {
             foreach (var player in PlayerControllers)
             {
-                NodeManager.AddNode(player);
-                AddChild(player);
-                player.InitializePlayerModel();
+                AddPlayer(player);
+            }
+        }
+
+        private void AddPlayer(PlayerController player)
+        {
+            NodeManager.AddNode(player);
+            AddChild(player);
+            player.InitializePlayerModel();
+        }
+
+        private void RemovePlayer(int Index)
+        {
+            var player = PlayerControllers.Find(a => a.playerDataModel.Index == Index);
+            if (player != null)
+            {
+                NodeManager.RemoveNode(player);
+                RemoveChild(player);
+                player.QueueFree();
             }
         }
     }

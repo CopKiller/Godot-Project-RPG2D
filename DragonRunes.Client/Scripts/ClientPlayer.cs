@@ -3,7 +3,6 @@ using DragonRunes.Logger;
 using DragonRunes.Network.CustomData;
 using DragonRunes.Scripts.Network;
 using DragonRunes.Network.CustomDataSerializable;
-using GdProject.Client.Scripts.Entities.Player;
 using LiteNetLib;
 using System;
 

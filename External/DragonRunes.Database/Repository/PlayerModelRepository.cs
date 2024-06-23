@@ -4,13 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.Marshalling;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DragonRunes.Database.Repository
 {
-    public abstract class PlayerModelRepository : IPlayerModelRepository
+    public abstract class PlayerModelRepository
     {
         protected readonly DatabaseContext _db;
 
@@ -19,10 +20,10 @@ namespace DragonRunes.Database.Repository
             _db = db;
         }
 
-        public async virtual Task<bool> AddPlayerAsync(PlayerModel player)
+        public async virtual Task<PlayerModel> AddPlayerAsync(PlayerModel player)
         {
             await _db.Players.AddAsync(player);
-            return await _db.SaveChangesAsync() > 0 ? true : false;
+            return (await _db.SaveChangesAsync() > 0 ? player : null);
         }
 
         public async virtual Task<bool> DeletePlayerAsync(PlayerModel player)
@@ -31,7 +32,18 @@ namespace DragonRunes.Database.Repository
             return await _db.SaveChangesAsync() > 0 ? true : false;
         }
 
-        public async virtual Task<PlayerModel> GetPlayerAsync(string name)
+        public async virtual Task<PlayerModel> GetPlayerByIdAsync(int id)
+        {
+            return await _db.Players.FindAsync(id);
+        }
+
+        public async virtual Task<PlayerModel> GetPlayerByAccountIdAsync(int accountId)
+        {
+            var account = await _db.Accounts.FindAsync(accountId);
+            return await _db.Players.FindAsync(account.PlayerId);
+        }
+
+        public async virtual Task<PlayerModel> GetPlayerByNameAsync(string name)
         {
             name = name.ToUpper();
             return await _db.Players.FirstOrDefaultAsync(x => x.Name.ToUpper() == name);
@@ -46,6 +58,12 @@ namespace DragonRunes.Database.Repository
         {
             _db.Players.Update(player);
             return await _db.SaveChangesAsync() > 0 ? true : false;
+        }
+
+        public async virtual Task<bool> HasPlayerNameAsync(string name)
+        {
+            name = name.ToUpper();
+            return await _db.Players.AnyAsync(x => x.Name.ToUpper() == name);
         }
     }
 }

@@ -40,6 +40,6 @@ public class NetworkManager : INetworkManager
     public void Update()
     {
         _networkService?.Update();
-        //Thread.Sleep(15); // A Lib ja implementa um delay
+        Thread.Sleep(15); // A Lib ja implementa um delay
     }
 }
