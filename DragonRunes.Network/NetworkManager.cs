@@ -17,6 +17,9 @@ public class NetworkManager : INetworkManager
     {
         _networkService?.Register();
         _networkService?.Start();
+
+        _isRunning = true;
+
         _thread = new Thread(() =>
         {
             while (_isRunning)
@@ -26,7 +29,6 @@ public class NetworkManager : INetworkManager
             Stop();
         });
         _thread.Start();
-        _isRunning = true;
     }
     public void Register(INetworkService service)
     {

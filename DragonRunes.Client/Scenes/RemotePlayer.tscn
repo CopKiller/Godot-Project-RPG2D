@@ -1,6 +1,6 @@
 [gd_scene load_steps=33 format=3 uid="uid://b7xasqtculcs4"]
 
-[ext_resource type="Script" path="res://Scripts/PlayerScript/LocalPlayerController.cs" id="1_mphw7"]
+[ext_resource type="Script" path="res://Scripts/PlayerScript/RemotePlayerController.cs" id="1_mvmra"]
 [ext_resource type="Texture2D" uid="uid://bytu0xolmpp40" path="res://Resources/Players/Mage/Male.png" id="2_d5n2h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ptxk0"]
@@ -248,7 +248,7 @@ height = 20.0
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(523, 423)
-script = ExtResource("1_mphw7")
+script = ExtResource("1_mvmra")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vfk14")

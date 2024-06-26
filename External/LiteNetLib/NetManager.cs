@@ -147,7 +147,7 @@ namespace LiteNetLib
 
         private readonly Dictionary<IPEndPoint, ConnectionRequest> _requestsDict = new Dictionary<IPEndPoint, ConnectionRequest>();
         private readonly ConcurrentDictionary<IPEndPoint, NtpRequest> _ntpRequests = new ConcurrentDictionary<IPEndPoint, NtpRequest>();
-        private int _connectedPeersCount;
+        private long _connectedPeersCount;
         private readonly List<NetPeer> _connectedPeerListCache = new List<NetPeer>();
         private readonly PacketLayerBase _extraPacketLayer;
         private int _lastPeerId;
@@ -176,7 +176,7 @@ namespace LiteNetLib
         /// <summary>
         /// Interval for latency detection and checking connection (in milliseconds)
         /// </summary>
-        public int PingInterval = 2000;
+        public int PingInterval = 1000;
 
         /// <summary>
         /// If NetManager doesn't receive any packet from remote peer during this time (in milliseconds) then connection will be closed
@@ -284,7 +284,7 @@ namespace LiteNetLib
         /// <summary>
         /// IPv6 support
         /// </summary>
-        public bool IPv6Enabled = false;
+        public bool IPv6Enabled = true;
 
         /// <summary>
         /// Override MTU for all new peers registered in this NetManager, will ignores MTU Discovery!
@@ -346,7 +346,7 @@ namespace LiteNetLib
         /// <summary>
         /// Returns connected peers count
         /// </summary>
-        public int ConnectedPeersCount => Interlocked.CompareExchange(ref _connectedPeersCount,0,0);
+        public int ConnectedPeersCount => (int)Interlocked.Read(ref _connectedPeersCount);
 
         public int ExtraPacketSizeForLayer => _extraPacketLayer?.ExtraPacketSizeForLayer ?? 0;
 
@@ -1268,6 +1268,21 @@ namespace LiteNetLib
                 _peersLock.ExitReadLock();
             }
         }
+        
+        /// <summary>
+        /// Send message without connection
+        /// </summary>
+        /// <param name="message">Raw data</param>
+        /// <param name="remoteEndPoint">Packet destination</param>
+        /// <returns>Operation result</returns>
+        public bool SendUnconnectedMessage(ReadOnlySpan<byte> message, IPEndPoint remoteEndPoint)
+        {
+            int headerSize = NetPacket.GetHeaderSize(PacketProperty.UnconnectedMessage);
+            var packet = PoolGetPacket(message.Length + headerSize);
+            packet.Property = PacketProperty.UnconnectedMessage;
+            message.CopyTo(new Span<byte>(packet.RawData, headerSize, message.Length));
+            return SendRawAndRecycle(packet, remoteEndPoint) > 0;
+        }
 #endif
 
         /// <summary>
@@ -1415,17 +1430,19 @@ namespace LiteNetLib
         }
 
         /// <summary>
-        /// Receive all pending events. Call this in game update code
+        /// Receive "maxProcessedEvents" pending events. Call this in game update code
         /// In Manual mode it will call also socket Receive (which can be slow)
+        /// 0 - receive all events
         /// </summary>
-        public void PollEvents()
+        /// <param name="maxProcessedEvents">Max events that will be processed (called INetEventListener Connect/Receive/Etc), 0 - receive all events</param>
+        public void PollEvents(int maxProcessedEvents = 0)
         {
             if (_manualMode)
             {
                 if (_udpSocketv4 != null)
-                    ManualReceive(_udpSocketv4, _bufferEndPointv4);
+                    ManualReceive(_udpSocketv4, _bufferEndPointv4, maxProcessedEvents);
                 if (_udpSocketv6 != null && _udpSocketv6 != _udpSocketv4)
-                    ManualReceive(_udpSocketv6, _bufferEndPointv6);
+                    ManualReceive(_udpSocketv6, _bufferEndPointv6, maxProcessedEvents);
                 ProcessDelayedPackets();
                 return;
             }
@@ -1439,11 +1456,15 @@ namespace LiteNetLib
                 _pendingEventTail = null;
             }
 
+            int counter = 0;
             while (pendingEvent != null)
             {
                 var next = pendingEvent.Next;
                 ProcessEvent(pendingEvent);
                 pendingEvent = next;
+                counter++;
+                if (counter == maxProcessedEvents)
+                    break;
             }
         }
 

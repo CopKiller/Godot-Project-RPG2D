@@ -23,6 +23,8 @@ public partial class Game : Node2D
 
         var players = NodeManager.GetNode<Players>(nameof(Players));
 
+        GD.Print("Players: " + players.GetChildCount());
+
         AddChild(players);
     }
 

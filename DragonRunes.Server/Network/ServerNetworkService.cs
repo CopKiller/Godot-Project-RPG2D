@@ -88,6 +88,8 @@ internal class ServerNetworkService : NetworkService
         _players?.GetItem(peerId).Disconnect();
         _players?.RemoveItem(peerId);
 
+        Logg.Logger.Log($"{peerId}: {Enum.GetName(disconnectInfo.Reason)}");
+
         Logg.Logger.Log($"Player disconnected: {peerId}");
     }
     private void OnNetworkErrorEvent(IPEndPoint endPoint, SocketError socketError)

@@ -117,7 +117,8 @@ public class ClientNetworkService : NetworkService
 
     private void OnConnectionRequestEvent(ConnectionRequest request)
     {
-
+        //request.AcceptIfKey(NetworkAddress.SecureConnectionKey);
+        //request.Reject();
     }
 
     private void OnDeliveryEvent(NetPeer peer, object userData)

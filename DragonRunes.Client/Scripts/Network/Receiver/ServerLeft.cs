@@ -1,4 +1,5 @@
-﻿using DragonRunes.Logger;
+﻿using DragonRunes.Client.Scripts.PlayerScript;
+using DragonRunes.Logger;
 using DragonRunes.Network.Packet;
 using DragonRunes.Network.Packet.Server;
 using LiteNetLib;
@@ -9,8 +10,7 @@ namespace DragonRunes.Scripts.Network
     {
         public void ServerLeft(SLeft obj, NetPeer netPeer)
         {
-
-            NodeManager.GetNode<PlayerController>(obj.Index.ToString()).QueueFree();
+            NodeManager.GetNode<RemotePlayerController>(obj.Index.ToString()).QueueFree();
         }
     }
 }

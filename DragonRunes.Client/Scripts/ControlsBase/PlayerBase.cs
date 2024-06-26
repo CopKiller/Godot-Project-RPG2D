@@ -1,4 +1,5 @@
-﻿using DragonRunes.Models.CustomData;
+﻿using DragonRunes.Logger;
+using DragonRunes.Models.CustomData;
 using DragonRunes.Network.CustomDataSerializable.Extension;
 using Godot;
 using System.ComponentModel;
@@ -14,13 +15,12 @@ namespace DragonRunes.Client.Scripts.ControlsBase
             set
             {
                 playerName = value;
-                GetChild<RichTextLabel>(0).Text = value;
+                GetNode<RichTextLabel>("PlayerName").Text = value;
             }
         }
 
         protected bool isRunning = false;
-
-        private bool isMoving = false;
+        protected bool isMoving { get; private set; } = false;
 
         private Position position;
         protected new Position Position
@@ -35,6 +35,10 @@ namespace DragonRunes.Client.Scripts.ControlsBase
                         Y = base.Position.Y
                     };
                     position.PropertyChanged += Position_PropertyChanged;
+                } else
+                {
+                    position.X = base.Position.X;
+                    position.Y = base.Position.Y;
                 }
                 return position;
             }
@@ -61,23 +65,20 @@ namespace DragonRunes.Client.Scripts.ControlsBase
 
         private AnimatedSprite2D AnimatedSprite;
 
-        public virtual void InitializePlayerBase()
+        public virtual void InitializePlayer()
         {
             AnimatedSprite = GetChild<AnimatedSprite2D>(0);
-            Direction = new Direction();
+            //Direction = new Direction();
             LastDirection = new Direction();
             Speed = 100;
         }
         public override void _PhysicsProcess(double delta)
         {
-            ProcessDirectionAnimation(delta);
-
-            SetInputDirection(); // --> Isso aqui pode ser processado em outra camada, que o resto vai funcionar.
-
             ProcessDirection(delta);
 
             ProcessPlayerMovement(delta);
 
+            ProcessDirectionAnimation(delta);
         }
         private void ProcessPlayerMovement(double delta)
         {
@@ -85,9 +86,9 @@ namespace DragonRunes.Client.Scripts.ControlsBase
 
             var velocity = Direction * speed;
 
-            isMoving = velocity.Length() > 0;
-
             Velocity = new Godot.Vector2(velocity.X, velocity.Y);
+
+            isMoving = Velocity.LengthSquared() > 0;
 
             MoveAndCollide(Velocity * (float)delta);
         }
@@ -104,7 +105,7 @@ namespace DragonRunes.Client.Scripts.ControlsBase
         }
         private string GetAnimationNameFromDirection()
         {
-            if (isRunning)
+            if (isRunning && isMoving)
             {
                 if (Mathf.Abs(Direction.X) > Mathf.Abs(Direction.Y))
                 {
@@ -137,13 +138,6 @@ namespace DragonRunes.Client.Scripts.ControlsBase
                 else
                     return "Idle_Up";
             }
-        }
-
-        protected void SetInputDirection()
-        {
-            Direction.X = Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
-            Direction.Y = Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
-            Direction.Normalized();
         }
 
         private void Position_PropertyChanged(object sender, PropertyChangedEventArgs e)

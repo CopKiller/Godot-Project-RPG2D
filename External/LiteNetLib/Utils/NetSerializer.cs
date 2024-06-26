@@ -422,6 +422,12 @@ namespace LiteNetLib.Utils
             protected override void ElementWrite(NetDataWriter w, ref IPEndPoint prop) { w.Put(prop); }
             protected override void ElementRead(NetDataReader r, out IPEndPoint prop) { prop = r.GetNetEndPoint(); }
         }
+        
+        private class GuidSerializer<T> : FastCallSpecificAuto<T, Guid>
+        {
+            protected override void ElementWrite(NetDataWriter w, ref Guid guid) { w.Put(guid); }
+            protected override void ElementRead(NetDataReader r, out Guid guid) { guid = r.GetGuid(); }
+        }
 
         private class StringSerializer<T> : FastCallSpecific<T, string>
         {
@@ -569,13 +575,16 @@ namespace LiteNetLib.Utils
             _maxStringLength = maxStringLength;
         }
 
-        private ClassInfo<T> RegisterInternal<T>()
+        private ClassInfo<T> RegisterInternal<
+#if NET5_0_OR_GREATER
+        [DynamicallyAccessedMembers(Trimming.SerializerMemberTypes)]
+#endif
+            T>()
         {
             if (ClassInfo<T>.Instance != null)
                 return ClassInfo<T>.Instance;
 
-            Type t = typeof(T);
-            var props = t.GetProperties(
+            var props = typeof(T).GetProperties(
                 BindingFlags.Instance |
                 BindingFlags.Public |
                 BindingFlags.GetProperty |
@@ -642,6 +651,8 @@ namespace LiteNetLib.Utils
                     serialzer = new CharSerializer<T>();
                 else if (elementType == typeof(IPEndPoint))
                     serialzer = new IPEndPointSerializer<T>();
+                else if (elementType == typeof(Guid))
+                    serialzer = new GuidSerializer<T>();
                 else
                 {
                     _registeredTypes.TryGetValue(elementType, out var customType);

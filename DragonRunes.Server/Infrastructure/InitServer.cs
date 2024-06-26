@@ -20,7 +20,7 @@ namespace DragonRunes.Server.Infrastructure
 
         public static DatabaseManager _databaseManager;
 
-        private bool _isRunning = false;
+        private bool _isRunning = true;
 
         internal InitServer(IServiceProvider serviceProvider)
         {

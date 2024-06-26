@@ -23,6 +23,7 @@ public partial class SceneManager : Node
         AddScene("Game", "res://Scenes/Game.tscn");
         AddScene("Players", "res://Scenes/Players.tscn");
         AddScene("Player", "res://Scenes/Player.tscn");
+        AddScene("RemotePlayer", "res://Scenes/RemotePlayer.tscn");
         AddScene("Dungeon", "res://Scenes/Maps/Dungeon.tscn");
 
 

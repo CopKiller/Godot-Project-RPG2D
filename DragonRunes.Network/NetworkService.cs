@@ -15,6 +15,8 @@ public abstract class NetworkService : INetworkService
         this.NetManager = new NetManager(this.listener)
         {
             AutoRecycle = true,
+            EnableStatistics = false,
+            UnconnectedMessagesEnabled = true
         };
     }
 

@@ -1,4 +1,5 @@
-﻿using DragonRunes.Network.Packet;
+﻿using DragonRunes.Client.Scripts.PlayerScript;
+using DragonRunes.Network.Packet;
 using DragonRunes.Network.Packet.Server;
 using LiteNetLib;
 using System;
@@ -10,7 +11,7 @@ namespace DragonRunes.Scripts.Network
         public void ServerPlayerMove(SPlayerMove obj, NetPeer netPeer)
         {
 
-            var playerNode = NodeManager.GetNode<PlayerController>(obj.PlayerMoveModel.Index.ToString());
+            var playerNode = NodeManager.GetNode<RemotePlayerController>(obj.PlayerMoveModel.Index.ToString());
 
             if (playerNode == null) return;
 

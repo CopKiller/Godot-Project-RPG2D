@@ -12,8 +12,8 @@ namespace DragonRunes.Models.CustomData
     {
         public int Id { get; set; }
 
-        public float x { get; private set;}
-        public float y { get; private set; }
+        private float x { get; set;}
+        private float y { get; set; }
 
         public float X
         {
@@ -70,7 +70,7 @@ namespace DragonRunes.Models.CustomData
         }
         private float LengthSquared()
         {
-            return x * x + y * y;
+            return X * X + Y * Y;
         }
         public float Length()
         {

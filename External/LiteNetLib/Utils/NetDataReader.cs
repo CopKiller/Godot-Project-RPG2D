@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Net;
-using System.Numerics;
 using System.Runtime.CompilerServices;
 
 namespace LiteNetLib.Utils
@@ -109,92 +108,97 @@ namespace LiteNetLib.Utils
 
         #region GetMethods
 
-        //public void Get<T>(out T result) where T : struct, INetSerializable
-        //{
-        //    result = default(T);
-        //    result.Deserialize(this);
-        //}
+        public void Get<T>(out T result) where T : struct, INetSerializable
+        {
+            result = default(T);
+            result.Deserialize(this);
+        }
 
-        //public void Get<T>(out T result, Func<T> constructor) where T : class, INetSerializable
-        //{
-        //    result = constructor();
-        //    result.Deserialize(this);
-        //}
+        public void Get<T>(out T result, Func<T> constructor) where T : class, INetSerializable
+        {
+            result = constructor();
+            result.Deserialize(this);
+        }
 
-        //public void Get(out IPEndPoint result)
-        //{
-        //    result = GetNetEndPoint();
-        //}
+        public void Get(out IPEndPoint result)
+        {
+            result = GetNetEndPoint();
+        }
 
-        //public void Get(out byte result)
-        //{
-        //    result = GetByte();
-        //}
+        public void Get(out byte result)
+        {
+            result = GetByte();
+        }
 
-        //public void Get(out sbyte result)
-        //{
-        //    result = (sbyte)GetByte();
-        //}
+        public void Get(out sbyte result)
+        {
+            result = (sbyte)GetByte();
+        }
 
-        //public void Get(out bool result)
-        //{
-        //    result = GetBool();
-        //}
+        public void Get(out bool result)
+        {
+            result = GetBool();
+        }
 
-        //public void Get(out char result)
-        //{
-        //    result = GetChar();
-        //}
+        public void Get(out char result)
+        {
+            result = GetChar();
+        }
 
-        //public void Get(out ushort result)
-        //{
-        //    result = GetUShort();
-        //}
+        public void Get(out ushort result)
+        {
+            result = GetUShort();
+        }
 
-        //public void Get(out short result)
-        //{
-        //    result = GetShort();
-        //}
+        public void Get(out short result)
+        {
+            result = GetShort();
+        }
 
-        //public void Get(out ulong result)
-        //{
-        //    result = GetULong();
-        //}
+        public void Get(out ulong result)
+        {
+            result = GetULong();
+        }
 
-        //public void Get(out long result)
-        //{
-        //    result = GetLong();
-        //}
+        public void Get(out long result)
+        {
+            result = GetLong();
+        }
 
-        //public void Get(out uint result)
-        //{
-        //    result = GetUInt();
-        //}
+        public void Get(out uint result)
+        {
+            result = GetUInt();
+        }
 
-        //public void Get(out int result)
-        //{
-        //    result = GetInt();
-        //}
+        public void Get(out int result)
+        {
+            result = GetInt();
+        }
 
-        //public void Get(out double result)
-        //{
-        //    result = GetDouble();
-        //}
+        public void Get(out double result)
+        {
+            result = GetDouble();
+        }
 
-        //public void Get(out float result)
-        //{
-        //    result = GetFloat();
-        //}
+        public void Get(out float result)
+        {
+            result = GetFloat();
+        }
 
-        //public void Get(out string result)
-        //{
-        //    result = GetString();
-        //}
+        public void Get(out string result)
+        {
+            result = GetString();
+        }
 
-        //public void Get(out string result, int maxLength)
-        //{
-        //    result = GetString(maxLength);
-        //}
+        public void Get(out string result, int maxLength)
+        {
+            result = GetString(maxLength);
+        }
+        
+        public void Get(out Guid result)
+        {
+            result = GetGuid();
+        }
 
         public IPEndPoint GetNetEndPoint()
         {
@@ -226,6 +230,30 @@ namespace LiteNetLib.Utils
             return result;
         }
 
+        public T[] GetArray<T>() where T : INetSerializable, new()
+        {
+            ushort length = BitConverter.ToUInt16(_data, _position);
+            _position += 2;
+            T[] result = new T[length];
+            for (int i = 0; i < length; i++)
+            {
+                var item = new T();
+                item.Deserialize(this);
+                result[i] = item;
+            }
+            return result;
+        }
+        
+        public T[] GetArray<T>(Func<T> constructor) where T : class, INetSerializable
+        {
+            ushort length = BitConverter.ToUInt16(_data, _position);
+            _position += 2;
+            T[] result = new T[length];
+            for (int i = 0; i < length; i++)
+                Get(out result[i], constructor);
+            return result;
+        }
+        
         public bool[] GetBoolArray()
         {
             return GetArray<bool>(1);
@@ -371,40 +399,47 @@ namespace LiteNetLib.Utils
         {
             ushort size = GetUShort();
             if (size == 0)
-            {
                 return string.Empty;
-            }
-
+            
             int actualSize = size - 1;
-            if (actualSize >= NetDataWriter.StringBufferMaxLength)
-            {
-                return null;
-            }
-
-            ArraySegment<byte> data = GetBytesSegment(actualSize);
-
-            return (maxLength > 0 && NetDataWriter.uTF8Encoding.Value.GetCharCount(data.Array, data.Offset, data.Count) > maxLength) ?
+            string result = maxLength > 0 && NetDataWriter.uTF8Encoding.Value.GetCharCount(_data, _position, actualSize) > maxLength ?
                 string.Empty :
-                NetDataWriter.uTF8Encoding.Value.GetString(data.Array, data.Offset, data.Count);
+                NetDataWriter.uTF8Encoding.Value.GetString(_data, _position, actualSize);
+            _position += actualSize;
+            return result;
         }
 
         public string GetString()
         {
             ushort size = GetUShort();
             if (size == 0)
-            {
                 return string.Empty;
-            }
-
+            
             int actualSize = size - 1;
-            if (actualSize >= NetDataWriter.StringBufferMaxLength)
-            {
-                return null;
-            }
+            string result = NetDataWriter.uTF8Encoding.Value.GetString(_data, _position, actualSize);
+            _position += actualSize;
+            return result;
+        }
 
-            ArraySegment<byte> data = GetBytesSegment(actualSize);
-
-            return NetDataWriter.uTF8Encoding.Value.GetString(data.Array, data.Offset, data.Count);
+        public string GetLargeString()
+        {
+            int size = GetInt();
+            if (size <= 0)
+                return string.Empty;
+            string result = NetDataWriter.uTF8Encoding.Value.GetString(_data, _position, size);
+            _position += size;
+            return result;
+        }
+        
+        public Guid GetGuid()
+        {
+#if LITENETLIB_SPANS || NETCOREAPP2_1_OR_GREATER || NETSTANDARD2_1_OR_GREATER || NETCOREAPP2_1 || NETCOREAPP3_1 || NET5_0 || NETSTANDARD2_1
+            var result =  new Guid(_data.AsSpan(_position, 16));
+            _position += 16;
+            return result;
+#else
+            return new Guid(GetBytesWithLength());
+#endif
         }
 
         public ArraySegment<byte> GetBytesSegment(int count)
@@ -421,19 +456,12 @@ namespace LiteNetLib.Utils
             return segment;
         }
 
-        public T Get<T>() where T : INetSerializable, new()
+        public T Get<T>() where T : struct, INetSerializable
         {
-            var obj = new T();
+            var obj = default(T);
             obj.Deserialize(this);
             return obj;
         }
-
-        //public T Get<T>() where T : struct, INetSerializable
-        //{
-        //    var obj = default(T);
-        //    obj.Deserialize(this);
-        //    return obj;
-        //}
 
         public T Get<T>(Func<T> constructor) where T : class, INetSerializable
         {
@@ -550,16 +578,9 @@ namespace LiteNetLib.Utils
         {
             ushort size = PeekUShort();
             if (size == 0)
-            {
                 return string.Empty;
-            }
-
+            
             int actualSize = size - 1;
-            if (actualSize >= NetDataWriter.StringBufferMaxLength)
-            {
-                return null;
-            }
-
             return (maxLength > 0 && NetDataWriter.uTF8Encoding.Value.GetCharCount(_data, _position + 2, actualSize) > maxLength) ?
                 string.Empty :
                 NetDataWriter.uTF8Encoding.Value.GetString(_data, _position + 2, actualSize);
@@ -569,16 +590,9 @@ namespace LiteNetLib.Utils
         {
             ushort size = PeekUShort();
             if (size == 0)
-            {
                 return string.Empty;
-            }
 
             int actualSize = size - 1;
-            if (actualSize >= NetDataWriter.StringBufferMaxLength)
-            {
-                return null;
-            }
-
             return NetDataWriter.uTF8Encoding.Value.GetString(_data, _position + 2, actualSize);
         }
         #endregion
