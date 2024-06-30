@@ -118,10 +118,10 @@ region = Rect2(384, 192, 64, 64)
 [sub_resource type="SpriteFrames" id="SpriteFrames_vfk14"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 5.0,
 "texture": SubResource("AtlasTexture_ptxk0")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_qvhmn")
 }, {
 "duration": 1.0,
@@ -132,10 +132,10 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 5.0,
 "texture": SubResource("AtlasTexture_fbdj4")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_dk3tp")
 }, {
 "duration": 1.0,
@@ -146,10 +146,10 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 5.0,
 "texture": SubResource("AtlasTexture_gw4np")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_l015n")
 }, {
 "duration": 1.0,
@@ -160,10 +160,10 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 5.0,
 "texture": SubResource("AtlasTexture_n0ii4")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_ibmdt")
 }, {
 "duration": 1.0,
@@ -174,16 +174,16 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_xswhg")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_ip7dl")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_adbv5")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_q6dbt")
 }],
 "loop": true,
@@ -191,16 +191,16 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_vprob")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_m6neu")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_kkbi4")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_j1f0e")
 }],
 "loop": true,
@@ -208,16 +208,16 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_qakj0")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_t4cyf")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_jcilv")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_eygdj")
 }],
 "loop": true,
@@ -225,16 +225,16 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_1mp0k")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_um0f6")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_pbbdf")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_y2odv")
 }],
 "loop": true,
@@ -242,21 +242,28 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4ilj1"]
-radius = 8.0
-height = 20.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j050j"]
+size = Vector2(32, 32)
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(523, 423)
+position = Vector2(18, 5)
+slide_on_ceiling = false
+floor_stop_on_slope = false
+floor_block_on_wall = false
+floor_snap_length = 32.0
 script = ExtResource("1_mphw7")
+metadata/_edit_vertical_guides_ = [32.0]
+metadata/_edit_horizontal_guides_ = [32.0]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_vfk14")
-animation = &"Walk_Down"
+animation = &"Idle_Down"
+frame_progress = 0.36153
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 17)
-shape = SubResource("CapsuleShape2D_4ilj1")
+position = Vector2(-2, 11)
+shape = SubResource("RectangleShape2D_j050j")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 7

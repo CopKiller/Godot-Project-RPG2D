@@ -1,7 +1,9 @@
 ﻿using DragonRunes.Logger;
 using DragonRunes.Models.CustomData;
+using DragonRunes.Models.Enum;
 using DragonRunes.Network.CustomDataSerializable.Extension;
 using Godot;
+using System;
 using System.ComponentModel;
 
 namespace DragonRunes.Client.Scripts.ControlsBase
@@ -20,7 +22,7 @@ namespace DragonRunes.Client.Scripts.ControlsBase
         }
 
         protected bool isRunning = false;
-        protected bool isMoving { get; private set; } = false;
+        protected bool isMoving { get; set; } = false;
 
         private Position position;
         protected new Position Position
@@ -35,7 +37,8 @@ namespace DragonRunes.Client.Scripts.ControlsBase
                         Y = base.Position.Y
                     };
                     position.PropertyChanged += Position_PropertyChanged;
-                } else
+                }
+                else
                 {
                     position.X = base.Position.X;
                     position.Y = base.Position.Y;
@@ -48,6 +51,7 @@ namespace DragonRunes.Client.Scripts.ControlsBase
                 {
                     position.PropertyChanged -= Position_PropertyChanged;
                 }
+
                 position = value;
                 if (position != null)
                 {
@@ -57,46 +61,162 @@ namespace DragonRunes.Client.Scripts.ControlsBase
             }
         }
 
-        protected private Direction Direction;
 
-        protected Direction LastDirection;
+        protected Direction Direction { get; set; } = Direction.Down;
+        protected float offSetX = 0f;
+        protected float offSetY = 0f;
+        public const float GridSize = 32.0f;
+
+        private Position positionGrid;
+        protected Position PositionGrid
+        {
+            get
+            {
+                if (positionGrid == null)
+                {
+                    positionGrid = new Position
+                    {
+                        X = 0,
+                        Y = 0
+                    };
+                }
+                return positionGrid;
+            }
+            set
+            {
+                positionGrid = value;
+            }
+        }
+
 
         protected float Speed;
 
         private AnimatedSprite2D AnimatedSprite;
 
+        private long WalkTimer;
+
+
         public virtual void InitializePlayer()
         {
             AnimatedSprite = GetChild<AnimatedSprite2D>(0);
-            //Direction = new Direction();
-            LastDirection = new Direction();
-            Speed = 100;
+            Speed = 2.0f;
         }
         public override void _PhysicsProcess(double delta)
         {
-            ProcessDirection(delta);
-
-            ProcessPlayerMovement(delta);
-
             ProcessDirectionAnimation(delta);
+            ProcessPlayerMovement(delta);
         }
         private void ProcessPlayerMovement(double delta)
         {
-            var speed = isRunning ? Speed * 2 : Speed;
+            if (!isMoving) return;
 
-            var velocity = Direction * speed;
+            var tickCount = System.Environment.TickCount64;
 
-            Velocity = new Godot.Vector2(velocity.X, velocity.Y);
-
-            isMoving = Velocity.LengthSquared() > 0;
-
-            MoveAndCollide(Velocity * (float)delta);
-        }
-        private void ProcessDirection(double delta)
-        {
-            if (Direction.Length() > 0)
+            if (WalkTimer < tickCount)
             {
-                LastDirection.ReplicateData(Direction);
+                var speed = isRunning ? Speed * 2.0f : Speed;
+                var velocity = new Godot.Vector2();
+
+                switch (Direction)
+                {
+                    case Direction.Up:
+                        velocity.Y = -speed;
+                        offSetY -= speed;
+                        if (offSetY < 0)
+                            offSetY = 0;
+                        break;
+                    case Direction.Down:
+                        velocity.Y = speed;
+                        offSetY += speed;
+                        if (offSetY > 0)
+                            offSetY = 0;
+                        break;
+                    case Direction.Left:
+                        velocity.X = -speed;
+                        offSetX -= speed;
+                        if (offSetX < 0)
+                            offSetX = 0;
+                        break;
+                    case Direction.Right:
+                        velocity.X = speed;
+                        offSetX += speed;
+                        if (offSetX > 0)
+                            offSetX = 0;
+                        break;
+                    case Direction.UpLeft:
+                        velocity.X = -speed;
+                        velocity.Y = -speed;
+                        offSetX -= speed;
+                        offSetY -= speed;
+                        if (offSetY < 0f)
+                            offSetY = 0f;
+                        if (offSetX < 0f)
+                            offSetX = 0f;
+                        break;
+                    case Direction.UpRight:
+                        velocity.X = speed;
+                        velocity.Y = -speed;
+                        offSetX += speed;
+                        offSetY -= speed;
+                        if (offSetY < 0f)
+                            offSetY = 0f;
+                        if (offSetX > 0f)
+                            offSetX = 0f;
+                        break;
+                    case Direction.DownLeft:
+                        velocity.X = -speed;
+                        velocity.Y = speed;
+                        offSetX -= speed;
+                        offSetY += speed;
+                        if (offSetY > 0f)
+                            offSetY = 0f;
+                        if (offSetX < 0f)
+                            offSetX = 0f;
+                        break;
+                    case Direction.DownRight:
+                        velocity.X = speed;
+                        velocity.Y = speed;
+                        offSetX += speed;
+                        offSetY += speed;
+                        if (offSetY > 0f)
+                            offSetY = 0f;
+                        if (offSetX > 0f)
+                            offSetX = 0f;
+                        break;
+                }
+
+                if (Direction == Direction.Right || Direction == Direction.Down || Direction == Direction.DownRight)
+                {
+                    if (offSetX >= 0f && offSetY >= 0f)
+                    {
+                        isMoving = false;
+
+                        return;
+                    }
+                }
+                else
+                {
+                    if (offSetX <= 0f && offSetY <= 0f)
+                    {
+                        isMoving = false;
+
+                        return;
+                    }
+                }
+
+                velocity.Normalized();
+
+                // Use MoveAndCollide para mover o jogador
+                var collision = MoveAndCollide(velocity);
+
+                // Se houver colisão, parar o movimento
+                if (collision != null)
+                {
+                    isMoving = false;
+                    GD.Print($"colisao aqui");
+                }
+
+                WalkTimer = System.Environment.TickCount64 + 30;
             }
         }
         private void ProcessDirectionAnimation(double delta)
@@ -107,36 +227,63 @@ namespace DragonRunes.Client.Scripts.ControlsBase
         {
             if (isRunning && isMoving)
             {
-                if (Mathf.Abs(Direction.X) > Mathf.Abs(Direction.Y))
+                switch (Direction)
                 {
-                    return Direction.X > 0 ? "Walk_Right" : "Walk_Left";
-                }
-                else
-                {
-                    return Direction.Y > 0 ? "Walk_Down" : "Walk_Up";
+                    case Direction.Up:
+                    case Direction.UpLeft:
+                    case Direction.UpRight:
+                        return "Walk_Up";
+                    case Direction.Down:
+                    case Direction.DownLeft:
+                    case Direction.DownRight:
+                        return "Walk_Down";
+                    case Direction.Left:
+                        return "Walk_Left";
+                    case Direction.Right:
+                        return "Walk_Right";
+                    default:
+                        return "Idle_Down";
                 }
             }
             else if (isMoving)
             {
-                if (Mathf.Abs(Direction.X) > Mathf.Abs(Direction.Y))
+                switch (Direction)
                 {
-                    return Direction.X > 0 ? "Walk_Right" : "Walk_Left";
-                }
-                else
-                {
-                    return Direction.Y > 0 ? "Walk_Down" : "Walk_Up";
+                    case Direction.Up:
+                    case Direction.UpLeft:
+                    case Direction.UpRight:
+                        return "Walk_Up";
+                    case Direction.Down:
+                    case Direction.DownLeft:
+                    case Direction.DownRight:
+                        return "Walk_Down";
+                    case Direction.Left:
+                        return "Walk_Left";
+                    case Direction.Right:
+                        return "Walk_Right";
+                    default:
+                        return "Idle_Down";
                 }
             }
             else //Stop
             {
-                if (LastDirection.X > 0)
-                    return "Idle_Right";
-                else if (LastDirection.X < 0)
-                    return "Idle_Left";
-                else if (LastDirection.Y > 0)
-                    return "Idle_Down";
-                else
-                    return "Idle_Up";
+                switch (Direction)
+                {
+                    case Direction.Up:
+                    case Direction.UpLeft:
+                    case Direction.UpRight:
+                        return "Idle_Up";
+                    case Direction.Down:
+                    case Direction.DownLeft:
+                    case Direction.DownRight:
+                        return "Idle_Down";
+                    case Direction.Left:
+                        return "Idle_Left";
+                    case Direction.Right:
+                        return "Idle_Right";
+                    default:
+                        return "Idle_Down";
+                }
             }
         }
 

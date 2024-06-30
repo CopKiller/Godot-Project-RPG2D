@@ -1,4 +1,5 @@
 ﻿using DragonRunes.Models.CustomData;
+using DragonRunes.Models.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace DragonRunes.Models
         public Gender Gender { get; set; }
         public Class Class { get; set; }
         public Position Position { get; set; } = new Position();
-        public Direction Direction { get; set; } = new Direction();
+        public Direction Direction { get; set; } = Direction.Down;
 
         public PlayerModel()
         {

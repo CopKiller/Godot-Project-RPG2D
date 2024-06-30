@@ -3,8 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\controlsbase\\playerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\controlsbase\\playerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\playerscript\\localplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\playerscript\\localplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B7F9A39-7ADA-413D-BFE5-91AA82E1599D}|..\\DragonRunes.Models\\DragonRunes.Models.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.models\\playermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B7F9A39-7ADA-413D-BFE5-91AA82E1599D}|..\\DragonRunes.Models\\DragonRunes.Models.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.models\\customdata\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\playerscript\\remoteplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\playerscript\\remoteplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\controlsbase\\windowbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\controlsbase\\windowbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617868CC-CA30-4E55-B5B6-B5B6EA925FD2}|..\\DragonRunes.Network\\DragonRunes.Network.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.network\\customdataserializable\\playerdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\receiver\\serveringame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\receiver\\serveringame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\sender\\clientregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\sender\\clientregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\sender\\clientplayermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\sender\\clientplayermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\sender\\clientnewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\sender\\clientnewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\sender\\clientlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\sender\\clientlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617868CC-CA30-4E55-B5B6-B5B6EA925FD2}|..\\DragonRunes.Network\\DragonRunes.Network.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617868CC-CA30-4E55-B5B6-B5B6EA925FD2}|..\\DragonRunes.Network\\DragonRunes.Network.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.network\\inetworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617868CC-CA30-4E55-B5B6-B5B6EA925FD2}|..\\DragonRunes.Network\\DragonRunes.Network.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.network\\inetworkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617868CC-CA30-4E55-B5B6-B5B6EA925FD2}|..\\DragonRunes.Network\\DragonRunes.Network.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.network\\packetprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\clientpacketprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\clientpacketprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CB73657-1667-4494-9E81-1E25F803D802}|..\\External\\LiteNetLib\\LiteNetLib.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\external\\litenetlib\\netmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\clientnetworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -24,13 +84,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CB73657-1667-4494-9E81-1E25F803D802}|..\\External\\LiteNetLib\\LiteNetLib.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\external\\litenetlib\\connectionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\clientpacketprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\clientpacketprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{617868CC-CA30-4E55-B5B6-B5B6EA925FD2}|..\\DragonRunes.Network\\DragonRunes.Network.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.network\\packetprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F386CC1-76A0-4129-A829-25BE562C9A4A}|..\\DragonRunes.Server\\DragonRunes.Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.server\\network\\serverpacketprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -60,26 +113,7 @@
       "AbsoluteMoniker": "D:0:0:{6CB73657-1667-4494-9E81-1E25F803D802}|..\\External\\LiteNetLib\\LiteNetLib.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\external\\litenetlib\\ineteventlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\controlsbase\\windowbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\controlsbase\\windowbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\playerscript\\remoteplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\playerscript\\remoteplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F386CC1-76A0-4129-A829-25BE562C9A4A}|..\\DragonRunes.Server\\DragonRunes.Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.server\\network\\receiver\\clientplayermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B7F9A39-7ADA-413D-BFE5-91AA82E1599D}|..\\DragonRunes.Models\\DragonRunes.Models.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.models\\customdata\\vector2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\receiver\\serveringame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\receiver\\serveringame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\sender\\clientplayermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\sender\\clientplayermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\receiver\\serverplayermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,18 +147,6 @@
       "AbsoluteMoniker": "D:0:0:{8F386CC1-76A0-4129-A829-25BE562C9A4A}|..\\DragonRunes.Server\\DragonRunes.Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\sender\\clientnewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\sender\\clientnewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\sender\\clientregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\sender\\clientregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.client\\scripts\\network\\sender\\clientlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07B0242A-7B9A-4B2D-9CD5-1ACBC4D703B2}|DragonRunes.Client.csproj|solutionrelative:scripts\\network\\sender\\clientlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F386CC1-76A0-4129-A829-25BE562C9A4A}|..\\DragonRunes.Server\\DragonRunes.Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.server\\network\\receiver\\clientnewchar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -143,13 +165,7 @@
       "AbsoluteMoniker": "D:0:0:{8F386CC1-76A0-4129-A829-25BE562C9A4A}|..\\DragonRunes.Server\\DragonRunes.Server.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.server\\network\\receiver\\clientregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B7F9A39-7ADA-413D-BFE5-91AA82E1599D}|..\\DragonRunes.Models\\DragonRunes.Models.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.models\\playermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B7F9A39-7ADA-413D-BFE5-91AA82E1599D}|..\\DragonRunes.Models\\DragonRunes.Models.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\dragonrunes.models\\accountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32496863-369D-4831-970C-5CF8E912C277}|..\\External\\DragonRunes.Database\\DragonRunes.Database.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\external\\dragonrunes.database\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CB73657-1667-4494-9E81-1E25F803D802}|..\\External\\LiteNetLib\\LiteNetLib.csproj|c:\\users\\felip\\onedrive\\\u00E1rea de trabalho\\my github repos\\godot-project\\external\\litenetlib\\netutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -216,7 +232,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 144,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -224,241 +240,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientNetworkService.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\ClientNetworkService.cs",
-              "RelativeDocumentMoniker": "Scripts\\Network\\ClientNetworkService.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\ClientNetworkService.cs",
-              "RelativeToolTip": "Scripts\\Network\\ClientNetworkService.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAuwBoAAAANAAAA",
+              "DocumentIndex": 3,
+              "Title": "Vector2.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Models\\CustomData\\Vector2.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Models\\CustomData\\Vector2.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Models\\CustomData\\Vector2.cs",
+              "RelativeToolTip": "..\\DragonRunes.Models\\CustomData\\Vector2.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAADwv1MAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T18:33:57.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConnectionRequest.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\ConnectionRequest.cs",
-              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\ConnectionRequest.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\ConnectionRequest.cs",
-              "RelativeToolTip": "..\\External\\LiteNetLib\\ConnectionRequest.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAuwFwAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:28:46.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PacketProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\PacketProcessor.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\PacketProcessor.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\PacketProcessor.cs",
-              "RelativeToolTip": "..\\DragonRunes.Network\\PacketProcessor.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBwAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T00:27:10.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NetworkManager.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkManager.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\NetworkManager.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkManager.cs",
-              "RelativeToolTip": "..\\DragonRunes.Network\\NetworkManager.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA1wBAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:22:22.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PooledPacket.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\PooledPacket.cs",
-              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\PooledPacket.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\PooledPacket.cs",
-              "RelativeToolTip": "..\\External\\LiteNetLib\\PooledPacket.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T00:05:43.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T05:05:45.949Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "NetworkAddress.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkAddress.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\NetworkAddress.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkAddress.cs",
-              "RelativeToolTip": "..\\DragonRunes.Network\\NetworkAddress.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Title": "RemotePlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\PlayerScript\\RemotePlayerController.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerScript\\RemotePlayerController.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\PlayerScript\\RemotePlayerController.cs",
+              "RelativeToolTip": "Scripts\\PlayerScript\\RemotePlayerController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwBoAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T22:19:49.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-30T01:02:32.91Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerBase.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\ControlsBase\\PlayerBase.cs",
+              "RelativeDocumentMoniker": "Scripts\\ControlsBase\\PlayerBase.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\ControlsBase\\PlayerBase.cs",
+              "RelativeToolTip": "Scripts\\ControlsBase\\PlayerBase.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAcwEAAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T21:06:59.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "LocalPlayerController.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\PlayerScript\\LocalPlayerController.cs",
               "RelativeDocumentMoniker": "Scripts\\PlayerScript\\LocalPlayerController.cs",
               "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\PlayerScript\\LocalPlayerController.cs",
               "RelativeToolTip": "Scripts\\PlayerScript\\LocalPlayerController.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAIwDMAAAA7AAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswFgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T00:50:51.188Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ServerNetworkService.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\ServerNetworkService.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\ServerNetworkService.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\ServerNetworkService.cs",
-              "RelativeToolTip": "..\\DragonRunes.Server\\Network\\ServerNetworkService.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAADwvywAAAAhAAAA",
+              "DocumentIndex": 8,
+              "Title": "ClientRegister.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientRegister.cs",
+              "RelativeDocumentMoniker": "Scripts\\Network\\Sender\\ClientRegister.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientRegister.cs",
+              "RelativeToolTip": "Scripts\\Network\\Sender\\ClientRegister.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T00:22:07.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InitServer.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Infrastructure\\InitServer.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Infrastructure\\InitServer.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Infrastructure\\InitServer.cs",
-              "RelativeToolTip": "..\\DragonRunes.Server\\Infrastructure\\InitServer.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAApwB8AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T01:24:29.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T21:52:39.381Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ClientPacketProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\ClientPacketProcessor.cs",
-              "RelativeDocumentMoniker": "Scripts\\Network\\ClientPacketProcessor.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\ClientPacketProcessor.cs",
-              "RelativeToolTip": "Scripts\\Network\\ClientPacketProcessor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "ServerInGame.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerInGame.cs",
+              "RelativeDocumentMoniker": "Scripts\\Network\\Receiver\\ServerInGame.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerInGame.cs",
+              "RelativeToolTip": "Scripts\\Network\\Receiver\\ServerInGame.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAIBJwDgAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T18:34:01.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T01:57:36.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ServerPacketProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\ServerPacketProcessor.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\ServerPacketProcessor.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\ServerPacketProcessor.cs",
-              "RelativeToolTip": "..\\DragonRunes.Server\\Network\\ServerPacketProcessor.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAjwDsAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T18:52:43.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "NetManager.Socket.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.Socket.cs",
-              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NetManager.Socket.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.Socket.cs",
-              "RelativeToolTip": "..\\External\\LiteNetLib\\NetManager.Socket.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T00:05:38.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "NetManager.PacketPool.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.PacketPool.cs",
-              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NetManager.PacketPool.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.PacketPool.cs",
-              "RelativeToolTip": "..\\External\\LiteNetLib\\NetManager.PacketPool.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAcwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T00:05:32.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LiteNetLib.csproj",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\LiteNetLib.csproj",
-              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\LiteNetLib.csproj",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\LiteNetLib.csproj",
-              "RelativeToolTip": "..\\External\\LiteNetLib\\LiteNetLib.csproj",
-              "ViewState": "AQIAABkAAAAAAAAAAABBwDMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-25T23:44:53.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "NuGet.Build.Tasks.Pack.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\NuGet.Build.Tasks.Pack\\buildCrossTargeting\\NuGet.Build.Tasks.Pack.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\NuGet.Build.Tasks.Pack\\buildCrossTargeting\\NuGet.Build.Tasks.Pack.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\NuGet.Build.Tasks.Pack\\buildCrossTargeting\\NuGet.Build.Tasks.Pack.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\NuGet.Build.Tasks.Pack\\buildCrossTargeting\\NuGet.Build.Tasks.Pack.targets",
-              "ViewState": "AQIAAOUAAAAAAAAAAAAIwNMAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-06-25T23:44:10.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NetPeer.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetPeer.cs",
-              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NetPeer.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetPeer.cs",
-              "RelativeToolTip": "..\\External\\LiteNetLib\\NetPeer.cs",
-              "ViewState": "AQIAAD0CAAAAAAAAAAAiwFECAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:28:21.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ArrayExtension.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\CustomDataSerializable\\Extension\\ArrayExtension.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\CustomDataSerializable\\Extension\\ArrayExtension.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\CustomDataSerializable\\Extension\\ArrayExtension.cs",
-              "RelativeToolTip": "..\\DragonRunes.Network\\CustomDataSerializable\\Extension\\ArrayExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T01:32:35.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "INetEventListener.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\INetEventListener.cs",
-              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\INetEventListener.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\INetEventListener.cs",
-              "RelativeToolTip": "..\\External\\LiteNetLib\\INetEventListener.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T23:31:03.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 5,
               "Title": "WindowBase.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\ControlsBase\\WindowBase.cs",
               "RelativeDocumentMoniker": "Scripts\\ControlsBase\\WindowBase.cs",
@@ -466,207 +322,35 @@
               "RelativeToolTip": "Scripts\\ControlsBase\\WindowBase.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAIwC4AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T21:32:51.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T21:32:51.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ClientPlayerMove.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientPlayerMove.cs",
-              "RelativeDocumentMoniker": "Scripts\\Network\\Sender\\ClientPlayerMove.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientPlayerMove.cs",
-              "RelativeToolTip": "Scripts\\Network\\Sender\\ClientPlayerMove.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "DocumentIndex": 2,
+              "Title": "PlayerModel.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Models\\PlayerModel.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Models\\PlayerModel.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Models\\PlayerModel.cs",
+              "RelativeToolTip": "..\\DragonRunes.Models\\PlayerModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T21:04:16.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T17:01:11.871Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ServerLeft.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerLeft.cs",
-              "RelativeDocumentMoniker": "Scripts\\Network\\Receiver\\ServerLeft.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerLeft.cs",
-              "RelativeToolTip": "Scripts\\Network\\Receiver\\ServerLeft.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "DocumentIndex": 6,
+              "Title": "PlayerDataModel.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\CustomDataSerializable\\PlayerDataModel.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\CustomDataSerializable\\PlayerDataModel.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\CustomDataSerializable\\PlayerDataModel.cs",
+              "RelativeToolTip": "..\\DragonRunes.Network\\CustomDataSerializable\\PlayerDataModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCUAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T21:49:39.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T00:14:37.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ServerPlayerData.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerPlayerData.cs",
-              "RelativeDocumentMoniker": "Scripts\\Network\\Receiver\\ServerPlayerData.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerPlayerData.cs",
-              "RelativeToolTip": "Scripts\\Network\\Receiver\\ServerPlayerData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T02:36:14.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ClientPlayerMove.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\Receiver\\ClientPlayerMove.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\Receiver\\ClientPlayerMove.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\Receiver\\ClientPlayerMove.cs",
-              "RelativeToolTip": "..\\DragonRunes.Server\\Network\\Receiver\\ClientPlayerMove.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBQAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T21:18:23.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RemotePlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\PlayerScript\\RemotePlayerController.cs",
-              "RelativeDocumentMoniker": "Scripts\\PlayerScript\\RemotePlayerController.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\PlayerScript\\RemotePlayerController.cs",
-              "RelativeToolTip": "Scripts\\PlayerScript\\RemotePlayerController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowC4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T02:39:15.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ServerPlayerMove.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerPlayerMove.cs",
-              "RelativeDocumentMoniker": "Scripts\\Network\\Receiver\\ServerPlayerMove.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerPlayerMove.cs",
-              "RelativeToolTip": "Scripts\\Network\\Receiver\\ServerPlayerMove.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAIBZwBYAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T01:27:02.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ServerInGame.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerInGame.cs",
-              "RelativeDocumentMoniker": "Scripts\\Network\\Receiver\\ServerInGame.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerInGame.cs",
-              "RelativeToolTip": "Scripts\\Network\\Receiver\\ServerInGame.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAgwD8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T01:57:36.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Vector2.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Models\\CustomData\\Vector2.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Models\\CustomData\\Vector2.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Models\\CustomData\\Vector2.cs",
-              "RelativeToolTip": "..\\DragonRunes.Models\\CustomData\\Vector2.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T22:32:47.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\Game.cs",
-              "RelativeDocumentMoniker": "Scripts\\SceneScript\\Game.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\Game.cs",
-              "RelativeToolTip": "Scripts\\SceneScript\\Game.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBcAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T01:36:46.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Players.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Players.cs",
-              "RelativeDocumentMoniker": "Scripts\\Players.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Players.cs",
-              "RelativeToolTip": "Scripts\\Players.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T20:24:17.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "NodeManager.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\NodeManager.cs",
-              "RelativeDocumentMoniker": "Scripts\\NodeManager.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\NodeManager.cs",
-              "RelativeToolTip": "Scripts\\NodeManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T02:28:01.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "winLogin.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\MainMenu\\Windows\\winLogin.cs",
-              "RelativeDocumentMoniker": "Scripts\\SceneScript\\MainMenu\\Windows\\winLogin.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\MainMenu\\Windows\\winLogin.cs",
-              "RelativeToolTip": "Scripts\\SceneScript\\MainMenu\\Windows\\winLogin.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAADgvywAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T21:46:43.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Program.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Program.cs",
-              "RelativeToolTip": "..\\DragonRunes.Server\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T18:52:52.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ClientLogin.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientLogin.cs",
-              "RelativeDocumentMoniker": "Scripts\\Network\\Sender\\ClientLogin.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientLogin.cs",
-              "RelativeToolTip": "Scripts\\Network\\Sender\\ClientLogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T21:52:06.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ClientRegister.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientRegister.cs",
-              "RelativeDocumentMoniker": "Scripts\\Network\\Sender\\ClientRegister.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientRegister.cs",
-              "RelativeToolTip": "Scripts\\Network\\Sender\\ClientRegister.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T21:52:39.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 10,
               "Title": "ClientNewChar.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientNewChar.cs",
               "RelativeDocumentMoniker": "Scripts\\Network\\Sender\\ClientNewChar.cs",
@@ -674,12 +358,395 @@
               "RelativeToolTip": "Scripts\\Network\\Sender\\ClientNewChar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T21:52:30.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T21:52:30.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClientLogin.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientLogin.cs",
+              "RelativeDocumentMoniker": "Scripts\\Network\\Sender\\ClientLogin.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientLogin.cs",
+              "RelativeToolTip": "Scripts\\Network\\Sender\\ClientLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T21:52:06.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClientPlayerMove.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientPlayerMove.cs",
+              "RelativeDocumentMoniker": "Scripts\\Network\\Sender\\ClientPlayerMove.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Sender\\ClientPlayerMove.cs",
+              "RelativeToolTip": "Scripts\\Network\\Sender\\ClientPlayerMove.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T21:04:16.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NetworkService.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkService.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\NetworkService.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkService.cs",
+              "RelativeToolTip": "..\\DragonRunes.Network\\NetworkService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T02:17:56.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "INetworkService.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\INetworkService.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\INetworkService.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\INetworkService.cs",
+              "RelativeToolTip": "..\\DragonRunes.Network\\INetworkService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T02:17:38.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "INetworkManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\INetworkManager.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\INetworkManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\INetworkManager.cs",
+              "RelativeToolTip": "..\\DragonRunes.Network\\INetworkManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T02:17:42.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PacketProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\PacketProcessor.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\PacketProcessor.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\PacketProcessor.cs",
+              "RelativeToolTip": "..\\DragonRunes.Network\\PacketProcessor.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T00:27:10.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NetManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.cs",
+              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NetManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.cs",
+              "RelativeToolTip": "..\\External\\LiteNetLib\\NetManager.cs",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAAALYAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T02:08:32.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PooledPacket.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\PooledPacket.cs",
+              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\PooledPacket.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\PooledPacket.cs",
+              "RelativeToolTip": "..\\External\\LiteNetLib\\PooledPacket.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T00:05:43.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NetworkManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkManager.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\NetworkManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkManager.cs",
+              "RelativeToolTip": "..\\DragonRunes.Network\\NetworkManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T01:22:22.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NetworkAddress.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkAddress.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\NetworkAddress.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\NetworkAddress.cs",
+              "RelativeToolTip": "..\\DragonRunes.Network\\NetworkAddress.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T22:19:49.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ConnectionRequest.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\ConnectionRequest.cs",
+              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\ConnectionRequest.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\ConnectionRequest.cs",
+              "RelativeToolTip": "..\\External\\LiteNetLib\\ConnectionRequest.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAuwFwAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T01:28:46.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClientPacketProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\ClientPacketProcessor.cs",
+              "RelativeDocumentMoniker": "Scripts\\Network\\ClientPacketProcessor.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\ClientPacketProcessor.cs",
+              "RelativeToolTip": "Scripts\\Network\\ClientPacketProcessor.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAqwBsAAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T18:34:01.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ClientNetworkService.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\ClientNetworkService.cs",
+              "RelativeDocumentMoniker": "Scripts\\Network\\ClientNetworkService.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\ClientNetworkService.cs",
+              "RelativeToolTip": "Scripts\\Network\\ClientNetworkService.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAuwBoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T18:33:57.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ServerNetworkService.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\ServerNetworkService.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\ServerNetworkService.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\ServerNetworkService.cs",
+              "RelativeToolTip": "..\\DragonRunes.Server\\Network\\ServerNetworkService.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvywAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T00:22:07.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InitServer.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Infrastructure\\InitServer.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Infrastructure\\InitServer.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Infrastructure\\InitServer.cs",
+              "RelativeToolTip": "..\\DragonRunes.Server\\Infrastructure\\InitServer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAApwB8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T01:24:29.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ServerPacketProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\ServerPacketProcessor.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\ServerPacketProcessor.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\ServerPacketProcessor.cs",
+              "RelativeToolTip": "..\\DragonRunes.Server\\Network\\ServerPacketProcessor.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAjwDsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T18:52:43.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "NetManager.Socket.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.Socket.cs",
+              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NetManager.Socket.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.Socket.cs",
+              "RelativeToolTip": "..\\External\\LiteNetLib\\NetManager.Socket.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T00:05:38.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NetManager.PacketPool.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.PacketPool.cs",
+              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NetManager.PacketPool.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.PacketPool.cs",
+              "RelativeToolTip": "..\\External\\LiteNetLib\\NetManager.PacketPool.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T00:05:32.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LiteNetLib.csproj",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\LiteNetLib.csproj",
+              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\LiteNetLib.csproj",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\LiteNetLib.csproj",
+              "RelativeToolTip": "..\\External\\LiteNetLib\\LiteNetLib.csproj",
+              "ViewState": "AQIAABkAAAAAAAAAAABBwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-25T23:44:53.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NuGet.Build.Tasks.Pack.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\NuGet.Build.Tasks.Pack\\buildCrossTargeting\\NuGet.Build.Tasks.Pack.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\NuGet.Build.Tasks.Pack\\buildCrossTargeting\\NuGet.Build.Tasks.Pack.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\NuGet.Build.Tasks.Pack\\buildCrossTargeting\\NuGet.Build.Tasks.Pack.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\NuGet.Build.Tasks.Pack\\buildCrossTargeting\\NuGet.Build.Tasks.Pack.targets",
+              "ViewState": "AQIAAOUAAAAAAAAAAAAIwNMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-06-25T23:44:10.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "NetPeer.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetPeer.cs",
+              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NetPeer.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetPeer.cs",
+              "RelativeToolTip": "..\\External\\LiteNetLib\\NetPeer.cs",
+              "ViewState": "AQIAAD0CAAAAAAAAAAAiwFECAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T01:28:21.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ArrayExtension.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\CustomDataSerializable\\Extension\\ArrayExtension.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Network\\CustomDataSerializable\\Extension\\ArrayExtension.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\CustomDataSerializable\\Extension\\ArrayExtension.cs",
+              "RelativeToolTip": "..\\DragonRunes.Network\\CustomDataSerializable\\Extension\\ArrayExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T01:32:35.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "INetEventListener.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\INetEventListener.cs",
+              "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\INetEventListener.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\INetEventListener.cs",
+              "RelativeToolTip": "..\\External\\LiteNetLib\\INetEventListener.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T23:31:03.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ServerLeft.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerLeft.cs",
+              "RelativeDocumentMoniker": "Scripts\\Network\\Receiver\\ServerLeft.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerLeft.cs",
+              "RelativeToolTip": "Scripts\\Network\\Receiver\\ServerLeft.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T21:49:39.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ServerPlayerData.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerPlayerData.cs",
+              "RelativeDocumentMoniker": "Scripts\\Network\\Receiver\\ServerPlayerData.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerPlayerData.cs",
+              "RelativeToolTip": "Scripts\\Network\\Receiver\\ServerPlayerData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T02:36:14.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ClientPlayerMove.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\Receiver\\ClientPlayerMove.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\Receiver\\ClientPlayerMove.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\Receiver\\ClientPlayerMove.cs",
+              "RelativeToolTip": "..\\DragonRunes.Server\\Network\\Receiver\\ClientPlayerMove.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T21:18:23.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ServerPlayerMove.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerPlayerMove.cs",
+              "RelativeDocumentMoniker": "Scripts\\Network\\Receiver\\ServerPlayerMove.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerPlayerMove.cs",
+              "RelativeToolTip": "Scripts\\Network\\Receiver\\ServerPlayerMove.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAIBZwBYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T01:27:02.82Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\Game.cs",
+              "RelativeDocumentMoniker": "Scripts\\SceneScript\\Game.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\Game.cs",
+              "RelativeToolTip": "Scripts\\SceneScript\\Game.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBcAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T01:36:46.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Players.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Players.cs",
+              "RelativeDocumentMoniker": "Scripts\\Players.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Players.cs",
+              "RelativeToolTip": "Scripts\\Players.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T20:24:17.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "NodeManager.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\NodeManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\NodeManager.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\NodeManager.cs",
+              "RelativeToolTip": "Scripts\\NodeManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T02:28:01.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "winLogin.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\MainMenu\\Windows\\winLogin.cs",
+              "RelativeDocumentMoniker": "Scripts\\SceneScript\\MainMenu\\Windows\\winLogin.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\MainMenu\\Windows\\winLogin.cs",
+              "RelativeToolTip": "Scripts\\SceneScript\\MainMenu\\Windows\\winLogin.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADgvywAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T21:46:43.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Program.cs",
+              "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Program.cs",
+              "RelativeToolTip": "..\\DragonRunes.Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T18:52:52.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
               "Title": "NetSerializer.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\Utils\\NetSerializer.cs",
               "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\Utils\\NetSerializer.cs",
@@ -687,12 +754,11 @@
               "RelativeToolTip": "..\\External\\LiteNetLib\\Utils\\NetSerializer.cs",
               "ViewState": "AQIAAB0BAAAAAAAAAIAwwC4BAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:28:37.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:28:37.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 47,
               "Title": "ClientRegister.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\Receiver\\ClientRegister.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\Receiver\\ClientRegister.cs",
@@ -700,12 +766,11 @@
               "RelativeToolTip": "..\\DragonRunes.Server\\Network\\Receiver\\ClientRegister.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAQwB4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T16:17:55.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T16:17:55.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 42,
               "Title": "ClientNewChar.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\Receiver\\ClientNewChar.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\Receiver\\ClientNewChar.cs",
@@ -713,12 +778,11 @@
               "RelativeToolTip": "..\\DragonRunes.Server\\Network\\Receiver\\ClientNewChar.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAgwDkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T00:08:23.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T00:08:23.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "ClientLogin.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\Receiver\\ClientLogin.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\Receiver\\ClientLogin.cs",
@@ -726,12 +790,11 @@
               "RelativeToolTip": "..\\DragonRunes.Server\\Network\\Receiver\\ClientLogin.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAgwDYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T16:41:37.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T16:41:37.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 66,
               "Title": "20240623172826_RemovidoRelacionamentoAccountEPlayer.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\DragonRunes.Database\\Migrations\\20240623172826_RemovidoRelacionamentoAccountEPlayer.cs",
               "RelativeDocumentMoniker": "..\\External\\DragonRunes.Database\\Migrations\\20240623172826_RemovidoRelacionamentoAccountEPlayer.cs",
@@ -739,12 +802,11 @@
               "RelativeToolTip": "..\\External\\DragonRunes.Database\\Migrations\\20240623172826_RemovidoRelacionamentoAccountEPlayer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T17:28:26.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T17:28:26.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "ServerInGame.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\Sender\\ServerInGame.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\Sender\\ServerInGame.cs",
@@ -752,12 +814,11 @@
               "RelativeToolTip": "..\\DragonRunes.Server\\Network\\Sender\\ServerInGame.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T17:33:07.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T17:33:07.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "AccountModel.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Models\\AccountModel.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Models\\AccountModel.cs",
@@ -765,25 +826,11 @@
               "RelativeToolTip": "..\\DragonRunes.Models\\AccountModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T17:01:00.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T17:01:00.751Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "PlayerModel.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Models\\PlayerModel.cs",
-              "RelativeDocumentMoniker": "..\\DragonRunes.Models\\PlayerModel.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Models\\PlayerModel.cs",
-              "RelativeToolTip": "..\\DragonRunes.Models\\PlayerModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T17:01:11.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 46,
               "Title": "PlayerRepository.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Repository\\PlayerRepository.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Repository\\PlayerRepository.cs",
@@ -791,12 +838,11 @@
               "RelativeToolTip": "..\\DragonRunes.Server\\Repository\\PlayerRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwBIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T17:27:59.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T17:27:59.355Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "NetUtils.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetUtils.cs",
               "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NetUtils.cs",
@@ -804,25 +850,11 @@
               "RelativeToolTip": "..\\External\\LiteNetLib\\NetUtils.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:18:30.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T14:18:30.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "DatabaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\DragonRunes.Database\\DatabaseContext.cs",
-              "RelativeDocumentMoniker": "..\\External\\DragonRunes.Database\\DatabaseContext.cs",
-              "ToolTip": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\DragonRunes.Database\\DatabaseContext.cs",
-              "RelativeToolTip": "..\\External\\DragonRunes.Database\\DatabaseContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T01:39:44.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "SNewChar.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\Packet\\Server\\SNewChar.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Network\\Packet\\Server\\SNewChar.cs",
@@ -830,12 +862,11 @@
               "RelativeToolTip": "..\\DragonRunes.Network\\Packet\\Server\\SNewChar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T02:32:39.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T02:32:39.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "ServerPlayerTo.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Server\\Network\\Sender\\ServerPlayerTo.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Server\\Network\\Sender\\ServerPlayerTo.cs",
@@ -843,12 +874,11 @@
               "RelativeToolTip": "..\\DragonRunes.Server\\Network\\Sender\\ServerPlayerTo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T02:35:57.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T02:35:57.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "SInGame.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\Packet\\Server\\SInGame.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Network\\Packet\\Server\\SInGame.cs",
@@ -856,12 +886,11 @@
               "RelativeToolTip": "..\\DragonRunes.Network\\Packet\\Server\\SInGame.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T02:52:45.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T02:52:45.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 51,
               "Title": "SLeft.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\Packet\\Server\\SLeft.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Network\\Packet\\Server\\SLeft.cs",
@@ -869,12 +898,11 @@
               "RelativeToolTip": "..\\DragonRunes.Network\\Packet\\Server\\SLeft.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T02:32:33.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T02:32:33.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 53,
               "Title": "SPlayerData.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\Packet\\Server\\SPlayerData.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Network\\Packet\\Server\\SPlayerData.cs",
@@ -882,12 +910,11 @@
               "RelativeToolTip": "..\\DragonRunes.Network\\Packet\\Server\\SPlayerData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T00:55:20.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-22T00:55:20.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": "ServerNewChar.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\Network\\Receiver\\ServerNewChar.cs",
               "RelativeDocumentMoniker": "Scripts\\Network\\Receiver\\ServerNewChar.cs",
@@ -895,12 +922,11 @@
               "RelativeToolTip": "Scripts\\Network\\Receiver\\ServerNewChar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:19:02.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:19:02.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "winNewChar.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\MainMenu\\Windows\\winNewChar.cs",
               "RelativeDocumentMoniker": "Scripts\\SceneScript\\MainMenu\\Windows\\winNewChar.cs",
@@ -908,12 +934,11 @@
               "RelativeToolTip": "Scripts\\SceneScript\\MainMenu\\Windows\\winNewChar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T01:26:24.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T01:26:24.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "winRegister.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Client\\Scripts\\SceneScript\\MainMenu\\Windows\\winRegister.cs",
               "RelativeDocumentMoniker": "Scripts\\SceneScript\\MainMenu\\Windows\\winRegister.cs",
@@ -921,12 +946,11 @@
               "RelativeToolTip": "Scripts\\SceneScript\\MainMenu\\Windows\\winRegister.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T01:24:56.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T01:24:56.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 60,
               "Title": "NativeSocket.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NativeSocket.cs",
               "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NativeSocket.cs",
@@ -934,12 +958,11 @@
               "RelativeToolTip": "..\\External\\LiteNetLib\\NativeSocket.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:28:55.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:28:55.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 61,
               "Title": "InternalPackets.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\InternalPackets.cs",
               "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\InternalPackets.cs",
@@ -947,12 +970,11 @@
               "RelativeToolTip": "..\\External\\LiteNetLib\\InternalPackets.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:28:54.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:28:54.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "AccountDataModel.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\DragonRunes.Network\\CustomDataSerializable\\AccountDataModel.cs",
               "RelativeDocumentMoniker": "..\\DragonRunes.Network\\CustomDataSerializable\\AccountDataModel.cs",
@@ -960,12 +982,11 @@
               "RelativeToolTip": "..\\DragonRunes.Network\\CustomDataSerializable\\AccountDataModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T01:31:32.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T01:31:32.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": "NetManager.HashSet.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\NetManager.HashSet.cs",
               "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\NetManager.HashSet.cs",
@@ -973,12 +994,11 @@
               "RelativeToolTip": "..\\External\\LiteNetLib\\NetManager.HashSet.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:29:26.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:29:26.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "BaseChannel.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\BaseChannel.cs",
               "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\BaseChannel.cs",
@@ -986,12 +1006,11 @@
               "RelativeToolTip": "..\\External\\LiteNetLib\\BaseChannel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:28:44.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:28:44.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 63,
               "Title": "Preserve.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\Utils\\Preserve.cs",
               "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\Utils\\Preserve.cs",
@@ -999,12 +1018,11 @@
               "RelativeToolTip": "..\\External\\LiteNetLib\\Utils\\Preserve.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:28:41.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:28:41.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 64,
               "Title": "NtpRequest.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\Utils\\NtpRequest.cs",
               "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\Utils\\NtpRequest.cs",
@@ -1012,12 +1030,11 @@
               "RelativeToolTip": "..\\External\\LiteNetLib\\Utils\\NtpRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:28:39.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:28:39.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 65,
               "Title": "NtpPacket.cs",
               "DocumentMoniker": "C:\\Users\\felip\\OneDrive\\\u00C1rea de Trabalho\\My GitHub Repos\\Godot-Project\\External\\LiteNetLib\\Utils\\NtpPacket.cs",
               "RelativeDocumentMoniker": "..\\External\\LiteNetLib\\Utils\\NtpPacket.cs",
@@ -1025,8 +1042,7 @@
               "RelativeToolTip": "..\\External\\LiteNetLib\\Utils\\NtpPacket.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:28:38.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T01:28:38.823Z"
             }
           ]
         },

@@ -17,7 +17,11 @@ namespace DragonRunes.Client.Scripts.PlayerScript
             if (playerDataModel == null)
             {
                 GD.PrintErr("playerDataModel is null");
-                
+                playerDataModel = new PlayerDataModel();
+                playerDataModel.Name = "Player";
+                playerDataModel.Position = new Position();
+                playerDataModel.Position.X = 18.0f;
+                playerDataModel.Position.Y = 5.0f;
             }
 
             InitializePlayer();
@@ -46,9 +50,9 @@ namespace DragonRunes.Client.Scripts.PlayerScript
         public void ReceivePlayerMove(PlayerMoveModel playerMoveModel)
         {
             Position = playerMoveModel.Position;
-            Direction = playerMoveModel.Direction;
-            playerDataModel.Position = playerMoveModel.Position;
-            playerDataModel.Direction = playerMoveModel.Direction;
+            //Direction = playerMoveModel.Direction;
+            //playerDataModel.Position = playerMoveModel.Position;
+            //playerDataModel.Direction = playerMoveModel.Direction;
 
             isRunning = playerMoveModel.IsRunning;
         }
@@ -56,7 +60,8 @@ namespace DragonRunes.Client.Scripts.PlayerScript
         private void UpdatePlayerPosition()
         {
             Position = playerDataModel.Position;
-            Direction = playerDataModel.Direction;
+
+            //Direction = playerDataModel.Direction;
         }
     }
 }

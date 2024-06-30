@@ -2,8 +2,8 @@
 
 namespace DragonRunes.Models.CustomData
 {
-    public class Direction : Vector2
-    {
+    //public class Direction : Vector2
+    //{
 
-    }
+    //}
 }

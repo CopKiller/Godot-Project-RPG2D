@@ -1,5 +1,6 @@
 ﻿
 using DragonRunes.Models.CustomData;
+using DragonRunes.Models.Enum;
 using DragonRunes.Network.CustomDataSerializable.Extension;
 using LiteNetLib.Utils;
 
@@ -17,14 +18,14 @@ namespace DragonRunes.Network.CustomDataSerializable
             Index = reader.GetInt();
             IsRunning = reader.GetBool();
             Position = reader.GetVector2<Position>();
-            Direction = reader.GetVector2<Direction>();
+            Direction = (Direction)reader.GetByte();
         }
         public void Serialize(NetDataWriter writer)
         {
             writer.Put(Index);
             writer.Put(IsRunning);
             writer.Put(Position);
-            writer.Put(Direction);
+            writer.Put((byte)Direction);
         }
     }
 }

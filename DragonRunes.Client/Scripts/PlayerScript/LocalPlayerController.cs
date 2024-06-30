@@ -1,7 +1,10 @@
-﻿using DragonRunes.Network.CustomDataSerializable;
+﻿using DragonRunes.Models.Enum;
+using DragonRunes.Network.CustomDataSerializable;
+using DragonRunes.Network.CustomDataSerializable.Extension;
 using DragonRunes.Scripts.Network;
 using Godot;
 using LiteNetLib;
+using System;
 
 namespace DragonRunes.Client.Scripts.PlayerScript
 {
@@ -10,6 +13,8 @@ namespace DragonRunes.Client.Scripts.PlayerScript
         public ClientPacketProcessor packetProcessor { get; set; }
         public NetPeer serverPeer;
         private PlayerMoveModel playerMoveModel;
+
+        private long tmrDirection = 0;
 
         public override void _Ready()
         {
@@ -20,48 +25,67 @@ namespace DragonRunes.Client.Scripts.PlayerScript
             playerMoveModel.Direction = playerDataModel.Direction;
         }
 
-        // --> This is the only difference between LocalPlayerController and RemotePlayerController
-        public override void _Input(InputEvent @event)
+        public override void _PhysicsProcess(double delta)
         {
-            if (@event is InputEventKey)
-            {
-                SetInputDirection();
-                SetInputRunning();
-                SendPlayerMove();
-            }
+
+            base._PhysicsProcess(delta);
+
+            SetInputRunning();
+
+            SetInputDirection();
         }
 
         private void SetInputDirection()
         {
-            Direction.X = Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
-            Direction.Y = Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
-            Direction.Normalized();
+            var tickCount = System.Environment.TickCount64;
+
+            if (tmrDirection < tickCount)
+            {
+                var direction = new Vector2(); //Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
+                direction.X = Input.GetActionStrength("ui_right") - Input.GetActionStrength("ui_left");
+                direction.Y = Input.GetActionStrength("ui_down") - Input.GetActionStrength("ui_up");
+
+                if (direction == Vector2.Zero)
+                    return;
+                if (isMoving)
+                    return;
+
+                if (direction.X > 0 && direction.Y < 0)
+                    Direction = Direction.UpRight;
+                else if (direction.X < 0 && direction.Y < 0)
+                    Direction = Direction.UpLeft;
+                else if (direction.X > 0 && direction.Y > 0)
+                    Direction = Direction.DownRight;
+                else if (direction.X < 0 && direction.Y > 0)
+                    Direction = Direction.DownLeft;
+                else if (direction.X > 0)
+                    Direction = Direction.Right;
+                else if (direction.X < 0)
+                    Direction = Direction.Left;
+                else if (direction.Y < 0)
+                    Direction = Direction.Up;
+                else if (direction.Y > 0)
+                    Direction = Direction.Down;
+                else
+                    GD.PrintErr("Direction not found");
+
+                PositionGrid.X += direction.X;
+                PositionGrid.Y += direction.Y;
+
+                offSetX = GridSize * -direction.X;
+                offSetY = GridSize * -direction.Y;
+
+                GD.Print($"PositionGrid: X: {PositionGrid.X} Y: {PositionGrid.Y}");
+
+                isMoving = true;
+                tmrDirection = tickCount + 25;
+            }
         }
 
         private void SetInputRunning()
         {
             isRunning = Input.IsActionPressed("ui_running");
-        }
 
-        public void SendPlayerMove()
-        {
-            if (isMoving)
-            {
-                if (packetProcessor == null)
-                {
-                    GD.PrintErr("packetProcessor is null");
-                    return;
-                }
-
-                playerMoveModel.IsRunning = isRunning;
-                //GD.Print($"PlayerMoveModel: Enviado Position` X: {Position.X} Y: {Position.Y}");
-                //GD.Print($"PlayerMoveModel: Enviado Direction` X: {Direction.X} Y: {Direction.Y}");
-
-
-                //playerMoveModel.Position = Position;
-                //playerMoveModel.Direction = Direction;
-                packetProcessor.ClientPlayerMove(serverPeer, playerMoveModel);
-            }
         }
     }
 }
